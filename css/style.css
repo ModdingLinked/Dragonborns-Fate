@@ -425,6 +425,16 @@ body {
     text-decoration: underline;
 }
 
+.subheader a {
+    padding-top: 1vw;
+    color: rgb(51, 122, 183);
+    text-decoration: none;
+}
+
+.subheader a:hover {
+    text-decoration: underline;
+}
+
 .install {
     margin-right: 12vw;
     margin-left: 12vw;
