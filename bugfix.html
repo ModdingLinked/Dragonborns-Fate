@@ -55,6 +55,7 @@ SOFTWARE.
         <a href="./mo2.html">MO2</a>
         <a href="./utilities.html">Utilities</a>
         <a href="./bugfix.html"><span style="color:#DCDCDC">Bug Fixes</span></a>
+        <a href="./qol.html">Tweaks</a>
         <a href="./hud.html">User Interface</a>
         <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
@@ -66,27 +67,22 @@ SOFTWARE.
             <ul>
                 <a href="./bugfix.html#separator"><span style="font-size:.8vw;">Separator</span></a>
                 <a href="./bugfix.html#patch"><span style="font-size:.8vw;">USSEP</span></a>
+                <a href="./bugfix.html#engine_fixes"><span style="font-size:.8vw;">Engine Fixes</span></a>
                 <a href="./bugfix.html#scrambled"><span style="font-size:.8vw;">Scrambled Bugs</span></a>
                 <a href="./bugfix.html#powerofthree"><span style="font-size:.8vw;">powerofthree's Tweaks</span></a>
                 <a href="./bugfix.html#equip_fix"><span style="font-size:.8vw;">Enchant Equip Fix</span></a>
-                <a href="./bugfix.html#sneak_fix"><span style="font-size:.8vw;">1st Person Sneak Fix</span></a>
-                <a href="./bugfix.html#quests"><span style="font-size:.8vw;">Quests Are In Skyrim</span></a>
-                <a href="./bugfix.html#db_delay"><span style="font-size:.8vw;">Dragonborn Delayed</span></a>
-                <a href="./bugfix.html#dg_delay"><span style="font-size:.8vw;">Dawnguard Delayed</span></a>
-                <a href="./bugfix.html#npcs_run"><span style="font-size:.8vw;">Quest NPCs Run</span></a>
-                <a href="./bugfix.html#convos"><span style="font-size:.8vw;">Realistic Conversations</span></a>
-                <a href="./bugfix.html#horses"><span style="font-size:.8vw;">Better Horses</span></a>
-                <a href="./bugfix.html#autosave"><span style="font-size:.8vw;">Minimalistic Autosaves</span></a>
+                <a href="./bugfix.html#ai_fix"><span style="font-size:.8vw;">NPC AI Fix</span></a>
+                <a href="./bugfix.html#tavern_fix"><span style="font-size:.8vw;">Tavern AI Fix</span></a>
             </ul>
     </div>
     <div>
         <h2 class="fullheader">
-           Bug Fixes and Quality of Life Improvements
+           Bug Fixes
         </h2>
             <a class="internallink" href="#separator"><h2 class="smallheader" id="separator">Creating a Separator in MO2</h2></a>
                 <ol class="standard_ol">
                     <li>Right-click anywhere in the left pane of MO2 and select <strong>Create Separator</strong></li>
-                    <li>Name the separator <strong>Bug Fix + QOL</strong></li>
+                    <li>Name the separator <strong>Bug Fixes</strong></li>
                 </ol>
             <a class="internallink" href="#patch"><h2 class="smallheader" id="patch"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/266" target="_blank">Unofficial Skyrim Special Edition Patch</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
@@ -95,31 +91,44 @@ SOFTWARE.
                     </ul>
                     <br>
                 <p class="subparagraph"> - Fixes thousands of bugs with both the base game and DLCs</p>
-            <a href="internallink" href="scrambled"><h2 class="smallheader" id="scrambled"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/43532" target="_blank">Scrambled Bugs</a> </h2> </a>
-              <h2 class="install">Installation instructions:</h2>
-                  <ol class="standard_ul">
-                      <li>Download and install both the <strong>Main File - Scrambled Bugs 11</strong> and <strong>Main File - Scrambled Eggchantments 1</strong> </li>
-                  </ol>
-                      <blockquote class="blockquote">
-                            If you do not know what to do when installing multiple mods from the same page, read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page
-                      </blockquote>
-                  <ol class="standard_ol" start="2">
-                      <li>Once the files are installed, right-click on the <strong>Scrambled Bugs</strong> mod in the left pane of MO2 and select <strong>Open in Explorer</strong> </li>
-                      <li>Navigate to <code>NetScriptFramework\Plugins\</code> and open <strong>ScrambledBugs.json</strong> in a text editor (such as notepad)</li>
-                      <li>Set <strong>"equipBestAmmo":</strong> to <strong>true</strong> (line 19)</li>
-                      <li>Set <strong>underfilledSoulGems</strong> to <strong>true</strong> (line 23)</li>
-                      <li>Save and exit</li>
-                  </ol>
-                  <br>
-              <p class="subparagraph"> - Fixes many common bugs at an engine level, all fully configurable</p>
-            <a class="internallink" href="#powerofthree"><h2 class="smallheader" id="powerofthree"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/51073" target="_blank">powerofthree's Tweaks</a></h2></a>
-                  <h2 class="install">Installation instructions:</h2>
-                      <ul class="standard_ul">
-                          <li><b>Main File - powerofthree's Tweaks 1.1.1</b></li>
-                          <li><b>Optional File - INI file 1.1</b></li>
-                      </ul>
-                      <br>
-                  <p class="subparagraph"> - A collection of engine-level fixes and tweaks similar to the above mod</p>
+                <a class="internallink" href="engine_fixes"><h2 class="smallheader" id="engine_fixes"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/17230" target="_blank">SSE Engine Fixes</a></h2></a>
+                    <h2 class="install">Installation instructions:</h2>
+                        <ol class="standard_ol">
+                            <li>Download and install the <strong>Main File - (Part 1) Engine Fixes 5.6.0</strong> normally through MO2</li>
+                            <li>Download the <strong>Main File - (Part 2) Engine Fixes - skse64 Preloader and TBB Lib 2020.3</strong> file using the <strong>Manual Download</strong> button</li>
+                            <li>From the downloaded archive, extract all the files to the game's <strong>Root</strong> folder</li>
+                            <li>Once the files are installed, right-click on the <strong>SSE Engine Fixes</strong> mod in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
+                            <li>Navigate to <code>SKSE\Plugins</code> and open <strong>EngineFixes.toml</strong> in a text editor (such as notepad)</li>
+                            <li>Set <strong>RegularQuicksaves</strong> to <strong>true</strong> (line 13)</li>
+                            <li>Set <strong>SleepWaitTime</strong> to <strong>true</strong> (line 18)</li>
+                        </ol>
+                        <br>
+                    <p class="subparagraph"> - Fixes numerous bugs within the game's engine</p>
+              <a href="internallink" href="scrambled"><h2 class="smallheader" id="scrambled"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/43532" target="_blank">Scrambled Bugs</a> </h2> </a>
+                    <h2 class="install">Installation instructions:</h2>
+                        <ol class="standard_ul">
+                            <li>Download and install both the <strong>Main File - Scrambled Bugs 11</strong> and <strong>Main File - Scrambled Eggchantments 1</strong> normally</li>
+                        </ol>
+                            <blockquote class="blockquote">
+                                  If you do not know what to do when installing multiple mods from the same page, read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page
+                            </blockquote>
+                        <ol class="standard_ol" start="2">
+                            <li>Once the files are installed, right-click on the <strong>Scrambled Bugs</strong> mod in the left pane of MO2 and select <strong>Open in Explorer</strong> </li>
+                            <li>Navigate to <code>NetScriptFramework\Plugins\</code> and open <strong>ScrambledBugs.json</strong> in a text editor</li>
+                            <li>Set <strong>"equipBestAmmo":</strong> to <strong>true</strong> (line 19)</li>
+                            <li>Set <strong>"underfilledSoulGems":</strong> to <strong>true</strong> (line 23)</li>
+                            <li>Save and exit</li>
+                        </ol>
+                        <br>
+                    <p class="subparagraph"> - Fixes many common bugs at an engine level, all fully configurable</p>
+                  <a class="internallink" href="#powerofthree"><h2 class="smallheader" id="powerofthree"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/51073" target="_blank">powerofthree's Tweaks</a></h2></a>
+                        <h2 class="install">Installation instructions:</h2>
+                            <ul class="standard_ul">
+                                <li><b>Main File - powerofthree's Tweaks 1.1.1</b></li>
+                                <li><b>Optional File - INI file 1.1</b></li>
+                            </ul>
+                            <br>
+                        <p class="subparagraph"> - A collection of engine-level fixes and tweaks similar to the previous two mods</p>
             <a class="internallink" href="#equip_fix"><h2 class="smallheader" id="equip_fix"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/42839" target="_blank">Enchantment Equip Fix</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
@@ -127,62 +136,20 @@ SOFTWARE.
                     </ul>
                     <br>
                 <p class="subparagraph"> - Fixes enchantments not properly applying when weapons/armors are equipped automatically</p>
-            <a class="internallink" href="#sneak_fix"><h2 class="smallheader" id="sneak_fix"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/31165" target="_blank">1st Person Sneak Strafe Stutter Fix</a></h2></a>
+            <a class="internallink" href="#ai_fix"><h2 class="smallheader" id="ai_fix"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/40261" target="_blank">NPC AI Process Position Fix</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - First Person Sneak Strafe-Walk Stutter Fix 1.0</b></li>
+                    <ul class="standard_ol">
+                        <li><b>Main File - NPC AI Process Pos Fix-SSE-V4.05b</b></li>
                     </ul>
                     <br>
-                <p class="subparagraph"> - Fixes a bug that would cause the camera to stutter while diagonally strafing while crouched in first person</p>
-            <a class="interallink" href="#quests"><h2 class="smallheader" id="quests"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/18416" target="_blank">Quests Are In Skyrim</a></h2></a>
+                <p class="subparagraph"> - Fixes NPC AI not updating while the player sleeps/waits</p>
+            <a class="internallink" href="#tavern_fix"><h2 class="smallheader" id="tavern_fix"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/23107" target="_blank">Tavern AI Fix</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - QuestsAreInSkyrim_USSEP_1_2_reupload 1.2</b></li>
+                    <ul class="standard_ol">
+                        <li><b>Main File - TavernAIFix 1.1d</b></li>
                     </ul>
                     <br>
-                <p class="subparagraph"> - Fixes base-game radiant quests being generated in DLC areas</p>
-            <a class="interallink" href="#db_delay"><h2 class="smallheader" id="db_delay"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/8365" target="_blank">Dragonborn Delayed</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - 1 - Dragonborn Delayed - Horn of Jurgen Windcaller 1.0</b></li>
-                    </ul>
-                    <br>
-                <p class="subparagraph"> - Delays the start of the Dragonborn DLC until after you finish the Horn of Jurgen Windcaller quest</p>
-            <a class="interallink" href="#dg_delay"><h2 class="smallheader" id="dg_delay"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/2399" target="_blank">Dawnguard Delayed</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - Dawnguard Delayed - Level 30 1.0</b></li>
-                    </ul>
-                    <br>
-                <p class="subparagraph"> - Delays the start of the Dawnguard DLC until reaching level 30</p>
-            <a class="interallink" href="#convos"><h2 class="smallheader" id="convos"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/1717" target="_blank">Realistic Conversations</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Optional File - Realistic Conversations - longer pause between sentences 2.1</b></li>
-                    </ul>
-                    <br>
-                <p class="subparagraph"> - Prevents NPCs from constantly barraging you with greetings</p>
-            <a class="interallink" href="#npcs_run"><h2 class="smallheader" id="npcs_run"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/21103" target="_blank">Quest NPCs Run</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - Quest NPCs Run 1.12</b></li>
-                    </ul>
-                    <br>
-                <p class="subparagraph"> - Makes slow walking quest NPCs you follow run</p>
-            <a class="interallink" href="#horses"><h2 class="smallheader" id="horses"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/38348" target="_blank">Miscellaneous Tweaks Collection</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - Misc Tweaks - Better Horses 1.3</b></li>
-                    </ul>
-                    <br>
-                <p class="subparagraph"> - Makes player-bought horses essential and makes them flee from combat</p>
-            <a class="interallink" href="#autosave"><h2 class="smallheader" id="autosave"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/37133" target="_blank">Minimalistic AutoSave Mod</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - Minimalistic AutoSave 3</b></li>
-                    </ul>
-                    <br>
-                <p class="subparagraph"> - Automatically creates an auto-save every five minutes if certain conditions are met</p>
+                <p class="subparagraph"> - Fixes two major annoyances with tavern workers' behaviors</p>
     </div>
     <div>
         <br> <br>

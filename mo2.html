@@ -55,6 +55,7 @@ SOFTWARE.
         <a href="./mo2.html"><span style="color:#DCDCDC">MO2</span></a>
         <a href="./utilities.html">Utilities</a>
         <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./qol.html">Tweaks</a>
         <a href="./hud.html">User Interface</a>
         <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
@@ -69,7 +70,10 @@ SOFTWARE.
                 <a href="./mo2.html#settings"><span style="font-size:.8vw;">Settings</span></a>
             </ul>
         <a href="./mo2.html#profiles">Profiles</a>
-        <a href="./mo2.html#ini_notes">Notes</a>
+        <a href="./mo2.html#ini_tweaks">INI Tweaks</a>
+          <ul>
+              <a href="./mo2.html#ini_notes"><span style="font-size:.8vw;">Notes</span></a>
+          </ul>
         <a href="./mo2.html#advice">Install Advice</a>
     </div>
     <div>
@@ -87,7 +91,7 @@ SOFTWARE.
                         </ul>
                 </ol>
                 <blockquote class="blockquote">
-                    If you do know what is meant by "default Windows folders", read the <strong>Installation Location</strong> section from the <a href="./setup.html#location">Initial Setup</a> page.
+                    If you do not know what is meant by "default Windows folders", read the <strong>Installation Location</strong> section from the <a href="./setup.html#location">Initial Setup</a> page.
                 </blockquote>
                 <ol class="standard_ol" start="4">
                     <li>Click <strong>Next</strong> until the installer finishes</li>
@@ -124,6 +128,7 @@ SOFTWARE.
                     </blockquote>
                 <a class="internallink" href="#settings"><p class="smallheader" id="settings">Configuring Settings</p></a>
                     <ol class="standard_ol">
+                        <li>Select the <strong>X</strong> in the bottom right of MO2 to close the log window</li>
                         <li>Select the <img src="./img/mo2 settings.png" alt="mo2 settings"> button at the top of MO2 to open the settings</li>
                         <li>In the <strong>Theme</strong> tab, you can select a different style from the drop-down menu at the top</li>
                             <ul>
@@ -156,12 +161,29 @@ SOFTWARE.
                     <li>Exit out of the profiles menu and select the <strong>A Dragonborn's Fate</strong> profile from the drop-down above the left pane</li>
                         <img src="./img/mo2 profile select.png" alt="profile select">
                 </ol>
-            <a class="internallink" href="#ini_notes"><p class="smallheader" id="ini_notes">Notes</p></a>
-                    <p class="subparagraph">
-                        Currently, this guide does not use any INI tweaks. The default <strong>High</strong> launcher preset already give the best balance of performance and quality in my opinion.
-                        It is highly recommended to avoid using INI "optimization" tools like BethINI. The changes these mods make are largely undocumented and range from placebo at best and dangerous at worst.
-                        You will realistically not need any additional INI tweaks for maximum performance with this guide.
-                    </p>
+                <a class="internallink" href="#ini_tweaks"><h2 class="subheader" id="ini_tweaks">INI Tweaks</h2></a>
+                        <p class="subparagraph">
+                            In this step, we will configure the game's INI files to increase performance/stability at minimal visual cost.
+                        </p>
+                        <br>
+                        <ol class="standard_ol">
+                            <li>Make sure the <strong>A Dragonborn's Fate</strong> profile is active</li>
+                            <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
+                            <li>Select the <strong>SkyrimPrefs.ini</strong> tab</li>
+                            <li>Use ctrl+f to find and change the following options:</li>
+                                <p class="smalllist">
+                                  Set <strong>fShadowDistance</strong> to <b>7000</b><br>
+                                  Set <strong>iMaxFocusShadows</strong> to <b>3</b><br>
+                                  Set <strong>fDynamicDOFBlurMultiplier</strong> to <strong>0</strong>
+                                </p>
+                            <li>Save your changes, but stay in the INI editor</li>
+                        </ol>
+                <a class="internallink" href="#ini_notes"><p class="smallheader" id="ini_notes">Notes</p></a>
+                  <p class="subparagraph">
+                      It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using INI "optimization" tools like BethINI.
+                      The changes these mods make are largely undocumented and range from placebo at best and dangerous at worst. You will realistically not need any other tweaks than the ones
+                      already in the guide.
+                  </p>
             <a class="internallink" href="#advice"><h2 class="subheader" id="advice">Mod Installation Advice</h2></a>
                 <blockquote class="blockquote">
                     If you are completely unfamiliar with Mod Organizer 2, I recommended watching <a href="https://www.youtube.com/watch?v=7v0wWVuOagA" target="_blank">GamerPoet's video</a> about mod installation in MO2.
