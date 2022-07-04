@@ -57,8 +57,8 @@ SOFTWARE.
         <a href="./bugfix.html">Bug Fixes</a>
         <a href="./qol.html">Tweaks</a>
         <a href="./hud.html">User Interface</a>
-        <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
+        <a href="./visuals.html">Visuals</a>
         <a href="./finish.html">Final Steps</a>
         <a href="./appendix.html">Appendix</a>
     </div>
@@ -66,13 +66,12 @@ SOFTWARE.
         <a href="./utilities.html">Utilities</a>
             <ul>
                 <a href="./utilities.html#skse"><span style="font-size:.8vw;">SKSE64</span></a>
-                <a href="./utilities.html#skse_ini"><span style="font-size:.8vw;">SKSE64 INI</span></a>
                 <a href="./utilities.html#address_lib"><span style="font-size:.8vw;">Address Libraries</span></a>
-                <a href="./utilities.html#engine_fixes"><span style="font-size:.8vw;">Engine Fixes</span></a>
-                <a href="./utilities.html#net_framework"><span style="font-size:.8vw;">.NET Framework</span></a>
-                <a href="./utilities.html#display_tweaks"><span style="font-size:.8vw;">Display Tweaks</span></a>
-                <a href="./utilities.html#scaleform"><span style="font-size:.8vw;">Scaleform++</span></a>
-                <a href="./utilities.html#p3_extender"><span style="font-size:.8vw;">powerofthree's Extender</span></a>
+                <a href="./utilities.html#net_framework"><span style="font-size:.8vw;">.NET Script Framework</span></a>
+                <a href="./utilities.html#display_tweaks"><span style="font-size:.8vw;">SSE Display Tweaks</span></a>
+                <a href="./utilities.html#scaleform"><span style="font-size:.8vw;">Scaleform Translation Plus Plus</span></a>
+                <a href="./utilities.html#p3_extender"><span style="font-size:.8vw;">powerofthree's Papyrus Extender</span></a>
+                <a href="./utilities.html#papyrusutil"><span style="font-size:.8vw;">PapyrusUtil</span></a>
             </ul>
     </div>
     <div>
@@ -82,6 +81,11 @@ SOFTWARE.
         <blockquote class="blockquote">
             Make sure the <strong>A Dragonborn's Fate</strong> profile is active before proceeding.
         </blockquote>
+        <a class="internallink" href="#separator"><h2 class="smallheader" id="separator">Creating a Separator in MO2</h2></a>
+                <ol class="standard_ol">
+                    <li>Right-click anywhere in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                    <li>Name the separator <strong>Utilities</strong></li>
+                </ol>
             <a class="internallink" href="#skse"><h2 class="smallheader" id="skse"><a href="https://skse.silverlock.org" target="_blank">Skyrim Script Extender</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ol class="standard_ol">
@@ -106,38 +110,13 @@ SOFTWARE.
                         <blockquote class="blockquote">
                             In order for the script extender to work, you need to launch the game using the <strong>skse64_loader.exe</strong> file. It will automatically be added to Mod Organizer 2 upon restarting it.
                         </blockquote>
-            <a class="internallink" href="#skse_ini"><h2 class="smallheader" id="skse_ini"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/1651" target="_blank">SKSE64 INI</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - No Warpaint tweak 1.2</b></li>
-                    </ul>
-                    <blockquote class="blockquote">
-                        If you do not know what these instructions mean, or how to install mods with MO2, read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page
-                    </blockquote>
-                    <p class="subparagraph"> - Enables a setting in SKSE that cleans your save of dirty OnUpdate() blocks from scripts</p>
-                    <blockquote class="blockquote">
-                        After installing a mod, make sure you check the box next to it in the left pane of MO2 to enable it
-                    </blockquote>
-            <a class="internallink" href="address_lib"><h2 class="smallheader" id="address_lib"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/32444" target="_blank">Address Libraries for SKSE Plugins</a></h2></a>
+            <a class="internallink" href="#address_lib"><h2 class="smallheader" id="address_lib"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/32444" target="_blank">Address Libraries for SKSE Plugins</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
                         <li><b>Main File - All in one (Special Edition) 2</b></li>
                     </ul>
                     <br>
                 <p class="subparagraph"> - Resource required for other SKSE plugins</p>
-            <a class="internallink" href="engine_fixes"><h2 class="smallheader" id="engine_fixes"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/17230" target="_blank">SSE Engine Fixes</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ol class="standard_ol">
-                        <li>Download and install the <strong>Main File - (Part 1) SSE Engine Fixes for 1.5.39 - 1.5.97 5.8.3</strong> normally through MO2</li>
-                        <li>Download the <strong>Main File - (Part 2) Engine Fixes - skse64 Preloader and TBB Lib 2020.3</strong> file using the <strong>Manual Download</strong> button</li>
-                        <li>From the downloaded archive, extract all the files to the game's <strong>Root</strong> folder</li>
-                        <li>Once the files are installed, right-click on the <strong>SSE Engine Fixes</strong> mod in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
-                        <li>Navigate to <code>SKSE\Plugins</code> and open <strong>EngineFixes.toml</strong> in a text editor (such as notepad)</li>
-                        <li>Set <strong>RegularQuicksaves</strong> to <strong>true</strong> (line 13)</li>
-                        <li>Set <strong>SleepWaitTime</strong> to <strong>true</strong> (line 18)</li>
-                    </ol>
-                    <br>
-                <p class="subparagraph"> - Fixes numerous bugs within the game's engine</p>
             <a class="internallink" href="#net_framework"><h2 class="smallheader" id="net_framework"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/21294" target="_blank">.NET Script Framework</a></h2></a>
                         <h2 class="install">Installation instructions:</h2>
                             <ul class="standard_ul">
@@ -149,33 +128,36 @@ SOFTWARE.
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
                         <li><b>Main File - SSE Display Tweaks 0.5.9</b></li>
+                        <li>Navigate to <code>SKSE\Plugins</code> and open <strong>SSEDisplayTweaks.ini</strong> in a text editor (such as notepad)</li>
+                        <li>Set <strong>MaximumRefreshRate</strong> to your monitor's refresh rate (line 195)</li>
+                        <li>Set <strong>FramerateLimit</strong> to a value you want the game FPS to be locked to (line 204)</li>
                     </ul>
                     <br>
-                <p class="subparagraph"> - Allows for playing at framerates over 60, along with many other display-related improvements</p>
+                <p class="subparagraph"> - All-in-one solution for smooth FPS-unlocked gameplay, also includes many fixes</p>
             <a class="internallink" href="#scaleform"><h2 class="smallheader" id="scaleform"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/22603" target="_blank">Scaleform Translation Plus Plus</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
-                        <li><b>Old File - ScaleformTranslationPP 1.4.1</b></li>
+                        <li><b>Old File - ScaleformTranslationPP</b></li>
                     </ul>
-                    <blockquote class="blockquote">
-                        IMPORTANT: Make sure you download the <strong>Old File</strong> rather than the <strong>Main File</strong>, as that is the only version supported by the version of the game used in the guide.
-                    </blockquote>
-                <p class="subparagraph"> - Resource for expanding SkyUI, a mod that will be installed later</p>
+                <p class="subparagraph"> - Enables native translation nesting present within SkyUI</p>
             <a class="internallink" href="#p3_extender"><h2 class="smallheader" id="p3_extender"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/22854" target="_blank">powerofthree's Papyrus Extender</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
-                        <li><b>Main File - Papyrus Extender SSE - 4.5.7</b></li>
+                        <li><b>Main File - Papyrus Extender</b></li>
+                        <li>You will be prompted with a FOMOD installer, click <b>Install</b></li>
                     </ul>
                     <br>
-                <p class="subparagraph"> - Adds new scripting functions for mods to take advantage of</p>
-                <br>
-                <blockquote class="blockquote">
-                  REMINDER: You need to run the game through the <strong>SKSE</strong> option in Mod Organizer 2 from now on, NOT the <strong>Skyrim Special Edition</strong> option.
-                  You may need to restart MO2 for the option to appear.
-                </blockquote>
+                <p class="subparagraph"> - SKSE64 plugin that extends Papyrus script functionality</p>
+            <a class="internallink" href="#papyrusutil"><h2 class="smallheader" id="papyrusutil"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/13048" target="_blank">PapyrusUtil</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - PapyrusUtil SE - Scripting Utility Functions</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - An SKSE plugin adding several new scripts with native functions</p>
     </div>
     <div>
-        <br> <br>
+        <br><br>
         <hr>
         <br>
         <a href="./mo2.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
@@ -184,7 +166,7 @@ SOFTWARE.
     <div class="footer">
         <div class="inner_footer">
             <div class="footer_third">
-                <li><a href="https://github.com/VivaNewVegas/Dragonborns-Fate-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
                 <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
                 <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
                 <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>

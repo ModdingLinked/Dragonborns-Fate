@@ -57,8 +57,8 @@ SOFTWARE.
         <a href="./bugfix.html">Bug Fixes</a>
         <a href="./qol.html">Tweaks</a>
         <a href="./hud.html">User Interface</a>
-        <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
+        <a href="./visuals.html">Visuals</a>
         <a href="./finish.html">Final Steps</a>
         <a href="./appendix.html">Appendix</a>
     </div>
@@ -71,9 +71,6 @@ SOFTWARE.
             </ul>
         <a href="./mo2.html#profiles">Profiles</a>
         <a href="./mo2.html#ini_tweaks">INI Tweaks</a>
-          <ul>
-              <a href="./mo2.html#ini_notes"><span style="font-size:.8vw;">Notes</span></a>
-          </ul>
         <a href="./mo2.html#advice">Install Advice</a>
     </div>
     <div>
@@ -136,6 +133,7 @@ SOFTWARE.
                 <br>
                 <ol class="standard_ol">
                     <li>Select the <img src="./img/mo2 profiles.png" alt="mo2 profiles"> button at the top of MO2 to open the profiles menu</li>
+                    <li>Disable "Use profile-specific Game INI Files"</li>
                     <li>Select the <strong>Default</strong> profile, then select <strong>Copy</strong></li>
                     <li>Name the new profile <strong>A Dragonborn's Fate</strong></li>
                     <li>Select the <strong>A Dragonborn's Fate</strong> profile and make sure <strong>Use profile-specific Game INI Files</strong> is checked at the bottom</li>
@@ -155,32 +153,24 @@ SOFTWARE.
                         </p>
                         <br>
                         <ol class="standard_ol">
-                            <li>Make sure the <strong>A Dragonborn's Fate</strong> profile is active</li>
-                            <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
-                            <li>Select the <strong>SkyrimPrefs.ini</strong> tab</li>
-                            <li>Use ctrl+f to find and change the following options:</li>
-                                <p class="smalllist">
-                                  Set <strong>fShadowDistance</strong> to <b>7000</b><br>
-                                  Set <strong>iNumFocusShadow</strong> to <b>3</b><br>
-                                  Set <strong>fDynamicDOFBlurMultiplier</strong> to <strong>0</strong>
-                                </p>
+                            <li>Download <a href="https://www.nexusmods.com/skyrimspecialedition/mods/4875" target="_blank">BethINI</a></li>
+                            <li>Extract the archive somewhere on your computer such as <code>C:\Modding Tools</code> (Make sure it's not a UAC protected folder)</li>
+                            <li>Run <strong>BethINI.exe</strong></li>
+                            <li>Select the medium or high preset depending on your hardware, then do the following</li>
+                                <ol>
+                                    <li>Disable VSync and Lock Frame Rate</li>
+                                    <li>Enable Windowed Mode and 64-bit Render Targets</li>
+                                    <li>Select the resolution you want to display the game in</li>
+                                    <li>Edit the other settings to your liking (Support won't be provided if they are broken or not ideal)</li>
+                                </ol>
                             <li>Save and exit</li>
                         </ol>
-                        <blockquote class="blockquote">
-                            These settings tweak shadows to improve performance without much visual cost and disable the game's built in depth-of-field effect.
-                        </blockquote>
-                <a class="internallink" href="#ini_notes"><p class="smallheader" id="ini_notes">Notes</p></a>
-                  <p class="subparagraph">
-                      It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using tools like BethINI.
-                      The changes these mods make are largely undocumented and range from placebo at best and dangerous at worst. You will realistically not need any other tweaks than the ones
-                      already in the guide.
-                  </p>
             <a class="internallink" href="#advice"><h2 class="subheader" id="advice">Mod Installation Advice</h2></a>
                 <blockquote class="blockquote">
                     If you are completely unfamiliar with Mod Organizer 2, I recommended watching <a href="https://www.youtube.com/watch?v=7v0wWVuOagA" target="_blank">GamerPoet's video</a> about mod installation in MO2.
                 </blockquote>
                 <p class="subparagraph">
-                    When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Unofficial Skyrim Special Edition Patch 4.2.4b</strong>. This is referring to the mod's category on Nexus, the file name, and the file version.
+                    When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Unofficial Skyrim Special Edition Patch</strong>. This is referring to the mod's category on Nexus and file name.
                         <br> <br>
                         <img style="width:85%;" src="./img/download example.png" alt="download example"> <br> <br>
                     Unless instructed otherwise, simply download the listed file using the <strong>Mod Manager Download</strong> button and install it through MO2.
@@ -201,10 +191,9 @@ SOFTWARE.
                     If you are updating from an old version of a mod, you should select <strong>Replace</strong>. This will delete all the files from the old version of the mod and replace them,with the ones from the new version.
                     This is the only time you should use the <strong>Replace</strong> option, otherwise always use <strong>Rename</strong>.
                 </p>
-
     </div>
     <div>
-        <br> <br>
+        <br><br>
         <hr>
         <br>
         <a href="./setup.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
@@ -213,7 +202,7 @@ SOFTWARE.
     <div class="footer">
         <div class="inner_footer">
             <div class="footer_third">
-                <li><a href="https://github.com/VivaNewVegas/Dragonborns-Fate-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
                 <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
                 <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
                 <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
