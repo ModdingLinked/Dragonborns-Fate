@@ -51,7 +51,7 @@ b {
 }
 
 strong {
-    color: #ad9df4;
+    color: #7375cc;
 }
 
 code {
@@ -110,17 +110,17 @@ img {
 }
 
 .section a {
-    color: rgb(51, 122, 183);
+    color: rgb(85, 170, 255);
     font-size: 1.025em;
 }
 
 .link {
-    color: rgb(51, 122, 183) !important;
+    color: rgb(85, 170, 255) !important;
     font-size: 1.025em;
 }
 
 .link:hover {
-    color: hsl(208, 80%, 70%) !important;
+    color: hsl(210, 100%, 80%) !important;
     text-decoration-line: underline !important;
 }
 
@@ -222,6 +222,10 @@ img {
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
     text-shadow: 0.05em 0.075em 0.1em rgba(0, 0, 0, 0.7);
+}
+
+#changelog {
+    line-height: 1.6em;
 }
 
 /* Titlebar */
@@ -397,7 +401,7 @@ blockquote a:hover {
 /* Headers */
 
 h1 {
-    color: #9285ce;
+    color: #8587eb;
     font-size: 2.5em;
     word-wrap: break-word;
 }
@@ -409,7 +413,7 @@ h2 {
 }
 
 .install {
-    color: #9285ce;
+    color: #8587eb;
     font-size: 1.5em;
 }
 
