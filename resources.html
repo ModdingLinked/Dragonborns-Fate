@@ -43,62 +43,150 @@ SOFTWARE.
     </head>
 
     <body>
+        <!-- Titlebar -->
         <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.webp" alt="Logo"></img>
-                <h1>A Dragonborn's Fate</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./tweaks.html">Tweaks</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-            <a href="./resources.html"><span style="color:#DCDCDC">Resources</span></a>
-        </div>
-        <div>
-            <h2 class="fullheader">Resources</h2>
-            <h2 class="smallheader"><a href="./avoid-tools.html" target="_blank">Tools to Avoid</a></h2>
-            <p>List of many outdated/dangerous tools</p>
-            <h2 class="smallheader"><a href="./avoid-mods.html" target="_blank">Mods to Avoid</a></h2>
-            <p>List of many outdated/dangerous mods</p>
-            <h2 class="smallheader"><a href="https://tes5edit.github.io/docs/" target="_blank">Tome of xEdit</a></h2>
-            <p>Most comprehensive tutorial for xEdit, which is an essential tool if you plan on adding any mods</p>
-            <h2 class="smallheader"><a href="https://github.com/LivelyDismay/Learn-To-Mod/blob/19f7c8d14daddadc1a6c0ec5c1ac9189878a9fd6/lessons/Conflict%20Basics.md" target="_blank">LivelyDismay's Learn to Mod</a> </h2>
-            <p>More streamlined xEdit tutorial that focuses on conflicts, which are crucial to understand for any modded setup</p>
-            <h2 class="smallheader"><a href="https://www.youtube.com/watch?v=1naNojdx0ek&list=PL2g2oK5KhZT0WUOw0Y_8HFudZbgfmcdEl" target="_blank">Bethesda Modding School</a></h2>
-            <p>Comprehensive tutorials on how to make various types of mod in the Creation Kit, made by the author of Sim Settlements for Fallout 4. Although it was made primarily for Fallout 4, most of the information should still apply since F4 and SSE use the same engine</p>
-            <h2 class="smallheader"><a href="https://www.youtube.com/watch?v=Ipgx3xmzEaw&list=PL2g2oK5KhZT3L25H0FqJzSnFib9VmymQS" target="_blank">Creation Kit Tutorials</a></h2>
-            <p>Playlist of many YouTube videos from various mod authors that explain how to use the Creation Kit. Use only if the above link doesn't have the information you need</p>
-        </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <a href="./appendix.html"><img class="backarrow" src="./img/leftarrow.webp" alt="back arrow"></a>
-            <a href="./index.html"><img class="forwardarrow" src="./img/rightarrow.webp" alt="forward arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
-                </div>
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html"> A Dragonborn's Fate </a>
+            <div class="guideLinks">
+                <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas </a>
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+            </div>
+        </div>
+        <!-- Left Sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="./setup.html">Initial Setup</a>
+                    </li>
+                    <li>
+                        <a href="./mo2.html">MO2</a>
+                    </li>
+                    <li>
+                        <a href="./utilities.html">Utilities</a>
+                    </li>
+                    <li>
+                        <a href="./bugfix.html">Bug Fixes</a>
+                    </li>
+                    <li>
+                        <a href="./tweaks.html">Tweaks</a>
+                    </li>
+                    <li>
+                        <a href="./hud.html">User Interface</a>
+                    </li>
+                    <li>
+                        <a href="./gameplay.html">Gameplay</a>
+                    </li>
+                    <li>
+                        <a href="./visuals.html">Visuals</a>
+                    </li>
+                    <li>
+                        <a href="./finish.html">Final Steps</a>
+                    </li>
+                    <li>
+                        <a href="./appendix.html">Appendix</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="./resources.html" class="active">Resources</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas </a>
+                    </li>
+                    <li>
+                        <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    </li>
+                    <li>
+                        <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/DhX5S27" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                            <i class="fab fa-patreon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                            <i class="fab fa-paypal"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+            <div class="section">
+                <h1> Resources </h1>
+                <p>
+                    <a class="link" href="./avoid-tools.html">
+                        <h2> Tools to Avoid </h2>
+                    </a> List of many outdated/dangerous tools.
+                </p>
+                <p>
+                    <a class="link" href="./avoid-mods.html">
+                        <h2> Mods to Avoid </h2>
+                    </a> List of many outdated/dangerous mods.
+                </p>
+                <!--         <p>
+            <a class="link" href="./lod.html">
+                <h2> LOD Guide </h2>
+            </a> Guide on how to generate Object LOD with xLODgen and DynDOLOD.
+        </p> -->
+                <p>
+                    <a class="link" href="https://wastelandsurvivalguide.com/xedit.html">
+                        <h2> xEdit Basics </h2>
+                    </a> Introduction to xEdit, which will allow you to understand how plugins work and how you can edit records.
+                </p>
+                <p>
+                    <a class="link" href="https://wastelandsurvivalguide.com/themethod.html">
+                        <h2> The Method </h2>
+                    </a> Guide on how to use The Method, which is used while creating a modlist in order to patch it properly and hide remaining conflicts that need no intervention.
+                </p>
+                <p>
+                    <a class="link" href="https://www.youtube.com/watch?v=Ipgx3xmzEaw&list=PL2g2oK5KhZT3L25H0FqJzSnFib9VmymQS">
+                        <h2> Creation Kit Tutorials </h2>
+                    </a> Playlist of many YouTube videos from various mod authors that explain how to use the Creation Kit.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./appendix.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                </p>
+            </div>
+            </p>
         </div>
     </body>
 

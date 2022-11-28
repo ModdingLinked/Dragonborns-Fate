@@ -43,66 +43,160 @@ SOFTWARE.
     </head>
 
     <body>
+        <!-- Titlebar -->
         <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.webp" alt="Logo"></img>
-                <h1>A Dragonborn's Fate</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./tweaks.html">Tweaks</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-            <a href="./avoid-mods.html"><span style="color:#DCDCDC">Mods to Avoid</span></a>
-        </div>
-        <div>
-            <h2 class="fullheader">Mods to Avoid</h2>
-            <p><strong>Fores New Idles:</strong> Unsupported and dated, lots of new animation mods will not work with this. Use <a href="https://www.nexusmods.com/skyrimspecialedition/mods/60033" target="_blank">Nemesis</a> instead.</p>
-            <br>
-            <p><strong>Achievements Mods Enabler:</strong> Achievements are already enabled by <a href="https://www.nexusmods.com/skyrimspecialedition/mods/17230" target="_blank">Engine Fixes</a>.</p>
-            <br>
-            <p><strong>HDT-SMP:</strong> Completely replaced and superseded <a href="https://www.nexusmods.com/skyrimspecialedition/mods/57339" target="_blank">Faster HDT-SMP</a>.</p>
-            <br>
-            <p><strong>Breezehome (By Elianora):</strong> Has lots of errors and deleted navmeshes that will cause crashing, do not use without <a href="https://www.nexusmods.com/skyrimspecialedition/mods/48931" target="_blank">this</a>.</p>
-            <br>
-            <p><strong>Most oversized texture mods:</strong> 90% of textures in the game should not be sized higher than 4K, lots of smaller objects sit comfortably at 1K or 2K. The only 2 assets that i know benefit from 8K are mountains and dragons since their UV is wrapped around a very big and complex mesh.</p>
-            <br>
-            <p><strong>Parallax texture mods:</strong> These might replace meshes that were fixed by other mods and often without any patch available, good normal maps suffice is most situations.</p>
-            <br>
-            <p><strong>A Matter of Time:</strong> Broken plugin, contains HITME records. Resave in xEdit for possible fix, support will not be provided.</p>
-            <br>
-            <p><strong>LOD textures and billboards:</strong> <a href="https://www.nexusmods.com/skyrimspecialedition/mods/32382" target="_blank">DynDOLOD 3</a> generates its own textures for LOD with far better results that will actually match your full textures (Same goes for terrain mods since xLODGen does that).</p>
-            <br>
-            <p><strong>SSE Fixes:</strong> Completely replaced by all the engine fixes included in the guide.</p>
-            <br>
-            <p><strong>Skyrim Project Optimization:</strong> Occlusion is already taken care of by Lux.</p>
-            <br>
-            <p><strong>Summerset Isle:</strong> Horribly made mod.</p>
-            <br>
-            <hr>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
-                </div>
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html"> A Dragonborn's Fate </a>
+            <div class="guideLinks">
+                <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas </a>
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+            </div>
+        </div>
+        <!-- Left Sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="./setup.html">Initial Setup</a>
+                    </li>
+                    <li>
+                        <a href="./mo2.html">MO2</a>
+                    </li>
+                    <li>
+                        <a href="./utilities.html">Utilities</a>
+                    </li>
+                    <li>
+                        <a href="./bugfix.html">Bug Fixes</a>
+                    </li>
+                    <li>
+                        <a href="./tweaks.html">Tweaks</a>
+                    </li>
+                    <li>
+                        <a href="./hud.html">User Interface</a>
+                    </li>
+                    <li>
+                        <a href="./gameplay.html">Gameplay</a>
+                    </li>
+                    <li>
+                        <a href="./visuals.html">Visuals</a>
+                    </li>
+                    <li>
+                        <a href="./finish.html">Final Steps</a>
+                    </li>
+                    <li>
+                        <a href="./appendix.html">Appendix</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="./avoid-tools.html">Tools to Avoid</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-mods.html" class="active">Mods to Avoid</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas </a>
+                    </li>
+                    <li>
+                        <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    </li>
+                    <li>
+                        <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/DhX5S27" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                            <i class="fab fa-patreon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                            <i class="fab fa-paypal"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+            <div class="section">
+                <p>
+                <h1> Mods to Avoid </h1>
+                <p>
+                    <strong>Fores New Idles:</strong> Unsupported and dated, lots of new animation mods will not work with this. Use <a href="https://www.nexusmods.com/skyrimspecialedition/mods/60033" target="_blank">Nemesis</a> instead.
+                </p>
+                <p>
+                    <strong>Achievements Mods Enabler:</strong> Achievements are already enabled by <a href="https://www.nexusmods.com/skyrimspecialedition/mods/17230" target="_blank">Engine Fixes</a>.
+                </p>
+                <p>
+                    <strong>HDT-SMP:</strong> Completely replaced and superseded <a href="https://www.nexusmods.com/skyrimspecialedition/mods/57339" target="_blank">Faster HDT-SMP</a>.
+                </p>
+                <p>
+                    <strong>Breezehome (By Elianora):</strong> Has lots of errors and deleted navmeshes that will cause crashing, do not use without <a href="https://www.nexusmods.com/skyrimspecialedition/mods/48931" target="_blank">this</a>.
+                </p>
+                <p>
+                    <strong>Most oversized texture mods:</strong> 90% of textures in the game should not be sized higher than 4K, lots of smaller objects sit comfortably at 1K or 2K. The only 2 assets that i know benefit from 8K are mountains and dragons since their UV is wrapped around a very big and complex mesh.
+                </p>
+                <p>
+                    <strong>Parallax texture mods:</strong> These might replace meshes that were fixed by other mods and often without any patch available, good normal maps suffice is most situations.
+                </p>
+                <p>
+                    <strong>A Matter of Time:</strong> Broken plugin, contains HITME records. Resave in xEdit for possible fix, support will not be provided.
+                </p>
+                <p>
+                    <strong>LOD textures and billboards:</strong> <a href="https://www.nexusmods.com/skyrimspecialedition/mods/32382" target="_blank">DynDOLOD 3</a> generates its own textures for LOD with far better results that will actually match your full textures (Same goes for terrain mods since xLODGen does that).
+                </p>
+                <p>
+                    <strong>SSE Fixes:</strong> Completely replaced by all the engine fixes included in the guide.
+                </p>
+                <p>
+                    <strong>Skyrim Project Optimization:</strong> Occlusion is already taken care of by Lux.
+                </p>
+                <p>
+                    <strong>Summerset Isle:</strong> Horribly made mod.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./resources.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                </p>
+            </div>
+            </p>
         </div>
     </body>
 
