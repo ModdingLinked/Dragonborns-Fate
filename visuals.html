@@ -1,3 +1,26 @@
+<!--
+MIT License
+
+Copyright (c) TheBestofTimes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,231 +29,336 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="https://dragonbornsfate.github.io/img/logo.png">
-        <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="img/logo.webp">
+        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <title>Visuals | A Dragonborn's Fate</title>
         <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
         <meta name="twitter:card" value="summary">
         <meta property="og:title" content="A Dragonborn's Fate" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://dragonbornsfate.github.io/" />
-        <meta property="og:image" content="https://dragonbornsfate.github.io/img/logo.png" />
+        <meta property="og:image" content="img/logo.webp" />
         <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." />
     </head>
 
     <body>
-        <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>A Dragonborn's Fate</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./tweaks.html">Tweaks</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./visuals.html"><span style="color:#DCDCDC">Visuals</span></a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-        </div>
-        <div class="sidenavright">
-            <a href="./visuals.html#evlas"><span style="font-size:.8vw;">EVLaS</span></a>
-            <a href="./visuals.html#weather"><span style="font-size:.8vw;">Cathedral Weathers and Seasons</span></a>
-            <a href="./visuals.html#blended_roads"><span style="font-size:.8vw;">Blended Roads</span></a>
-            <a href="./visuals.html#smim"><span style="font-size:.8vw;">SMIM</span></a>
-            <a href="./visuals.html#assortedfixes"><span style="font-size:.8vw;">Assorted mesh fixes</span></a>
-            <a href="./visuals.html#assorted-smim-blended-patch"><span style="font-size:.8vw;">Assorted Mesh Fixes - SMIM - Blended Roads Patch</span></a>
-            <a href="./visuals.html#noble"><span style="font-size:.8vw;">Noble Skyrim</span></a>
-            <a href="./visuals.html#water"><span style="font-size:.8vw;">Water Mod</span></a>
-            <a href="./visuals.html#waterfix"><span style="font-size:.8vw;">Water Fixes</span></a>
-            <a href="./visuals.html#luxresources"><span style="font-size:.8vw;">Lux Resources</span></a>
-            <a href="./visuals.html#lux"><span style="font-size:.8vw;">Lux</span></a>
-            <a href="./visuals.html#security_overhaul"><span style="font-size:.8vw;">Security Overhaul - Lock Variations</span></a>
-            <a href="./visuals.html#security_regional"><span style="font-size:.8vw;">Security Overhaul - Regional Locks</span></a>
-            <a href="./visuals.html#security_addons"><span style="font-size:.8vw;">Security Overhaul - Add-ons</span></a>
-        </div>
         <div>
-            <h2 class="fullheader">Visuals</h2>
-            <a class="internallink" href="#separator">
-                <h2 class="smallheader" id="separator">Creating a Separator in MO2</h2>
-            </a>
-            <ol class="standard_ol">
-                <li>Right-click anywhere in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                <li>Name the separator <strong>Visuals</strong>.</li>
-            </ol>
-            <a class="internallink" href="#evlas" target="_blank">
-                <h2 class="smallheader" id="evlas"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/63725" target="_blank">Enhanced Volumetric Lighting and Shadows</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - EVLaS</b></li>
-                <li><b>Optional File - EVLaS Skyrim Underside</b></li>
-            </ul>
-            <br>
-            <p class="subparagraph">SKSE plugin that improves volumetric lighting and shadows.</p>
-            <a class="internallink" href="#weather" target="_blank">
-                <h2 class="smallheader" id="weather"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/24791" target="_blank">Cathedral Weathers and Seasons</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Cathedral - Weathers</b></li>
-            </ul>
-            <br>
-            <p class="subparagraph">A natural-fantasy weather mod.</p>
-            <a class="internallink" href="#blended_roads">
-                <h2 class="smallheader" id="blended_roads"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/8834" target="_blank">Blended Roads</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li>Download the <strong>Main File - Blended Roads</strong> through MO2 and begin the installation normally</li>
-                <li>You will be prompted with a FOMOD installer, select <strong>Really Blended Roads</strong> in both sections and then <b>Install</b></li>
-            </ol>
-            <ol class="standard_ol" start="3">
-                <li>Finish the installation normally</li>
-            </ol>
-            <br>
-            <p class="subparagraph">Better blends roads into the landscape textures to avoid seams and gives them 3D meshes to look more natural.</p>
-            <a class="internallink" href="#smim" target="_blank">
-                <h2 class="smallheader" id="smim"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/659" target="_blank">Static Mesh Improvement Mod</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - SMIM SE 2-08</b></li>
-                <li>You will be prompted with a FOMOD installer, click <b>Install</b></li>
-            </ul>
-            <br>
-            <p class="subparagraph">A massive project to greatly improve the appearance of countless static 3D models.</p>
-            <a class="internallink" href="#assortedfixes" target="_blank">
-                <h2 class="smallheader" id="assortedfixes"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/32117" target="_blank">Assorted mesh fixes</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Assorted mesh fixes</b></li>
-            </ul>
-            <br>
-            <p class="subparagraph">Fixes various issues with vanilla Skyrim meshes that causes them to render incorrectly.</p>
-            <a class="internallink" href="#assorted-smim-blended-patch" target="_blank">
-                <h2 class="smallheader" id="assorted-smim-blended-patch"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/45597" target="_blank">Assorted Mesh Fixes - SMIM - Blended Roads Patch</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Assorted Mesh Fixes - SMIM - Really Blended Roads Patch</b></li>
-            </ul>
-            <br>
-            <p class="subparagraph">Patch between Assorted Mesh Fixes, SMIM and Really Blended Roads.</p>
-            <a class="internallink" href="#noble" target="_blank">
-                <h2 class="smallheaderoptional" id="noble"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/21423" target="_blank">Noble Skyrim</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - A. Noble Skyrim - FULL PACK_2K</b></li>
-                <li><b>NSM - SMIM Patch</b></li> (When prompted, expand the names drop-down and select the second one)
-            </ul>
-            <br>
-            <p class="subparagraph">Retextures most of the game without going overboard. This is a good base if you want to add your own retextures to the game.</p>
-            <a class="internallink" href="#water" target="_blank">
-                <h2 class="smallheaderoptional" id="water"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/56520" target="_blank">Water Mod</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Water Mod</b></li>
-                <li>You will be prompted with a FOMOD installer, select <b>2K Textures</b> and then <b>Install</b></li>
-            </ul>
-            <br>
-            <p class="subparagraph">A light-weight water mod.</p>
-            <a class="internallink" href="#waterfix" target="_blank">
-                <h2 class="smallheader" id="waterfix"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/63862" target="_blank">Water Effects Brightness and Reflection Fix</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Water Effects Brightness and Reflection Fix</b></li>
-                <li>You will be prompted with a FOMOD installer, click <b>Install</b></li>
-            </ul>
-            <br>
-            <p class="subparagraph">Fixes bright water effects at night and neon green reflections.</p>
-            <a class="internallink" href="#luxresources" target="_blank">
-                <h2 class="smallheaderoptional" id="luxresources"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/63588" target="_blank">Lux Resource Pack</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Lux Resource Pack (No ENB Light)</b></li>
-            </ul>
-            <br>
-            <p class="subparagraph">Resources needed for Lux.</p>
-            <blockquote class="blockquote">Make sure you download you download only the resources and not the main mod file!</blockquote>
-            <a class="internallink" href="#lux" target="_blank">
-                <h2 class="smallheaderoptional" id="lux"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/43158" target="_blank">Lux</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Lux</b></li>
-                <li>You will be prompted with a FOMOD installer, select the following options:</li>
-                <img src="./img/luxfomod.png" alt="lux fomod options">
-                <li>Click next and then <b>Install</b></li>
-            </ul>
-            <br>
-            <p class="subparagraph">Consistent and complete rework of Skyrim interiors lighting.</p>
-            <a class="internallink" href="#security_overhaul">
-                <h2 class="smallheaderoptional" id="security_overhaul"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/58224" target="_blank">Security Overhaul - Lock Variations</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li>Download the <strong>Main File - Security Overhaul SKSE - Lock Variations</strong> through MO2 and begin the installation normally</li>
-                <li>You will be prompted with a FOMOD installer, select <b>2K Textures</b> and then <b>Install</b></li>
-            </ol>
-            <br>
-            <p class="subparagraph">SKSE based framework for replacing overused lock model with unique lock variants.</p>
-            <blockquote class="blockquote">If you have a very little VRAM, you can select the <strong>1K Textures</strong> instead.</blockquote>
-            <a class="internallink" href="#security_regional">
-                <h2 class="smallheaderoptional" id="security_regional"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/62781" target="_blank">Security Overhaul - Regional Locks</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li>Download the <strong>Main File - Security Overhaul SKSE - Regional Locks</strong> through MO2 and begin the installation normally</li>
-                <li>You will be prompted with a FOMOD installer, select <b>2K Textures</b> and then <b>Install</b></li>
-            </ol>
-            <br>
-            <p class="subparagraph">Regional variant lock models.</p>
-            <blockquote class="blockquote">If you have a very little VRAM, you can select the <strong>1K Textures</strong> instead.</blockquote>
-            <a class="internallink" href="#security_addons">
-                <h2 class="smallheaderoptional" id="security_addons"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/59529" target="_blank">Security Overhaul - Add-ons</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li>Download the <strong>Main File - Security Overhaul SKSE - Add-ons</strong> through MO2 and begin the installation normally</li>
-                <li>You will be prompted with a FOMOD installer, select <b>2K Textures</b> and then <b>Install</b></li>
-            </ol>
-            <br>
-            <p class="subparagraph">Additional variant lock models.</p>
-            <blockquote class="blockquote">If you have a very little VRAM, you can select the <strong>1K Textures</strong> instead.</blockquote>
-        </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <a href="./gameplay.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-            <a href="./finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            <!-- Titlebar -->
+            <div class="titlecontainer">
+                <div id="sideButton" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <img src="./img/logo.webp" alt="Logo" />
+                <a href="./index.html">A Dragonborn's Fate</a>
+                <div class="guideLinks">
+                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a>
                 </div>
             </div>
-        </div>
+            <!-- Left Sidebar -->
+            <div id="sidenavLeft">
+                <p>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./intro.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">Initial Setup</a>
+                        </li>
+                        <li>
+                            <a href="./mo2.html">MO2</a>
+                        </li>
+                        <li>
+                            <a href="./utilities.html">Utilities</a>
+                        </li>
+                        <li>
+                            <a href="./bugfix.html">Bug Fixes</a>
+                        </li>
+                        <li>
+                            <a href="./tweaks.html">Tweaks</a>
+                        </li>
+                        <li>
+                            <a href="./hud.html">User Interface</a>
+                        </li>
+                        <li>
+                            <a href="./gameplay.html">Gameplay</a>
+                        </li>
+                        <li>
+                            <a href="./visuals.html" class="active">Visuals</a>
+                        </li>
+                        <li>
+                            <a href="./finish.html">Final Steps</a>
+                        </li>
+                        <li>
+                            <a href="./appendix.html">Appendix</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="./avoid-tools.html">Tools to Avoid</a>
+                        </li>
+                        <li>
+                            <a href="./avoid-mods.html">Mods to Avoid</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guideLinks">
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                        </li>
+                        <li>
+                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                        </li>
+                        <li>
+                            <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/DhX5S27" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                                <i class="fab fa-patreon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                <i class="fab fa-paypal"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </p>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <p>
+                <div class="section">
+                    <p>
+                    <h1>Utilities</h1>
+                    <h2>Creating a Separator in MO2</h2>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                        <li>Name the separator <strong>Visuals</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+                <!-- Blended Roads -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/8834" target="_blank">
+                            <h2 id="blended_roads">Blended Roads</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Blended Roads</li>
+                        <li>You will be prompted with a FOMOD installer, select <strong>Really Blended Roads </strong>in both sections and then <strong>Install </strong></li>
+                    </ul>Better blends roads into the landscape textures to avoid seams and gives them 3D meshes to look more natural.</p>
+                </div>
+                <!-- SMIM -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/659" target="_blank">
+                            <h2 id="smim">Static Mesh Improvement Mod</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - SMIM SE 2-0</li>
+                        <li>You will be prompted with a FOMOD installer, click <strong>Install </strong></li>
+                    </ul>A massive project to greatly improve the appearance of countless static 3D models.</p>
+                </div>
+                <!-- Assorted Mesh Fixes -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/32117" target="_blank">
+                            <h2 id="assortedfixes">Assorted mesh fixes</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Assorted mesh fixes</li>
+                    </ul>Fixes various issues with vanilla Skyrim meshes.</p>
+                </div>
+                <!-- Assorted - SMIM - Blended -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/45597" target="_blank">
+                            <h2 id="assorted-smim-blended">Assorted Mesh Fixes - SMIM - Blended Roads Patch</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Assorted Mesh Fixes - SMIM - Blended Roads Patch</li>
+                    </ul>Patch between Assorted Mesh Fixes, SMIM and Really Blended Roads.</p>
+                </div>
+                <!-- Water Fixes -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/63862" target="_blank">
+                            <h2 id="waterfixes">Water Effects Brightness and Reflection Fix</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Water Effects Brightness and Reflection Fix</li>
+                        <li>You will be prompted with a FOMOD installer, click <strong>Install</strong></li>
+                    </ul>Fixes bright water effects at night and neon green reflections.</p>
+                </div>
+                <!-- Simplicity of Sea -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/56520" target="_blank">
+                            <h2 id="sos">Simplicity of Sea</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Water Mod</li>
+                        <li>You will be prompted with a FOMOD installer, select <strong>2K Textures </strong>and then <strong>Install </strong></li>
+                    </ul>A light-weight water mod. Includes ENB-compatible displacement maps. An optional ESP only edits water records.</p>
+                </div>
+                <!-- Noble Skyrim -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/21423" target="_blank">
+                            <h2 id="noble">Noble Skyrim</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - A. Noble Skyrim - FULL PACK_2K</li>
+                        <li>Update Files - NSM - SMIM Patch (When prompted, select the name that matches the file on Nexus)</li>
+                    </ul>Retextures most of the game without going overboard. This is a good base if you want to add your own retextures to the game.</p>
+                </div>
+                <!-- Lock Variations -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/58224" target="_blank">
+                            <h2 id="security_overhaul">Security Overhaul SKSE - Lock Variations</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Security Overhaul SKSE - Lock Variations</li>
+                        <li>You will be prompted with a FOMOD installer, select <strong>2K Textures </strong>and then <strong>Install </strong></li>
+                    </ul>SKSE based framework for replacing overused lock model with unique lock variants.</p>
+                    <blockquote>If you have a very little VRAM, you can select the <strong>1K Textures </strong>instead.</blockquote>
+                </div>
+                <!-- Regional Locks -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/62781" target="_blank">
+                            <h2 id="security_regional">Security Overhaul SKSE - Regional Locks</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Security Overhaul SKSE - Regional Locks</li>
+                        <li>You will be prompted with a FOMOD installer, select <strong>2K Textures </strong>and then <strong>Install </strong></li>
+                    </ul>Regional variant lock models for Security Overhaul SKSE - Lock Variations.</p>
+                    <blockquote>If you have a very little VRAM, you can select the <strong>1K Textures </strong>instead.</blockquote>
+                </div>
+                <!-- Lock Add-ons -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/59529" target="_blank">
+                            <h2 id="security_addons">Security Overhaul SKSE - Lock Add-ons</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Security Overhaul SKSE - Add-ons</li>
+                        <li>You will be prompted with a FOMOD installer, select <strong>2K Textures </strong>and then <strong>Install </strong></li>
+                    </ul>Additional variant lock models for Security Overhaul SKSE - Lock Variations.</p>
+                    <blockquote>If you have a very little VRAM, you can select the <strong>1K Textures </strong>instead.</blockquote>
+                </div>
+                <!-- Soft Shadows -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/74632" target="_blank">
+                            <h2 id="soft_shadows">Soft Shadows</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Soft Shadows</li>
+                    </ul>SKSE plugin which dynamically adjusts the look of shadows depending on lighting conditions.</p>
+                </div>
+                <!-- HD Local Map -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/74722" target="_blank">
+                            <h2 id="hd_map">HD Local Map</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - HD Local Map</li>
+                    </ul>SKSE plugin which makes local maps use the full screen resolution.</p>
+                </div>
+                <div>
+                    <p>
+                        <hr>
+                        <a href="./gameplay.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                        <a href="./finish.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                    </p>
+                </div>
+                </p>
+            </div>
+            <!-- Right Sidebar -->
+            <div id="sidenavRight">
+                <p>
+                <ul>
+                    <li>
+                        <a href="#blended_roads">Blended Roads</a>
+                    </li>
+                    <li>
+                        <a href="#smim">SMIM</a>
+                    </li>
+                    <li>
+                        <a href="#assortedfixes">Assorted Mesh Fixes</a>
+                    </li>
+                    <li>
+                        <a href="#assorted-smim-blended">Assorted - SMIM - Blended</a>
+                    </li>
+                    <li>
+                        <a href="#waterfixes">Water Fixes</a>
+                    </li>
+                    <li>
+                        <a href="#sos">Simplicity of Sea</a>
+                    </li>
+                    <li>
+                        <a href="#noble">Noble Skyrim</a>
+                    </li>
+                    <li>
+                        <a href="#security_overhaul">Lock Variations</a>
+                    </li>
+                    <li>
+                        <a href="#security_regional">Regional Locks</a>
+                    </li>
+                    <li>
+                        <a href="#security_addons">Lock Add-ons</a>
+                    </li>
+                    <li>
+                        <a href="#soft_shadows">Soft Shadows</a>
+                    </li>
+                    <li>
+                        <a href="#hd_map">HD Local Map</a>
+                    </li>
+                </ul>
+                </p>
+            </div>
     </body>
 
 </html>
