@@ -21,7 +21,7 @@ function sizeChanged() {
 function toggleNav() {
     if (document.getElementById("sidenavLeft").style.width == 0) {
         document.getElementById('sideButton').classList.add('pressed');
-        document.getElementById("sidenavLeft").style.width = "21.5em";
+        document.getElementById("sidenavLeft").style.width = "23.5em";
     }
     else {
         document.getElementById("sidenavLeft").style.width = "";
