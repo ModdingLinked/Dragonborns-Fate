@@ -231,8 +231,12 @@ SOFTWARE.
                         <li>In the <strong>INI-Files</strong> tab, select <code>SKSE/Plugins/SSEDisplayTweaks.ini</code></li>
                         <li>Change the following options:</li>
                         <ul>
-                            <li>Set <strong>EnableTearing=</strong> to <strong>true</strong> (line 109)</li>
-                            <li>Set <strong>FramerateLimit=</strong> to a value you want the game FPS to be locked to (line 204)</li>
+                            <li>Set <strong>FramerateLimit</strong> to a value you want the game FPS to be locked to (line 204)</li>
+                            If you set FramerateLimit to a value higher than 60:
+                            <ul>
+                                <li>Set <strong>DynamicUpdateBudget</strong> to <strong>true</strong> (line 542)</li>
+                                <li>Set <strong>BudgetMaxFPS</strong> to the same value as FramerateLimit (line 561)</li>
+                            </ul>
                         </ul>
                     </ol>All-in-one solution for smooth FPS-unlocked gameplay, also includes many fixes and tweaks.
                     <blockquote> If you don't mind something more complex you can find a more in-depth methods to lock your FPS on <a href="https://wallsogb.github.io/FalloutNV-Performance-Guide/sse.html" target="_blank">this</a> guide by Wall_SoGB. </blockquote>
