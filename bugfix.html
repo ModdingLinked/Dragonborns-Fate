@@ -43,411 +43,413 @@ SOFTWARE.
     </head>
 
     <body>
-        <div>
-            <!-- Titlebar -->
-            <div class="titlecontainer">
-                <div id="sideButton" onclick="toggleNav()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <img src="./img/logo.webp" alt="Logo" />
-                <a href="./index.html">A Dragonborn's Fate</a>
-                <div class="guideLinks">
-                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                    <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a>
-                    <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                </div>
+        <!-- Titlebar -->
+        <div class="titlecontainer">
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <!-- Left Sidebar -->
-            <div id="sidenavLeft">
-                <p>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./intro.html">Introduction</a>
-                        </li>
-                        <li>
-                            <a href="./setup.html">Initial Setup</a>
-                        </li>
-                        <li>
-                            <a href="./mo2.html">MO2</a>
-                        </li>
-                        <li>
-                            <a href="./utilities.html">Utilities</a>
-                        </li>
-                        <li>
-                            <a href="./bugfix.html" class="active">Bug Fixes</a>
-                        </li>
-                        <li>
-                            <a href="./tweaks.html">Tweaks</a>
-                        </li>
-                        <li>
-                            <a href="./hud.html">User Interface</a>
-                        </li>
-                        <li>
-                            <a href="./gameplay.html">Gameplay</a>
-                        </li>
-                        <li>
-                            <a href="./visuals.html">Visuals</a>
-                        </li>
-                        <li>
-                            <a href="./finish.html">Final Steps</a>
-                        </li>
-                        <li>
-                            <a href="./appendix.html">Appendix</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <hr>
-                    <ul>
-                        <li>
-                            <a href="./avoid-tools.html">Tools to Avoid</a>
-                        </li>
-                        <li>
-                            <a href="./avoid-mods.html">Mods to Avoid</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="guideLinks">
-                    <hr>
-                    <ul>
-                        <li>
-                            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                        </li>
-                        <li>
-                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                        </li>
-                        <li>
-                            <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a>
-                        </li>
-                        <li>
-                            <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footer">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://discord.gg/DhX5S27" target="_blank">
-                                <i class="fab fa-discord"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
-                                <i class="fab fa-patreon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="paypal" onclick="toggleDonationMenu()">
-                                <i class="fab fa-paypal"></i>
-                            </a>
-                            <div id="paypalMenu" style="display: none;">
-                                <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
-                                    Author - Qolore7
-                                </a>
-                                <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
-                                    Maintainer - VishVadeva50
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                </p>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html">A Dragonborn's Fate</a>
+            <div class="guideLinks">
+                <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a>
+                <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
             </div>
-            <!-- Content -->
-            <div class="content">
-                <p>
-                <div class="section">
-                    <p>
-                    <h1>Bug Fixes</h1>
-                    <h2>Creating a Separator in MO2</h2>
-                    <ol>
-                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                        <li>Name the separator <strong>Bug Fixes</strong>.</li>
-                    </ol>
-                    </p>
-                </div>
-                <!-- USSEP -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/266" target="_blank">
-                            <h2 id="ussep">Unofficial Skyrim Special Edition Patch</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Unofficial Skyrim Special Edition Patch</li>
-                    </ul>Fixes thousands of bugs with both the base game and DLCs.
-                    </p>
-                    <blockquote>If you get a missing masters warning in MO2 after installing this mod, then you used the wrong downgrader version.</blockquote>
-                </div>
-                <!-- Script Optimizations -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/54061" target="_blank">
-                            <h2 id="micro_opt">Vanilla Script (micro)Optimizations</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Vanilla Script microOptimizations</li>
-                    </ul>Rewriting many of the vanilla game scripts with the goal of increasing efficiency.
-                    </p>
-                </div>
-                <!-- Scripting Enhancements -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/68139" target="_blank">
-                            <h2 id="vse">Vanilla Scripting Enhancements</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - BSA Version</li>
-                    </ul>Optimize certain vanilla scripts with PO3 Extender to reduce script lag when using lots of mods.
-                    </p>
-                </div>
-                <!-- Engine Fixes -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/17230" target="_blank">
-                            <h2 id="engine_fixes">Engine Fixes</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ol>
-                        <li>Download and install the <strong>Main File - (Part 1) SSE Engine Fixes for 1.5.39 - 1.5.97 </strong>normally through MO2</li>
-                        <li>Download the <strong>Main File - (Part 2) Engine Fixes - skse64 Preloader and TBB Lib 2020.3 </strong>file using the <strong>Manual Download </strong>button</li>
-                        <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder</li>
-                        <li>Once the files are installed, right-click on the <strong>SSE Engine Fixes </strong>mod in the left pane of MO2 and select <strong>Open in Explorer </strong></li>
-                        <li>Navigate to <code>SKSE\Plugins</code>and open <strong>EngineFixes.toml </strong>in a text editor (Such as notepad)</li>
-                        <li>Set <strong>CleanSKSECosaves </strong>to <strong>true </strong>(Line 5)</li>
-                        <li>Set <strong>MaxStdio </strong>to <strong>8192 </strong>(Line 11)</li>
-                        <li>Set <strong>RegularQuicksaves </strong>to <strong>true </strong>(Line 13)</li>
-                        <li>Set <strong>SleepWaitTime </strong>to <strong>true </strong>(Line 18)</li>
-                        <li>Set <strong>SaveGameMaxSize </strong>to <strong>true </strong>(Line 66)</li>
-                    </ol>Fixes numerous bugs within the game's engine.
-                    </p>
-                </div>
-                <!-- Sound Fix -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/71567" target="_blank">
-                            <h2 id="sound_fix">Sound Fix for Large Sector Drives</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Sound Fix for Large Sector Drives</li>
-                    </ul>Fixes a bug that causes audio to not play most of the time when the game is installed to a drive with a sector size other than 512.
-                    </p>
-                </div>
-                <!-- Bug Fixes -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/33261" target="_blank">
-                            <h2 id="bug_fixes">Bug Fixes</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Bug Fixes SSE (Special Edition)</li>
-                    </ul>A collection of engine bug fixes.
-                    </p>
-                </div>
-                <!-- Scrambled Bugs -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/43532" target="_blank">
-                            <h2 id="scrambled">Scrambled Bugs</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ol>
-                        <li>Main File - Scrambled Bugs (Special Edition)</li>
-                        <li>Optional Files - Underfilled Soul Gems - Soul Gem Too Small (select the name that matches the file on Nexus when the installation prompt comes up)</li>
-                        <li>Also get the custom config <a href="https://www.nexusmods.com/skyrimspecialedition/mods/81286" target="_blank">here</a></li>
-                    </ol>Fixes many common bugs at an engine level, fully configurable.
-                    </p>
-                </div>
-                <!-- PO3 Tweaks -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/51073" target="_blank">
-                            <h2 id="po3_tweaks">powerofthree's Tweaks</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - powerofthree's Tweaks</li>
-                        <li>You will be prompted with a FOMOD installer, click <strong>Install</strong></li>
-                        <li>Also get the custom INI <a href="https://www.nexusmods.com/skyrimspecialedition/mods/81286" target="_blank">here</a></li>
-                    </ul>A collection of engine-level fixes and tweaks similar to the previous two mods.
-                    </p>
-                </div>
-                <!-- Enchantment Equip Fix -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/42839" target="_blank">
-                            <h2 id="equip_fix">Enchantment Equip Fix</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Equip Enchantment Fix for 1.5.39 - 1.6.353</li>
-                    </ul>Fixes enchantments not properly applying when weapons/armors are equipped automatically.
-                    </p>
-                </div>
-                <!-- Process Position Fix -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/69326" target="_blank">
-                            <h2 id="ai_fix">NPC AI Process Position Fix</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - NPC AI Process Position Fix - NG</li>
-                        <li>You will be prompted with a FOMOD installer, click <strong>Install</strong></li>
-                    </ul>Fixes NPC AI not updating while the player sleeps/waits.
-                    </p>
-                </div>
-                <!-- Combat Music Fix -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/67015" target="_blank">
-                            <h2 id="music_fix">Combat Music Fix</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Combat Music Fix SKSE - SSE</li>
-                    </ul>Simple SKSE plugin to fix the never-ending combat music bug.
-                    </p>
-                </div>
-                <!-- Journal Limit Fix -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/56130" target="_blank">
-                            <h2 id="journal_fix">Quest Journal Limit Bug Fixer</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Quest Journal Limit Bug Fixer</li>
-                    </ul>An utility to bring back quests that disappeared due to quest journal limit bug.
-                    </p>
-                </div>
-                <!-- Sky Overhaul -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/73336" target="_blank">
-                            <h2 id="sky_overhaul">Moons and Stars - Sky Overhaul SKSE</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Moons And Stars - Sky Overhaul SKSE</li>
-                        <li>You will be prompted with a FOMOD installer, click <strong>Install</strong></li>
-                    </ul>DLL plugin to fix moons and stars movement and phases.
-                    </p>
-                </div>
-                <!-- Aurora Fix -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/77834" target="_blank">
-                            <h2 id="aurora_fix">Aurora Fix</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Aurora Fix-</li>
-                    </ul>SKSE plugin which fixes auroras getting stuck when transitioning between worldspaces.
-                    </p>
-                </div>
-                <!-- Barter Limit Fix -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/77173" target="_blank">
-                            <h2 id="barter_fix">Barter Limit Fix</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Barter Limit Fix</li>
-                    </ul>SKSE plugin that fixes trading with merchants with more than 32,767 gold.
-                    </p>
-                </div>
-                <!-- Tavern AI Fix -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/23107" target="_blank">
-                            <h2 id="tavern_fix">Tavern AI Fix</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - TavernAIFix</li>
-                    </ul>Fixes couple of things in the behavior of tavern workers.
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <hr>
-                        <a href="./utilities.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
-                        <a href="./tweaks.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
-                    </p>
-                </div>
-                </p>
-            </div>
-            <!-- Right Sidebar -->
-            <div id="sidenavRight">
-                <p>
+        </div>
+        <!-- Left Sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
                 <ul>
                     <li>
-                        <a href="#ussep">USSEP</a>
+                        <a href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#micro_opt">Script Optimizations</a>
+                        <a href="./intro.html">Introduction</a>
                     </li>
                     <li>
-                        <a href="#vse">Scripting Enhancements</a>
+                        <a href="./setup.html">Initial Setup</a>
                     </li>
                     <li>
-                        <a href="#engine_fixes">Engine Fixes</a>
+                        <a href="./mo2.html">MO2</a>
                     </li>
                     <li>
-                        <a href="#sound_fix">Sound Fix</a>
+                        <a href="./utilities.html">Utilities</a>
                     </li>
                     <li>
-                        <a href="#bug_fixes">Bug Fixes</a>
+                        <a href="./bugfix.html" class="active">Bug Fixes</a>
                     </li>
                     <li>
-                        <a href="#scrambled">Scrambled Bugs</a>
+                        <a href="./tweaks.html">Tweaks</a>
                     </li>
                     <li>
-                        <a href="#po3_tweaks">PO3 Tweaks</a>
+                        <a href="./hud.html">User Interface</a>
                     </li>
                     <li>
-                        <a href="#equip_fix">Enchantment Equip Fix</a>
+                        <a href="./gameplay.html">Gameplay</a>
                     </li>
                     <li>
-                        <a href="#ai_fix">Process Position Fix</a>
+                        <a href="./visuals.html">Visuals</a>
                     </li>
                     <li>
-                        <a href="#music_fix">Combat Music Fix</a>
+                        <a href="./finish.html">Final Steps</a>
                     </li>
                     <li>
-                        <a href="#journal_fix">Journal Limit Fix</a>
-                    </li>
-                    <li>
-                        <a href="#sky_overhaul">Sky Overhaul</a>
-                    </li>
-                    <li>
-                        <a href="#aurora_fix">Aurora Fix</a>
-                    </li>
-                    <li>
-                        <a href="#barter_fix">Barter Limit Fix</a>
-                    </li>
-                    <li>
-                        <a href="#tavern_fix">Tavern AI Fix</a>
+                        <a href="./appendix.html">Appendix</a>
                     </li>
                 </ul>
+            </div>
+            <div>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="./faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-tools.html">Tools to Avoid</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-mods.html">Mods to Avoid</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    </li>
+                    <li>
+                        <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    </li>
+                    <li>
+                        <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a>
+                    </li>
+                    <li>
+                        <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/DhX5S27" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                            <i class="fab fa-patreon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="paypal" onclick="toggleDonationMenu()">
+                            <i class="fab fa-paypal"></i>
+                        </a>
+                        <div id="paypalMenu" style="display: none;">
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                Author - Qolore7
+                            </a>
+                            <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
+                                Maintainer - VishVadeva50
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+            <div class="section">
+                <p>
+                <h1>Bug Fixes</h1>
+                <h2>Creating a Separator in MO2</h2>
+                <ol>
+                    <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                    <li>Name the separator <strong>Bug Fixes</strong>.</li>
+                </ol>
                 </p>
             </div>
+            <!-- USSEP -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/266" target="_blank">
+                        <h2 id="ussep">Unofficial Skyrim Special Edition Patch</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Unofficial Skyrim Special Edition Patch</li>
+                </ul>Fixes thousands of bugs with both the base game and DLCs.
+                </p>
+                <blockquote>If you get a missing masters warning in MO2 after installing this mod, then you used the wrong downgrader version.</blockquote>
+            </div>
+            <!-- Script Optimizations -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/54061" target="_blank">
+                        <h2 id="micro_opt">Vanilla Script (micro)Optimizations</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Vanilla Script microOptimizations</li>
+                </ul>Rewriting many of the vanilla game scripts with the goal of increasing efficiency.
+                </p>
+            </div>
+            <!-- Scripting Enhancements -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/68139" target="_blank">
+                        <h2 id="vse">Vanilla Scripting Enhancements</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - BSA Version</li>
+                </ul>Optimize certain vanilla scripts with PO3 Extender to reduce script lag when using lots of mods.
+                </p>
+            </div>
+            <!-- Engine Fixes -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/17230" target="_blank">
+                        <h2 id="engine_fixes">Engine Fixes</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ol>
+                    <li>Download and install the <strong>Main File - (Part 1) SSE Engine Fixes for 1.5.39 - 1.5.97 </strong>normally through MO2</li>
+                    <li>Download the <strong>Main File - (Part 2) Engine Fixes - skse64 Preloader and TBB Lib 2020.3 </strong>file using the <strong>Manual Download </strong>button</li>
+                    <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder</li>
+                    <li>Once the files are installed, right-click on the <strong>SSE Engine Fixes </strong>mod in the left pane of MO2 and select <strong>Open in Explorer </strong></li>
+                    <li>Navigate to <code>SKSE\Plugins</code>and open <strong>EngineFixes.toml </strong>in a text editor (Such as notepad)</li>
+                    <li>Set <strong>CleanSKSECosaves </strong>to <strong>true </strong>(Line 5)</li>
+                    <li>Set <strong>MaxStdio </strong>to <strong>8192 </strong>(Line 11)</li>
+                    <li>Set <strong>RegularQuicksaves </strong>to <strong>true </strong>(Line 13)</li>
+                    <li>Set <strong>SleepWaitTime </strong>to <strong>true </strong>(Line 18)</li>
+                    <li>Set <strong>SaveGameMaxSize </strong>to <strong>true </strong>(Line 66)</li>
+                </ol>Fixes numerous bugs within the game's engine.
+                </p>
+            </div>
+            <!-- Sound Fix -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/71567" target="_blank">
+                        <h2 id="sound_fix">Sound Fix for Large Sector Drives</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Sound Fix for Large Sector Drives</li>
+                </ul>Fixes a bug that causes audio to not play most of the time when the game is installed to a drive with a sector size other than 512.
+                </p>
+            </div>
+            <!-- Bug Fixes -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/33261" target="_blank">
+                        <h2 id="bug_fixes">Bug Fixes</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Bug Fixes SSE (Special Edition)</li>
+                </ul>A collection of engine bug fixes.
+                </p>
+            </div>
+            <!-- Scrambled Bugs -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/43532" target="_blank">
+                        <h2 id="scrambled">Scrambled Bugs</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ol>
+                    <li>Main File - Scrambled Bugs (Special Edition)</li>
+                    <li>Optional Files - Underfilled Soul Gems - Soul Gem Too Small (select the name that matches the file on Nexus when the installation prompt comes up)</li>
+                    <li>Also get the custom config <a href="https://www.nexusmods.com/skyrimspecialedition/mods/81286" target="_blank">here</a></li>
+                </ol>Fixes many common bugs at an engine level, fully configurable.
+                </p>
+            </div>
+            <!-- PO3 Tweaks -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/51073" target="_blank">
+                        <h2 id="po3_tweaks">powerofthree's Tweaks</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - powerofthree's Tweaks</li>
+                    <li>You will be prompted with a FOMOD installer, click <strong>Install</strong></li>
+                    <li>Also get the custom INI <a href="https://www.nexusmods.com/skyrimspecialedition/mods/81286" target="_blank">here</a></li>
+                </ul>A collection of engine-level fixes and tweaks similar to the previous two mods.
+                </p>
+            </div>
+            <!-- Enchantment Equip Fix -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/42839" target="_blank">
+                        <h2 id="equip_fix">Enchantment Equip Fix</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Equip Enchantment Fix for 1.5.39 - 1.6.353</li>
+                </ul>Fixes enchantments not properly applying when weapons/armors are equipped automatically.
+                </p>
+            </div>
+            <!-- Process Position Fix -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/69326" target="_blank">
+                        <h2 id="ai_fix">NPC AI Process Position Fix</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - NPC AI Process Position Fix - NG</li>
+                    <li>You will be prompted with a FOMOD installer, click <strong>Install</strong></li>
+                </ul>Fixes NPC AI not updating while the player sleeps/waits.
+                </p>
+            </div>
+            <!-- Combat Music Fix -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/67015" target="_blank">
+                        <h2 id="music_fix">Combat Music Fix</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Combat Music Fix SKSE - SSE</li>
+                </ul>Simple SKSE plugin to fix the never-ending combat music bug.
+                </p>
+            </div>
+            <!-- Journal Limit Fix -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/56130" target="_blank">
+                        <h2 id="journal_fix">Quest Journal Limit Bug Fixer</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Quest Journal Limit Bug Fixer</li>
+                </ul>An utility to bring back quests that disappeared due to quest journal limit bug.
+                </p>
+            </div>
+            <!-- Sky Overhaul -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/73336" target="_blank">
+                        <h2 id="sky_overhaul">Moons and Stars - Sky Overhaul SKSE</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Moons And Stars - Sky Overhaul SKSE</li>
+                    <li>You will be prompted with a FOMOD installer, click <strong>Install</strong></li>
+                </ul>DLL plugin to fix moons and stars movement and phases.
+                </p>
+            </div>
+            <!-- Aurora Fix -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/77834" target="_blank">
+                        <h2 id="aurora_fix">Aurora Fix</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Aurora Fix-</li>
+                </ul>SKSE plugin which fixes auroras getting stuck when transitioning between worldspaces.
+                </p>
+            </div>
+            <!-- Barter Limit Fix -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/77173" target="_blank">
+                        <h2 id="barter_fix">Barter Limit Fix</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Barter Limit Fix</li>
+                </ul>SKSE plugin that fixes trading with merchants with more than 32,767 gold.
+                </p>
+            </div>
+            <!-- Tavern AI Fix -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/23107" target="_blank">
+                        <h2 id="tavern_fix">Tavern AI Fix</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - TavernAIFix</li>
+                </ul>Fixes couple of things in the behavior of tavern workers.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./utilities.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    <a href="./tweaks.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                </p>
+            </div>
+            </p>
+        </div>
+        <!-- Right Sidebar -->
+        <div id="sidenavRight">
+            <p>
+            <ul>
+                <li>
+                    <a href="#ussep">USSEP</a>
+                </li>
+                <li>
+                    <a href="#micro_opt">Script Optimizations</a>
+                </li>
+                <li>
+                    <a href="#vse">Scripting Enhancements</a>
+                </li>
+                <li>
+                    <a href="#engine_fixes">Engine Fixes</a>
+                </li>
+                <li>
+                    <a href="#sound_fix">Sound Fix</a>
+                </li>
+                <li>
+                    <a href="#bug_fixes">Bug Fixes</a>
+                </li>
+                <li>
+                    <a href="#scrambled">Scrambled Bugs</a>
+                </li>
+                <li>
+                    <a href="#po3_tweaks">PO3 Tweaks</a>
+                </li>
+                <li>
+                    <a href="#equip_fix">Enchantment Equip Fix</a>
+                </li>
+                <li>
+                    <a href="#ai_fix">Process Position Fix</a>
+                </li>
+                <li>
+                    <a href="#music_fix">Combat Music Fix</a>
+                </li>
+                <li>
+                    <a href="#journal_fix">Journal Limit Fix</a>
+                </li>
+                <li>
+                    <a href="#sky_overhaul">Sky Overhaul</a>
+                </li>
+                <li>
+                    <a href="#aurora_fix">Aurora Fix</a>
+                </li>
+                <li>
+                    <a href="#barter_fix">Barter Limit Fix</a>
+                </li>
+                <li>
+                    <a href="#tavern_fix">Tavern AI Fix</a>
+                </li>
+            </ul>
+            </p>
+        </div>
     </body>
 
 </html>

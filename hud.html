@@ -43,289 +43,291 @@ SOFTWARE.
     </head>
 
     <body>
-        <div>
-            <!-- Titlebar -->
-            <div class="titlecontainer">
-                <div id="sideButton" onclick="toggleNav()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <img src="./img/logo.webp" alt="Logo" />
-                <a href="./index.html">A Dragonborn's Fate</a>
-                <div class="guideLinks">
-                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                    <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a>
-                    <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                </div>
+        <!-- Titlebar -->
+        <div class="titlecontainer">
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <!-- Left Sidebar -->
-            <div id="sidenavLeft">
-                <p>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./intro.html">Introduction</a>
-                        </li>
-                        <li>
-                            <a href="./setup.html">Initial Setup</a>
-                        </li>
-                        <li>
-                            <a href="./mo2.html">MO2</a>
-                        </li>
-                        <li>
-                            <a href="./utilities.html">Utilities</a>
-                        </li>
-                        <li>
-                            <a href="./bugfix.html">Bug Fixes</a>
-                        </li>
-                        <li>
-                            <a href="./tweaks.html">Tweaks</a>
-                        </li>
-                        <li>
-                            <a href="./hud.html" class="active">User Interface</a>
-                        </li>
-                        <li>
-                            <a href="./gameplay.html">Gameplay</a>
-                        </li>
-                        <li>
-                            <a href="./visuals.html">Visuals</a>
-                        </li>
-                        <li>
-                            <a href="./finish.html">Final Steps</a>
-                        </li>
-                        <li>
-                            <a href="./appendix.html">Appendix</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <hr>
-                    <ul>
-                        <li>
-                            <a href="./avoid-tools.html">Tools to Avoid</a>
-                        </li>
-                        <li>
-                            <a href="./avoid-mods.html">Mods to Avoid</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="guideLinks">
-                    <hr>
-                    <ul>
-                        <li>
-                            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                        </li>
-                        <li>
-                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                        </li>
-                        <li>
-                            <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a>
-                        </li>
-                        <li>
-                            <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footer">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://discord.gg/DhX5S27" target="_blank">
-                                <i class="fab fa-discord"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
-                                <i class="fab fa-patreon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="paypal" onclick="toggleDonationMenu()">
-                                <i class="fab fa-paypal"></i>
-                            </a>
-                            <div id="paypalMenu" style="display: none;">
-                                <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
-                                    Author - Qolore7
-                                </a>
-                                <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
-                                    Maintainer - VishVadeva50
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                </p>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html">A Dragonborn's Fate</a>
+            <div class="guideLinks">
+                <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a>
+                <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
             </div>
-            <!-- Content -->
-            <div class="content">
-                <p>
-                <div class="section">
-                    <p>
-                    <h1>User Interface</h1>
-                    <h2>Creating a Separator in MO2</h2>
-                    <ol>
-                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                        <li>Name the separator <strong>UI</strong>.</li>
-                    </ol>
-                    </p>
-                </div>
-                <!-- SkyUI -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/12604" target="_blank">
-                            <h2 id="skyui">SkyUI</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - SkyUI_5_2_SE</li>
-                        <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/20406" target="_blank">Main File - SkyUI SE - Flashing Savegames Fix</a> </li>
-                        <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/32561" target="_blank">Main File - FixNotesForSkyUI Skyrim SE 1.5.97</a> </li>
-                        <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/49106" target="_blank">Main File - SkyUI - Ghost Item Bug Fix</a> </li>
-                        <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/22825" target="_blank">Main File - Opt. 3 - Larger MCM Menu for SkyUI</a> </li>
-                    </ul>Modernizes and improves the user interface
-                    </p>
-                </div>
-                <!-- MCM Helper -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/53000" target="_blank">
-                            <h2 id="mcmhelper">MCM Helper</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Miscellaneous Files - MCM Helper SE (1.5.97 BACKPORT)</li>
-                    </ul>Requirement for many mods, also simplifies the creation of Mod Configuration Menus and extends them with powerful new features.</p>
-                </div>
-                <!-- MoreHUD -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/12688" target="_blank">
-                            <h2 id="morehud">MoreHUD</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Optional Files - moreHUD SE Light Master- Pre AE</li>
-                        <li>Also get the Settings Loader <a href="https://www.nexusmods.com/skyrimspecialedition/mods/55503" target="_blank">here.</a></li>
-                        <li>You will be prompted with a FOMOD installer, click <strong>Install</strong></li>
-                    </ul>Adds many new configurable elements to the HUD to show more useful info.</p>
-                </div>
-                <!-- QuickLoot -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/69980" target="_blank">
-                            <h2 id="quickloot">QuickLoot EE</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - QuickLoot EE</li>
-                    </ul>Adds a Fallout 4-style quick loot system.</p>
-                </div>
-                <!-- Dialogue Controls -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/1429" target="_blank">
-                            <h2 id="dialoguecontrols">Better Dialogue Controls</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Better Dialogue Controls</li>
-                    </ul>Fixes annoyances with how dialogue controls.</p>
-                </div>
-                <!-- MessageBox Controls -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/1428" target="_blank">
-                            <h2 id="msg_box">Better MessageBox Controls</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Better MessageBox Controls</li>
-                    </ul>Allows for better control over message boxes.</p>
-                </div>
-                <!-- System Page -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/76927" target="_blank">
-                            <h2 id="system_page">Stay At The System Page NG</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Stay At The System Page</li>
-                    </ul>Changes the pause menu to default to the system page rather than the quests page.</p>
-                    <blockquote>This mod does not completely work with controllers. If you plan on using a controller, it is best to skip it.</blockquote>
-                </div>
-                <!-- Horse Stamina -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/47076" target="_blank">
-                            <h2 id="horse_hud">Horse Stamina HUD</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Old Files - Horse Stamina HUD (1.5.97)</li>
-                    </ul>Displays your horse's current stamina when riding.</p>
-                </div>
-                <!-- BTPS -->
-                <div class="section">
-                    <p>
-                        <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/64339" target="_blank">
-                            <h2 id="btps">Better Third Person Selection</h2>
-                        </a>
-                    <h2 class="install">Installation instructions:</h2>
-                    <ul>
-                        <li>Main File - Better Third Person Selection (AE - SE)</li>
-                    </ul>Overhauls 3rd person object selection.</p>
-                </div>
-                <div>
-                    <p>
-                        <hr>
-                        <a href="./tweaks.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
-                        <a href="./gameplay.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
-                    </p>
-                </div>
-                </p>
-            </div>
-            <!-- Right Sidebar -->
-            <div id="sidenavRight">
-                <p>
+        </div>
+        <!-- Left Sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
                 <ul>
                     <li>
-                        <a href="#skyui">SkyUI</a>
+                        <a href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#mcmhelper">MCM Helper</a>
+                        <a href="./intro.html">Introduction</a>
                     </li>
                     <li>
-                        <a href="#morehud">MoreHUD</a>
+                        <a href="./setup.html">Initial Setup</a>
                     </li>
                     <li>
-                        <a href="#quickloot">QuickLoot</a>
+                        <a href="./mo2.html">MO2</a>
                     </li>
                     <li>
-                        <a href="#dialoguecontrols">Dialogue Controls</a>
+                        <a href="./utilities.html">Utilities</a>
                     </li>
                     <li>
-                        <a href="#msg_box">MessageBox Controls</a>
+                        <a href="./bugfix.html">Bug Fixes</a>
                     </li>
                     <li>
-                        <a href="#system_page">System Pages</a>
+                        <a href="./tweaks.html">Tweaks</a>
                     </li>
                     <li>
-                        <a href="#horse_hud">Horse Stamina</a>
+                        <a href="./hud.html" class="active">User Interface</a>
                     </li>
                     <li>
-                        <a href="#btps">BTPS</a>
+                        <a href="./gameplay.html">Gameplay</a>
+                    </li>
+                    <li>
+                        <a href="./visuals.html">Visuals</a>
+                    </li>
+                    <li>
+                        <a href="./finish.html">Final Steps</a>
+                    </li>
+                    <li>
+                        <a href="./appendix.html">Appendix</a>
                     </li>
                 </ul>
+            </div>
+            <div>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="./faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-tools.html">Tools to Avoid</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-mods.html">Mods to Avoid</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    </li>
+                    <li>
+                        <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    </li>
+                    <li>
+                        <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a>
+                    </li>
+                    <li>
+                        <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/dragonbornsfate/dragonbornsfate.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/DhX5S27" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                            <i class="fab fa-patreon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="paypal" onclick="toggleDonationMenu()">
+                            <i class="fab fa-paypal"></i>
+                        </a>
+                        <div id="paypalMenu" style="display: none;">
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                Author - Qolore7
+                            </a>
+                            <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
+                                Maintainer - VishVadeva50
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+            <div class="section">
+                <p>
+                <h1>User Interface</h1>
+                <h2>Creating a Separator in MO2</h2>
+                <ol>
+                    <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                    <li>Name the separator <strong>UI</strong>.</li>
+                </ol>
                 </p>
             </div>
+            <!-- SkyUI -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/12604" target="_blank">
+                        <h2 id="skyui">SkyUI</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - SkyUI_5_2_SE</li>
+                    <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/20406" target="_blank">Main File - SkyUI SE - Flashing Savegames Fix</a> </li>
+                    <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/32561" target="_blank">Main File - FixNotesForSkyUI Skyrim SE 1.5.97</a> </li>
+                    <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/49106" target="_blank">Main File - SkyUI - Ghost Item Bug Fix</a> </li>
+                    <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/22825" target="_blank">Main File - Opt. 3 - Larger MCM Menu for SkyUI</a> </li>
+                </ul>Modernizes and improves the user interface
+                </p>
+            </div>
+            <!-- MCM Helper -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/53000" target="_blank">
+                        <h2 id="mcmhelper">MCM Helper</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Miscellaneous Files - MCM Helper SE (1.5.97 BACKPORT)</li>
+                </ul>Requirement for many mods, also simplifies the creation of Mod Configuration Menus and extends them with powerful new features.</p>
+            </div>
+            <!-- MoreHUD -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/12688" target="_blank">
+                        <h2 id="morehud">MoreHUD</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Optional Files - moreHUD SE Light Master- Pre AE</li>
+                    <li>Also get the Settings Loader <a href="https://www.nexusmods.com/skyrimspecialedition/mods/55503" target="_blank">here.</a></li>
+                    <li>You will be prompted with a FOMOD installer, click <strong>Install</strong></li>
+                </ul>Adds many new configurable elements to the HUD to show more useful info.</p>
+            </div>
+            <!-- QuickLoot -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/69980" target="_blank">
+                        <h2 id="quickloot">QuickLoot EE</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - QuickLoot EE</li>
+                </ul>Adds a Fallout 4-style quick loot system.</p>
+            </div>
+            <!-- Dialogue Controls -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/1429" target="_blank">
+                        <h2 id="dialoguecontrols">Better Dialogue Controls</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Better Dialogue Controls</li>
+                </ul>Fixes annoyances with how dialogue controls.</p>
+            </div>
+            <!-- MessageBox Controls -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/1428" target="_blank">
+                        <h2 id="msg_box">Better MessageBox Controls</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Better MessageBox Controls</li>
+                </ul>Allows for better control over message boxes.</p>
+            </div>
+            <!-- System Page -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/76927" target="_blank">
+                        <h2 id="system_page">Stay At The System Page NG</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Stay At The System Page</li>
+                </ul>Changes the pause menu to default to the system page rather than the quests page.</p>
+                <blockquote>This mod does not completely work with controllers. If you plan on using a controller, it is best to skip it.</blockquote>
+            </div>
+            <!-- Horse Stamina -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/47076" target="_blank">
+                        <h2 id="horse_hud">Horse Stamina HUD</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Old Files - Horse Stamina HUD (1.5.97)</li>
+                </ul>Displays your horse's current stamina when riding.</p>
+            </div>
+            <!-- BTPS -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/64339" target="_blank">
+                        <h2 id="btps">Better Third Person Selection</h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Main File - Better Third Person Selection (AE - SE)</li>
+                </ul>Overhauls 3rd person object selection.</p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./tweaks.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    <a href="./gameplay.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                </p>
+            </div>
+            </p>
+        </div>
+        <!-- Right Sidebar -->
+        <div id="sidenavRight">
+            <p>
+            <ul>
+                <li>
+                    <a href="#skyui">SkyUI</a>
+                </li>
+                <li>
+                    <a href="#mcmhelper">MCM Helper</a>
+                </li>
+                <li>
+                    <a href="#morehud">MoreHUD</a>
+                </li>
+                <li>
+                    <a href="#quickloot">QuickLoot</a>
+                </li>
+                <li>
+                    <a href="#dialoguecontrols">Dialogue Controls</a>
+                </li>
+                <li>
+                    <a href="#msg_box">MessageBox Controls</a>
+                </li>
+                <li>
+                    <a href="#system_page">System Pages</a>
+                </li>
+                <li>
+                    <a href="#horse_hud">Horse Stamina</a>
+                </li>
+                <li>
+                    <a href="#btps">BTPS</a>
+                </li>
+            </ul>
+            </p>
+        </div>
     </body>
 
 </html>
