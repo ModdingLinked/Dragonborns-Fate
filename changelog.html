@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <title>Changelog | A Dragonborn's Fate</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands">
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
     <meta name="description" content="Catalog of all changes made to the guide.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -64,6 +64,15 @@
                     <a href="./bugfix.html">Bug Fixes</a>
                 </li>
                 <li>
+                    <a href="./basefinish.html">Base Finish</a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div class="extended-background">
+            <ul>
+                <h3 id="extended-separator">DBF Extended</h3>
+                <li>
                     <a href="./tweaks.html">Tweaks</a>
                 </li>
                 <li>
@@ -73,10 +82,13 @@
                     <a href="./gameplay.html">Gameplay</a>
                 </li>
                 <li>
+                    <a href="./content.html">Content</a>
+                </li>
+                <li>
                     <a href="./visuals.html">Visuals</a>
                 </li>
                 <li>
-                    <a href="./finish.html">Final Steps</a>
+                    <a href="./finish.html">DBFE Finish</a>
                 </li>
             </ul>
         </div>
@@ -99,6 +111,9 @@
                 </li>
                 <li>
                     <a href="./avoid-mods.html">Mods to Avoid</a>
+                </li>
+                <li>
+                    <a href="./wabbajack.html">Wabbajack</a>
                 </li>
             </ul>
         </div>
@@ -161,381 +176,583 @@
     <div class="content">
         <div class="section">
             <h1>Changelog</h1>
-            <h2><strong>Time formatted in DD/MM/YY</strong></h2>
+            <h2>Time formatted in DD/MM/YY</h2>
+            <hr>
+            <h2 class="install">30/7/23</h2>
+            <h2><strong>MO2</strong></h2>
+            <ul>
+                <li>Updated Custom INI with the following changes:</li>
+                <ul>
+                    <li>Reverted BethINI's fWaterSSRIntensity to 1 to fix weak SSR</li>
+                    <li>Reverted BethINI's bBackgroundLoadVMData to 0 to fix edge cases of ILS</li>
+                    <li>Now applies the same changes as Multiple Floors Sandboxing</li>
+                </ul>
+            </ul>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Moved Improvement Names Customized AE to the installation steps of <b>Adamant - A Perk Overhaul</b>.</li>
+                <li>Removed Multiple Floors Sandboxing because the same changes are now applied by the guide's Custom INI.</li>
+            </ul>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Removed the following mods (you can use them if you wish, but their removal gives us room for more important fixes):</li>
+                <ul>
+                    <li>Vanilla Script (micro)Optimizations</li>
+                    <li>Vanilla Scripting Enhancements</li>
+                    <li>ferrari365's Script Fixes</li>
+                </ul>
+                <li>Removed RegularQuicksaves tweak in the Engine Fixes steps, since types of saves actually do not differ between each other.</li>
+                <li>Added the following mods:</li>
+                <ul>
+                    <li>Dual Casting Fix</li>
+                    <li>RemoveAllItems Freeze Fix</li>
+                    <li>DPI Scaling Fix</li>
+                    <li>Media Keys Fix SKSE</li>
+                    <li>World Encounter Hostility Fix</li>
+                    <li>Zero Bounty Hostility Fix</li>
+                    <li>Stuck on Screen Load Door Prompt Fix</li>
+                </ul>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Moved Custom Skills Framework to the installation steps of <b>Stormcrown - A Shout Overhaul</b>.</li>
+                <li>Removed MoreHUD and MoreHUD Inventory Edition.</li>
+                <li>Added TrueHUD</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Added Adamant - Bard Perks Addon.</li>
+                <li>Replaced Apothecary - Food and Drink Addon with Gourmet - A Cooking Overhaul.</li>
+                <li>Removed the Apothecary - Rare Curios Patch - USSEP Patch because it is no longer needed.</li>
+                <li>Added steps to the Journeyman installation to make its features only apply to Survival Mode.</li>
+            </ul>
+            <h2><strong>Content</strong></h2>
+            <ul>
+                <li>New section, added the following mods:</li>
+                <ul>
+                    <li>Skyrim Extended Cut - Saints and Seducers</li>
+                    <li>Paarthurnax - Quest Expansion</li>
+                </ul>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Moved HD Local Map to the <b>User Interface</b> section.</li>
+                <li>Added the following mods:</li>
+                <ul>
+                    <li>Community Shaders (and the required d3dcompiler_47)</li>
+                    <li>All current CS addons</li>
+                    <li>Grass Sampler Fix</li>
+                </ul>
+            </ul>
+            <h2><strong>Wabbajack</strong></h2>
+            <ul>
+                <li>A Wabbajack modlist and section are now available.</li>
+            </ul>
+            <hr>
             <h2 class="install">23/7/23</h2>
-            <p>
-                <strong>MO2</strong>: Switched back to portable instance for consistency with the TBoT video guide and the Wabbajacks.
-            </p>
+            <h2><strong>MO2</strong></h2>
+            <ul>
+                <li>Switched back to portable instance for consistency with the TBoT video guide and the Wabbajacks.</li>
+            </ul>
+            <hr>
             <h2 class="install">15/7/23</h2>
-            <p>
-                <strong>MO2</strong>: Updated Custom INI with better AO and disabled the ugly terrain LOD fade, also removed a tweak already applied by USSEP and commented the changes.
-                <br>
-                <strong>Bug Fixes</strong>: Added Performance Guide and Bash Bug Fix.
-                <br>
-                <strong>User Interface</strong>: Added C.O.C.K.S. and Custom Skills Framework (both required by the mods added below).
-                <br>
-                <strong>Gameplay</strong>: Added the following mods:
+            <h2><strong>MO2</strong></h2>
             <ul>
-                <li>Survival Mode Improved - SKSE</li>
-                <li>Stormcrown</li>
-                <li>Journeyman</li>
-                <li>Sorcerer</li>
+                <li>Updated Custom INI with better AO and disabled the ugly terrain LOD fade, also removed a tweak already applied by USSEP and commented the changes.</li>
             </ul>
-            <strong>Visuals</strong>: Removed EVLaS because it turns out it's not really meant for gameplay (big chunk of the map is always covered in shadow and stealth is busted).
-            </p>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added Performance Guide and Bash Bug Fix.</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Added C.O.C.K.S. and Custom Skills Framework (both required by the mods added below).</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Added the following mods:</li>
+                <ul>
+                    <li>Survival Mode Improved - SKSE</li>
+                    <li>Stormcrown</li>
+                    <li>Journeyman</li>
+                    <li>Sorcerer</li>
+                </ul>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Removed EVLaS because it turns out it's not really meant for gameplay (big chunk of the map is always covered in shadow and stealth is busted).</li>
+            </ul>
+            <hr>
             <h2 class="install">27/5/23</h2>
-            <p>
-                <strong>MO2</strong>: Switched to the 2.4.5 Alpha 3 version to fix the alphabetic load order issues and bring some QoL features.
-                <br>
-                <strong>Bug Fixes</strong>: Removed Beneath Bronze Waters Start Fix since USSEP 4.2.9 makes it redundant, added DLC2PillarBuilderActorScript Tweak.
-            </p>
+            <h2><strong>MO2</strong></h2>
+            <ul>
+                <li>Switched to the 2.4.5 Alpha 3 version to fix the alphabetic load order issues and bring some QoL features.</li>
+            </ul>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Removed Beneath Bronze Waters Start Fix since USSEP 4.2.9 makes it redundant, added DLC2PillarBuilderActorScript Tweak.</li>
+            </ul>
+            <hr>
             <h2 class="install">5/5/23</h2>
-            <p>
-                <strong>Utilities</strong>: Added ConsolePlusPlus.
-                <br>
-                <strong>Bug Fixes</strong>: Added DLC2dunFrostmoonTriggerScript Optimization and Comprehensive Attack Speed Patch - SKSE.
-            </p>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Added ConsolePlusPlus.</li>
+            </ul>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added DLC2dunFrostmoonTriggerScript Optimization and Comprehensive Attack Speed Patch - SKSE.</li>
+            </ul>
+            <hr>
             <h2 class="install">2/5/23</h2>
-            <p>
-                <strong>Whole Guide</strong>: Updated to the latest EXE version.
-                <br>
-                <strong>Bug Fixes</strong>: Added the following mods:
+            <h2><strong>Whole Guide</strong></h2>
             <ul>
-                <li>dunF01gunthurBossBatt1e Script Fix</li>
-                <li>Shroud Hearth Barrow Script</li>
-                <li>Soul Cairn Script Tweaks</li>
-                <li>The Taste of Death Improved</li>
-                <li>Beneath Bronze Waters Start Fix</li>
-                <li>DLC2TribaIWerebearScript</li>
-                <li>DLC2dunNchardakDoorSea1 Script Infinite Loop Fix</li>
-                <li>DLC2dunSeekerInvisScript</li>
-                <li>DLC2MiraakScript</li>
+                <li>Updated to 1.6.640.</li>
             </ul>
-            <strong>Tweaks</strong>: Added Instantly Skip Dialogue NG.
-            <br>
-            <strong>UI</strong>: Added moreHUD Inventory Edition.
-            <br>
-            <strong>UI</strong>: Switched from QuickLoot EE to Quick Loot RE.
-            <br>
-            </p>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added the following mods:</li>
+                <ul>
+                    <li>dunF01gunthurBossBatt1e Script Fix</li>
+                    <li>Shroud Hearth Barrow Script</li>
+                    <li>Soul Cairn Script Tweaks</li>
+                    <li>The Taste of Death Improved</li>
+                    <li>Beneath Bronze Waters Start Fix</li>
+                    <li>DLC2TribaIWerebearScript</li>
+                    <li>DLC2dunNchardakDoorSea1 Script Infinite Loop Fix</li>
+                    <li>DLC2dunSeekerInvisScript</li>
+                    <li>DLC2MiraakScript</li>
+                </ul>
+            </ul>
+            <h2><strong>Tweaks</strong></h2>
+            <ul>
+                <li>Added Instantly Skip Dialogue NG.</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Added moreHUD Inventory Edition.</li>
+                <li>Switched from QuickLoot EE to Quick Loot RE.</li>
+            </ul>
+            <hr>
             <h2 class="install">19/3/23</h2>
-            <p>
-                <strong>Bug Fixes</strong>: Added Animated Static Reload Fix - NG.
-                <br>
-                <strong>Gameplay</strong>: Added Vestige - An Artifact Overhaul.
-            </p>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added Animated Static Reload Fix - NG.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Added Vestige - An Artifact Overhaul.</li>
+            </ul>
+            <hr>
             <h2 class="install">14/3/23</h2>
-            <p>
-                <strong>Bug Fixes</strong>: Added the following mods:
+            <h2><strong>Bug Fixes</strong></h2>
             <ul>
-                <li>Script Effect Archetype Crash Fix</li>
-                <li>Vendor Respawn Fix</li>
-                <li>Sprint Sneak Movement Speed Fix</li>
+                <li>Added the following mods:</li>
+                <ul>
+                    <li>Script Effect Archetype Crash Fix</li>
+                    <li>Vendor Respawn Fix</li>
+                    <li>Sprint Sneak Movement Speed Fix</li>
+                </ul>
             </ul>
-            </p>
+            <hr>
             <h2 class="install">9/2/23</h2>
-            <p>
-                <strong>Setup</strong>: Added steps to delete the Patch BSA and fix some dialogue.
-                <br>
-                <strong>Visuals</strong>: Added Twilight and EVLaS (again).
-            </p>
+            <h2><strong>Setup</strong></h2>
+            <ul>
+                <li>Added steps to delete the Patch BSA and fix some dialogue.</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Added Twilight and EVLaS.</li>
+            </ul>
+            <hr>
             <h2 class="install">18/1/23</h2>
-            <p>
-                <strong>Utilities</strong>: Added more specific steps for the FPS cap in Display Tweaks in order to prevent Papyrus issues.
-            </p>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Added more specific steps for the FPS cap in Display Tweaks in order to prevent Papyrus issues.</li>
+            </ul>
+            <hr>
             <h2 class="install">28/11/22</h2>
-            <p>
-                <strong>Whole Guide</strong>: Recreated the website with the help of Wall_SoGB, the guide is now responsive.
-                <br>
-                <strong>Whole Guide</strong>: Reformatted and edited a lot of steps and information.
-                <br>
-                <strong>Whole Guide</strong>: Removed steps for AE DLC owners, support will not be provided.
-                <br>
-                <strong>Utilities</strong>: Switched from .net to crash logger.
-                <br>
-                <strong>Utilities</strong>: Added the following mods:
+            <h2><strong>Whole Guide</strong></h2>
             <ul>
-                <li>Improvement Names Customized</li>
-                <li>Keyword Item Distributor</li>
-                <li>More Informative Console</li>
-                <li>Multiple Floors Sandboxing</li>
+                <li>Recreated the website with the help of Wall_SoGB, the guide is now responsive.</li>
+                <li>Reformatted and edited a lot of steps and information.</li>
+                <li>Removed steps for AE DLC owners, support will not be provided.</li>
             </ul>
-            <strong>Bug Fixes</strong>: Added Scrambled Bugs Custom Config.
-            <br>
-            <strong>Bug Fixes</strong>: Added the following mods:
+            <h2><strong>Utilities</strong></h2>
             <ul>
-                <li>Sound Fix for Large Sector Drives</li>
-                <li>Moons and Stars - Sky Overhaul SKSE</li>
-                <li>Aurora Fix</li>
-                <li>Barter Limit Fix</li>
+                <li>Switched from .net to crash logger.</li>
+                <li>Added the following mods:</li>
+                <ul>
+                    <li>Improvement Names Customized AE</li>
+                    <li>Keyword Item Distributor</li>
+                    <li>More Informative Console</li>
+                    <li>Multiple Floors Sandboxing</li>
+                </ul>
             </ul>
-            <strong>Tweaks</strong>: Removed Realistic Conversations and All Thieves Guild Jobs Concurrently.
-            <br>
-            <strong>Tweaks</strong>: Added USSEP Patch for Quests Are In Skyrim.
-            <br>
-            <strong>Tweaks</strong>: Added the following mods:
+            <h2><strong>Bug Fixes</strong></h2>
             <ul>
-                <li>To Your Face SE - AE - VR</li>
-                <li>Enhanced Invisibility</li>
-                <li>Fires Hurt RE</li>
-                <li>Fire Hurts NG</li>
-                <li>Animals Swim (Sort of)</li>
-                <li>Dynamic Collision Adjustment</li>
-                <li>Remember Lockpick Angle - Updated</li>
-                <li>Better Jumping SE</li>
+                <li>Added Scrambled Bugs Custom Config.</li>
+                <li>Added the following mods:</li>
+                <ul>
+                    <li>Sound Fix for Large Sector Drives</li>
+                    <li>Moons and Stars - Sky Overhaul SKSE</li>
+                    <li>Aurora Fix</li>
+                    <li>Barter Limit Fix</li>
+                </ul>
             </ul>
-            <strong>UI</strong>: Moved Whose Quest Is It Anyway to the <b>Utilities</b> section.
-            <br>
-            <strong>Gameplay</strong>: Added Adamant and Mysticism addons.
-            <br>
-            <strong>Gameplay</strong>: Added USSEP Patch for Scion and Manbeast.
-            <br>
-            <strong>Visuals</strong>: Removed the following mods:
+            <h2><strong>Tweaks</strong></h2>
             <ul>
-                <li>EVLaS (Perf intensive and underside should be generated with DynDOLOD instead)</li>
-                <li>Cathedral Weathers (No longer preferred)</li>
-                <li>Lux (Needs an ENB such as Patrician to look right, not recommended for non-ENB users)</li>
+                <li>Removed Realistic Conversations and All Thieves Guild Jobs Concurrently.</li>
+                <li>Added USSEP Patch for Quests Are In Skyrim.</li>
+                <li>Added the following mods:</li>
+                <ul>
+                    <li>To Your Face SE - AE - VR</li>
+                    <li>Enhanced Invisibility</li>
+                    <li>Fires Hurt RE</li>
+                    <li>Fire Hurts NG</li>
+                    <li>Animals Swim (Sort of)</li>
+                    <li>Dynamic Collision Adjustment</li>
+                    <li>Remember Lockpick Angle - Updated</li>
+                    <li>Better Jumping SE</li>
+                </ul>
             </ul>
-            <strong>Visuals</strong>: Added the following mods:
+            <h2><strong>User Interface</strong></h2>
             <ul>
-                <li>Soft Shadows</li>
-                <li>HD Local Map</li>
+                <li>Moved Whose Quest Is It Anyway to the <b>Utilities</b> section.</li>
             </ul>
-            </p>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Added Adamant and Mysticism addons.</li>
+                <li>Added USSEP Patch for Scion and Manbeast.</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Removed the following mods:</li>
+                <ul>
+                    <li>EVLaS</li>
+                    <li>Cathedral Weathers</li>
+                    <li>Lux</li>
+                </ul>
+                <li>Added the following mods:</li>
+                <ul>
+                    <li>Soft Shadows</li>
+                    <li>HD Local Map</li>
+                </ul>
+            </ul>
+            <hr>
             <h2 class="install">14/11/22</h2>
-            <p>
-                <strong>Utilities</strong>: Switched to the Nexus release of SKSE64.
-                <br>
-                <strong>Utilities</strong>: Added Recursion Monitor and Papyrus Tweaks NG.
-            </p>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Switched to the Nexus release of SKSE64.</li>
+                <li>Added Recursion Monitor and Papyrus Tweaks NG.</li>
+            </ul>
+            <hr>
             <h2 class="install">13/11/22</h2>
-            <p>
-                <strong>MO2</strong>: Switched to global instance (don't worry about this if you already have the guide installed).
-                <br>
-                <strong>UI</strong>: Switched from Stay At The System Page to Stay At The System Page NG.
-            </p>
+            <h2><strong>MO2</strong></h2>
+            <ul>
+                <li>Switched to global instance (don't worry about this if you already have the guide installed).</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Switched from Stay At The System Page to Stay At The System Page NG.</li>
+            </ul>
+            <hr>
             <h2 class="install">28/9/22</h2>
-            <p>
-                <strong>Whole Guide</strong>: Now using 1.5.97 for better compatibility and to prevent issues when the game updates.
-                <br>
-                <strong>Utilities</strong>: Switched from Crash Logger to .NET.
-                <br>
-                <strong>Tweaks</strong>: Edited the guide's PO3 Tweaks config file so now you can wait while standing.
-                <br>
-                <strong>UI</strong>: Switched from QuickLoot RE to QuickLoot EE.
-            </p>
+            <h2><strong>Whole Guide</strong></h2>
+            <ul>
+                <li>Now using 1.5.97 for better compatibility and to prevent issues when the game updates.</li>
+            </ul>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Switched from Crash Logger to .NET.</li>
+            </ul>
+            <h2><strong>Tweaks</strong></h2>
+            <ul>
+                <li>Edited the guide's PO3 Tweaks config file so now you can wait while standing.</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Switched from QuickLoot RE to QuickLoot EE.</li>
+            </ul>
+            <hr>
             <h2 class="install">11/7/22</h2>
-            <p>
-                <strong>Utilities</strong>: Added JContainers because BTPS needs it and i forgot.
-            </p>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Added JContainers because it's required by BTPS.</li>
+            </ul>
+            <hr>
             <h2 class="install">8/7/22</h2>
-            <p>
-                <strong>Utilities</strong>: Added brightness templates for Lux.
-                <br>
-                <strong>UI</strong>: Fixed SkyUI Notes Fix version.
-            </p>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Added steps to install the brightness templates of Lux.</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Fixed SkyUI Notes Fix version.</li>
+            </ul>
+            <hr>
             <h2 class="install">6/7/22</h2>
-            <p>
-                <strong>Utilities</strong>: Added SPID.
-                <br>
-                <strong>Gameplay</strong>: Added missing patches for Apothecary.
-                <br>
-                <strong>Bug Fixes</strong>: Corrected Scrambled Bugs configuration instructions.
-                <br>
-                <strong>Whole Guide</strong>: Converted to 1.6.353, no more downgrading needed.
-                <br>
-                <strong>Bug Fixes</strong>: Added Unofficial CC Patch and notes for users who might own the extra CC content.
-                <br>
-                <strong>Resources</strong>: Added sections for mods and tools to avoid.
-                <br>
-                <strong>Bug Fixes</strong>: Added fixes for full AE owners.
-                <br>
-                <strong>Visuals</strong>: Updated Lux FOMOD instructions.
-            </p>
+            <h2><strong>Whole Guide</strong></h2>
+            <ul>
+                <li>Converted to 1.6.353, no more downgrading needed.</li>
+            </ul>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Added SPID.</li>
+            </ul>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added fixes for full AE owners.</li>
+                <li>Corrected Scrambled Bugs configuration instructions.</li>
+                <li>Added Unofficial CC Patch and notes for users who own the extra CC content.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Added missing patches for Apothecary.</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Updated Lux FOMOD instructions.</li>
+            </ul>
+            <h2><strong>Resources</strong></h2>
+            <ul>
+                <li>Added mods and tools to avoid sections.</li>
+            </ul>
+            <hr>
             <h2 class="install">5/7/22</h2>
-            <p>
-                <strong>Tweaks</strong>: Added All Thieves Guild Jobs Concurrently - USSEP Patch (moved from Final Steps section).
-                <br>
-                <strong>Visuals</strong>: Added the following mods: Security Overhaul SKSE - Lock Variations, Security Overhaul SKSE - Regional Locks, Security Overhaul SKSE - Add-ons.
-                <br>
-                <strong>UI</strong>: Added Wider MCM Menu for SkyUI.
-                <br>
-                <strong>MO2</strong>: Added Custom INI.
-            </p>
+            <h2><strong>MO2</strong></h2>
+            <ul>
+                <li>Added Custom INI.</li>
+            </ul>
+            <h2><strong>Tweaks</strong></h2>
+            <ul>
+                <li>Added All Thieves Guild Jobs Concurrently - USSEP Patch (moved from Final Steps section).</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Added Wider MCM Menu for SkyUI.</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Added the following mods: Security Overhaul SKSE - Lock Variations, Security Overhaul SKSE - Regional Locks, Security Overhaul SKSE - Add-ons.</li>
+            </ul>
+            <hr>
             <h2 class="install">4/7/22</h2>
-            <p>
-                <strong>Whole Guide</strong>: Moved Visuals section below Gameplay.
-                <br>
-                <strong>Bug Fixes</strong>: Added the following mods: Vanilla Script (micro)Optimizations, Engine Fixes (Moved from Utilities), Bug Fixes, Combat Music Fix and Quest Journal Limit Bug Fixer.
-                <br>
-                <strong>Bug Fixes</strong>: Switched from NPC AI Process Pos Fix to NPC AI Process Pos Fix NG.
-                <br>
-                <strong>FAQ</strong>: More accurate info.
-                <br>
-                <strong>Final Steps</strong>: Switched from CR FOMOD to single patch.
-                <br>
-                <strong>Final Steps</strong>: Updated info.
-                <br>
-                <strong>Gameplay</strong>: Too many changes, check commit.
-                <br>
-                <strong>UI</strong>: Too many changes, check commit.
-                <br>
-                <strong>Introduction</strong>: More accurate info.
-                <br>
-                <strong>MO2</strong>: Added BethINI instructions and disabled profile-specific INIs.
-                <br>
-                <strong>Tweaks</strong>: Replaced quest delay mods with Timing is Everything and the setting loader for it.
-                <br>
-                <strong>Setup</strong>: Switched from full AE patcher to Best of Both Worlds versions to ensure USSEP compatibility without API trick.
-                <br>
-                <strong>Utilities</strong>: Moved Engine Fixes to Bug Fix section and updated configuration instructions.
-                <br>
-                <strong>Utilities</strong>: Added Display Tweaks configuration instructions.
-                <br>
-                <strong>Utilities</strong>: Added PapyrusUtil.
-                <br>
-                <strong>Utilities</strong>: Removed SKSE INI.
-                <br>
-                <strong>Visuals</strong>: Too many changes, check commit.
-            </p>
+            <h2><strong>Whole Guide</strong></h2>
+            <ul>
+                <li>Moved Visuals section below Gameplay.</li>
+            </ul>
+            <h2><strong>Setup</strong></h2>
+            <ul>
+                <li>Switched from full AE patcher to Best of Both Worlds versions to ensure USSEP compatibility without API trick.</li>
+            </ul>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added the following mods: Vanilla Script (micro)Optimizations, Engine Fixes (moved from Utilities section), Bug Fixes SSE, Combat Music Fix SKSE and Quest Journal Limit Bug Fixer.</li>
+                <li>Switched from NPC AI Process Pos Fix to NPC AI Process Pos Fix NG.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Complete overhaul.</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Complete overhaul.</li>
+            </ul>
+            <h2><strong>MO2</strong></h2>
+            <ul>
+                <li>Added BethINI instructions and disabled profile-specific INIs.</li>
+            </ul>
+            <h2><strong>Tweaks</strong></h2>
+            <ul>
+                <li>Replaced quest delay mods with Timing is Everything its setting loader.</li>
+            </ul>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Moved Engine Fixes to Bug Fix section and updated configuration instructions.</li>
+                <li>Added Display Tweaks configuration instructions.</li>
+                <li>Added PapyrusUtil.</li>
+                <li>Removed SKSE INI.</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Complete overhaul.</li>
+            </ul>
+            <h2><strong>Final Steps</strong></h2>
+            <ul>
+                <li>Switched from the CR FOMOD to a single patch.</li>
+            </ul>
+            <hr>
             <h2 class="install">11/11/21</h2>
-            <p>
-                <strong>Installation:</strong> Added instructions for downgrading game version to pre-Anniversary edition.
-                <br>
-                <strong>Tweaks</strong>: Removed No Kill Cams (Was too subjective to warrant including, especially since kill cams aren't buggy like in NV).
-                <br>
-                <strong>Visuals</strong>: Added Security Overhaul SKSE.
-                <br>
-                <strong>Gameplay</strong>: Changed instructions to download old version of SunHelm (Pre-Anniversary update version).
-                <br>
-                <strong>Gameplay</strong>: Moved Encounter Zones Unlocked to Tweaks (Just a better fit IMO).
-            </p>
+            <h2><strong>Installation</strong></h2>
+            <ul>
+                <li>Added instructions for downgrading game version to pre-Anniversary edition.</li>
+            </ul>
+            <h2><strong>Tweaks</strong></h2>
+            <ul>
+                <li>Removed No Kill Cams (too subjective, especially since kill cams aren't buggy like in NV).</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Added Security Overhaul SKSE.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Changed instructions to download old version of SunHelm.</li>
+                <li>Moved Encounter Zones Unlocked to the <b>Tweaks</b> section.</li>
+            </ul>
+            <hr>
             <h2 class="install">9/10/21</h2>
-            <p>
-                <strong>User Interface:</strong> Added Recleaned Menu.
-                <br>
-                <strong>Visuals</strong>: Replaced Realistic Water Two + Better Water for RW2 with Cathedral Waters (Much simpler and just as effective IMO, fits the guide better).
-            </p>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Added Recleaned Menu.</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Replaced Realistic Water Two + Better Water for RW2 with Cathedral Waters.</li>
+            </ul>
+            <hr>
             <h2 class="install">16/8/21</h2>
-            <p>
-                <strong>Utilities</strong>: Added powerofthree's Papyrus Extender (Now required for SunHelm).
-                <br>
-                <strong>Gameplay</strong>: Added instructions to also install the Food and Drink addon from Apothecary.
-                <br>
-                <strong>Visuals</strong>: Removed support for ELE, instead adding a note about not selecting the ELFX Enhancer setting in the ELFX FOMOD if you have a weaker PC or don't like the "realistically" dark interiors.
-                <br>
-                <strong>Gameplay</strong>: Removed support for EnaiRim (Didn't feel like maintaining it anymore, especially since most people use SimonRim. EnaiRim only required one minor patch with Scarcity that was more of a consistency patch than a necessity, so in theory it is still incredibly easy to swap Simon for Enai).
-            </p>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Added powerofthree's Papyrus Extender because it's required by SunHelm.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Removed support for EnaiRim in favour of SimonRim.</li>
+                <li>Added instructions to also install the Food and Drink addon from Apothecary.</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Removed support for ELE, instead adding a note about not selecting the ELFX Enhancer setting in the ELFX FOMOD if you have a weaker PC or don't like the "realistically" dark interiors.</li>
+            </ul>
+            <hr>
             <h2 class="install">9/7/21</h2>
-            <p>
-                <strong>Bug Fixes</strong>: Added instructions to enable a couple features in SSE Engine Fixes' config.
-                <br>
-                <strong>Bug Fixes</strong>: Added NPC Position Process Fix.
-                <br>
-                <strong>Bug Fixes</strong>: Added Tavern AI Fix.
-                <br>
-                <strong>Tweaks</strong>: New section, separated Bug Fixes and QOL Improvements basically.
-                <br>
-                <strong>Tweaks</strong>: Added Bounty Preview.
-                <br>
-                <strong>Tweaks</strong>: Added All Thieves Guild Jobs Concurrently.
-                <br>
-                <strong>Tweaks</strong>: Added Simple Offence suppression.
-                <br>
-                <strong>Tweaks</strong>: Added Disable Cinematic Kills.
-                <br>
-                <strong>UI</strong>: Added Roboto Font Replacer.
-                <br>
-                <strong>UI</strong>: Added Smaller Vanilla Cursors.
-                <br>
-                <strong>UI</strong>: Added Horse Stamina HUD.
-                <br>
-                <strong>Visuals</strong>: Added ELFX Fixes.
-                <br>
-                <strong>Visuals</strong>: Added Dimmer Fog.
-                <br>
-                <strong>Visuals</strong>: Added Blended Roads.
-                <br>
-                <strong>Visuals</strong>: Realistic Water Two.
-                <br>
-                <strong>Visuals</strong>: Better Water for Realistic Water Two.
-                <br>
-                <strong>Gameplay</strong>: Added SunHelm.
-                <br>
-                <strong>SimonRim:</strong> Added Apothecary.
-                <br>
-                <strong>EnaiRim</strong>: Added Tonics Heal Over Time.
-                <br>
-                <strong>Bug Fixes</strong>: Removed 1st Person Sneak Stutter Fix (Too specific of a fix to warrant including).
-                <br>
-                <strong>Bug Fixes</strong>: Removed Minimalistic AutoSave Mod (Didn't like the sudden stuttering when autosaving, instead opting for the setting in SSE Engine Fixes that makes F5 create an autosave).
-                <br>
-                <strong>UI</strong>: Removed MoreHUD Inventory Edition (Didn't have any useful info IMO).
-                <br>
-                <strong>Gameplay</strong>: Removed M'aiq's Tweaks Better Sneaking (Ended up making sneak to easy/awkward).
-                <br>
-                <strong>Gameplay</strong>: Removed Alchemy Potions and Food Adjustments (Replaced by Apothecary in SimonRim and Tonics Heal Over Time in EnaiRim).
-            </p>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added instructions to enable a couple features in the Engine Fixes config.</li>
+                <li>Added NPC Position Process Fix.</li>
+                <li>Added Tavern AI Fix.</li>
+                <li>Removed 1st Person Sneak Stutter Fix (too specific).</li>
+                <li>Removed Minimalistic AutoSave Mod (causes sudden stuttering when autosaving, instead opting for the setting in SSE Engine Fixes that makes F5 create an autosave).</li>
+            </ul>
+            <h2><strong>Tweaks</strong></h2>
+            <ul>
+                <li>New section, separated Bug Fixes and QoL mods.</li>
+                <li>Added Bounty Preview.</li>
+                <li>Added All Thieves Guild Jobs Concurrently.</li>
+                <li>Added Simple Offence suppression.</li>
+                <li>Added Disable Cinematic Kills.</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Added Roboto Font Replacer.</li>
+                <li>Added Smaller Vanilla Cursors.</li>
+                <li>Added Horse Stamina HUD.</li>
+                <li>Removed MoreHUD Inventory Edition.</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Added ELFX Fixes.</li>
+                <li>Added Dimmer Fog.</li>
+                <li>Added Blended Roads.</li>
+                <li>Realistic Water Two./li>
+                <li>Better Water for Realistic Water Two.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Added SunHelm.</li>
+                <li>Removed M'aiq's Tweaks Better Sneaking (makes sneak to easy/awkward).</li>
+                <li>Removed Alchemy Potions and Food Adjustments (replaced by Apothecary in SimonRim and Tonics Heal Over Time in EnaiRim).</li>
+            </ul>
+            <h2><strong>SimonRim</strong></h2>
+            <ul>
+                <li>Added Apothecary.</li>
+            </ul>
+            <h2><strong>EnaiRim</strong></h2>
+            <ul>
+                <li>Added Tonics Heal Over Time.</li>
+            </ul>
+            <hr>
             <h2 class="install">23/6/21</h2>
-            <p>
-                <strong>Visuals</strong>: Added back ELFX as an alternative to ELE, since I know some people (Myself included) much prefer how it looks to ELE despite its potential performance impact. ELFX will be recommended for higher-end PCs and ELE will be for lower-end ones.
-            </p>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Added back ELFX as an alternative to ELE. ELFX will be recommended for higher-end PCs and ELE will be for lower-end ones.</li>
+            </ul>
+            <hr>
             <h2 class="install">21/6/21</h2>
-            <p>
-                <strong>Bug Fixes</strong>: Added powerofthree's tweaks.
-                <br>
-                <strong>Visuals</strong>: Swapped ELFX with ELE.
-                <br>
-                <strong>Gameplay</strong>: Separated the gameplay section into two sections, one for EnaiRim and one for SimonRim.
-                <br>
-                <strong>Gameplay</strong>: Swapped Arena and Morrowloot Misc with Open World Loot (Plus OWL - Vanilla Progression).
-            </p>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added powerofthree's Tweaks.</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Swapped ELFX with ELE.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Separated the gameplay section into two sections, one for EnaiRim and one for SimonRim.</li>
+                <li>Swapped Arena and Morrowloot Misc with Open World Loot and OWL - Vanilla Progression.</li>
+            </ul>
+            <hr>
             <h2 class="install">3/5/21</h2>
-            <p>
-                <strong>Utilities</strong>: Added .NET Script Framework.
-                <br>
-                <strong>Bug Fixes</strong>: Added Scrambled Bugs.
-                <br>
-                <strong>Bug Fixes</strong>: Removed Enchanting Adjustments and Price-Charge Bug Fix (Engine level fix included in Scrambled Bugs).
-            </p>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Added .NET Script Framework.</li>
+            </ul>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added Scrambled Bugs.</li>
+                <li>Removed Enchanting Adjustments and Price-Charge Bug Fix because they are included in Scrambled Bugs.</li>
+            </ul>
+            <hr>
             <h2 class="install">6/3/21</h2>
-            <p>
-                <strong>Bug Fixes</strong>: Changed Realistic Conversations to the "longer pause" version.
-                <br>
-                <strong>Gameplay</strong>: Exchanged Mysticism for Odin.
-                <br>
-                <strong>Gameplay</strong>: Exchanged Vokrii - Mysticism patch for the Vokrii - Odin patch.
-            </p>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Changed Realistic Conversations to the "longer pause" version.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Exchanged Mysticism for Odin.</li>
+                <li>Exchanged Vokrii - Mysticism patch for the Vokrii - Odin patch.</li>
+            </ul>
+            <hr>
             <h2 class="install">3/3/21</h2>
-            <p>
-                <strong>Utilities</strong>: Added Scaleform Translation Plus Plus.
-                <br>
-                <strong>Bug Fixes</strong>: Added Quest NPCs Run.
-                <br>
-                <strong>HUD</strong>: Added SkyUI Flashing Savegame Fix.
-                <br>
-                <strong>HUD</strong>: Added MoreHUD + MoreHUD Inventory.
-                <br>
-                <strong>HUD</strong>: Removed Better Book Names (moreHUD essentially does the same thing).
-                <br>
-                <strong>Gameplay</strong>: Swapped out ChocolateNoodle's Little Balance Mods for Economy Overhaul and Speechcraft Improvements.
-                <br>
-                <strong>Gameplay</strong>: Added Scarcity, M'aiq's Tweaks (Stealth file), and Alchemy Potions and Food Adjustments.
-            </p>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Added Scaleform Translation Plus Plus.</li>
+            </ul>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added Quest NPCs Run.</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Added SkyUI Flashing Savegame Fix.</li>
+                <li>Added MoreHUD + MoreHUD Inventory.</li>
+                <li>Removed Better Book Names (moreHUD essentially does the same thing).</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Swapped out ChocolateNoodle's Little Balance Mods for Economy Overhaul and Speechcraft Improvements.</li>
+                <li>Added Scarcity, M'aiq's Tweaks (stealth file), and Alchemy Potions and Food Adjustments.</li>
+            </ul>
+            <hr>
             <h2 class="install">23/2/21</h2>
-            <p>
-                <strong>Bug Fixes</strong>: Added Miscellaneous Tweaks Collection (Just the Better Horses file).
-                <br>
-                <strong>HUD</strong>: Added both Better MessageBox and Better Dialogue Controls.
-                <br>
-                <strong>Gameplay</strong>: Removed Apocalypse (Too ambitious of a mod to be included in a Vanilla Plus guide).
-                <br>
-                <strong>Gameplay</strong>: Removed MorrowLoot Ultimate (After play-testing, unleveling the game sounds a lot better in theory than it is in practice. Someone also made a great point about being able to exploit the hand-placed glass/ebony items if you know where they are).
-                <br>
-                <strong>Gameplay</strong>: Added MorrowLoot Miscellania (Just the Unleveled Quest Rewards option, since I still do believe this feature is balanced).
-                <br>
-                <strong>Gameplay</strong>: Added both Encounter Zones Unlocked and Arena - An Encounter Zone Overhaul (Better than unleveled enemies IMO).
-            </p>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added the Better Horses file of Miscellaneous Tweaks Collection.</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Added both Better MessageBox and Better Dialogue Controls.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Removed Apocalypse (too ambitious).</li>
+                <li>Removed MorrowLoot Ultimate (sounds a lot better in theory than it is in practice. Someone also made a great point about being able to exploit the hand-placed glass/ebony items if you know where they are).</li>
+                <li>Added the Unleveled Quest Rewards file of MorrowLoot Miscellania.</li>
+                <li>Added both Encounter Zones Unlocked and Arena - An Encounter Zone Overhaul.</li>
+            </ul>
         </div>
 
         <!-- Arrows -->
