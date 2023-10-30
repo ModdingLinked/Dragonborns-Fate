@@ -6,19 +6,9 @@
 		<lastmod>2023-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/index.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/avoid-mods.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2023-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/intro.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2023-09-16</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/faq.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2023-10-03</lastmod>
+		<lastmod>2023-08-02</lastmod>
 	</url>
 	<url>
 		<loc>https://dragonbornsfate.moddinglinked.com/avoid-tools.html</loc>
@@ -26,22 +16,47 @@
 		<lastmod>2023-08-02</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/avoid-mods.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/faq.html</loc>
 		<priority>0.80</priority>
+		<lastmod>2023-10-03</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/intro.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2023-09-16</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/index.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2023-04-08</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/appendix.html</loc>
+		<priority>0.64</priority>
 		<lastmod>2023-08-02</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/setup.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/finish.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2023-10-03</lastmod>
+		<lastmod>2023-08-01</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/mo2.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/visuals.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2023-10-03</lastmod>
+		<lastmod>2023-10-28</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/utilities.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/gameplay.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-10-30</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/hud.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-08-02</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/tweaks.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2023-10-28</lastmod>
 	</url>
@@ -51,39 +66,19 @@
 		<lastmod>2023-10-28</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/tweaks.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/utilities.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2023-10-28</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/hud.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/mo2.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2023-08-02</lastmod>
+		<lastmod>2023-10-03</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/gameplay.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/setup.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2023-10-28</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/visuals.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-10-28</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/finish.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-08-01</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/appendix.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-08-02</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/changelog.html</loc>
-		<priority>0.51</priority>
-		<lastmod>2023-08-02</lastmod>
+		<lastmod>2023-10-03</lastmod>
 	</url>
 	<url>
 		<loc>https://dragonbornsfate.moddinglinked.com/resources.html</loc>
@@ -91,9 +86,14 @@
 		<lastmod>2023-08-01</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/basefinish.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/changelog.html</loc>
+		<priority>0.51</priority>
+		<lastmod>2023-08-02</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/content.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-08-01</lastmod>
+		<lastmod>2023-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://dragonbornsfate.moddinglinked.com/wabbajack.html</loc>
@@ -101,8 +101,8 @@
 		<lastmod>2023-10-28</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/content.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/basefinish.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-10-28</lastmod>
+		<lastmod>2023-08-01</lastmod>
 	</url>
 </urlset>
