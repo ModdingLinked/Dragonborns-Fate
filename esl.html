@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo-icon.webp">
+    <link rel="canonical" href="https://dragonbornsfate.moddinglinked.com">
+    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    <title>Light Plugins | A Dragonborn's Fate</title>
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack, ESL, Light Plugins">
+    <meta name="description" content="All you need to know about light plugins (ESL).">
+    <meta http-equiv='content-language' content='en-us'>
+    <meta name="twitter:card" value="summary_large_image">
+    <meta property="og:site_name" content="ModdingLinked">
+    <meta property="og:title" content="A Dragonborn's Fate">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://dragonbornsfate.moddinglinked.com">
+    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/card-wj.webp">
+    <meta property="og:description" content="All you need to know about light plugins (ESL).">
+</head>
+
+<body>
+
+    <!-- Titlebar -->
+    <div class="titlecontainer">
+        <div id="sideButton" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <img src="./img/logo.webp" alt="Logo">
+        <a href="./index.html">A Dragonborn's Fate</a>
+        <div class="guideLinks">
+            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
+            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+        </div>
+    </div>
+
+    <!-- Left Sidebar -->
+    <div id="sidenavLeft">
+        <div>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./intro.html">Introduction</a>
+                </li>
+                <li>
+                    <a href="./setup.html">Setup</a>
+                </li>
+                <li>
+                    <a href="./mo2.html">MO2</a>
+                </li>
+                <li>
+                    <a href="./utilities.html">Utilities</a>
+                </li>
+                <li>
+                    <a href="./bugfix.html">Bug Fixes</a>
+                </li>
+                <li>
+                    <a href="./basefinish.html">Base Finish</a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div class="extended-background">
+            <ul>
+                <h3 id="extended-separator">DBF Extended</h3>
+                <li>
+                    <a href="./tweaks.html">Tweaks</a>
+                </li>
+                <li>
+                    <a href="./hud.html">User Interface</a>
+                </li>
+                <li>
+                    <a href="./gameplay.html">Gameplay</a>
+                </li>
+                <li>
+                    <a href="./content.html">Content</a>
+                </li>
+                <li>
+                    <a href="./visuals.html">Visuals</a>
+                </li>
+                <li>
+                    <a href="./finish.html">DBFE Finish</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <hr>
+            <ul>
+                <li>
+                    <a href="./appendix.html">Appendix</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="./resources.html">Resources</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="./esl.html" class="active">Light Plugins</a>
+                        </li>
+                    </ul>
+                </ul>
+                <li>
+                    <a href="./faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="./avoid-tools.html">Tools to Avoid</a>
+                </li>
+                <li>
+                    <a href="./avoid-mods.html">Mods to Avoid</a>
+                </li>
+                <li>
+                    <a href="./wabbajack.html">Wabbajack</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Guide Links -->
+        <div class="guideLinks">
+            <hr>
+            <ul>
+                <li>
+                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                </li>
+                <li>
+                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                </li>
+                <li>
+                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <ul>
+                <li>
+                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
+                        <i class="fab fa-patreon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a id="paypal" onclick="toggleDonationMenu()">
+                        <i class="fab fa-paypal"></i>
+                    </a>
+                    <div id="paypalMenu" style="display: none;">
+                        <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://www.paypal.com/paypalme/wallsogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://github.com/WallSoGB/Dragonborns-Fate" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="section">
+            <h1>Light Plugins</h1>
+            <p>
+                <a>
+                    <h2 id="what">What are They?</h2>
+                </a>
+                ESLs (<b>Elder Scrolls Light</b> Plugin) are a type of plugin used in Fallout 4 and Skyrim Special Edition, they allow plugins within a certain size to have an index limited to <strong>4096 instead of 256</strong>.
+                <br>
+                <br>
+                <strong>Mod Organizer 2 will indicate these plugins</strong> with a <b>yellow circle</b> in the plugins tab and with an <b>italic font</b>.
+                <br>
+                <img src="./img/mo2 esl flag.webp" alt="ESL flag in MO2's plugins tab">
+            <p>
+                <a>
+                    <h2 id="limitations">ESL Limitations</h2>
+                </a>
+            <ul>
+                <li>To be flagged ESL, a plugin <strong>can't have more than 4095 new records</strong> (the range is from 001->FFF).</li>
+                <li><strong>ESL on Skyrim Special Edition has a bug</strong> involving cell overrides, described in detail <a href="https://www.nexusmods.com/skyrimspecialedition/mods/68889/?tab=posts&jump_to_comment=109953898">here</a>. The same mod page hosts a script that allows you to detect said bug in your load order.</li>
+                <li>Working with ESL plugins in Creation Kit might result in more work due to the <strong>CK totally ignoring ESL</strong> space when creating new records. This means that after making new records in CK you'll have to compact forms in xEdit.</li>
+            </ul>
+            </p>
+            <p>
+                <a>
+                    <h2 id="batchFlagging">Batch Flagging ESL</h2>
+                </a>
+                In order to have more space for non-ESL plugins in your load order, you'll have to make sure everything that can be flagged ESL, is. <strong>xEdit can do this natively</strong> thanks to it's PseudoESL argument and the SetESL script, which flags everything that can be flagged safely.
+            <ol>
+                <li>If you haven't already, read the <a href="https://moddinglinked.com/xedit.html">xEdit guide</a> to avoid confusion with the next steps.</li>
+                <li><strong>Add <code>-PseudoESL</code></strong> to the arguments field of xEdit in MO2.</li>
+                <li>Run xEdit and load <strong>all of your mods</strong>.</li>
+                <li>Once loaded, select all plugins on the tree-view with CTRL+A, then right-click and <code><strong>Apply Script...</strong></code></li>
+                <img src="./img/apply script.webp" alt="Applying a script to the entire load order">
+                <li>Type <strong>SetESL</strong> in the filter and the script will automatically be selected.</li>
+                <img src="./img/set esl script.webp" alt="Selecting the SetESL script">
+                <li>Click <code><strong>OK</strong></code> and wait for it to process everything.</li>
+                <li><strong>Close xEdit</strong>, if it asks you to save then that means the plugins listed received the ESL flag.</li>
+            </ol>
+            </p>
+        </div>
+
+        <!-- Arrows -->
+        <div>
+            <hr>
+            <a href="./resources.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Resources</span></a>
+        </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div id="sidenavRight">
+        <ul>
+            <li>
+                <a href="#what">What are They?</a>
+            </li>
+            <li>
+                <a href="#limitations">ESL Limitations</a>
+            </li>
+            <li>
+                <a href="#batchFlagging">Batch Flagging ESL</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
