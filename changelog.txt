@@ -1,5 +1,5 @@
 ---Changelog----
-specific changes made:
+- Removed nearly all mentions of the moddinglinked discord
 - updated MO2 instructions for parity with other moddinglinked guides
 - updated BethINI instructions for Bethini Pie
 - removed Scaleform Translation Plus Plus and Whose Quest Is It Anyway
