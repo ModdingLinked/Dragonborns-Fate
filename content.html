@@ -5,228 +5,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logoex-icon.webp">
-    <link rel="canonical" href="https://dragonbornsfate.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
-    <title>Tweaks | A Dragonborn's Fate</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Small content additions/restorations that keep the vanilla-style.">
+    <link rel="icon" href="img/Coco/Head Logo Extended.webp">
+
+    <title>Content | A Dragonborn's Fate</title>
+
+    <meta name="keywords" content="
+    Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
+    Stable, Stability, Performance, Fix, Fixes, FPS,
+    Fast, Easy, Beginner,
+    Nexus, Nexus Mods, NexusMods,
+    Wabbajack, WJ, Installer,
+    Mod Organizer, Mod Organizer, MO2,
+    Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
+    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout 4, FO4,
+    Tale of Two Wastelands, TTW,
+    Skyrim Special Edition, Skyrim SE, SSE">
+
+    <meta name="description" content="Content additions and restorations.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="A Dragonborn's Fate">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://dragonbornsfate.moddinglinked.com">
-    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Small content additions/restorations that keep the vanilla-style.">
+    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:description" content="Content additions and restorations.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+    <meta name="darkreader-lock">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='clear-site-data' content='cache'>
+
+    <script src="js/popup.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/responsiveTitle.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/logoex.webp" alt="Logo">
-        <a href="./index.html">A Dragonborn's Fate - Extended</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">DBF Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html" class="active">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">DBFE Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-<!--                 <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Head Logo Extended.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">A Dragonborn's Fate</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="kofi">
-                    <a href="https://ko-fi.com/wall_sogb" target="_blank">
-                        <i class="fa fa-coffee"></i>
-                        Support us
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Dragonborns-Fate" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
 
-    <div class="deprecationBanner">
-        <p>
-            Due to constant game updates and the community split regarding which game versions to support, the guide has been discontinued and will be longer being updated.
-            <br>
-            The website will remain available for archival purposes.
-        </p>
-    </div>
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Content</h1>
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Content</strong>.</li>
-            </ol>
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
 
-            <!-- ECSS -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/72772" target="_blank">
-                    <h2 id="ecss">Skyrim Extended Cut - Saints and Seducers</h2>
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
                 </a>
             </p>
-            <h2 class="install">Installation instructions:</h2>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a> -->
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="card popup" id="donation">
             <ul>
-                <li><b>Main Files - Skyrim Extended Cut - Saints and Seducers</b></li>
-                <li>You will be prompted with a FOMOD installer:
+                <li>
+                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
+                </li>
+                <li>
+                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <span id="Content" class="section">
+                <h2 onclick="location.href='#Content'">Content</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
                     <ol>
-                        <li>Next</li>
-                        <li>Next</li>
-                        <li>Install</li>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Content</strong>.</li>
                     </ol>
-                </li>
-                <li><b><a href="https://www.nexusmods.com/skyrimspecialedition/mods/78228" target="_blank">ECSS - Apothecary Patch</a></b> (only if you installed Apothecary - An Alchemy Overhaul)</li>
-                <li><b><a href="https://www.nexusmods.com/skyrimspecialedition/mods/96876" target="_blank">Gourmet - ECSS Patch</a></b> (only if you installed Gourmet - A Cooking Overhaul)</li>
-            </ul>
-            Return to the Shivering Isles in a fully-voiced overhaul of Saints and Seducers.
+                    </p>
+                </div>
 
-            <!-- Paarthurnax Expansion -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/51711" target="_blank">
-                    <h2 id="paarthExpansion">Paarthurnax - Quest Expansion</h2>
+                <div class="card" id="SaintsAndSeducersExtended">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/72772" target="_blank">Skyrim Extended Cut - Saints and Seducers</a></h3>
+                    A fully-voiced and seamlessly integrated overhaul of the Saints and Seducers Creation.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Skyrim Extended Cut - Saints and Seducers</li>
+                    </ul>
+
+                    <div class="card-green">
+                        The following utilities are not required, but are recommended for a better experience:
+                        <ul>
+                            <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/82395" target="_blank">Animation Queue Fix</a></li>
+                            <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/99621" target="_blank">Paired Animation Improvements</a> and Horse Mount and Dismount Double Sound Fix (optional file)</li>
+                            <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/92109" target="_blank">Open Animation Replacer</a> (requires the 3 files above)</li>
+                            <li>CoMAP</li>
+                        </ul>
+                    </div>
+                    </p>
+                </div>
+            </span>
+
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
                 </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
             </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Paarthurnax - Quest Expansion</b></li>
-            </ul>
-            A fully voiced new take on the Paarthurnax quest.
-        </div>
-
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./gameplay.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Gameplay</span></a>
-            <a href="./visuals.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Visuals</span></a>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#ecss">ECSS</a>
-            </li>
-            <li>
-                <a href="#paarthExpansion">Paarthurnax Expansion</a>
-            </li>
-        </ul>
-    </div>
+    <footer>ModdingLinked 2025</footer>
 </body>
 
 </html>

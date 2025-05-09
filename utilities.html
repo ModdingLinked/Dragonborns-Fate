@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logo.webp">
-    <link rel="canonical" href="https://dragonbornsfate.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    <link rel="icon" href="img/Coco/Head Logo.webp">
+
     <title>Utilities | A Dragonborn's Fate</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+
+    <meta name="keywords" content="
+    Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
+    Stable, Stability, Performance, Fix, Fixes, FPS,
+    Fast, Easy, Beginner,
+    Nexus, Nexus Mods, NexusMods,
+    Wabbajack, WJ, Installer,
+    Mod Organizer, Mod Organizer, MO2,
+    Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
+    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout 4, FO4,
+    Tale of Two Wastelands, TTW,
+    Skyrim Special Edition, Skyrim SE, SSE">
+
     <meta name="description" content="Essential stability and performance mods, required for any modded setup.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -20,448 +29,439 @@
     <meta property="og:title" content="A Dragonborn's Fate">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://dragonbornsfate.moddinglinked.com">
-    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/card.webp">
+    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Essential stability and performance mods, required for any modded setup.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+    <meta name="darkreader-lock">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='clear-site-data' content='cache'>
+
+    <script src="js/imageViewer.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/responsiveTitle.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/logo.webp" alt="Logo">
-        <a href="./index.html">A Dragonborn's Fate</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html" class="active">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">DBF Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">DBFE Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-<!--                 <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Head Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">A Dragonborn's Fate</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="kofi">
-                    <a href="https://ko-fi.com/wall_sogb" target="_blank">
-                        <i class="fa fa-coffee"></i>
-                        Support us
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Dragonborns-Fate" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
 
-    <div class="deprecationBanner">
-        <p>
-            Due to constant game updates and the community split regarding which game versions to support, the guide has been discontinued and will be longer being updated.
-            <br>
-            The website will remain available for archival purposes.
-        </p>
-    </div>
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Utilities</h1>
-            <blockquote>Make sure the <strong>A Dragonborn's Fate</strong> profile is active before proceeding.</blockquote>
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Utilities</strong>.</li>
-            </ol>
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
 
-            <!-- SKSE -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/30379" target="_blank">
-                    <h2 id="skse">SKSE (Script Extender)</h2>
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
                 </a>
             </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Skyrim Script Extender (SKSE64) 2.2.3</b> (Manual download, first file).</li>
-                <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
-            </ol>
-            <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Setup</a> page.</blockquote>
-            <ol start="3">
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a> -->
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="card popup" id="donation">
+            <ul>
                 <li>
-                    After proper install, your <strong>Root Folder</strong> should look like this:
+                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
+                </li>
+                <li>
+                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <div class="card-yellow center" style="margin-top: 30px;">
+                <p>
+                    <b>IMPORTANT</b>:
                     <br>
-                    <img src="./img/root.webp" alt="Screenshot of the root folder showcasing correct SKSE install" id="skseRoot">
-                </li>
-            </ol>
-            Extends the scripting capabilities of the game.
+                    If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>.
+                    <br>
+                    If your issue is not addressed there, join the <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
+                </p>
+            </div>
 
-            <!-- Address Library -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/32444" target="_blank">
-                    <h2 id="addressLib">Address Library for SKSE Plugins</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - All in one (Anniversary Edition)</b></li>
-            </ul>
-            Resource required for other SKSE plugins.
-            <blockquote>After installing a mod, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
+            <span id="ManualDownloads" class="section">
+                <h2 onclick="location.href='#ManualDownloads'">Manual Downloads</h2>
 
-            <!-- Crash Logger -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/59818" target="_blank">
-                    <h2 id="crashLogger">Crash Logger SSE AE VR - PDB support</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - CrashLogger</b></li>
-            </ul>
-            Generates crash logs.
+                <div class="card">
+                    <p>
+                    <h3>Root Mods</h3>
+                    The following mods are special because they need to be installed directly into the game's <b>Root</b> folder, <strong>not through Mod Organizer 2</strong>.
+                    <br>
+                    Use the <strong>Manual Download</strong> and follow the instructions provided for each mod.
+                    <br>
+                    <br>
+                    Failing to install these mods correctly will result in issues.
+                    </p>
+                </div>
 
-            <!-- Display Tweaks -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/34705" target="_blank">
-                    <h2 id="displayTweaks">SSE Display Tweaks</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - SSE Display Tweaks</b></li>
-                <li>Once the mod has been installed, double-click on it in the left pane of MO2</li>
-                <li>In the <strong>INI-Files</strong> tab, select <code>SKSE/Plugins/SSEDisplayTweaks.ini</code></li>
-                <li>Change the following options:</li>
-                <ul>
-                    <li>Set <strong>FramerateLimit</strong> to a value you want the game FPS to be locked to (line 204)</li>
-                    If you set FramerateLimit to a value higher than 60:
+                <div class="card" id="SKSE" title="SKSE">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/30379?tab=files&file_id=462377" target="_blank">Skyrim Script Extender (SKSE64)</a></h3>
+                    Extends the scripting capabilities of the game.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li>Set <strong>DynamicUpdateBudget</strong> to <b>true</b> (line 542)</li>
-                        <li>Set <strong>BudgetMaxFPS</strong> to the <b>same value as InGameFPS</b> (line 561)</li>
+                        <li><b>Main Files</b> - Skyrim Script Extender (SKSE64) <strong>2.2.6</strong></li>
+                        <ol>
+                            <li>Open the downloaded archive and <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                        </ol>
+
+                        <div class="card-yellow">
+                            <p>
+                                If you do not know what the <b>Root</b> folder is, read the <a href="./setup.html#Terminology" target="_blank">Key Terminology</a>.</p>
+                        </div>
+
+                        <div class="card-red">
+                            <p>
+                                Downloading through the link button above is especially important when the guide specifies the exact version, like for this mod and more later.
+                            </p>
+                        </div>
+
+                        <ol start="2">
+                            <li>
+                                After proper install, your <b>Root</b> folder should look like this:
+                                <br>
+                                <div class="image-container width-40">
+                                    <img class="content-img" src="./img/Others/Root Folder.webp" alt="Root folder with a correct SKSE install">
+                                    <div class="resize-overlay expand"></div>
+                                </div>
+                            </li>
+                        </ol>
                     </ul>
-                    If you are using VRR (G-Sync or FreeSync):
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p>
+                    <h3>Making MO2 Detect SKSE</h3>
+                    <ol>
+                        <li>
+                            Once SKSE is installed as instructed above, <strong>restart MO2</strong> and you should see a new option in the top right drop-down:
+                            <br>
+                            <div class="image-container width-60">
+                                <img class="content-img" src="./img/Others/Start SKSE.webp" alt="Launching SKSE">
+                                <div class="resize-overlay expand"></div>
+                            </div>
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+            </span>
+
+            <span id="MO2Downloads" class="section">
+                <h2 onclick="location.href='#MO2Downloads'">Mod Organizer Downloads</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Managed</h3>
+                    From now on, select <strong>Mod Manager Download</strong> to download mods - this will make the file appear in MO2's <b>Downloads</b> tab, ready to be installed according to the <a href="./mo2.html#Instructions" target="_blank">instructions</a> earlier in the guide.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Utilities</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="AddressLibrary">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/32444?tab=files&file_id=470707&nmm=1" target="_blank">Address Library for SKSE Plugins</a></h3>
+                    Resource required by most SKSE plugins.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li>Set <strong>AllowTearing</strong> to <b>true</b> (line 109)</li>
-                        <li>Set <strong>FramerateLimitMode</strong> to <b>1</b> (line 213)</li>
+                        <li><b>Main Files</b> - All in one (1.6.X) <strong>11</strong></li>
                     </ul>
-                </ul>
-            </ol>
-            All-in-one solution for smooth FPS-unlocked gameplay, also includes many fixes and tweaks.
+                    </p>
+                </div>
 
-            <!-- Scaleform Translation++ -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/22603" target="_blank">
-                    <h2 id="scaleformTranslation">Scaleform Translation Plus Plus</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li>Main Files - ScaleformTranslationPP</b></li>
-            </ul>
-            Enables native translation nesting present within SkyUI.
+                <div class="card" id="MoreInformativeConsole">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/19250" target="_blank">More Informative Console</a></h3>
+                    Edits the console's UI to show a great deal of additional information.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - More Informative Console 1.2.2</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Whose Quest -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/23581" target="_blank">
-                    <h2 id="whoseQuest">Whose Quest Is It Anyway</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li>Main Files - Whose Quest Is It Anyway</b></li>
-            </ul>
-            Swaps the "Quest items cannot be removed..." message for a more descriptive message informing you which quest the item belongs to.
+                <div class="card" id="CrashLogger">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/59818" target="_blank">Crash Logger SSE AE VR - PDB support</a></h3>
+                    Generates crash logs, which can be found in the SKSE folder in the game's Documents folder.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - CrashLogger</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Papyrus Extender -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/22854" target="_blank">
-                    <h2 id="po3Extender">powerofthree's Papyrus Extender</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Papyrus Extender</b></li>
-                <li>You will be prompted with a FOMOD installer:
-                    <ol>
-                        <li>Install</li>
-                    </ol>
-                </li>
-            </ol>
-            SKSE plugin that extends scripting functionality.
+                <div class="card" id="DisplayTweaks">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/34705" target="_blank">SSE Display Tweaks</a></h3>
+                    All-in-one solution for smooth FPS-unlocked gameplay.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - SSE Display Tweaks</li>
+                        <ol>
+                            <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
+                            <li>In the <strong>INI-Files</strong> tab, open <span class="card-basic">SKSE/Plugins/SSEDisplayTweaks.ini</span></li>
+                            <li>Change only the following options:</li>
+                            <ul>
+                                <li>Set <b>EnableTearing</b> to <b>true</b> (line 37).</li>
+                            </ul>
 
-            <!-- PapyrusUtil -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/13048" target="_blank">
-                    <h2 id="papyrusUtil">PapyrusUtil SE - Modders Scripting Utility Functions</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - PapyrusUtil AE SE - Scripting Utility Functions</b></li>
-            </ul>
-            SKSE plugin adding several new scripts with native functions.
+                            <div class="card-yellow">
+                                <p>Enabling <b>AllowTearing</b> is a requirement for VRR, enabling it will not lead to any tearing because V-Sync is being used.</p>
+                            </div>
 
-            <!-- SPID -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/36869" target="_blank">
-                    <h2 id="spid">Spell Perk Item Distributor (SPID)</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Spell Perk Item Distributor</b></li>
-                <li>You will be prompted with a FOMOD installer:
-                    <ol>
-                        <li>Install</li>
-                    </ol>
-                </li>
-            </ol>
-            SKSE plugin that can be used to add spells/perks/items/shouts/packages/outfits/keywords/factions to every NPC in the game, using config files.
+                            <ul>
+                                <li>If you use <strong>VRR</strong><sup><a title="VRR" href="#annotation2">[2]</a></sup>, set <b>FramerateLimit</b> (line 204) to a number you can reach across the majority of the game<sup><a title="Bound" href="#annotation3">[3]</a></sup>, it has to be between 48<sup><a title="Range" href="#annotation4">[4]</a></sup> and <span class="card-basic">refresh rate - (refresh rate x 6.8%)</span>
+                                </li>
+                                <li>If you use <strong>fixed refresh rate</strong> (no VRR), set <b>FramerateLimit</b> (line 204) to your <span class="card-basic">refresh rate - 0.005</span> or divisors of your refresh rate, based on which is <strong>closest to your lowest FPS</strong>.</li>
+                                <ul>
 
-            <!-- KID -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/55728" target="_blank">
-                    <h2 id="kid">Keyword Item Distributor (KID)</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Keyword Item Distributor</b></li>
-                <li>You will be prompted with a FOMOD installer:
-                    <ol>
-                        <li>Install</li>
-                    </ol>
-                </li>
-            </ol>
-            SKSE plugin that distributes keywords to weapons/armor/magic effects/ingestibles and other items, using config files.
+                                    <div class="card-yellow">
+                                        <p>Some examples:
+                                        <ul>
+                                            <li>60Hz: 59.995 (VRR wouldn't be a thing)</li>
+                                            <li>144Hz: any value between 48 and 134 if VRR is enabled, 72 or 143.995 if using fixed refresh rate.</li>
+                                            <li>165Hz: anywhere between 48 and 154 if VRR is enabled, changing the refresh rate<a title="CustomResolution" href="#annotation5">[5]</a></sup> to 144 is recommened if using fixed refresh rate.</li>
+                                            <li>240Hz: anywhere between 48 and 224 if VRR is enabled. 60, 120, 180, or 239.995 if using fixed refresh rate.</li>
+                                        </ul>
+                                        <br>
+                                        Obviously, when using 240Hz as example, you wouldn't lock it as high as 180 or 239.995 if you cannot reach those FPS in most of the game. The goal is to have a smooth experience, not to be hardware bound.
+                                        </p>
+                                    </div>
 
-            <!-- JContainers -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/16495" target="_blank">
-                    <h2 id="jContainer">JContainers SE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - JContainers SE</b> (second file)</li>
-            </ul>
-            Extends Papyrus scripts with JSON.
+                                </ul>
+                                <li>If you set <b>InGameFPS</b> to a value higher than 60, do the following as well:</li>
+                                <ul>
+                                    <li>Set <b>DynamicUpdateBudget</b> to <b>true</b> (line 542).</li>
+                                </ul>
+                            </ul>
+                        </ol>
+                    </ul>
 
-            <!-- Recursion Monitor -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/76867" target="_blank">
-                    <h2 id="recursion">Recursion Monitor</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Recursion Fix</b></li>
-            </ul>
-            Detects broken papyrus scripts stuck in recursion and prevents huge framerate lag.
+                    <hr>
 
-            <!-- Papyrus Tweaks -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/77779" target="_blank">
-                    <h2 id="papyrusTweaks">Papyrus Tweaks NG</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Papyrus Tweaks 4.1.0</b></li>
-                <li><b>Miscellaneous Files - INI file for reference</b></li>
-            </ul>
-            Collection of fixes, tweaks and performance improvements for Skyrim's script engine. 100% configurable.
-            <blockquote>This is the first mod in the guide you need multiple files from, remember to <strong>Rename</strong> each file to match what it actually is.</blockquote>
+                    <span class="annotations">
+                        <ol start="1">
+                            <li id="annotation1">
+                                You can <strong>check if you are using VRR</strong> by going to the <b>Nvidia Control Panel</b> if you're on Nvidia or <b>Adrenalin's Display Settings</b> if you're on AMD. If the G-Sync tab is missing from NVCP, your display doesn't support it or doesn't have the feature enabled in the OSD.
+                                <br>
+                                <br>
+                                Nvidia users need to make sure that G-Sync is set to <b>Fullscreen</b> and that <b>Display Specific settings</b> are enabled, the <b>Windowed</b> option is problematic due to it being a hacky method. Both of the settings are wrongly named so they do not actually directly refer to the display method.
+                            </li>
+                            <li id="annotation2">
+                                You always want your FPS capped by a <strong>limiter instead of being hardware bound</strong>, this will reduce lag and increase power efficiency. It is also less jarring for the player when visual smoothness is the same across all scenes.
+                            </li>
+                            <li id="annotation3">
+                                The VRR range on most monitors starts at 48, but it might also start at 30 or 1. You can check this on <a href="https://www.nvidia.com/en-us/geforce/products/g-sync-monitors/specs/" target="_blank">Nvidia's page</a> or from your monitor's specifications. Windows 11 users can also check <b>Display information</b> in the <b>Advanced display</b> settings page.
+                            </li>
+                            <li id="annotation4">
+                                You can set a <strong>custom resolution (and refresh rate)</strong> in the <b>Nvidia Control Panel</b> or <b>Adrenalin</b> settings. This is useful for monitors that don't have an evenly divisible refresh rate and if VRR is not available. For example, if your monitor has a refresh rate of 165Hz, you can set it to 144Hz and use 72 as limiter instead of 55.
+                            </li>
+                        </ol>
+                    </span>
+                    </p>
+                </div>
 
-            <!-- More Informative Console -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/19250" target="_blank">
-                    <h2 id="moreInfoConsole">More Informative Console</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - More Informative Console 1.1.0 AE (1.6.640 plus)</b></li>
-            </ul>
-            This mod edits the UI to show a great deal of additional information on NPCs, items and other objects when the console is open.
+                <div class="card" id="MediaKeysFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/92948" target="_blank">Media Keys Fix SKSE</a></h3>
+                    Fixes media keys not working by removing the game's exclusive access to the keyboard.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Media Keys Fix</li>
+                        <ol>
+                            <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
+                            <li>In the <strong>INI-Files</strong> tab, open <span class="card-basic">SKSE/Plugins/MediaKeysFix.ini</span></li>
+                            <li>Change only the following options:</li>
+                            <ul>
+                                <li>Set <b>false</b> to <b>false</b> (line 4).</li>
+                            </ul>
+                        </ol>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- CPP -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/79975" target="_blank">
-                    <h2 id="cpp">ConsolePlusPlus</h2>
+                <div class="card" id="BetterAltTab">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/121342" target="_blank">Better AltTab</a></h3>
+                    Mutes game audio when alt-tabbed and shows cursor when hovering over the window.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Better AltTab</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="DPIFix" title="DPI Fix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/95740" target="_blank">DPI Scaling Fix</a></h3>
+                    Fixes the game's window being scaled to the incorrect size when using display scaling other than 100%.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - DPI Scaling Fix</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
                 </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - ConsolePlusPlus</b></li>
-                <li>You will be prompted with a FOMOD installer:
-                    <ol>
-                        <li>Install</li>
-                    </ol>
-                </li>
-            </ul>
-            Adds copy paste into console and caches console commands between game sessions.
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
         </div>
 
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./mo2.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Mod Organizer 2</span></a>
-            <a href="./bugfix.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Bug Fixes</span></a>
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#skse">SKSE</a>
-            </li>
-            <li>
-                <a href="#addressLib">Address Library</a>
-            </li>
-            <li>
-                <a href="#crashLogger">Crash Logger</a>
-            </li>
-            <li>
-                <a href="#displayTweaks">Display Tweaks</a>
-            </li>
-            <li>
-                <a href="#scaleformTranslation">Scaleform Translation++</a>
-            </li>
-            <li>
-                <a href="#whoseQuest">Whose Quest</a>
-            </li>
-            <li>
-                <a href="#po3Extender">Papyrus Extender</a>
-            </li>
-            <li>
-                <a href="#papyrusUtil">PapyrusUtil</a>
-            </li>
-            <li>
-                <a href="#spid">SPID</a>
-            </li>
-            <li>
-                <a href="#kid">KID</a>
-            </li>
-            <li>
-                <a href="#jContainer">JContainers</a>
-            </li>
-            <li>
-                <a href="#recursion">Recursion Monitor</a>
-            </li>
-            <li>
-                <a href="#papyrusTweaks">Papyrus Tweaks</a>
-            </li>
-            <li>
-                <a href="#moreInfoConsole">More Informative Console</a>
-            </li>
-            <li>
-                <a href="#cpp">ConsolePlusPlus</a>
-            </li>
-        </ul>
+    <footer>ModdingLinked 2025</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
     </div>
+
 </body>
 
 </html>

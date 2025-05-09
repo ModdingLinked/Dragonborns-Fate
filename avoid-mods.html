@@ -5,266 +5,278 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logo.webp">
-    <link rel="canonical" href="https://dragonbornsfate.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    <link rel="icon" href="img/Coco/Head Logo.webp">
+
     <title>Mods to Avoid | A Dragonborn's Fate</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack, Avoid, Don't use These, Bad Mods, Broken Mods, Broken">
-    <meta name="description" content="List of many popular mods that are outdated/broken.">
+
+    <meta name="keywords" content="
+    Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
+    Stable, Stability, Performance, Fix, Fixes, FPS,
+    Fast, Easy, Beginner,
+    Nexus, Nexus Mods, NexusMods,
+    Wabbajack, WJ, Installer,
+    Mod Organizer, Mod Organizer, MO2,
+    Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
+    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout 4, FO4,
+    Tale of Two Wastelands, TTW,
+    Skyrim Special Edition, Skyrim SE, SSE">
+
+    <meta name="description" content="List of many popular mods that are outdated or broken.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="A Dragonborn's Fate">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://dragonbornsfate.moddinglinked.com">
-    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="List of many popular mods that are outdated/broken.">
+    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:description" content="List of many popular mods that are outdated or broken.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+    <meta name="darkreader-lock">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='clear-site-data' content='cache'>
+
+    <script src="js/popup.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/responsiveTitle.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/logo.webp" alt="Logo">
-        <a href="./index.html">A Dragonborn's Fate</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Head Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">A Dragonborn's Fate</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
+        </div>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
             <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">DBF Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">DBFE Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
             <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html" class="active">Mods to Avoid</a>
-                </li>
-<!--                 <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
-        </div>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a> -->
+            </p>
+            <p class="sidebar-padder"></p>
             <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="card popup" id="donation">
             <ul>
                 <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
                 </li>
                 <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
                 </li>
             </ul>
         </div>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="kofi">
-                    <a href="https://ko-fi.com/wall_sogb" target="_blank">
-                        <i class="fa fa-coffee"></i>
-                        Support us
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Dragonborns-Fate" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
+        <div class="content">
+
+            <span id="ModsToAvoid" class="section">
+
+                <h2 onclick="location.href='#ModsToAvoid'">Mods to Avoid</h2>
+
+                <div class="card-yellow">
+                    <p>
+                        This list is far from comprehensive. There are still tons of mods not listed here that will break your game. This is why it is very important to have some modding knowledge before adding any mods.
+                        <br>
+                        Always view every plugin you install with <a href="https://moddinglinked.com/xedit.html" target="_blank">SSEEdit</a> to check for conflicts.
+                    </p>
+                </div>
+
+                <div class="expander-top">
+                    <p>
+                    <h3>Bugfix & Optimization Mods</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom">
+                    <p>
+                    <h3>Grass FPS Booster</h3>
+                    Includes subjective tweaks and does not improve performance at all<!--, as tested <a href="link to ml benchmarks" target="_blank">here</a>-->. Grass performance is dependent on the grass mod used the the density setting. Generating <!-- Link grass cache here --> grass cache can also result in less grass overall, improving performance.
+                    </p>
+                </div>
+
+                <div class="expander-top">
+                    <p>
+                    <h3>Visual Mods</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom">
+                    <p>
+                    <h3>Oversized textures</h3>
+                    Based on the object size and how the texture is wrapped around it, you should pick textures with a reasonable resolution and avoid the very big ones also based on your display resolution. Keep in mind that the textures will not be displayed with their full resolution at all times, in fact they will be scaled down because of <a href="https://imgsli.com/MTMwNjU2" target="" _blank>mipmaps</a> based on distance and other factors, as shown with these sliders. Just for reference, a maximum of 2K at 1080p is a pretty safe bet in terms of balance.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>AI-upscaled texture packs</h3>
+                    Mods upscaled with AI or other lazy techniques generally are not worth the higher VRAM usage.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>ELFX and ELFX Shadows</h3>
+                    Both are unsupported and far less patches are available for them compared to <a href="https://www.nexusmods.com/skyrimspecialedition/mods/43158" target="_blank">Lux</a>, which is visually superior for those who want a complete lighting rework.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>HDT-SMP</h3>
+                    Completely replaced and superseded <a href="https://www.nexusmods.com/skyrimspecialedition/mods/57339" target="_blank">Faster HDT-SMP</a>.
+                    </p>
+                </div>
+
+                <div class="expander-top">
+                    <p>
+                    <h3>Miscellaneous</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom">
+                    <p>
+                    <h3>Sinitar's Modlists</h3>
+                    If you have a few hours and want more information about Sinitar's lies, scamming and lack of modding knowledge, check out <a href="https://docs.google.com/document/d/1F1-6lF8dI4i2Zz8iT-bv_Ci1VO9MSU4MiSUrT5JqgHA/edit" target="_blank">this</a> <i>twenty-eight</i> page essay that goes into excruciating detail about it.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Achievements Mods Enabler</h3>
+                    Achievements are already enabled by <a href="https://www.nexusmods.com/skyrimspecialedition/mods/17230" target="_blank">Engine Fixes</a>.
+                    </p>
+                </div>
+            </span>
+
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
         </div>
     </div>
 
-    <div class="deprecationBanner">
-        <p>
-            Due to constant game updates and the community split regarding which game versions to support, the guide has been discontinued and will be longer being updated.
-            <br>
-            The website will remain available for archival purposes.
-        </p>
-    </div>
-
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Mods to Avoid</h1>
-            <blockquote>
-                This list is far from comprehensive. There are still tons of mods not listed here that will break your game. This is why it is very important to have some modding knowledge before adding any mods.
-                <br>
-                Always view every plugin you install with <a href="https://moddinglinked.com/xedit.html" target="_blank">SSEEdit</a> to check for conflicts.
-            </blockquote>
-            <!-- Oversized Textures -->
-            <p>
-                <strong>Oversized textures</strong>
-                <br>
-                Based on the object size and how the texture is wrapped around it, you should pick textures with a reasonable resolution and avoid the very big ones also based on your display resolution. Keep in mind that the textures will not be displayed with their full resolution at all times, in fact they will be scaled down because of <a href="https://imgsli.com/MTMwNjU2" target="" _blank>mipmaps</a> based on distance and other factors, as shown with these sliders. Just for reference, a maximum of 2K at 1080p is a pretty safe bet in terms of balance.
-            </p>
-
-            <!-- AI Upscales -->
-            <p>
-                <strong>AI-upscaled texture packs</strong>
-                <br>
-                Mods upscaled with AI or other lazy techniques generally are not worth the higher VRAM usage.
-            </p>
-
-            <!-- Timescale -->
-            <p>
-                <strong>Any mods that edit timescale</strong>
-                <br>
-                Vanilla AI packages and scripts are based on the vanilla timescale, and can break and/or run when they aren't supposed to if the timescale is changed.
-            </p>
-
-            <!-- Sinitar -->
-            <p>
-                <strong>Sinitar's Modlists</strong>
-                <br>
-                If you have a few hours and want more information about Sinitar's lies, scamming and lack of modding knowledge, check out <a href="https://docs.google.com/document/d/1F1-6lF8dI4i2Zz8iT-bv_Ci1VO9MSU4MiSUrT5JqgHA/edit" target="_blank">this</a> <i>twenty-eight</i> page essay that goes into excruciating detail about it.
-            </p>
-
-            <!-- ENBoost -->
-            <p>
-                <strong>ENBoost</strong>
-                <br>
-                Completely unnecessary on Skyrim SE and unsupported.
-            </p>
-
-            <!-- FNIS -->
-            <p>
-                <strong>Fores New Idles</strong>
-                <br>Unsupported and dated, lots of new animation mods will not work with this. Use <a href="https://www.nexusmods.com/skyrimspecialedition/mods/60033" target="_blank">Nemesis</a> instead.
-            </p>
-
-            <!-- Achivements Enabler -->
-            <p>
-                <strong>Achievements Mods Enabler</strong>
-                <br>Achievements are already enabled by <a href="https://www.nexusmods.com/skyrimspecialedition/mods/17230" target="_blank">Engine Fixes</a>.
-            </p>
-
-            <!-- HDT-SMP -->
-            <p>
-                <strong>HDT-SMP</strong>
-                <br>Completely replaced and superseded <a href="https://www.nexusmods.com/skyrimspecialedition/mods/57339" target="_blank">Faster HDT-SMP</a>.
-            </p>
-
-            <!-- Breezehome -->
-            <p>
-                <strong>Breezehome (by Elianora)</strong>
-                <br>Has lots of errors and deleted navmeshes that will cause crashing, do not use without <a href="https://www.nexusmods.com/skyrimspecialedition/mods/48931" target="_blank">this patch</a>.
-            </p>
-
-            <!-- Parallax -->
-            <p>
-                <strong>Parallax</strong>
-                <br>Any mod applying parallax on meshes will have to replace them, often reverting important fixes. Not easy to manage for beginners and they are not worth the visual improvement since a properly made normal map can still look good. Terrain parallax is way easier to manage and will not cause issues, you can safely add it on top of this guide.
-            </p>
-
-            <!-- AMoT -->
-            <p>
-                <strong>A Matter of Time</strong>
-                <br>Has a broken plugin that contains HITME records. Resave in the Creation Kit for a fix, support will not be provided.
-            </p>
-
-            <!-- Pre-generated LOD -->
-            <p>
-                <strong>LOD billboards and pre-generated terrain LOD</strong>
-                <br><a href="https://www.nexusmods.com/skyrimspecialedition/mods/32382" target="_blank">DynDOLOD 3</a> generates object and tree LOD that will actually match your modlist with far better results than what resources can provide.
-                <br>
-                <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-95-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">SSELODGen</a> generates configurable terrain LOD.
-            </p>
-
-            <!-- SSE Fixes -->
-            <p>
-                <strong>SSE Fixes</strong>
-                <br>Mostly replaced by <a href="https://www.nexusmods.com/skyrimspecialedition/mods/17230" target="_blank">Engine Fixes</a>, the only thing missing is the mutex fix, which you realistically only benefit from if you have a very large amount of plugins, way past what the guide has. If you do want to use this mod, then disable all of it's functions in the configuration file except for the mutex fix.
-            </p>
-
-            <!-- Summerset Isle -->
-            <p>
-                <strong>Summerset Isle</strong>
-                <br>Horribly made mod.
-            </p>
-        </div>
-    </div>
+    <footer>ModdingLinked 2025</footer>
 </body>
 
 </html>

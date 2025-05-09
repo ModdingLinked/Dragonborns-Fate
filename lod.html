@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/Coco/Head Logo.webp">
+
+    <title>LOD Guide | A Dragonborn's Fate</title>
+
+    <meta name="keywords" content="
+    Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
+    Stable, Stability, Performance, Fix, Fixes, FPS,
+    Fast, Easy, Beginner,
+    Nexus, Nexus Mods, NexusMods,
+    Wabbajack, WJ, Installer,
+    Mod Organizer, Mod Organizer, MO2,
+    Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
+    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout 4, FO4,
+    Tale of Two Wastelands, TTW,
+    Skyrim Special Edition, Skyrim SE, SSE,
+    Level Of Detail, LOD, xLODGen, DynDOLOD, TexGen, Terrain LOD, Object LOD, Tree LOD">
+
+    <meta name="description" content="General information on LOD and how to regenerate it with SSELODgen, DynDOLOD, and other tools.">
+    <meta http-equiv='content-language' content='en-us'>
+    <meta name="twitter:card" value="summary_large_image">
+    <meta property="og:site_name" content="ModdingLinked">
+    <meta property="og:title" content="A Dragonborn's Fate">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://themidnightride.moddinglinked.com">
+    <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:description" content="General information on LOD and how to regenerate it with SSELODgen, DynDOLOD, and other tools.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+    <meta name="darkreader-lock">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='clear-site-data' content='cache'>
+
+    <script src="js/imageViewer.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/responsiveTitle.js"></script>
+    <script src="js/imageSlider.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/textIcons.css">
+    <link rel="stylesheet" href="css/imageSlider.css">
+</head>
+
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Head Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">A Dragonborn's Fate</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
+        </div>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="card popup" id="donation">
+            <ul>
+                <li>
+                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
+                </li>
+                <li>
+                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <span id="Overview" class="section">
+                <h2 onclick="location.href='#Overview'">Overview</h2>
+
+                <div class="card" id="UnderstandingLOD" title="Understanding LOD">
+                    <p>
+                    <h3>Understanding LOD</h3>
+                    LOD stands for <strong>Level Of Detail</strong> - a system used to represent distant objects with simplified meshes and textures to improve performance. In Bethesda games, LOD primarily refers to <strong>Cell LOD</strong>, which represents whole "chunks" of land in the distance.
+
+                    <p>Cell LOD is divided into three main categories:</p>
+                    <ol>
+                        <li>
+                            <strong>Object LOD</strong> - Simplified versions of buildings, rocks, and other static objects. Has only one quality level and generates relatively quickly.
+                        </li>
+                        <li>
+                            <strong>Terrain LOD</strong> - Represents the terrain of cell groups, with multiple quality levels that change based on distance (LOD4 4x4, LOD8 8x8, etc.). Takes the longest to generate due to its complexity.
+                        </li>
+                        <li>
+                            <strong>Tree LOD</strong> - 2D planes representing vegetation. Despite the name, works best for small flora rather than actual trees, which are often handled by Object LOD.
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="WhyGenerate" title="Why Generate Custom LOD?">
+                    <p>
+                    <h3>Why Generate Custom LOD?</h3>
+                    The vanilla game's LOD is pre-generated and static, which means it can't reflect changes made by mods to terrain or objects. Custom LOD generation creates meshes that match your modded game, providing:
+
+                    <ul>
+                        <li>Increased visual consistency between nearby and distant objects.</li>
+                        <li>More objects visible in the distance.</li>
+                        <li>LOD textures that match your installed texture mods.</li>
+                        <li>Improved quality over the low-detail vanilla LOD.</li>
+                        <li>Filled gaps where objects previously appeared out of nowhere during cell transitions.</li>
+                    </ul>
+
+                    <div class="card-yellow">
+                        <p>
+                            A Dragonborn's Fate (even with DBF Extended) does not strictly require terrain LOD regeneration, but this guide covers both object and terrain LOD to accommodate custom modlists.
+                        </p>
+                    </div>
+
+                    <div class="card-green">
+                        <p>
+                            While custom LOD significantly improves visual quality, it does come with a minor performance cost. The trade-off is generally worth it for most modern systems.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="LODComparison" title="LOD Comparison">
+                    <p>
+                    <h3>LOD Comparison</h3>
+                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.
+                    </p>
+
+                    <div class="image-slider">
+                        <div class="slider-select-container">
+                            <select class="slider-select">
+                                <option value="comparison-1">Comparison 1</option>
+                                <option value="comparison-2">Comparison 2</option>
+                                <option value="comparison-3">Comparison 3</option>
+                                <option value="comparison-4">Comparison 4</option>
+                                <option value="comparison-5">Comparison 5</option>
+                            </select>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider-before">
+                                <img class="slider-img" src="./img/LOD/Comparison/1 - Before.webp" alt="Before image">
+                            </div>
+                            <img class="slider-img slider-after" src="./img/LOD/Comparison/1 - After.webp" alt="After image">
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="slider-labels">
+                            <span class="slider-label-before">Vanilla Game</span>
+                            <span class="slider-label-after">Generated LOD</span>
+                        </div>
+                    </div>
+                </div>
+
+            </span>
+
+            <span id="Preparation" class="section">
+                <h2 onclick="location.href='#Preparation'">Preparation</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>LOD</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="InstallingResources" title="Installing LOD Resources">
+                    <p>
+                    <h3>Installing LOD Resources</h3>
+                    Install in the following order:
+                    <ol>
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/56367" target="_blank">A Clear Map of Skyrim and Other Worlds</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - A Clear Map of Skyrim and Other Worlds FOMOD</li>
+                                <li>You will be prompted with a FOMOD installer:
+                                    <ol>
+                                        <li>DynDOLOD 3</li>
+                                        <li>With DynDOLOD 3</li>
+                                        <li>Remove or keep clouds based on your preference</li>
+                                        <li>Install</li>
+                                    </ol>
+                                </li>
+                            </ul>
+
+                            <div class="card-yellow">
+                                <p>
+                                    After installing ACMoS, you should move its plugin right above <b>Weather of World.esp</b>. This way, Weather of the World will overwrite ACMoS and the map will look better.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/52897" target="_blank">DynDOLOD Resources SE 3</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - DynDOLOD Resources SE 3.00</li>
+                                <li>You will be prompted with a FOMOD installer:
+                                    <ol>
+                                        <li>Next</li>
+                                        <li>Solitude Occlusion Planes</li>
+                                        <li>High Hrothgar Windows Glow</li>
+                                        <li>DLC2 Vvardenfell 3D Plume</li>
+                                        <li>Vvardenfell 3D Plume</li>
+                                        <li>Install</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/57264" target="_blank">DynDOLOD DLL SE</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - 1 - DynDOLOD DLL SE - Scripts</li>
+                                <li><b>Main Files</b> - 2 - DynDOLOD DLL SE - Steam - 1.6.1170</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/79197" target="_blank">Far Object LOD Improvement Project SSE</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - Far Object LOD Improvement Project SSE</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/41857" target="_blank">Majestic Landscapes</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - Noise DDS</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">A Dragonborn's Fate Resources</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - DBF LOD Guide - Whiter Snow LOD Material</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card-red center">
+                    <p>
+                        <b>IMPORTANT</b>:
+                        <br>
+                        Enable all resources in MO2 before continuing.
+                    </p>
+                </div>
+
+                <div class="card" id="PreGeneratedLOD" title="Pre-Generated LOD">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">Pre-Generated LOD</a></h3>
+                    If you use a <strong>DBFE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using these files. The Object LOD file also includes Tree LOD, while the other only contains Terrain LOD to reduce bandwith required for upload and download.
+                    <br>
+                    <br>
+                    Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need), then move <strong>dyndolod.esp to the bottom</strong> of your load order. You can then ignore the rest of this guide.
+                    </p>
+                </div>
+            </span>
+
+            <span id="Terrain" class="section">
+                <h2 onclick="location.href='#Terrain'">Terrain LOD</h2>
+
+                <div class="card" id="xLODGen" title="xLODGen">
+                    <p>
+                    <h3>xLODGen</h3>
+                    xLODGen is an xEdit-based tool that allows you to generate LOD meshes for your game. Similarly to xEdit, it has a single executable that can be be turned into a game specific version by adding arguments.
+
+                    <div class="card-red">
+                        <p>
+                            Generating Terrain LOD is <u>very</u> CPU intensive and can take a long time depending on the settings and your CPU's multithreaded performance.
+                            <br>
+                            <br>
+                            It's needed <u>only</u> if you have mods that edit the landscape or landscape textures. But the visual improvement is big regardless.
+                        </p>
+                    </div>
+
+                    <ol>
+
+                        <li>Download, install, and enable <a href="https://www.nexusmods.com/skyrimspecialedition/mods/54680?tab=files&file_id=401159&nmm=1" target="_blank">SSE Terrain Tamriel Extend</a>, then place its plugin at the top of your load order (right below <b>_ResourcePack.esl</b>).</li>
+                    </ol>
+
+                    <div class="card-green">
+                        <p>
+                            It is recommended to lock this plugin's load order (right-click on it) in the correct position, so that it always stays at the top of your load order for future xLODGen runs.
+                        </p>
+                    </div>
+
+                    <ol start="2">
+                        <li>Download, install, and enable <a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">DBF LOD Guide - Temp Snow Replacement</a>.</li>
+                        <li>Download the latest <strong>xLODGen</strong> from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
+                        <li>Once the download has finished, extract the contents of the archive anywhere outside of the default Windows folders.</li>
+                        <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables" class="mo2-icon"> button at the top of MO2 to open the executables menu.</li>
+                        <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
+                        <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGenx64.exe</strong>.</li>
+                        <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-SSE -O:"C:\Output"</span></li>
+
+                        <div class="card-green">
+                            <p>
+                                This argument will send the LOD output to a folder called <b class="card-basic">Output</b> on your <b>C</b> drive (the drive Windows is installed on).
+                                <br>
+                                You can change this path if you would prefer the files to be generated elsewhere (do not use a UAC protected folder or the game folder).
+                                <br>
+                                <br>
+                                Make sure that the output folder is empty before generating LOD.
+                            </p>
+                        </div>
+
+                        <li>Close the <b>Modify Executables</b> menu and <strong>run xLODGen</strong> from the drop-down.</li>
+                        <li>In the right pane, check <strong>only Terrain LOD</strong>.</li>
+                        <li>Copy all settings from the image below:</li>
+
+                        <div class="image-container width-60">
+                            <img class="content-img" src="./img/LOD/Main Settings.webp" alt="Main LOD Settings - Terrain">
+                            <div class="resize-overlay expand"></div>
+                        </div>
+
+                        <div class="card-red">
+                            <p>
+                                Object and Tree LOD will be done with DynDOLOD, xLODGen is only used for Terrain LOD.
+                            </p>
+                        </div>
+
+                        <li>Then click <b>Settings for</b> to select the next LOD level (LOD 8), and copy these settings for each of them:</li>
+                        <ul>
+                            <li><b>LOD 8</b>:</li>
+                            <div class="image-container width-60">
+                                <img class="content-img" src="./img/LOD/Land 8 Settings.webp" alt="Landscape LOD Settings - Level 8">
+                                <div class="resize-overlay expand"></div>
+                            </div>
+                            <li><b>LOD 16</b>:</li>
+                            <div class="image-container width-60">
+                                <img class="content-img" src="./img/LOD/Land 16 Settings.webp" alt="Landscape LOD Settings - Level 16">
+                                <div class="resize-overlay expand"></div>
+                            </div>
+                            <li><b>LOD 32</b>:</li>
+                            <div class="image-container width-60">
+                                <img class="content-img" src="./img/LOD/Land 32 Settings.webp" alt="Landscape LOD Settings - Level 32">
+                                <div class="resize-overlay expand"></div>
+                            </div>
+                        </ul>
+
+                        <div class="expander-top">
+                            <p>
+                            <h3>Technical Details</h3>
+                            <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                            </p>
+                        </div>
+                        <div class="expander-bottom">
+                            <h3>Landscape Settings</h3>
+                            <ul>
+                                <li><strong>Protect borders</strong>: Prevents ugly terrain drops at the cell borders.</li>
+                                <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
+                                <li><strong>Bake normal-maps</strong>: Roughens the terrain LOD textures to match the actual terrain's normal map.</li>
+                                <li><strong>Mipmap</strong>: Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost. Skyrim's terrain LOD uses mipmaps only on LOD4 diffuse textures.</li>
+                                <li><strong>Quality</strong>: This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the amount of triangles in the mesh.</li>
+                                <li><strong>Optimize Unseen</strong>: Reduces the amount of triangles of geometry below a configurable height, this is meant to optimize unseen areas underwater. Setting this to 550 for LOD32 gets rid of the map's spiky terrain. Other values may work, 550 is known to be good.</li>
+                            </ul>
+
+                            <hr>
+
+                            <h3>Snow Fix</h3>
+                            <p>A common issue when regenerating terrain LOD32, is snow being too green and/or grey. This is due to the vanilla snow textures not being bright enough. This guides solves the problem by loading a temporary replacement for a few snow textures. This, coupled with a whiter <a href="https://dyndolod.info/Help/Snow-Ash-LOD-Shader" target="_blank">LOD snow shader</a>, should result in a map with the same terrain colors as vanilla, while improving detail.</p>
+                        </div>
+
+                        <div class="card-yellow">
+                            <p>
+                                All LOD levels are generated at once! You don't have to do anything besides configuring every level!
+                                <br>
+                                This is not something that you pick and choose - those are not quality "settings", just how the game works.
+                            </p>
+                        </div>
+
+                        <li>Click <strong>Generate</strong>.</li>
+                        <li>When complete, the log will stop and at the end you will see a message saying "LOD generation done", you can now close the program.</li>
+                        <li><strong>Disable xLODGen Resource - SSE Terrain Tamriel</strong> in Mod Organizer 2.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="InstallingLOD" title="Installing LOD">
+                    <p>
+                    <h3>Installing the LOD</h3>
+                    <ol>
+                        <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
+                        <li>Title the mod <span class="card-basic">Terrain LOD</span></li>
+                        <li>Navigate to where the LOD files were generated and select both the <b>textures</b> and <b>meshes</b> folders.</li>
+                        <li>Cut them to the <b>Terrain LOD</b> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                    </ol>
+                    </p>
+
+                    <div class="card-red">
+                        <p>
+                            <b>IMPORTANT</b>:
+                            <br>
+                            Do not disable the remaining LOD resources! The game needs them for the LOD to work properly.
+                            <br>
+                            <br>
+                            Generated LOD must <strong>always</strong> be loaded last in your modlist!
+                            <br>
+                            <br>
+                            If it happens to be overwritten by any mod, the LOD in-game will be <strong>broken</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" id="GeneratingPaths">
+                    <p>
+                    <h3>Generating Paths</h3>
+                    <ol>
+                        <li>Download <a href="https://www.nexusmods.com/skyrimspecialedition/mods/79205" target="_blank">ACMOS Road Generator</a></li>
+                        <li>Once the download has finished, extract the contents of the archive.</li>
+                        <li>Run <strong>ACMOS Road Generator.exe</strong>.</li>
+                        <li>In Mod Organizer 2, right-click on your <strong>Terrain LOD</strong> and select <b>Open in Explorer</b>.</li>
+                        <li>From from newly opened window, <strong>copy the file path</strong>.</li>
+                        <li>Click <b>Browse...</b> next to <b>Path to LOD</b>, then paste the path you just copied.</li>
+                        <li>Click the <strong>Generate</strong> button.</li>
+                        <li>Click <strong>Yes</strong> at the <b>Overwrite LOD textures</b> prompt.</li>
+                        <li>Once the process is complete, click <strong>No</strong> at the <b>Zip?</b> prompt.</li>
+                        <li>When complete, you should get an <b>All Done</b> prompt, press OK and close the program.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="PackingTerrainLOD" title="Packing Terrain LOD">
+                    <p>
+                    <h3>Packing Terrain LOD</h3>
+                    This step is not necessary, but will reduce loading time of LOD assets by the game by packing them into optimized archive files (BSAs). This translates to less stuttering when entering new areas.
+                    <br>
+                    <ol>
+                        <li>Download <a href="https://www.nexusmods.com/skyrimspecialedition/mods/23316" target="_blank">Cathedral Assets Optimizer</a>.</li>
+                        <li>Once the download has finished, extract the contents of the archive.</li>
+                        <li>Run <strong>Cathedral_Assets_Optimizer.exe</strong>.</li>
+                        <li>Tick the <b>Create BSA</b> box.</li>
+                        <li>In Mod Organizer 2, right-click on your <strong>Terrain LOD</strong> and select <b>Open in Explorer</b>.</li>
+                        <li>From from newly opened window, copy the file path, then paste it into CAO (right below the profile drop-down).</li>
+                        <li>Click the <strong>Run</strong> button.</li>
+                        <li>Once the process is complete, you will see a message saying <b>Done</b> at the bottom.</li>
+                        <li>If everything was done correctly, the Terrain LOD folder should have BSA files and the relative plugin for loading them.</li>
+                        <li>Click <strong>F5</strong> while you are on MO2 without any menu open, and make sure the aforemention plugin is enabled in your load order.</li>
+                    </ol>
+                    <div class="card-red">
+                        <p>
+                            <b>IMPORTANT:</b>
+                            <br>
+                            To properly use BSA files, you must keep the following in mind:
+                        <ul>
+                            <li>
+                                BSA files are loaded by plugins they share their name with - hence why BSAs created here start with "<b>Terrain LOD</b>".
+                                <br>
+                                This also means that BSAs are loaded in the same order as their plugins.
+                            </li>
+                            <li>BSAs belonging to the same plugin are loaded in an alphanumeric order, same one you will get when sorting by <b>Name</b> in <b>File Explorer</b>.</li>
+                            <li>
+                                Due to <b>Archive Invalidation</b>, loose files will always override files in BSAs.
+                                <br>
+                                <br>
+                                Because of this, you must pay attention to files added by other mods. Watch out for following folders:
+                                <ul>
+                                    <li><span class="card-basic">meshes\terrain</span></li>
+                                    <li><span class="card-basic">textures\terrain</span></li>
+                                </ul>
+                                You can hide them in MO2 to prevent them from being loaded.
+                                <br>
+                                <br>
+                                You can enable <b>Enable archives parsing</b> in <b>Mod Organizer 2 -> Settings -> Workarounds</b> to see which mods are overwriting your BSAs.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                    </p>
+                </div>
+            </span>
+
+            <span id="ObjectAndTree" class="section">
+                <h2 onclick="location.href='#ObjectAndTree'">Object and Tree LOD</h2>
+
+                <div class="card" id="TexGen" title="TexGen">
+                    <p>
+                    <h3>TexGen</h3>
+                    <ol>
+                        <li>Download the latest <a href="https://www.nexusmods.com/skyrimspecialedition/mods/68518?" target="_blank">DynDOLOD 3 Alpha</a>.</li>
+                        <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
+                        <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                        <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
+                        <li>From the pop-up, navigate to where TexGen is installed and select <strong>TexGenx64.exe</strong>.</li>
+                        <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-SSE</span></li>
+                        <li>Close the <b>Modify Executables</b> menu and <strong>run TexGen</strong> from the drop-down.</li>
+                        <li>Enable <b>HD Tree</b>.</li>
+                    </ol>
+
+                    <div class="card-green">
+                        <p>
+                            HD Tree billboards are a pre-requirement for trees in Object LOD - this achieves better visuals and works around limitations of the Tree LOD system. More information can be found in the <a href="https://dyndolod.info/Help/Ultra-Tree-LOD" target="_blank">DynDOLOD 3 wiki</a>.
+                        </p>
+                    </div>
+
+                    <ol start="8">
+                        <li>Click <strong>Start</strong>.</li>
+                        <li>When complete, you will see a message saying "TexGen completed successfully", click <strong>Zip and Exit</strong>.</li>
+                        <li>Install the TexGen output by clicking the <img src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
+                        <li>From the new window, navigate to the DynDOLOD folder you installed in step 2, then double-click <b>TexGen_Output.zip</b> and install it.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="DynDOLOD" title="DynDOLOD">
+                    <p>
+                    <h3>DynDOLOD</h3>
+                    <ol>
+                        <li>Open the folder where you extracted DynDOLOD, then open <span class="card-basic">Edit Scripts\DynDOLOD\DynDOLOD_SSE.ini</span></li>
+                        <li>Change only the following options:</li>
+                        <ul>
+                            <li>Set <b>Expert</b> to <b>1</b> (line 11).</li>
+                            <li>Set <b>Level32</b> to <b>1</b> (line 45).</li>
+                        </ul>
+                        <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                        <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
+                        <li>From the pop-up, navigate to where TexGen is installed and select <strong>DynDOLODx64.exe</strong>.</li>
+                        <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-SSE</span></li>
+                        <li>Close the <b>Modify Executables</b> menu and <strong>run DynDOLOD</strong> from the drop-down.</li>
+                        <li>Configure DynDOLOD with the following settings:</li>
+                    </ol>
+
+                    <div class="card-yellow">
+                        <p>
+                            These settings are the recommended ones for the modlist, but you can change them to your liking and based on the performance of your system.
+                        </p>
+                    </div>
+
+                    <ol start="8">
+                        <ul>
+                            <li>In the top-left corner, right-click the list of worldspaces and <b>Select all</b>.</li>
+                            <li>Select the <b>High</b> preset.</li>
+                            <li>Enable <b>Candles</b> and <b>FXGlow</b>.</li>
+                            <li>Switch from <b>Tree LOD</b> to <b>Ultra</b>.</li>
+                            <li>Enable Terrain underside.</li>
+                            <li>Enable <b>Glow windows</b> and set it to <b>High</b>.</li>
+                            <li>In the <b>Mesh and Reference rules</b> list, scroll to the bottom and double click on <b>tree</b>.</li>
+                            <li>Set its LOD options to:
+                                <ul>
+                                    <li>LOD4: Level0</li>
+                                    <li>LOD8: Billboard4</li>
+                                    <li>LOD16: Billboard4</li>
+                                    <li>LOD32: Billboard6</li>
+                                </ul>
+                            </li>
+                            <li>Still in the list, double click <b>\</b> and set its LOD32 to Level0.</li>
+                        </ul>
+                    </ol>
+
+                    <div class="card-green">
+                        <p>
+                            The customized rules will improve the look of trees and add objects to the map menu (LOD32). Once again, more information can be found in the <a href="https://dyndolod.info/Help/Advanced-Mode" target="_blank">DynDOLOD 3 wiki</a>.
+                        </p>
+                    </div>
+
+                    <ol start="9">
+                        <li>Click <strong>Generate</strong>.</li>
+                        <li>When complete, you will see a message saying "DynDOLOD completed successfully", click <strong>Zip and Exit</strong>.</li>
+                        <li>Install the DynDOLOD output by clicking the <img src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
+                        <li>From the new window, navigate to the DynDOLOD folder you installed in step 2, then double-click <b>DynDOLOD_Output.zip</b> and install it.</li>
+                        <li>Set up the load order as follows:
+                            <ul>
+                                <li><strong>DynDOLOD.esm</strong> should be the <strong>last</strong> ESM plugin (written in bold).</li>
+                                <li><strong>DynDOLOD.esp</strong> followed by <strong>Occlusion.esp</strong> should be at the <strong>bottom</strong>.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+            </span>
+
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
+        </div>
+    </div>
+
+    <footer>ModdingLinked 2025</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

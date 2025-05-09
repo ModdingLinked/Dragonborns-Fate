@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logoex-icon.webp">
-    <link rel="canonical" href="https://dragonbornsfate.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    <link rel="icon" href="img/Coco/Head Logo Extended.webp">
+
     <title>Tweaks | A Dragonborn's Fate</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+
+    <meta name="keywords" content="
+    Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
+    Stable, Stability, Performance, Fix, Fixes, FPS,
+    Fast, Easy, Beginner,
+    Nexus, Nexus Mods, NexusMods,
+    Wabbajack, WJ, Installer,
+    Mod Organizer, Mod Organizer, MO2,
+    Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
+    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout 4, FO4,
+    Tale of Two Wastelands, TTW,
+    Skyrim Special Edition, Skyrim SE, SSE">
+
     <meta name="description" content="Various tweaks to improve annoying aspects of the game.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -20,457 +29,289 @@
     <meta property="og:title" content="A Dragonborn's Fate">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://dragonbornsfate.moddinglinked.com">
-    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/card.webp">
+    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Various tweaks to improve annoying aspects of the game.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+    <meta name="darkreader-lock">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='clear-site-data' content='cache'>
+
+    <script src="js/popup.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/responsiveTitle.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/logoex.webp" alt="Logo">
-        <a href="./index.html">A Dragonborn's Fate - Extended</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Head Logo Extended.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">A Dragonborn's Fate</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
+        </div>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
             <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">DBF Extended</h3>
-                <li>
-                    <a href="./tweaks.html" class="active">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">DBFE Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
             <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-<!--                 <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
-        </div>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a> -->
+            </p>
+            <p class="sidebar-padder"></p>
             <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="card popup" id="donation">
             <ul>
                 <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
                 </li>
                 <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
                 </li>
             </ul>
         </div>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="kofi">
-                    <a href="https://ko-fi.com/wall_sogb" target="_blank">
-                        <i class="fa fa-coffee"></i>
-                        Support us
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Dragonborns-Fate" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+        <div class="content">
 
-    <div class="deprecationBanner">
-        <p>
-            Due to constant game updates and the community split regarding which game versions to support, the guide has been discontinued and will be longer being updated.
-            <br>
-            The website will remain available for archival purposes.
-        </p>
-    </div>
+            <span id="Tweaks" class="section">
+                <h2 onclick="location.href='#Tweaks'">Tweaks</h2>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Tweaks</h1>
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Tweaks</strong>.</li>
-            </ol>
-
-            <!-- Survival Control Panel -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/41891" target="_blank">
-                    <h2 id="survivalCc">Survival Control Panel</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Survival Control Panel</b></li>
-            </ul>
-            Allows customizing native Survival Mode features like Sleep to Level Up.
-
-            <!-- Quests in Skyrim -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/18416" target="_blank">
-                    <h2 id="quests">Quests Are In Skyrim</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - QuestsAreInSkyrim_USSEP_1_3</b></li>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/78228" target="_blank">Quests Are In Skyrim - USSEP Patch</a></li>
-            </ul>
-            Fixes base-game radiant quests being generated in DLC areas.
-
-            <!-- Timing is Everything -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/25464" target="_blank">
-                    <h2 id="timing">Timing is Everything SE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Timing is Everything SE</b></li>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/57754" target="_blank">Timing is Everything SE - Settings Loader</a></li>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/81286" target="_blank">Timing is Everything DBF Configuration</a></li>
-            </ul>
-            Allows you to customize the starting conditions for various quests.
-
-            <!-- Quest NPCs Run -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/21103" target="_blank">
-                    <h2 id="npcsRun">Quest NPCs Run</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Quest NPCs Run</b></li>
-            </ul>
-            Makes slow walking quest NPCs you follow run.
-
-            <!-- Bounty Preview -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/33877" target="_blank">
-                    <h2 id="bountyPreview">Bounty Preview</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Bounty Preview</b></li>
-            </ul>
-            Allows you to preview bounty missions from innkeepers and either accept or reject them.
-
-            <!-- Simple Offence Suppression -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/41764" target="_blank">
-                    <h2 id="suppression">Simple Offence Suppression</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Simple Offence Suppression SE</b></li>
-                <li>You will be prompted with a FOMOD installer:
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
                     <ol>
-                        <li>Install</li>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Tweaks</strong>.</li>
                     </ol>
-                </li>
-            </ol>
-            Prevents friendly NPCs from turning hostile on you if you accidentally hit them during combat.
+                    </p>
+                </div>
 
-            <!-- Friendly Fire -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/50483" target="_blank">
-                    <h2 id="friendlyFire">Enemy Friendly Fire</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Enemy Friendly Fire</b></li>
-            </ul>
-            Enables friendly fire between NPCs.
+                <div class="card" id="BetterJumping">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/18967" target="_blank">Better Jumping SE</a></h3>
+                    Allows to jump while sprinting.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Better Jumping (1.6.X)</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Encounter Zones Unlocked -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/19608" target="_blank">
-                    <h2 id="unlocked">Encounter Zones Unlocked SE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Encounter Zones Unlocked AE</b></li>
-            </ul>
-            Prevents the game from locking an area's encounter zone level when you first enter it.
+                <div class="card" id="TavernAIFix" title="Tavern AI Fix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/23107" target="_blank">Tavern AI fix</a></h3>
+                    Waiters will only serve you if they can see you, and innkeepers will show you to your rented room once initially, but you can ask them again for directions if needed.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - TavernAIFix</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- To Your Face -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/24720" target="_blank">
-                    <h2 id="tyf">To Your Face SE - AE - VR</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - To Your Face AE</b></li>
-            </ul>
-            Prevents NPCs from making random greetings unless they are in front of the player.
+                <div class="card" id="RememberLockpickAngle">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/26838" target="_blank">Remember Lockpick Angle - Updated</a></h3>
+                    After breaking a lockpick, the angle will be remembered for the next attempt.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Remember Lockpick Angle</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Enhanced Invisibility -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/61950" target="_blank">
-                    <h2 id="invisibility">Enhanced Invisibility</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Enhanced Invisibility</b></li>
-                <li>You will be prompted with a FOMOD installer:
-                    <ol>
-                        <li>Install</li>
-                    </ol>
-                </li>
-            </ol>
-            SKSE plugin that improves and fixes bugs with Invisibility effects.
+                <div class="card" id="ToYourFace">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/24720" target="_blank">To Your Face SE - AE - VR</a></h3>
+                    Prevents NPCs from making random greetings unless they are in front of the player.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - To Your Face AE</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Fires Hurt RE -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/67473" target="_blank">
-                    <h2 id="fireHurts1">Fires Hurt RE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - FiresHurtRE</b></li>
-            </ul>
-            Now fires, campfires, embers, steam & magic pillars will hurt.
+                <div class="card" id="SimpleOffenceSuppression">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/41764" target="_blank">Simple Offence Suppression</a></h3>
+                    Prevents neutral NPCs from turning hostile when you accidentally hit them.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Simple Offence Suppression</li>
+                        <ul>
+                            <li>You will be prompted with a FOMOD installer:
+                                <ol>
+                                    <li>Install</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Fire Hurts NG -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/74064" target="_blank">
-                    <h2 id="fireHurts2">Fire Hurts NG</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Fire Hurts NG</b></li>
-            </ul>
-            Optimizes the previous mod and makes it compatible with all game versions.
+                <div class="card" id="SensibleOculorySolution">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/130200" target="_blank">Sensible Oculory Solution - Logical Mzark Puzzle - Discerning The Transmundane - Main Quest</a></h3>
+                    Makes the Mzard puzzle less confusing by giving you visual hints on how to solve it.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Sensible Oculory Solution - Logical Mzark Puzzle</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Animals Swim -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/78267" target="_blank">
-                    <h2 id="animalsSwim">Animals Swim (Sort of)</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Animals Swim (Sort Of)</b></li>
-            </ul>
-            Rabbits (and other animals) won't walk at the bottom of the sea anymore, they will float near the surface instead.
+                <div class="card" id="SimpleDualSheath">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/50049" target="_blank">Simple Dual Sheath</a></h3>
+                    Prevents NPCs from making random greetings unless they are in front of the player.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Simple Dual Sheath for 1.6.629 and newer</li>
+                        <ol>
+                            <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
+                            <li>In the <strong>Text Files</strong> tab, select <span class="card-basic">SKSE/Plugins/SimpleDualSheath.ini</span></li>
+                            <li>Set <b>MaxStdio</b> (line 11) to <strong>FirstPerson|Player|NPC</strong>.</li>
+                        </ol>
+                    </ul>
+                    </p>
+                </div>
+            </span>
 
-            <!-- Dynamic Collision -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/76783" target="_blank">
-                    <h2 id="dynamicCollision">Dynamic Collision Adjustment</h2>
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
                 </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Dynamic Collision Adjustment</b></li>
-            </ul>
-            Adjusts the character controller collision while sneaking and swimming so you can fit under objects.
 
-            <!-- Remember Angle -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/26838" target="_blank">
-                    <h2 id="rememberAngle">Remember Lockpick Angle - Updated</h2>
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
                 </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Remember Lockpick Angle</b></li>
-            </ul>
-            After breaking a lock-pick, the new lock-pick is placed at the same angle where the last one broke.
-
-            <!-- Better Jumping -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/18967" target="_blank">
-                    <h2 id="jumping">Better Jumping SE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Better Jumping AE</b></li>
-            </ul>
-            Allows to jump while sprinting.
-
-            <!-- Instantly Skip Dialogue -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/89163" target="_blank">
-                    <h2 id="skipDialogue">Instantly Skip Dialogue NG</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Instantly Skip Dialogue NG</b></li>
-            </ul>
-            Allows the player to skip dialogue instantly, bypassing the 750 millisecond delay. This includes dialogue that's normally unskippable.
-
-            <!-- Sandboxing -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/4524" target="_blank">
-                    <h2 id="sandboxing">Multiple Floors Sandboxing</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Multiple Floors Sandboxing</b></li>
-            </ul>
-            Allows NPCs to climb stairs around them and explore their surroundings more.
+            </div>
         </div>
 
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./basefinish.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Base Finish</span></a>
-            <a href="./hud.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">User Interface</span></a>
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#survivalCc">Survival Control Panel</a>
-            </li>
-            <li>
-                <a href="#quests">Quests in Skyrim</a>
-            </li>
-            <li>
-                <a href="#timing">Timing is Everything</a>
-            </li>
-            <li>
-                <a href="#npcsRun">Quest NPCs Run</a>
-            </li>
-            <li>
-                <a href="#bountyPreview">Bounty Preview</a>
-            </li>
-            <li>
-                <a href="#suppression">Simple Offence Suppression</a>
-            </li>
-            <li>
-                <a href="#friendlyFire">Friendly Fire</a>
-            </li>
-            <li>
-                <a href="#unlocked">Encounter Zones Unlocked</a>
-            </li>
-            <li>
-                <a href="#tyf">To Your Face</a>
-            </li>
-            <li>
-                <a href="#invisibility">Enhanced Invisibility</a>
-            </li>
-            <li>
-                <a href="#fireHurts1">Fires Hurt RE</a>
-            </li>
-            <li>
-                <a href="#fireHurts2">Fire Hurts NG</a>
-            </li>
-            <li>
-                <a href="#animalsSwim">Animals Swim</a>
-            </li>
-            <li>
-                <a href="#dynamicCollision">Dynamic Collision</a>
-            </li>
-            <li>
-                <a href="#rememberAngle">Remember Angle</a>
-            </li>
-            <li>
-                <a href="#jumping">Better Jumping</a>
-            </li>
-            <li>
-                <a href="#skipDialogue">Instantly Skip Dialogue</a>
-            </li>
-            <li>
-                <a href="#sandboxing">Sandboxing</a>
-            </li>
-        </ul>
-    </div>
+    <footer>ModdingLinked 2025</footer>
 </body>
 
 </html>

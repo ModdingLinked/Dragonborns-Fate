@@ -5,30 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="preload" href="./img/background.webp" as="image" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logo.webp">
-    <link rel="canonical" href="https://dragonbornsfate.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    <link rel="icon" href="img/Coco/Head Logo.webp">
+
     <title>A Dragonborn's Fate</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="A fully modular, comprehensive and regularly updated Skyrim SE modding guide that allows for any personal preference to be satisfied.">
+
+    <meta name="keywords" content="
+    Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
+    Stable, Stability, Performance, Fix, Fixes, FPS,
+    Fast, Easy, Beginner,
+    Nexus, Nexus Mods, NexusMods,
+    Wabbajack, WJ, Installer,
+    Mod Organizer, Mod Organizer, MO2,
+    Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
+    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout 4, FO4,
+    Tale of Two Wastelands, TTW,
+    Skyrim Special Edition, Skyrim SE, SSE">
+
+    <meta name="description" content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="A Dragonborn's Fate">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://dragonbornsfate.moddinglinked.com">
-    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="A fully modular, comprehensive and regularly updated Skyrim SE modding guide that allows for any personal preference to be satisfied.">
+    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:description" content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c212a">
+    <meta name="darkreader-lock">
+
+    <script src="js/popup.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/responsiveTitle.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/frontPage.css">
 </head>
 
-<body>
+<body class="theme">
     <style>
         body {
-            background-image: url('./img/background.webp');
+            background-image: url('./img/Others/Background.webp') !important;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -36,49 +59,35 @@
         }
     </style>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer transparent">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/logo.webp" alt="Logo">
-        <a href="./index.html">A Dragonborn's Fate</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
-    </div>
-
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft" class="transparent">
-        <div class="guideLinks">
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
+    <div style="overflow:auto">
+        <div class="header">
+            <div class="headerTitle">
+                <img src="./img/Coco/Head Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">A Dragonborn's Fate</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
     </div>
 
-    <div class="deprecationBanner">
-        <p>
-            Due to constant game updates and the community split regarding which game versions to support, the guide has been discontinued and will be longer being updated.
-            <br>
-            The website will remain available for archival purposes.
-        </p>
-    </div>
-
-    <!-- Content -->
     <div id="backdrop" class="welcomeContent">
-        <h1 id="title">Welcome to A Dragonborn's Fate!</h1>
-        <a id="next" class="welcomeButton" href="./intro.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Get Started</strong></a>
+        <div class="titleContainer">
+            <img src="img/Coco/Full.webp" alt="Background Image" class="backgroundImage">
+            <h1 id="title">Welcome to <br>A Dragonborn's Fate!</h1>
+        </div>
+        <div class="buttonContainer">
+            <div class="buttonWrapper">
+                <a id="next" class="welcomeButton" href="./intro.html"><strong>Full Guide</strong></a>
+                <span class="buttonText">Manual step-by-step setup</span>
+            </div>
+            <!-- <div class="buttonWrapper">
+                <a class="welcomeButtonWJ" href="./wabbajack.html"><strong>Wabbajack</strong></a>
+                <span class="buttonText">Automated modlist installation</span>
+            </div> -->
+        </div>
     </div>
 </body>
 

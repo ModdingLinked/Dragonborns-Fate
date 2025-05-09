@@ -5,326 +5,381 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logoex-icon.webp">
-    <link rel="canonical" href="https://dragonbornsfate.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    <link rel="icon" href="img/Coco/Head Logo Extended.webp">
+
     <title>User Interface | A Dragonborn's Fate</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Mods that vastly improve the vanilla user interface without making any drastic stylistic changes.">
+
+    <meta name="keywords" content="
+    Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
+    Stable, Stability, Performance, Fix, Fixes, FPS,
+    Fast, Easy, Beginner,
+    Nexus, Nexus Mods, NexusMods,
+    Wabbajack, WJ, Installer,
+    Mod Organizer, Mod Organizer, MO2,
+    Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
+    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout 4, FO4,
+    Tale of Two Wastelands, TTW,
+    Skyrim Special Edition, Skyrim SE, SSE">
+
+    <meta name="description" content="Improvements to the vanilla user interface without making any drastic stylistic changes.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="A Dragonborn's Fate">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://dragonbornsfate.moddinglinked.com">
-    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Mods that vastly improve the vanilla user interface without making any drastic stylistic changes.">
+    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:description" content="Improvements to the vanilla user interface without making any drastic stylistic changes.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+    <meta name="darkreader-lock">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='clear-site-data' content='cache'>
+
+    <script src="js/popup.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/responsiveTitle.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Head Logo Extended.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">A Dragonborn's Fate</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
-        <img src="./img/logoex.webp" alt="Logo">
-        <a href="./index.html">A Dragonborn's Fate - Extended</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a> -->
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="card popup" id="donation">
+            <ul>
+                <li>
+                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
+                </li>
+                <li>
+                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <span id="UI" class="section">
+                <h2 onclick="location.href='#UI'">User Interface</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>User Interface</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="SkyUI" title="SkyUI">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/12604" target="_blank">SkyUI</a></h3>
+                    PC-friendly interface mod with many advanced features.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - SkyUI_5_2_SE</li>
+                        <li>
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/32561" target="_blank">Fix Note icon for SkyUI (SKSE64 plugin)</a>
+                            <ul>
+                                <li><b>Main Files</b> - FixNotesForSkyUI Skyrim AE</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/49106" target="_blank">SkyUI - Ghost Item Bug Fix</a>
+                            <ul>
+                                <li><b>Main Files</b> - SkyUI - Ghost Item Bug Fix</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/128235" target="_blank">Knotwork</a> - Improves the look of the journal and includes <a href="https://www.nexusmods.com/skyrimspecialedition/mods/20406" target="_blank">SkyUI SE - Flashing Savegames Fix</a>.
+                            <ul>
+                                <li><b>Main Files</b> - Knotwork</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="TrueHUD" title="True HUD">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/62775" target="_blank">TrueHUD - HUD Additions</a></h3>
+                    Adds actor info bars, boss bars, a player widget, recent loot log, and an API for other plugins to use. Modular and completely customizable through MCM.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/53000" target="_blank">MCM Helper</a>
+                            <ul>
+                                <li><b>Main Files</b> - MCM Helper</li>
+                                <ul>
+                                    <li>You will be prompted with a FOMOD installer:
+                                        <ol>
+                                            <li>Next</li>
+                                            <li>Install</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li><b>Main Files</b> - TrueHUD</li>
+                        <li>
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/53406" target="_blank">TrueHUD Curated Bosses</a>
+                            <ul>
+                                <li><b>Main Files</b> - TrueHUD Curated Bosses</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="BetterDialogueControls">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/1429" target="_blank">Better Dialogue Controls</a></h3>
+                    Improves keyboard and mouse interaction in dialogue menus. Prevents the mouse pointer from interfering with keyboard navigation and maintains the default option selection when entering dialogues.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Better Dialogue Controls v1_2</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="BetterMessageBoxControls">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/1428" target="_blank">Better MessageBox Controls</a></h3>
+                    Allows navigating message boxes with the Left/Right and Activate (E) keys. Also fixes the clickable area of buttons.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Better MessageBox Controls v1_2</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="HDLocalMap" title="HD Local Map">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/74722" target="_blank">HD Local Map</a></h3>
+                    Makes local maps use the full screen resolution.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - HD Local Map</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ReadOrTake">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/69588" target="_blank">Read Or Take SKSE</a></h3>
+                    Allows toggling between reading and taking books with the press of a button.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Read or Take SKSE</li>
+                        <ul>
+                            <li>You will be prompted with a FOMOD installer:
+                                <ol>
+                                    <li>Install</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ReadOrTake">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/69588" target="_blank">Read Or Take SKSE</a></h3>
+                    Allows toggling between reading and taking books with the press of a button.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Read or Take SKSE</li>
+                        <ul>
+                            <li>You will be prompted with a FOMOD installer:
+                                <ol>
+                                    <li>Install</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="DescriptionFramework">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/105799" target="_blank">Description Framework</a></h3>
+                    Allows adding an in-game description to items.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Description Framework</li>
+                        <li>
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/105970" target="_blank">Vanilla Item Descriptions</a>
+                            <ul>
+                                <li><b>Main Files</b> - Vanilla Item Descriptions - Uniques Only Version</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ShowFollowerCarryWeight">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/99878" target="_blank">Show Follower Carry Weight</a></h3>
+                    Shows the carry weight of your followers in the trading menu.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Show Follower Carry Weight</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">DBF Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html" class="active">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">DBFE Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-<!--                 <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
-        </div>
-
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="kofi">
-                    <a href="https://ko-fi.com/wall_sogb" target="_blank">
-                        <i class="fa fa-coffee"></i>
-                        Support us
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Dragonborns-Fate" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="deprecationBanner">
-        <p>
-            Due to constant game updates and the community split regarding which game versions to support, the guide has been discontinued and will be longer being updated.
-            <br>
-            The website will remain available for archival purposes.
-        </p>
-    </div>
-
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>User Interface</h1>
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>User Interface</strong>.</li>
-            </ol>
-
-            <!-- SkyUI -->
-            <h2 id="skyUi">SkyUI</h2>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/12604" target="_blank"><b>SkyUI_5_2_SE</b></a></li>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/20406" target="_blank"><b>SkyUI SE - Flashing Savegames Fix</b></a></li>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/32561" target="_blank"><b>FixNotesForSkyUI Skyrim AE</b></a></li>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/49106" target="_blank"><b>SkyUI - Ghost Item Bug Fix</b></a></li>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/22825" target="_blank"><b>Opt. 3 - Larger MCM Menu for SkyUI</b></a></li>
-            </ul>
-            Modernizes and improves the user interface.
-
-            <hr>
-
-            <!-- MCM Helper -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/53000" target="_blank">
-                    <h2 id="mcmHelper">MCM Helper</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - MCM Helper SE</b></li>
-            </ul>
-            Requirement for many mods, also simplifies the creation of Mod Configuration Menus and extends them with powerful new features.
-
-            <!-- C.O.C.K.S -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/81409" target="_blank">
-                    <h2 id="cocks">Constructible Object Custom Keyword System</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Crafting Categories for SkyUI</b></li>
-            </ul>
-            Improves the usability of the Constructible Object Menu of SkyUI with an extensible keyword-based category system.
-
-            <!-- TrueHUD -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/62775" target="_blank">
-                    <h2 id="trueHud">TrueHUD - HUD Additions</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - TrueHUD</b></li>
-            </ol>
-            Adds customizable actor info bars, boss bars, player widget and a recent loot log.
-
-            <!-- Quick Loot -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/21085" target="_blank">
-                    <h2 id="quickLoot">Quick Loot RE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - QuickLootRE</b></li>
-            </ul>
-            Adds a Fallout 4-style quick loot system.
-
-            <!-- Dialogue Controls -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/1429" target="_blank">
-                    <h2 id="dialogueControls">Better Dialogue Controls</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Better Dialogue Controls</b></li>
-            </ul>
-            Fixes annoyances with how dialogue controls.
-
-            <!-- MessageBox Controls -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/1428" target="_blank">
-                    <h2 id="msgBox">Better MessageBox Controls</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Better MessageBox Controls</b></li>
-            </ul>
-            Allows for better control over message boxes.
-
-            <!-- BTPS -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/64339" target="_blank">
-                    <h2 id="btps">Better Third Person Selection</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Better Third Person Selection (AE - SE)</b></li>
-            </ul>
-            Overhauls 3rd person object selection.
-
-            <!-- HD Local Map -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/74722" target="_blank">
-                    <h2 id="hdMap">HD Local Map</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - HD Local Map</b></li>
-            </ul>
-            SKSE plugin which makes local maps use the full screen resolution.
-        </div>
-
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./tweaks.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Tweaks</span></a>
-            <a href="./gameplay.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Gameplay</span></a>
-        </div>
-    </div>
-
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#skyUi">SkyUI</a>
-            </li>
-            <li>
-                <a href="#mcmHelper">MCM Helper</a>
-            </li>
-            <li>
-                <a href="#cocks">C.O.C.K.S</a>
-            </li>
-            <li>
-                <a href="#trueHud">TrueHUD</a>
-            </li>
-            <li>
-                <a href="#quickLoot">Quick Loot</a>
-            </li>
-            <li>
-                <a href="#dialogueControls">Dialogue Controls</a>
-            </li>
-            <li>
-                <a href="#msgBox">MessageBox Controls</a>
-            </li>
-            <li>
-                <a href="#btps">BTPS</a>
-            </li>
-            <li>
-                <a href="#hdMap">HD Local Map</a>
-            </li>
-        </ul>
-    </div>
+    <footer>ModdingLinked 2025</footer>
 </body>
 
 </html>

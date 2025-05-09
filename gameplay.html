@@ -5,557 +5,307 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logoex-icon.webp">
-    <link rel="canonical" href="https://dragonbornsfate.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    <link rel="icon" href="img/Coco/Head Logo Extended.webp">
+
     <title>Gameplay | A Dragonborn's Fate</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Gameplay changes/additions that make the game feel more balanced and modern.">
+
+    <meta name="keywords" content="
+    Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
+    Stable, Stability, Performance, Fix, Fixes, FPS,
+    Fast, Easy, Beginner,
+    Nexus, Nexus Mods, NexusMods,
+    Wabbajack, WJ, Installer,
+    Mod Organizer, Mod Organizer, MO2,
+    Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
+    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout 4, FO4,
+    Tale of Two Wastelands, TTW,
+    Skyrim Special Edition, Skyrim SE, SSE">
+
+    <meta name="description" content="Simple gameplay changes and additions that make the game feel more balanced and modern.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="A Dragonborn's Fate">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://dragonbornsfate.moddinglinked.com">
-    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Gameplay changes/additions that make the game feel more balanced and modern.">
+    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:description" content="Simple gameplay changes and additions that make the game feel more balanced and modern.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+    <meta name="darkreader-lock">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='clear-site-data' content='cache'>
+
+    <script src="js/popup.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/responsiveTitle.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/logoex.webp" alt="Logo">
-        <a href="./index.html">A Dragonborn's Fate - Extended</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Head Logo Extended.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">A Dragonborn's Fate</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
+        </div>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
             <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">DBF Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html" class="active">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">DBFE Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
             <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-<!--                 <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
-        </div>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a> -->
+            </p>
+            <p class="sidebar-padder"></p>
             <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="card popup" id="donation">
             <ul>
                 <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
                 </li>
                 <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
                 </li>
             </ul>
         </div>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="kofi">
-                    <a href="https://ko-fi.com/wall_sogb" target="_blank">
-                        <i class="fa fa-coffee"></i>
-                        Support us
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Dragonborns-Fate" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+        <div class="content">
 
-    <div class="deprecationBanner">
-        <p>
-            Due to constant game updates and the community split regarding which game versions to support, the guide has been discontinued and will be longer being updated.
-            <br>
-            The website will remain available for archival purposes.
-        </p>
-    </div>
+            <span id="Gameplay" class="section">
+                <h2 onclick="location.href='#Gameplay'">Gameplay</h2>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Gameplay</h1>
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Gameplay</strong>.</li>
-            </ol>
-            <blockquote>It is especially important to read the descriptions of these mods. If you do want to use the SimonRim suite, it is recommended to install the whole package to avoid missing dependencies and to have the most comprehensive overhaul.</blockquote>
-
-            <!-- Survival Improved -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/78244" target="_blank">
-                    <h2 id="survivalImproved">Survival Mode Improved - SKSE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Survival Mode Improved - SKSE</b></li>
-            </ul>
-            SKSE plugin implementation of Skyrim's Survival Mode.
-
-            <!-- Mysticism -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/27839" target="_blank">
-                    <h2 id="mysticism">Mysticism - A Magic Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Mysticism - A Magic Overhaul</b></li>
-                <li><b>Optional Files - Mysticism - Jump Spell Addon</b></li>
-            </ul>
-            Complete overhaul of the magic system, designed to balance existing spells and add powerful new magical effects.
-
-            <!-- Aetherius -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/26686" target="_blank">
-                    <h2 id="aetherius">Aetherius - A Race Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Aetherius - A Race Overhaul</b></li>
-                <li><b>Optional Files - Aetherius - Starting Spells Addon</b></li>
-            </ul>
-            Complete overhaul of human, elf and beast races designed to balance the races and add powerful new gameplay options.
-
-            <!-- Adamant -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/30191" target="_blank">
-                    <h2 id="adamant">Adamant - A Perk Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Adamant - A Perk Overhaul</b></li>
-                <li><b>Optional Files - Adamant - Bard Perks Addon</b></li>
-                <li><b>Optional Files - Simonrim Attack Speed Fix</b></li>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/59435" target="_blank"><b>Improvement Names Customized AE</b></a> (make sure this loads <b>above</b> the Smithing Addon, which has to win the file conflict)</li>
-                <li><b>Optional Files - Adamant - Smithing Addon</b></li>
-            </ul>
-            Complete overhaul of the perk trees designed to balance existing skills and add powerful new perks.
-
-            <!-- Mundus -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/33411" target="_blank">
-                    <h2 id="mundus">Mundus - A Standing Stone Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Mundus - A Standing Stone Overhaul</b></li>
-                <li><b>Optional Files - Mundus - USSEP Tower Stone Patch</b></li>
-            </ul>
-            Complete overhaul of the Standing Stones designed to balance the stone bonuses and add powerful new gameplay options.
-
-            <!-- Arena -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/33487" target="_blank">
-                    <h2 id="arena">Arena - An Encounter Zone Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Arena - An Encounter Zone Overhaul</b></li>
-            </ul>
-            Complete overhaul of the encounter zones designed to increase difficulty and provide an organic sense of progression.
-
-            <!-- Blade and Blunt -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/34549" target="_blank">
-                    <h2 id="blade">Blade and Blunt - A Combat Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Blade and Blunt - A Combat Overhaul</b></li>
-            </ul>
-            Complete overhaul of the combat designed to increase difficulty and encourage active resource management.
-
-            <!-- Scion -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/41639" target="_blank">
-                    <h2 id="scion">Scion - A Vampire Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Scion - A Vampire Overhaul</b></li>
-            </ul>
-            Complete overhaul of the Vampire system designed to balance existing mechanics and add powerful new abilities.
-
-            <!-- Manbeast -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/44746" target="_blank">
-                    <h2 id="manbeast">Manbeast - A Werewolf Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Manbeast - A Werewolf Overhaul</b></li>
-            </ul>
-            Complete overhaul of the Werewolf system designed to balance existing mechanics and add powerful new abilities.
-
-            <!-- Apothecary -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/52130" target="_blank">
-                    <h2 id="apothecary">Apothecary - An Alchemy Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Apothecary - An Alchemy Overhaul</b></li>
-                <li><b>Miscellaneous Files - Apothecary - Fishing Patch</b></li>
-                <li><b>Miscellaneous Files - Apothecary - Rare Curios Patch</b></li>
-                <li><b>Miscellaneous Files - Apothecary - Saints and Seducers</b></li>
-            </ol>
-            Complete overhaul of the alchemy, food and alcohol systems designed to balance existing options while adding powerful new effects.
-
-            <!-- Pilgrim -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/54099" target="_blank">
-                    <h2 id="pilgrim">Pilgrim - A Religion Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Pilgrim - A Religion Overhaul</b></li>
-                <li>You will be prompted with a FOMOD installer:
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
                     <ol>
-                        <li>Install</li>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Gameplay</strong>.</li>
                     </ol>
-                </li>
-            </ol>
-            Complete overhaul of the religion system that adds dozens of new deities and with powerful shrine effects.
+                    </p>
+                </div>
 
-            <!-- Thaumaturgy -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/57138" target="_blank">
-                    <h2 id="thaumaturgy">Thaumaturgy - An Enchanting Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Thaumaturgy - An Enchanting Overhaul</b></li>
-            </ul>
-            Complete overhaul of the enchanting system designed to balance existing enchantments and add powerful new weapon and armor enchantments.
+                <div class="card" id="SurvivalModeImproved">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/78244" target="_blank">Survival Mode Improved - SKSE</a></h3>
+                    <ul>
+                        <li>Completely rewrites the needs systems in C++ for better performance, allowing them to update every few seconds.</li>
+                        <li>Overhauls how needs work.</li>
+                        <li>Removes the annoying start-up prompt.</li>
+                        <li>Pauses needs progression during certain activities.</li>
+                    </ul>
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Survival Mode Improved - SKSE (1.6.1170)</li>
+                        <li>
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">A Dragonborn's Fate Resources</a>
+                            <ul>
+                                <li><b>Main Files</b> - Survival Mode Improved - SKSE - USSEP Patch</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Hand to Hand -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/59790" target="_blank">
-                    <h2 id="hth">Hand to Hand - An Adamant Addon</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Hand to Hand - An Adamant Addon</b></li>
-                <li><b>Optional Files - Hand to Hand - Locksmith Addon</b></li>
-            </ul>
-            <blockquote>This addon will turn the functionality of the Remember Lockpick Angle mod into a perk. You can skip this if you wish to always remember the lockpick's position.</blockquote>
-            <ul>
-                <li><b>Optional Files - Hand to Hand - Trainers and Skill Books Addon</b></li>
-            </ul>
-            Addon for Adamant - A Perk Overhaul that merges Lockpicking and Pickpocketing into a single skill and adds a new perk tree for Hand to Hand combat.
+                <div class="card" id="EncounterZonesUnlocked">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/19608" target="_blank">Encounter Zones Unlocked SE</a></h3>
+                    Allows previously-visited encounter zones to update the levels of the enemies in them as the player levels up.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Encounter Zones Unlocked (1.6.X)</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Stormcrown -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/90659" target="_blank">
-                    <h2 id="stormcrown">Stormcrown - A Shout Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/41780" target="_blank"><b>Custom Skills Framework</b></a></li>
-                <li><b>Main Files - Stormcrown - A Shout Overhaul</b></li>
-            </ul>
-            Overhauls and rebalances the Shout system, adds new Shouts and provides additional progression for the player's experience as Dragonborn.
+                <div class="card" id="EnhancedInvisibility">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/61950" target="_blank">Enhanced Invisibility</a></h3>
+                    Enhances invisibility effects with improved shaders, makes blood splatter and arrows invisible, and stops item interaction from dispelling invisibility.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Enhanced Invisibility</li>
+                        <ul>
+                            <li>You will be prompted with a FOMOD installer:
+                                <ol>
+                                    <li>Install</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Journeyman -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/92220" target="_blank">
-                    <h2 id="journeyman">Journeyman - A Fast Travel Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Journeyman - A Fast Travel Overhaul</b></li>
-            </ul>
-            <blockquote>If you are ok with needing fast travel kits to use fast travel even outside of Survival mode, then you can skip the next steps and jump to the next mod.</blockquote>
-            <ol>
-                <li>Once the files are installed, right-click on the mod in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
-                <li>Navigate to <code>SKSE\Plugins</code> and open <strong>Journeyman.ini</strong> in a text editor (such as notepad)</li>
-                <li>Set <strong>bEnableOnlyOnSurvivalEnabled</strong> to <strong>true</strong> (line 3)</li>
-            </ol>
-            Journeyman is a lightweight, highly compatible fast travel overhaul that restricts the player from fast traveling unless they have prepared a travel pack.
+                <div class="card" id="MagicSneakAttacks">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/67613" target="_blank">Magic Sneak Attacks</a></h3>
+                    Enables sneak attacks with magic.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Magic Sneak Attacks</li>
+                        <ul>
+                            <li>You will be prompted with a FOMOD installer:
+                                <ol>
+                                    <li>Install</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Sorcerer -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/95196" target="_blank">
-                    <h2 id="sorcerer">Sorcerer - A Staff and Scroll Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Sorcerer - A Staff and Scroll Overhaul</b></li>
-            </ul>
-            Adds two new crafting tables to the game, a scroll enchanter and a staff enchanter.
+                <div class="card" id="StaminaOfShooting">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/105814" target="_blank">Stamina of Shooting - drawing bow costs stamina</a></h3>
+                    Keeping a bow drawn costs stamina. When you're out of stamina, the bow is let down.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Stamina of Shooting - drawing bow costs stamina</li>
+                        <ul>
+                            <li>You will be prompted with a FOMOD installer: choose based on your preference (the default is fine), then <b>Install</b>.</li>
+                        </ul>
+                    </ul>
+                    </p>
+                </div>
+            </span>
 
-            <!-- Gourmet -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/96876" target="_blank">
-                    <h2 id="gourmet">Gourmet - A Cooking Overhaul</h2>
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
                 </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/85702" target="_blank"><b>Inventory Interface Information Injector (SE)</b></a></li>
-                <li><b>Main Files - Gourmet - A Cooking Overhaul</b></li>
-                <li><b>Main Files - Gourmet - Cooking Pots and Baking Ovens</b></li>
-                <li><b>Optional Files - Gourmet - Fishing Patch</b></li>
-                <li><b>Optional Files - Gourmet - Survival Patch</b></li>
-                <li><b>Optional Files - Gourmet - USSEP Patch</b></li>
-                <li><b>Optional Files - Gourmet - Simonrim Patches</b></li>
-            </ul>
-            Complete overhaul of Skyrim's cooking system that distributes food, ingredients and crafting tables throughout the game.
 
-            <!-- Starfrost -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/97536" target="_blank">
-                    <h2 id="starfrost">Starfrost - A Survival Overhaul</h2>
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
                 </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Starfrost - A Survival Overhaul</b></li>
-                <li><b>Optional Files - Starfrost - Injury Integration Addon</b></li>
-                <li><b>Optional Files - Starfrost - Survival Spells Addon</b></li>
-            </ul>
-            Lightweight overhaul of Survival Mode designed to introduce Survival mechanics into the game with the least amount of tedium possible.
-
-            <!-- Candlehearth -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/97542" target="_blank">
-                    <h2 id="candlehearth">Candlehearth - An Inn Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Candlehearth - An Inn Overhaul</b></li>
-                <li><b>Optional Files - Candlehearth - Tavern AI Fix Patch</b></li>
-            </ul>
-            Inn overhaul that adds extended renting and safe storage to every inn.
-
-            <!-- Artificer -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/99619" target="_blank">
-                    <h2 id="artificer">Artificer - An Artifact Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Artificer - An Artifact Overhaul</b></li>
-                <li><b>Optional Files - Artificer - USSEP</b></li>
-            </ul>
-            Complete overhaul of Skyrim's artifacts, designed to distribute Thaumaturgy and Mysticism enchantments throughout the game while ensuring that non-crafting characters can find powerful weapons and armor through questing.
-
-            <!-- Sensible Bribes -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/55450" target="_blank">
-                    <h2 id="bribes">Sensible Bribes</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Sensible Bribes</b></li>
-            </ul>
-            Calculation of the bribe amount switched from using your level to your speechcraft.
-
-            <!-- Dynamic Fees -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/skyrimspecialedition/mods/45677" target="_blank">
-                    <h2 id="fees">Dynamic Mercenary Fees</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Dynamic Mercenary Fees</b></li>
-            </ul>
-            Makes mercenaries ask for more or less money for their services depending on their level, your and their race and how good you are at bartering.
+            </div>
         </div>
 
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./hud.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">User Interface</span></a>
-            <a href="./content.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Content</span></a>
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#survivalImproved">Survival Improved</a>
-            </li>
-            <li>
-                <a href="#mysticism">Mysticism</a>
-            </li>
-            <li>
-                <a href="#aetherius">Aetherius</a>
-            </li>
-            <li>
-                <a href="#adamant">Adamant</a>
-            </li>
-            <li>
-                <a href="#mundus">Mundus</a>
-            </li>
-            <li>
-                <a href="#arena">Arena</a>
-            </li>
-            <li>
-                <a href="#blade">Blade and Blunt</a>
-            </li>
-            <li>
-                <a href="#scion">Scion</a>
-            </li>
-            <li>
-                <a href="#manbeast">Manbeast</a>
-            </li>
-            <li>
-                <a href="#apothecary">Apothecary</a>
-            </li>
-            <li>
-                <a href="#pilgrim">Pilgrim</a>
-            </li>
-            <li>
-                <a href="#thaumaturgy">Thaumaturgy</a>
-            </li>
-            <li>
-                <a href="#hth">Hand to Hand</a>
-            </li>
-            <li>
-                <a href="#stormcrown">Stormcrown</a>
-            </li>
-            <li>
-                <a href="#journeyman">Journeyman</a>
-            </li>
-            <li>
-                <a href="#sorcerer">Sorcerer</a>
-            </li>
-            <li>
-                <a href="#gourmet">Gourmet</a>
-            </li>
-            <li>
-                <a href="#starfrost">Starfrost</a>
-            </li>
-            <li>
-                <a href="#candlehearth">Candlehearth</a>
-            </li>
-            <li>
-                <a href="#artificer">Artificer</a>
-            </li>
-            <li>
-                <a href="#bribes">Sensible Bribes</a>
-            </li>
-            <li>
-                <a href="#fees">Dynamic Fees</a>
-            </li>
-        </ul>
-    </div>
+    <footer>ModdingLinked 2025</footer>
 </body>
 
 </html>
