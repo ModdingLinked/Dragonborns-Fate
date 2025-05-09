@@ -14,9 +14,9 @@ Disable USSEP Book.esp
 TrueHUD.esl
 Skyrim Extended Cut - Saints and Seducers.esp
 DynDOLOD.esm
-stuck on screen fix.esp
 bleedoutFix.esp
 zeroBountyHostilityFix.esp
+stuck on screen fix.esp
 SkyUI_SE.esp
 MCMHelper.esp
 Show Follower Carryweight.esp
