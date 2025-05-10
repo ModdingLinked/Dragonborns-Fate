@@ -377,7 +377,12 @@
                     If you use a <strong>DBFE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using these files. The Object LOD file also includes Tree LOD, while the other only contains Terrain LOD to reduce bandwith required for upload and download.
                     <br>
                     <br>
-                    Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need), then move <strong>dyndolod.esp to the bottom</strong> of your load order. You can then ignore the rest of this guide.
+                    Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need), then set up the load order as follows:
+                    <ul>
+                        <li><strong>DynDOLOD.esm</strong> should be the <strong>last ESM</strong> plugin (written in bold).</li>
+                        <li><strong>DynDOLOD.esp</strong> and then <strong>Occlusion.esp</strong> should be at the <strong>bottom</strong>.</li>
+                    </ul>
+                    </li>
                     </p>
                 </div>
             </span>
@@ -686,8 +691,8 @@
                         <li>From the new window, navigate to the DynDOLOD folder you installed in step 2, then double-click <b>DynDOLOD_Output.zip</b> and install it.</li>
                         <li>Set up the load order as follows:
                             <ul>
-                                <li><strong>DynDOLOD.esm</strong> should be the <strong>last</strong> ESM plugin (written in bold).</li>
-                                <li><strong>DynDOLOD.esp</strong> followed by <strong>Occlusion.esp</strong> should be at the <strong>bottom</strong>.</li>
+                                <li><strong>DynDOLOD.esm</strong> should be the <strong>last ESM</strong> plugin (written in bold).</li>
+                                <li><strong>DynDOLOD.esp</strong> and then <strong>Occlusion.esp</strong> should be at the <strong>bottom</strong>.</li>
                             </ul>
                         </li>
                     </ol>
