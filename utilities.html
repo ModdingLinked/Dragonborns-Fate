@@ -15,7 +15,7 @@
     Fast, Easy, Beginner,
     Nexus, Nexus Mods, NexusMods,
     Wabbajack, WJ, Installer,
-    Mod Organizer, Mod Organizer, MO2,
+    Mod Manager, Mod Organizer, MO2,
     Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
     Fallout New Vegas, Fallout NV, New Vegas, FNV, 
     Fallout 4, FO4,
@@ -330,7 +330,7 @@
                         <li><b>Main Files</b> - SSE Display Tweaks</li>
                         <ol>
                             <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
-                            <li>In the <strong>INI-Files</strong> tab, open <span class="card-basic">SKSE/Plugins/SSEDisplayTweaks.ini</span></li>
+                            <li>In the <strong>INI Files</strong> tab, open <span class="card-basic">SKSE/Plugins/SSEDisplayTweaks.ini</span></li>
                             <li>Change only the following options:</li>
                             <ul>
                                 <li>Set <b>EnableTearing</b> to <b>true</b> (line 109).</li>
@@ -341,7 +341,11 @@
                             </div>
 
                             <ul>
-                                <li>If you use <strong>VRR</strong><sup><a title="VRR" href="#annotation1">[1]</a></sup>, set <b>FramerateLimit</b> (line 204) to a number you can reach across the majority of the game<sup><a title="Bound" href="#annotation2">[2]</a></sup>, it has to be between 48<sup><a title="Range" href="#annotation3">[3]</a></sup> and <span class="card-basic">refresh rate - (refresh rate x 6.8%)</span>
+                                <li>If you use <strong>VRR</strong><sup><a title="VRR" href="#annotation1">[1]</a></sup>:
+                                    <ul>
+                                        <li> Set <b>FramerateLimit</b> (line 204) to a number you can reach across the majority of the game<sup><a title="Bound" href="#annotation2">[2]</a></sup>, it has to be between 48<sup><a title="Range" href="#annotation3">[3]</a></sup> and <span class="card-basic">refresh rate - (refresh rate x 6.8%)</span></li>
+                                        <li>Set <b>FramerateLimitMode</b> (line 213) to <b>1</b>.</li>
+                                    </ul>
                                 </li>
                                 <li>If you use <strong>fixed refresh rate</strong> (no VRR), set <b>FramerateLimit</b> (line 204) to your <span class="card-basic">refresh rate - 0.005</span> or divisors of your refresh rate, based on which is <strong>closest to your lowest FPS</strong>.</li>
                                 <ul>
@@ -349,7 +353,7 @@
                                     <div class="card-yellow">
                                         <p>Some examples:
                                         <ul>
-                                            <li>60Hz: 59.995 (VRR wouldn't be a thing)</li>
+                                            <li>60Hz: 59.995, as it most likely won't have VRR.</li>
                                             <li>144Hz: any value between 48 and 134 if VRR is enabled, 72 or 143.995 if using fixed refresh rate.</li>
                                             <li>165Hz: anywhere between 48 and 154 if VRR is enabled, changing the refresh rate<a title="CustomResolution" href="#annotation4">[4]</a></sup> to 144 is recommened if using fixed refresh rate.</li>
                                             <li>240Hz: anywhere between 48 and 224 if VRR is enabled. 60, 120, 180, or 239.995 if using fixed refresh rate.</li>
@@ -401,7 +405,7 @@
                         <li><b>Main Files</b> - Media Keys Fix</li>
                         <ol>
                             <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
-                            <li>In the <strong>INI-Files</strong> tab, open <span class="card-basic">SKSE/Plugins/MediaKeysFix.ini</span></li>
+                            <li>In the <strong>INI Files</strong> tab, open <span class="card-basic">SKSE/Plugins/MediaKeysFix.ini</span></li>
                             <li>Change only the following options:</li>
                             <ul>
                                 <li>Set <b>DisableWindowsKey</b> to <b>false</b> (line 4).</li>
