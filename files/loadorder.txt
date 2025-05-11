@@ -11,15 +11,23 @@ ccBGSSSE025-AdvDSGS.esm
 _ResourcePack.esl
 unofficial skyrim special edition patch.esp
 Disable USSEP Book.esp
+Misc Bugfix Compilation.esp
 TrueHUD.esl
 Skyrim Extended Cut - Saints and Seducers.esp
 DynDOLOD.esm
+Lore-Friendly Redbelly Mine Fix.esp
+Rude Imperial Soldiers Fix.esp
+Jorn Fix.esp
+Veren Duleri and Thorek Fix.esp
+Dragon Leveled List Fixes.esp
 bleedoutFix.esp
 zeroBountyHostilityFix.esp
 stuck on screen fix.esp
 SkyUI_SE.esp
 MCMHelper.esp
+QuickLootIE.esp
 Show Follower Carryweight.esp
+BetterThirdPersonSelection.esp
 TavernAIFix.esp
 Sensible Oculory Solution - Logical Mzark Puzzle.esp
 SurvivalModeImproved.esp
@@ -31,12 +39,13 @@ Azurite Weathers - MCM.esp
 Azurite III - HDR.esp
 Simple Lighting.esp
 Simple Lighting - USSEP Patch.esp
+SLO - Skyrim Misc Bugfix Compilation Patch.esp
 water mod.esp
 UMW - Vanilla Additions.esp
 A Clear Map of Skyrim.esp
 Weather of World.esp
 FOLIP.esp
 DBF Snow LOD Material Tweak.esp
-Terrain LOD.esp
+DBF Pre-Generated Terrain LOD.esp
 DynDOLOD.esp
 Occlusion.esp

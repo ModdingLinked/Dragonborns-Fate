@@ -252,11 +252,12 @@
                     <div class="image-slider">
                         <div class="slider-select-container">
                             <select class="slider-select">
-                                <option value="comparison-1">Comparison 1</option>
-                                <option value="comparison-2">Comparison 2</option>
-                                <option value="comparison-3">Comparison 3</option>
-                                <option value="comparison-4">Comparison 4</option>
-                                <option value="comparison-5">Comparison 5</option>
+                                <option value="comparison-1">Hjaalmarch</option>
+                                <option value="comparison-2">Whiterun Night-time</option>
+                                <option value="comparison-3">The Reach</option>
+                                <option value="comparison-4">Lake Honrich</option>
+                                <option value="comparison-5">Dragonsreach</option>
+                                <option value="comparison-6">Map</option>
                             </select>
                         </div>
                         <div class="slider-container">
@@ -368,6 +369,59 @@
                         <b>IMPORTANT</b>:
                         <br>
                         Enable all resources in MO2 before continuing.
+                    </p>
+                </div>
+
+                <div class="card" id="CleaningPlugins">
+                    <p>
+                    <h3>Cleaning Plugins</h3>
+                    In order to prevent the bug where LOD fails to unload (shown in <a href="https://www.youtube.com/watch?v=V46ZpKZvLfM" target="_blank">this video</a>) <a href="https://dyndolod.info/Help/Large-Reference-Bugs-Workarounds" target="_blank">DynDOLOD's large refs bugs workarounds</a> are needed, which in turn require cleaning any plugin containing deleted references - in DBF, that only includes the base game and DLC plugins, but in a custom list there may be more.
+
+                    <br>
+
+                    <div class="card-yellow">
+                        <p>
+                            Cleaning plugins may be a controversial topic, so here's some <strong>things to know</strong>:
+                        <ul>
+                            <li>It is not a requirement for anything else aside from DynDOLOD's large refs bugs workarounds.</li>
+                            <li>Nothing manual needs to be done in xEdit after QAC has finished, USSEP covers those changes.</li>
+                            <li>If you've heard about QAC breaking the game, know that the bug was fixed years ago, as documented <a href="https://github.com/TES5Edit/TES5Edit/issues/803" target="_blank">here</a>.</li>
+                            <li>
+                                Cleaning ESM plugins may result in slightly longer loading times, as xEdit removes the OFST data (an engine optimization for faster cell lookup) instead of regenerating it. However, with a small load order list like DBF, the impact is negligible. Naturally this isn't a good thing, but fixing the large refs bugs is far more important.
+                            </li>
+                            </p>
+                    </div>
+
+                    <h3 id="CleaningSetup">Cleaning Setup</h3>
+                    <ol>
+                        <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
+                        <li>Title the mod <span class="card-basic">Cleaned Plugins</span></li>
+                        <li>Navigate to your game's <b>Data</b> folder, and copy the following plugins:
+                            <ul>
+                                <li>Update.esm</li>
+                                <li>Dawnguard.esm</li>
+                                <li>Hearthfires.esm</li>
+                                <li>Dragonborn.esm</li>
+                                <li>ccBGSSSE001-Fish.esm</li>
+                                <li>ccQDRSSE001-SurvivalMode.esl</li>
+                                <li>ccBGSSSE025-AdvDSGS.esm</li>
+                            </ul>
+                        </li>
+                        <li>Paste them to the <b>Cleaned Plugins</b> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                        <li>Press <strong>F5</strong> while you are on MO2 without any menu open, then make sure the new mod is enabled by ticking its checkbox.</li>
+                    </ol>
+
+                    <h3 id="RunningQAC">Running QAC</h3>
+                    <ol>
+                        <li><strong>Download the latest xEdit release</strong> from the <a href="https://discord.gg/5t8RnNQ">xEdit Discord server</a>, in the <b>xedit-builds</b> channel.</li>
+                        <li><strong>Extract the archive</strong> and place the files inside a folder of your choosing (do not use a UAC protected folder or the game folder).</li>
+                        <li><strong>Add xEdit to MO2</strong>'s executables list by pressing <b>CTRL + E</b> and then clicking <span class="card-basic">Add from file...</span>, then point it to <b>xEdit.exe</b>.</li>
+                        <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-SSE -QAC</span></li>
+                        <li>Close the <b>Modify Executables</b> menu and <strong>run xEdit</strong> from the drop-down.</li>
+                        <li>When prompted with the plugin selection screen, click on <strong>Update.esm</strong>.</li>
+                        <li>When complete, you should see <b>Quick Clean mode finished</b> at the bottom of the log, you can close the program.</li>
+                        <li>Now do the exact <strong>same thing for the rest</strong> of the plugins listed before.</li>
+                    </ol>
                     </p>
                 </div>
 
@@ -511,10 +565,11 @@
                     <p>
                     <h3>Installing the LOD</h3>
                     <ol>
-                        <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
+                        <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
                         <li>Title the mod <span class="card-basic">Terrain LOD</span></li>
                         <li>Navigate to where the LOD files were generated and select both the <b>textures</b> and <b>meshes</b> folders.</li>
                         <li>Cut them to the <b>Terrain LOD</b> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                        <li>Press <strong>F5</strong> while you are on MO2 without any menu open, then make sure the new mod is enabled by ticking its checkbox.</li>
                     </ol>
                     </p>
 
@@ -662,19 +717,21 @@
                             <li>In the top-left corner, right-click the list of worldspaces and <b>Select all</b>.</li>
                             <li>Select the <b>High</b> preset.</li>
                             <li>Enable <b>Candles</b> and <b>FXGlow</b>.</li>
-                            <li>Switch from <b>Tree LOD</b> to <b>Ultra</b>.</li>
-                            <li>Enable Terrain underside.</li>
-                            <li>Enable <b>Glow windows</b> and set it to <b>High</b>.</li>
                             <li>In the <b>Mesh and Reference rules</b> list, scroll to the bottom and double click on <b>tree</b>.</li>
                             <li>Set its LOD options to:
                                 <ul>
-                                    <li>LOD4: Level0</li>
-                                    <li>LOD8: Billboard4</li>
-                                    <li>LOD16: Billboard4</li>
-                                    <li>LOD32: Billboard6</li>
+                                    <li><i>LOD4</i>: Level0</li>
+                                    <li><i>LOD8</i>: Billboard4</li>
+                                    <li><i>LOD16</i>: Billboard4</li>
+                                    <li><i>LOD32</i>: Billboard6</li>
                                 </ul>
                             </li>
-                            <li>Still in the list, double click <b>\</b> and set its LOD32 to Level0.</li>
+                            <li>Still in the list, double click <b>\</b> and set its <b>LOD32</b> to <b>Level0</b>.</li>
+                            <li>Copy these options:</li>
+                            <div class="image-container">
+                                <img class="content-img" src="./img/LOD/DynDOLOD Options.webp" alt="DynDOLOD Options">
+                                <div class="resize-overlay expand"></div>
+                            </div>
                         </ul>
                     </ol>
 

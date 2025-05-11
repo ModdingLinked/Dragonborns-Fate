@@ -206,48 +206,82 @@
                 <div class="card">
                     <p>
                     <h3>Root Mods</h3>
-                    The following mods are special because they need to be installed directly into the game's <b>Root</b> folder, <strong>not through Mod Organizer 2</strong>.
+                    The following mods, unlike most others, need to be installed directly into the game's <b>Root</b> folder, <strong>not through Mod Organizer 2</strong>.
+                    <br>
                     <br>
                     Use the <strong>Manual Download</strong> and follow the instructions provided for each mod.
-                    <br>
-                    <br>
-                    Failing to install these mods correctly will result in issues.
                     </p>
                 </div>
 
-                <div class="card" id="SKSE" title="SKSE">
+                <div class="card" id="Patchers">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/30379?tab=files&file_id=462377" target="_blank">Skyrim Script Extender (SKSE64)</a></h3>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/30379" target="_blank">Skyrim Script Extender (SKSE64)</a></h3>
                     Extends the scripting capabilities of the game.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - Skyrim Script Extender (SKSE64) <strong>2.2.6</strong></li>
-                        <ol>
-                            <li>Open the downloaded archive and <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
-                        </ol>
-
-                        <div class="card-yellow">
-                            <p>
-                                If you do not know what the <b>Root</b> folder is, read the <a href="./setup.html#Terminology" target="_blank">Key Terminology</a>.</p>
-                        </div>
-
-                        <div class="card-red">
-                            <p>
-                                Downloading through the link button above is especially important when the guide specifies the exact version, like for this mod and more later.
-                            </p>
-                        </div>
-
-                        <ol start="2">
-                            <li>
-                                After proper install, your <b>Root</b> folder should look like this:
-                                <br>
-                                <div class="image-container width-40">
-                                    <img class="content-img" src="./img/Others/Root Folder.webp" alt="Root folder with a correct SKSE install">
-                                    <div class="resize-overlay expand"></div>
+                    <br>
+                    <br>
+                    Follow the instructions based on your game version.
+                    <div class="flex" style="flex-direction: row; align-content: center; justify-content: center;">
+                        <div class="flex" style="flex-direction: column; width: 50%; margin-right: 0.5em;">
+                            <div class="expander-top clickable" onclick="expandCard(this, skseSteamExpander)" id="skseSteam">
+                                <div>
+                                    <p>
+                                    <h3>Steam</h3>
+                                    </p>
                                 </div>
-                            </li>
-                        </ol>
-                    </ul>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                            </div>
+                            <div class="expander-bottom" id="skseSteamExpander">
+                                <p>
+                                <ul>
+                                    <li><b>Main Files</b> - Skyrim Script Extender (SKSE64)</li>
+                                    <ol>
+                                        <li>Open the downloaded archive and <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                                    </ol>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex" style="flex-direction: column; width: 50%; margin-left: 0.5em;">
+                            <div class="expander-top clickable" onclick="expandCard(this, skseGogExpander)" id="skseGog">
+                                <p>
+                                <h3>GOG</h3>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                                </p>
+                            </div>
+                            <div class="expander-bottom" id="skseGogExpander">
+                                <p>
+                                <ul>
+                                    <li><b>Main Files</b> - Skyrim Script Extender (SKSE64) GOG</li>
+                                    <ol>
+                                        <li>Open the downloaded archive and <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                                    </ol>
+                                </ul>
+                                </p>
+
+                                <div class="card-yellow">
+                                    <p>
+                                        If you plan to mod beyond what the guide includes, you should be particularly <strong>careful with SKSE mods</strong> and their versions. GOG is not as widely supported as Steam, as they use 2 different executable versions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card-yellow center">
+                        <p>
+                            If you do not know what the <b>Root</b> folder is, read the <a href="./setup.html#Terminology" target="_blank">Key Terminology</a>.</p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        After proper install, your <b>Root</b> folder should look like this:
+                        <br>
+                        <div class="image-container width-40" style="margin: 0 auto;">
+                            <img class="content-img" src="./img/Others/Root Folder.webp" alt="Root folder with a correct SKSE install">
+                            <div class="resize-overlay expand"></div>
+                        </div>
+                    </div>
                     </p>
                 </div>
 
