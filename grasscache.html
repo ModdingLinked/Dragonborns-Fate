@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/Coco/Head Logo.webp">
+
+    <title>Grass Cache Guide | A Dragonborn's Fate</title>
+
+    <meta name="keywords" content="
+    Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
+    Stable, Stability, Performance, Fix, Fixes, FPS,
+    Fast, Easy, Beginner,
+    Nexus, Nexus Mods, NexusMods,
+    Wabbajack, WJ, Installer,
+    Mod Manager, Mod Organizer, MO2,
+    Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
+    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout 4, FO4,
+    Tale of Two Wastelands, TTW,
+    Skyrim Special Edition, Skyrim SE, SSE,
+    Level Of Detail, LOD, xLODGen, DynDOLOD, TexGen, Terrain LOD, Object LOD, Tree LOD">
+
+    <meta name="description" content="A complete guide on generating new grass cache and grass LOD.">
+    <meta http-equiv='content-language' content='en-us'>
+    <meta name="twitter:card" value="summary_large_image">
+    <meta property="og:site_name" content="ModdingLinked">
+    <meta property="og:title" content="A Dragonborn's Fate">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://dragonbornsfate.moddinglinked.com">
+    <meta property="og:image" content="https://dragonbornsfate.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:description" content="A complete guide on generating new grass cache and grass LOD.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+    <meta name="darkreader-lock">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='clear-site-data' content='cache'>
+
+    <script src="js/imageViewer.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/responsiveTitle.js"></script>
+    <script src="js/splitImageSlider.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/textIcons.css">
+    <link rel="stylesheet" href="css/imageSlider.css">
+</head>
+
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Head Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">A Dragonborn's Fate</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
+        </div>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./extrautilities.html" title="Extra Utilities">
+                    Extra Utilities
+                </a>
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./animations.html" title="Animations">
+                    Animations
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Dragonborns-Fate" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="card popup" id="donation">
+            <ul>
+                <li>
+                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
+                </li>
+                <li>
+                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <span id="Overview" class="section">
+                <h2 onclick="location.href='#Overview'">Overview</h2>
+
+                <div class="card" id="IntroductionAndRequirement">
+                    <p>
+                    <h3>Introduction And Requirement</h3>
+                    In vanilla, grass is only rendered in the active cells, leaving the bare terrain LOD in the distance. Grass LOD is a DynDOLOD 3 feature that uses grass cache to generate <strong>Object LOD for grass</strong>. This allows grass to be rendered in the distance, at a performance cost.
+
+                    <br><br>
+
+                    For the best results, it is high recommended that you first go through the <a href="./lod.html" target="_blank">LOD Guide</a> - as the DynDOLOD settings used in the LOD guide will be used in this one. <strong>This guide will not cover the basics of LOD generation</strong>, but will instead focus on the grass cache and grass LOD generation.
+                    </p>
+                </div>
+
+                <div class="card" id="GrassLODComparison" title="Grass LOD Comparison">
+                    <p>
+                    <h3>Grass LOD Comparison</h3>
+                    Use the sliders below to compare different aspects of Grass LOD generation. Select different images for each side of the slider to create custom comparisons.
+                    </p>
+
+                    <div class="image-slider grass-comparison-slider">
+                        <div class="slider-select-container" style="display: flex; justify-content: space-between; gap: 10px;">
+                            <div style="flex: 1;">
+                                <label for="left-select" style="display: block; margin-bottom: 5px; color: white;">Left Image:</label>
+                                <select id="left-select" class="slider-select slider-left-select">
+                                    <option value="vanilla">Vanilla</option>
+                                    <option value="dyndolod">DynDOLOD 3</option>
+                                    <option value="grasslod">DynDOLOD 3 + Grass LOD</option>
+                                </select>
+                            </div>
+                            <div style="flex: 1;">
+                                <label for="right-select" style="display: block; margin-bottom: 5px; color: white;">Right Image:</label>
+                                <select id="right-select" class="slider-select slider-right-select">
+                                    <option value="vanilla">Vanilla</option>
+                                    <option value="dyndolod">DynDOLOD 3</option>
+                                    <option value="grasslod">DynDOLOD 3 + Grass LOD</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider-before">
+                                <img class="slider-img" src="./img/Grass LOD/Comparisons/1 - Vanilla.webp" alt="Before image">
+                            </div>
+                            <img class="slider-img slider-after" src="./img/Grass LOD/Comparisons/1 - DynDOLOD + Grass LOD.webp" alt="After image">
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="slider-labels">
+                            <span class="slider-label-before">Before</span>
+                            <span class="slider-label-after">After</span>
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+            <span id="Process" class="section">
+                <h2 onclick="location.href='#Process'">Process</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Grass Cache</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="InstallingResources" title="Installing Grass Cache Resources">
+                    <p>
+                    <h3>Installing Grass Cache Resources</h3>
+                    Install in the following order:
+                    <ol>
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/42161" target="_blank">No Grass In Objects</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - NGIO - NG</li>
+                                <ol>
+                                    <li>Once the mod has been installed, run the game once (SKSE in MO2), then close it.</li>
+                                    <li>Double-click the mod in the left pane of MO2.</li>
+                                    <li>In the <strong>INI Files</strong> tab, select <span class="card-basic">GrassControl.ini</span></li>
+                                    <li>Set <b>Use-grass-cache</b> (line 43) to <strong>true</strong>.</li>
+                                    <li>Set <b>Only-load-from-cache</b> (line 72) to <strong>true</strong>.</li>
+                                    <li>Set <b>DynDOLOD-Grass-Mode</b> (line 82) to <strong>2</strong>.</li>
+                                </ol>
+                                <li><b>Optional Files</b> - Grass Generation MO2 Plugin v3.2</li>
+                                <ol>
+                                    <li>Open the downloaded archive.</li>
+                                    <li>In MO2, click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 folders"> button at the top of MO2 and click <strong>Open MO2 Plugins folder</strong>.</li>
+                                    <li><strong>Drag GrassPrecacher.py</strong> into the folder.</li>
+                                </ol>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/101095" target="_blank">Grass Cache Helper NG</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - Grass Cache Helper NG</li>
+                                <ol>
+                                    <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
+                                    <li>In the <strong>INI Files</strong> tab, select <span class="card-basic">SKSE/Plugins/GrassCacheHelperNG.ini</span></li>
+                                    <li>Set <b>AutoGrassDistanceSettings</b> (line 19) to <strong>0</strong>.</li>
+                                </ol>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/68640" target="_blank">Vanilla Complex Grasses for ENB</a></b>
+                            <ul>
+                                <li><b>Main Files</b> - Vanilla Complex Grasses</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <div class="card-yellow">
+                        <p>
+                            Even tough the mod mentions ENB, it also <strong>works with Community Shaders</strong>.
+
+                            <br><br>
+
+                            <strong>DBF (even with DBF Extended) uses vanilla grass</strong>, use a different Complex Grass patch (or a mod with it included) if you want different grass. Results in the color matching between real grass and grass LOD may vary.
+                        </p>
+                    </div>
+
+                    </p>
+                </div>
+
+                <div class="card-red center">
+                    <p>
+                        <b>IMPORTANT</b>:
+                        <br>
+                        Enable all resources in MO2 before continuing.
+                    </p>
+                </div>
+
+                <div class="card" id="GrassCache">
+                    <p>
+                    <h3>Grass Cache</h3>
+                    <ol>
+                        <li><u>Temporarily</u> disable the following mods if you use them:
+                            <ul>
+                                <li>ENB</li>
+                                <li>Community Shaders</li>
+                                <li>TrueHUD</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <div class="card-red">
+                        <p>
+                            <strong>TrueHUD will cause crashes</strong> during the generation of the grass cache. ENB and Community Shaders will only slow down the game's startup.
+                        </p>
+                    </div>
+
+                    <ol start="2">
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/Tools.webp" alt="Tools drop-down"> button at the top of MO2 and select <b>Precache Grass</b>, then click <b>Yes</b>.</li>
+                        <li>The game will start and, shortly after, the grass caching will begin. You can open the console to track its progress through the different worldspaces.</li>
+                    </ol>
+
+                    <div class="card-yellow">
+                        <p>
+                            Especially during the last worldspace (Tamriel), the game <strong>might crash a few times</strong>. This is <strong>normal and can be ignored</strong>, as the mod will automatically restart the process.
+                            <br><br>
+                            However, if the game crashes way too often during the process and you can replicate the issue in-game by visiting the same location, you should investigate the cause.
+                        </p>
+                    </div>
+
+                    <ol start="3">
+                        <li>Once grass caching is finished, the game will close and the mod will prompt you with a message saying so.</li>
+                        <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
+                        <li>Title the mod <strong>Grass Cache</strong>.</li>
+                        <li>Double-click <i>Overwrite</i> and <strong>drag the grass folder</strong> to the newly created mod, then enable it.</li>
+                        <li>Re-enable the mods you disabled at the start.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="GrassLOD" title="Grass LOD">
+                    <p>
+                    <h3>Grass LOD</h3>
+                    This part assumes you are already familiar with the <a href="./lod.html#TexGen">LOD generation process</a>! Learn the ropes of LOD generation before continuing with this guide.
+
+                    <ol>
+                        <li>Delete the existing outputs for <b>TexGen</b> and <b>DynDOLOD</b>, if they exist.</li>
+                        <li>TexGen:
+                            <ul>
+                                <li>Enable <strong>HD Grass</strong>, which should now be available thanks to the Complex Grass patch and the presence of grass cache.</li>
+                                <li>Generate as normal.</li>
+                                <li><b>Install</b> the TexGen output.</li>
+                            </ul>
+                        </li>
+                        <li>DynDOLOD:
+                            <ul>
+                                <li>Enable <strong>Grass LOD</strong> with the <b>Mode</b> set to <strong>2</strong>.</li>
+                                <li>Set the <b>Density</b> setting to <strong>80</strong> as a starting point. Higher values mean denser grass but have a <strong>greater performance impact</strong>.</li>
+                                <li>Generate as normal.</li>
+                                <li>Install the DynDOLOD output.</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <div class="card-yellow">
+                        <p>
+                            If you use custom grass mods, you may need to <u>adjust the density</u> higher or lower to balance visuals and performance.
+                        </p>
+                    </div>
+
+                    </p>
+                </div>
+            </span>
+
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
+        </div>
+    </div>
+
+    <footer>ModdingLinked 2025</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
