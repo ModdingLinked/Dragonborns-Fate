@@ -432,7 +432,7 @@
                 <h2 onclick="location.href='#CS'">Community Shaders</h2>
                 <div class="card" id="CoreAndAddons">
                     <p>
-                        Community Shaders is a framework that fixes rendering bugs and allows adding <strong>new graphics features</strong> through addons. The performance impact depends on which modules are used in addition to the main one, which, by itself, improves performance.
+                        Community Shaders is a framework that fixes rendering bugs and allows adding <strong>new graphics features</strong> through addons. The performance impact depends on which modules are used in addition to the main one, which, by itself, doesn't have a significant impact.<!-- An overview of all performance numbers for these addons and the base Community Shaders can be found <a href="https://www.nexusmods.com/skyrimspecialedition/mods/86502?tab=files" target="_blank">here</a>.-->
                     </p>
 
                     <div class="card-red">
@@ -452,23 +452,6 @@
                         </li>
                     </ul>
 
-                    <div class="card-yellow">
-                        <p>
-                            The DBF Configuration file applies the following settings:
-                        <ul>
-                            <li>
-                                FSR 3.1 AA as anti-aliasing method, replacing TAA and massively improving visual clarity for a tiny performance hit.
-                                <ul>
-                                    <li>If you are using an RTX GPU, you should switch from FSR 3.1 AA to DLAA, which gives a similar result with better performance.</li>
-                                </ul>
-                            </li>
-                            <li>Increased sample count for Screen Space Shadows.</li>
-                            <li>SSGI set to quarter resolution - the full and half resolution options are too heavy to be recommended on most systems.</li>
-                            <li>Enabled contact shadows for LLF.</li>
-                        </ul>
-                        </p>
-                    </div>
-
                     <hr>
 
                     <h4>Recommended Addons:</h4>
@@ -481,24 +464,25 @@
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/112739" target="_blank">Wetness Effects</a> - Rainfall creates realistic wet surfaces, puddles that persist and evaporate over time, and dynamic ripple effects, while precipitation occlusion ensures raindrop visuals appear only on exposed areas.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/112762" target="_blank">Water Effects</a> - Simulates water caustic effects and adds optimised parallax support.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/135817" target="_blank">Terrain Shadows</a> - Enables rough terrain shadows with infinite distance, in game and on world maps.</li>
-
-                        <div class="card-yellow">
-                            <p>
-                                Unless you are generating new heightmaps (part of the LOD Guide, linked right after this section), install the <strong>optional file</strong> as well!
-                            </p>
-                        </div>
-
+                        <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/130375" target="_blank">Screen Space Global Illumination (SSGI)</a> - Simulates ambient occlusion and indirect lighting using screen space information.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/139185" target="_blank">Cloud Shadows</a> - Allows clouds to cast shadows.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/139352" target="_blank">Skylighting</a> - Simulates large scale world-space ambient occlusion.</li>
                     </ul>
 
                     <div class="card-green">
                         <p>
-                            Each feature, save a few, has a different performance impact - the heaviest ones are SSGI, the AA replacement, and Light Limit Fix. The rest are close to negligible.
-                            <!-- 
-                            <br><br>
-
-                            You can find benchmarks for some of them <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>. -->
+                            The DBF Configuration file applies the following settings:
+                        <ul>
+                            <li>
+                                Switched AA method from TAA to FSR 3.1 (native), massively improving visual clarity for a GPU performance hit of about 10%.
+                                <ul>
+                                    <li>If you are using an RTX GPU, you should switch from FSR 3.1 AA to DLAA, which gives a similar result but with better performance.</li>
+                                </ul>
+                            </li>
+                            <li>Increased sample count for Screen Space Shadows from 1x to 3x.</li>
+                            <li>SSGI set to quarter resolution - the full and half resolution options are too heavy to be recommended on most systems.</li>
+                            <li>Enabled contact shadows for LLF.</li>
+                        </ul>
                         </p>
                     </div>
                 </div>
