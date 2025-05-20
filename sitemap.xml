@@ -6,12 +6,12 @@
 		<lastmod>2023-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/index.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/avoid-mods.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2023-04-08</lastmod>
+		<lastmod>2025-05-16</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/intro.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/avoid-tools.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2025-05-15</lastmod>
 	</url>
@@ -21,47 +21,17 @@
 		<lastmod>2025-05-15</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/avoid-tools.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/intro.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2025-05-15</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/avoid-mods.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/index.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2025-05-16</lastmod>
+		<lastmod>2023-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/setup.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2025-05-15</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/mo2.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2025-05-15</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/utilities.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2025-05-15</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/bugfix.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2025-05-15</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/tweaks.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2025-05-15</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/hud.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2025-05-15</lastmod>
-	</url>
-	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/gameplay.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/finish.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2025-05-15</lastmod>
 	</url>
@@ -71,13 +41,38 @@
 		<lastmod>2025-05-18</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/finish.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/gameplay.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2025-05-15</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/changelog.html</loc>
-		<priority>0.51</priority>
+		<loc>https://dragonbornsfate.moddinglinked.com/hud.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2025-05-15</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/tweaks.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2025-05-15</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/bugfix.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2025-05-15</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/utilities.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2025-05-20</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/mo2.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2025-05-15</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/setup.html</loc>
+		<priority>0.64</priority>
 		<lastmod>2025-05-15</lastmod>
 	</url>
 	<url>
@@ -86,17 +81,17 @@
 		<lastmod>2025-05-16</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/esl.html</loc>
-		<priority>0.50</priority>
+		<loc>https://dragonbornsfate.moddinglinked.com/changelog.html</loc>
+		<priority>0.51</priority>
 		<lastmod>2025-05-15</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/basefinish.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/grasslod.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-05-15</lastmod>
+		<lastmod>2025-05-16</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/wabbajack.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/extrautilities.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2025-05-15</lastmod>
 	</url>
@@ -106,13 +101,18 @@
 		<lastmod>2025-05-17</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/extrautilities.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/wabbajack.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2025-05-15</lastmod>
 	</url>
 	<url>
-		<loc>https://dragonbornsfate.moddinglinked.com/grasslod.html</loc>
+		<loc>https://dragonbornsfate.moddinglinked.com/basefinish.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-05-16</lastmod>
+		<lastmod>2025-05-15</lastmod>
+	</url>
+	<url>
+		<loc>https://dragonbornsfate.moddinglinked.com/esl.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-05-15</lastmod>
 	</url>
 </urlset>
