@@ -235,69 +235,46 @@
                 <div class="card" id="GrassLODComparison" title="Grass LOD Comparison">
                     <p>
                     <h3>Grass LOD Comparison</h3>
-                    Use the sliders below to compare different aspects of Grass LOD generation. Select different images for each side of the slider to create custom comparisons.
+                    Use the sliders below to compare different aspects of Grass LOD generation. First select a comparison set, then choose which images to compare for each side of the slider.
                     </p>
 
-                    <div class="image-slider custom-comparison-slider grass-comparison-slider" data-default-left="vanilla" data-default-right="grasslod">
-                        <script type="application/json">
-                        [
-                            {
-                                "value": "1",
-                                "label": "Set 1 - Whiterun",
-                                "images": {
-                                    "vanilla": "./img/Grass LOD/Comparisons/1 - Vanilla.webp",
-                                    "dyndolod": "./img/Grass LOD/Comparisons/1 - DynDOLOD.webp",
-                                    "grasslod": "./img/Grass LOD/Comparisons/1 - DynDOLOD + Grass LOD.webp"
-                                }
-                            },
-                            {
-                                "value": "2",
-                                "label": "Set 2 - The Reach",
-                                "images": {
-                                    "vanilla": "./img/Grass LOD/Comparisons/2 - Vanilla.webp",
-                                    "dyndolod": "./img/Grass LOD/Comparisons/2 - DynDOLOD.webp",
-                                    "grasslod": "./img/Grass LOD/Comparisons/2 - DynDOLOD + Grass LOD.webp"
-                                }
-                            },
-                            {
-                                "value": "3",
-                                "label": "Set 3 - Eastmarch",
-                                "images": {
-                                    "vanilla": "./img/Grass LOD/Comparisons/3 - Vanilla.webp",
-                                    "dyndolod": "./img/Grass LOD/Comparisons/3 - DynDOLOD.webp",
-                                    "grasslod": "./img/Grass LOD/Comparisons/3 - DynDOLOD + Grass LOD.webp"
-                                }
-                            }
-                        ]
-                        </script>
+                    <div class="image-slider" data-image-path="./img/Grass LOD/Comparisons">
+                        <div class="slider-select-container" style="margin-bottom: 15px;">
+                            <label for="set-select" style="display: block; margin-bottom: 5px; color: white; font-weight: bold;">Comparison Set:</label>
+                            <select class="comparison-set-select">
+                                <option value="1" data-location="Whiterun">Set 1 - Whiterun</option>
+                                <option value="2" data-location="The Reach">Set 2 - The Reach</option>
+                                <option value="3" data-location="Eastmarch">Set 3 - Eastmarch</option>
+                            </select>
+                        </div>
+
                         <div class="slider-select-container" style="display: flex; justify-content: space-between; gap: 10px;">
                             <div style="flex: 1;">
                                 <label for="left-select" style="display: block; margin-bottom: 5px; color: white;">Left Image:</label>
-                                <select id="left-select" class="slider-select slider-left-select">
-                                    <option value="vanilla">Vanilla</option>
-                                    <option value="dyndolod">DynDOLOD 3</option>
-                                    <option value="grasslod">DynDOLOD 3 + Grass LOD</option>
+                                <select class="comparison-select-left">
+                                    <option value="vanilla" data-label="Vanilla">Vanilla</option>
+                                    <option value="dyndolod" data-label="DynDOLOD 3">DynDOLOD 3</option>
+                                    <option value="grasslod" data-label="DynDOLOD 3 + Grass LOD">DynDOLOD 3 + Grass LOD</option>
                                 </select>
                             </div>
                             <div style="flex: 1;">
                                 <label for="right-select" style="display: block; margin-bottom: 5px; color: white;">Right Image:</label>
-                                <select id="right-select" class="slider-select slider-right-select">
-                                    <option value="vanilla">Vanilla</option>
-                                    <option value="dyndolod">DynDOLOD 3</option>
-                                    <option value="grasslod">DynDOLOD 3 + Grass LOD</option>
+                                <select class="comparison-select-right">
+                                    <option value="vanilla" data-label="Vanilla">Vanilla</option>
+                                    <option value="dyndolod" data-label="DynDOLOD 3">DynDOLOD 3</option>
+                                    <option value="grasslod" data-label="DynDOLOD 3 + Grass LOD" selected>DynDOLOD 3 + Grass LOD</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="slider-container">
-                            <div class="slider-before">
-                                <img class="slider-img" src="" alt="Before image">
-                            </div>
-                            <img class="slider-img slider-after" src="" alt="After image">
-                            <div class="slider-handle"></div>
+
+                        <div class="comparison-slider">
+                            <img src="./img/Grass LOD/Comparisons/1 - Vanilla.webp" alt="Before" class="comparison-before">
+                            <img src="./img/Grass LOD/Comparisons/1 - DynDOLOD + Grass LOD.webp" alt="After" class="comparison-after">
+                            <div class="comparison-handle"></div>
                         </div>
-                        <div class="slider-labels">
-                            <span class="slider-label-before"></span>
-                            <span class="slider-label-after"></span>
+                        <div class="comparison-labels">
+                            <span class="label-before">Vanilla</span>
+                            <span class="label-after">DynDOLOD 3 + Grass LOD</span>
                         </div>
                     </div>
                 </div>

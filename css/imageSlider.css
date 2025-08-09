@@ -1,7 +1,6 @@
 .image-slider {
   margin: 20px 0;
   position: relative;
-  z-index: 0;
 }
 
 .slider-container {
@@ -89,8 +88,7 @@
   max-width: 800px;
   margin: 0 auto 10px;
 }
-
-.slider-select {
+.slider-select-container select {
   width: 100%;
   padding: 8px 12px;
   border-radius: 4px;
@@ -100,25 +98,69 @@
   cursor: pointer;
   font-size: 14px;
 }
-
-.slider-select option {
+.slider-select-container select option {
   background-color: #333;
   color: white;
 }
 
-.slider-labels {
+.comparison-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 6pt;
+  box-shadow: 0 2pt 4pt 0 rgba(0, 0, 0, 0.5);
+}
+.comparison-slider img {
+  width: 100%;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.comparison-slider .comparison-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+.comparison-slider .comparison-handle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 50%;
+  cursor: ew-resize;
+}
+.comparison-slider .comparison-handle::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100vh;
+  background: white;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50vh;
+}
+
+.comparison-labels {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
-  font-weight: bold;
+  margin: 10px auto 0;
 }
-
-.slider-labels span {
+.comparison-labels span {
   padding: 4px 8px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
 }/*# sourceMappingURL=imageSlider.css.map */
