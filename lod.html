@@ -257,28 +257,19 @@
                 <div class="card" id="LODComparison" title="LOD Comparison">
                     <p>
                     <h3>LOD Comparison</h3>
-                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.
+                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets. You can also find performance and VRAM usage comparisons <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>.
                     </p>
 
-                    <div class="image-slider" data-image-path="./img/LOD/Comparison">
-                        <div class="slider-select-container">
-                            <select class="comparison-select">
-                                <option value="1">Hjaalmarch</option>
-                                <option value="2">Whiterun Night-time</option>
-                                <option value="3">The Reach</option>
-                                <option value="4">Lake Honrich</option>
-                                <option value="5">Dragonsreach</option>
-                                <option value="6">Map</option>
-                            </select>
-                        </div>
+                    <div class="image-slider" data-image-path="./img/LOD/Comparisons" data-sets="Hjaalmarch|Whiterun|The Reach|Lake Honrich|Dragonsreach|Map" data-images="Vanilla|Generated LOD">
+                        <select class="comparison-set-select"></select>
                         <div class="comparison-slider">
-                            <img src="./img/LOD/Comparison/1 - Before.webp" alt="Before" class="comparison-before">
-                            <img src="./img/LOD/Comparison/1 - After.webp" alt="After" class="comparison-after">
+                            <img class="comparison-before" />
+                            <img class="comparison-after" />
                             <div class="comparison-handle"></div>
                         </div>
                         <div class="comparison-labels">
-                            <span class="label-before">Vanilla Game</span>
-                            <span class="label-after">Generated LOD</span>
+                            <span class="label-before"></span>
+                            <span class="label-after"></span>
                         </div>
                     </div>
                 </div>
@@ -541,11 +532,11 @@
                             <h3>Landscape Settings</h3>
                             <ul>
                                 <li><strong>Protect borders</strong>: Prevents ugly terrain drops at the cell borders.</li>
-                                <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
+                                <li><strong>Size</strong>: 512 on LOD4 and 256 on the next levels will suffice for most cases (especially in a list such as DBF), but high resolutions and retextured terrain may benefit from higher settings. Note that this setting can increase the generation time and file size of the output considerably.</li>
                                 <li><strong>Bake normal-maps</strong>: Roughens the terrain LOD textures to match the actual terrain's normal map.</li>
                                 <li><strong>Mipmap</strong>: Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost. Skyrim's terrain LOD uses mipmaps only on LOD4 diffuse textures.</li>
                                 <li><strong>Quality</strong>: This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the amount of triangles in the mesh.</li>
-                                <li><strong>Optimize Unseen</strong>: Reduces the amount of triangles of geometry below a configurable height, this is meant to optimize unseen areas underwater. Setting this to 550 for LOD32 gets rid of the map's spiky terrain. Other values may work, 550 is known to be good.</li>
+                                <li><strong>Optimize Unseen</strong>: Reduces the amount of triangles of geometry below a configurable height, this is meant to optimize unseen areas underwater. Even though most people recommend a value of 550, it seems to break the terrain in the map of minor worldspaces such as Soul Cairn.</li>
                             </ul>
 
                             <hr>
@@ -667,6 +658,19 @@
             <span id="ObjectAndTree" class="section">
                 <h2 onclick="location.href='#ObjectAndTree'">Object and Tree LOD</h2>
 
+                <div class="card-red center">
+                    <p>
+                        <b>IMPORTANT</b>:
+                        <br>
+                        Due to a current issue in <a href="./bugfix.html#MiscBugfixCompilation">Skyrim Misc Bugfix Compilation</a> (caused by a USSEP update), you should <strong>disable the following plugins</strong> while using TexGen and DynDOLOD:
+                    <ul>
+                        <li>Misc Bugfix Compilation.esp</li>
+                        <li>SMI SKSE - Skyrim Misc Bugfix Compilation Patch.esp</li>
+                    </ul>
+                    You can re-enable them once LOD is generated.
+                    </p>
+                </div>
+
                 <div class="card" id="TexGen" title="TexGen">
                     <p>
                     <h3>TexGen</h3>
@@ -725,7 +729,7 @@
                             <li>In the top-left corner, right-click the list of worldspaces and <b>Select all</b>.</li>
                             <li>Select the <b>High</b> preset.</li>
                             <li>Enable <b>Candles</b> and <b>FXGlow</b>.</li>
-                            <li>In the <b>Mesh and Reference rules</b> list, scroll to the bottom and double click on <b>tree</b>.</li>
+                            <li>In the <b>Mesh and Reference rules</b> list, scroll to the bottom and double-click on <b>tree</b>.</li>
                             <li>Set its LOD options to:
                                 <ul>
                                     <li><i>LOD4</i>: Level0</li>
@@ -734,7 +738,7 @@
                                     <li><i>LOD32</i>: Billboard6</li>
                                 </ul>
                             </li>
-                            <li>Still in the list, double click <b>\</b> and set its <b>LOD32</b> to <b>Level0</b>.</li>
+                            <li>Still in the list, double-click <b>\</b> and set its <b>LOD32</b> to <b>Level0</b>.</li>
                             <li>Copy these options:</li>
                             <div class="image-container">
                                 <img class="content-img" src="./img/LOD/DynDOLOD Options.webp" alt="DynDOLOD Options">

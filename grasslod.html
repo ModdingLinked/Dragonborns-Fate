@@ -238,43 +238,20 @@
                     Use the sliders below to compare different aspects of Grass LOD generation. First select a comparison set, then choose which images to compare for each side of the slider.
                     </p>
 
-                    <div class="image-slider" data-image-path="./img/Grass LOD/Comparisons">
-                        <div class="slider-select-container" style="margin-bottom: 15px;">
-                            <label for="set-select" style="display: block; margin-bottom: 5px; color: white; font-weight: bold;">Comparison Set:</label>
-                            <select class="comparison-set-select">
-                                <option value="1" data-location="Whiterun">Set 1 - Whiterun</option>
-                                <option value="2" data-location="The Reach">Set 2 - The Reach</option>
-                                <option value="3" data-location="Eastmarch">Set 3 - Eastmarch</option>
-                            </select>
+                    <div class="image-slider" data-image-path="./img/Grass LOD/Comparisons" data-sets="Whiterun Plains|The Reach|Eastmarch" data-images="Vanilla|DynDOLOD|DynDOLOD + Grass LOD">
+                        <select class="comparison-set-select"></select>
+                        <div class="comparison-selects">
+                            <select class="comparison-select-left"></select>
+                            <select class="comparison-select-right"></select>
                         </div>
-
-                        <div class="slider-select-container" style="display: flex; justify-content: space-between; gap: 10px;">
-                            <div style="flex: 1;">
-                                <label for="left-select" style="display: block; margin-bottom: 5px; color: white;">Left Image:</label>
-                                <select class="comparison-select-left">
-                                    <option value="vanilla" data-label="Vanilla">Vanilla</option>
-                                    <option value="dyndolod" data-label="DynDOLOD 3">DynDOLOD 3</option>
-                                    <option value="grasslod" data-label="DynDOLOD 3 + Grass LOD">DynDOLOD 3 + Grass LOD</option>
-                                </select>
-                            </div>
-                            <div style="flex: 1;">
-                                <label for="right-select" style="display: block; margin-bottom: 5px; color: white;">Right Image:</label>
-                                <select class="comparison-select-right">
-                                    <option value="vanilla" data-label="Vanilla">Vanilla</option>
-                                    <option value="dyndolod" data-label="DynDOLOD 3">DynDOLOD 3</option>
-                                    <option value="grasslod" data-label="DynDOLOD 3 + Grass LOD" selected>DynDOLOD 3 + Grass LOD</option>
-                                </select>
-                            </div>
-                        </div>
-
                         <div class="comparison-slider">
-                            <img src="./img/Grass LOD/Comparisons/1 - Vanilla.webp" alt="Before" class="comparison-before">
-                            <img src="./img/Grass LOD/Comparisons/1 - DynDOLOD + Grass LOD.webp" alt="After" class="comparison-after">
+                            <img class="comparison-before" />
+                            <img class="comparison-after" />
                             <div class="comparison-handle"></div>
                         </div>
                         <div class="comparison-labels">
-                            <span class="label-before">Vanilla</span>
-                            <span class="label-after">DynDOLOD 3 + Grass LOD</span>
+                            <span class="label-before"></span>
+                            <span class="label-after"></span>
                         </div>
                     </div>
                 </div>
@@ -316,6 +293,7 @@
                                     <li>Open the downloaded archive.</li>
                                     <li>In MO2, click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 folders"> button at the top of MO2 and click <strong>Open MO2 Plugins folder</strong>.</li>
                                     <li><strong>Drag GrassPrecacher.py</strong> into the folder.</li>
+                                    <li><strong>Restart MO2</strong>.</li>
                                 </ol>
                             </ul>
                         </li>

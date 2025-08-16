@@ -170,9 +170,9 @@
                     Mods to Avoid
                 </a>
 
-                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                <a href="./wabbajack.html" title="Wabbajack">
                     Wabbajack
-                </a> -->
+                </a>
             </p>
             <p class="sidebar-padder"></p>
             <hr>
@@ -228,11 +228,11 @@
                         <li>
                             ESL on Skyrim has <strong>2 bugs</strong>:
                             <ul>
-                                <li>Cells originating in a ESL plugin have trouble tracking the state of objects <strong>across save reloads in the same session</strong>, as shown by <a href="https://www.nexusmods.com/skyrimspecialedition/videos/21592" target="_blank">this video</a>.</li>
+                                <li>Cells originating in an ESL plugin have trouble tracking the state of objects <strong>across save reloads in the same session</strong>, as shown by <a href="https://www.nexusmods.com/skyrimspecialedition/videos/21592" target="_blank">this video</a>.</li>
                                 <li>
                                     All <strong>temporary references will fail to load</strong> in the cell when all these conditions are met:
                                     <ul>
-                                        <li>The cell originates in a ESM+ESL flagged file.</li>
+                                        <li>The cell originates in an ESM+ESL flagged file.</li>
                                         <li>That cell is overridden by another plugin.</li>
                                         <li>That override is not flagged as "Partial Form".</li>
                                     </ul>
@@ -247,7 +247,7 @@
                 <div class="card" id="BatchFlagging">
                     <p>
                     <h3>Batch Flagging</h3>
-                    In order to have more space for non-ESL plugins in your load order, you'll have to make sure everything that can be flagged ESL, is. <strong>xEdit can do this natively</strong> thanks to it's PseudoESL argument and the SetESL script, which flags everything that can be flagged safely.
+                    In order to have more space for non-ESL plugins in your load order, you'll have to make sure everything that can be flagged ESL, is. <strong>xEdit can do this natively</strong> thanks to its PseudoESL argument and the SetESL script, which flags everything that can be flagged safely.
                     <ol>
                         <li>If you haven't already, read the <a href="https://moddinglinked.com/xedit.html">xEdit guide</a> to avoid confusion with the next steps.</li>
                         <li>Add <span class="card-basic">-PseudoESL</span> to the arguments field of xEdit in MO2.</li>

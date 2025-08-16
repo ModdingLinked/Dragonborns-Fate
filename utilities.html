@@ -169,9 +169,9 @@
                     Mods to Avoid
                 </a>
 
-                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                <a href="./wabbajack.html" title="Wabbajack">
                     Wabbajack
-                </a> -->
+                </a>
             </p>
             <p class="sidebar-padder"></p>
             <hr>
@@ -378,14 +378,6 @@
                             <li>In the <strong>INI Files</strong> tab, open <span class="card-basic">SKSE/Plugins/SSEDisplayTweaks.ini</span></li>
                             <li>Change only the following options:</li>
                             <ul>
-                                <li>Set <b>EnableTearing</b> to <b>true</b> (line 109).</li>
-                            </ul>
-
-                            <div class="card-yellow">
-                                <p>Enabling <b>EnableTearing</b> is a requirement for VRR, enabling it will not lead to any tearing because V-Sync is being used.</p>
-                            </div>
-
-                            <ul>
                                 <li>If you use <strong>VRR</strong><sup><a title="VRR" href="#annotation1">[1]</a></sup>:
                                     <ul>
                                         <li>Set <b>FramerateLimit</b> (line 204) to a number you can reach across the majority of the game<sup><a title="Bound" href="#annotation2">[2]</a></sup>, it has to be between 48<sup><a title="Range" href="#annotation3">[3]</a></sup> and <span class="card-basic">refresh rate - (refresh rate x 6.8%)</span></li>
@@ -422,7 +414,7 @@
                     <hr>
 
                     <span class="annotations">
-                        <ol start="1">
+                        <ol>
                             <li id="annotation1">
                                 You can <strong>check if you are using VRR</strong> by going to the <b>Nvidia Control Panel</b> if you're on Nvidia or <b>Adrenalin's Display Settings</b> if you're on AMD. If the G-Sync tab is missing from NVCP, your display doesn't support it or doesn't have the feature enabled in the OSD.
                                 <br>

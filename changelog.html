@@ -166,9 +166,9 @@
                     Mods to Avoid
                 </a>
 
-                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                <a href="./wabbajack.html" title="Wabbajack">
                     Wabbajack
-                </a> -->
+                </a>
             </p>
             <p class="sidebar-padder"></p>
             <hr>
@@ -201,6 +201,60 @@
             <span id="Changelog" class="section">
                 <h2 onclick="location.href='#Changelog'">Changelog (Month Day)</h2>
 
+                <!-- 
+                CHANGELOG FORMATTING STANDARDS:
+                
+                1. Each year is wrapped in an expander (expander-top/expander-bottom)
+                2. Dates use format: "Month Day" (e.g., "August 9", "December 31")
+                3. Mid-game safety indicator: "Safe Mid-game" or "NOT Safe Mid-game"
+                4. Section headers use <h2><strong>Section Name</strong></h2>
+                5. Standard sections (in order):
+                   - Whole Guide (for site-wide changes)
+                   - Setup
+                   - MO2
+                   - Utilities
+                   - Bug Fixes
+                   - User Interface
+                   - Gameplay
+                   - Content
+                   - Overhauls
+                   - Visuals
+                   - Extended Finish
+                   - LOD Guide
+                   - FAQ
+                   - Resources
+                   - Wabbajack
+                6. Each change is a <li> with clear action verbs:
+                   - "Added" for new content
+                   - "Removed" for deleted content
+                   - "Replaced X with Y" for substitutions
+                   - "Updated" for version changes
+                   - "Fixed" for corrections
+                   - "Moved X to Y section" for reorganization
+                7. Nested lists for multiple items use <ul><li>Item Name (version)</li></ul>
+                8. Separate entries with <hr> between dates
+                9. Close each year's section properly
+                
+                TEMPLATE FOR NEW ENTRIES:
+                
+                <h2 class="install">Month Day</h2>
+                <h3>Safe Mid-game</h3> or <h3>NOT Safe Mid-game</h3>
+                <h2><strong>Section Name</strong></h2>
+                <ul>
+                    <li>Description of change.</li>
+                    <li>Added the following mods:
+                        <ul>
+                            <li>Mod Name (version)</li>
+                            <li>Another Mod Name</li>
+                        </ul>
+                    </li>
+                    <li>Removed Mod Name, reason for removal.</li>
+                    <li>Updated Mod Name (new version).</li>
+                </ul>
+                
+                <hr>
+                -->
+
                 <div class="expander-top">
                     <p>
                     <h3>2025</h3>
@@ -209,6 +263,49 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
+                    <h2 class="install">Aug 17</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Removed the EnableTearing steps during the installation of Display Tweaks, it can be left disabled as it's not actually a requirement for VRR (the Microsoft documentation is wrong).</li>
+                    </ul>
+                    <h2><strong>Extra Utilities</strong></h2>
+                    <ul>
+                        <li>Removed SkyPatcher, the removal of DIAL makes it unused.</li>
+                    </ul>
+                    <h2><strong>Animations</strong></h2>
+                    <ul>
+                        <li>Updated the DBF Pre-Generated Pandora Output for Pandora 3.2.0-beta.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Dynamic Interior Ambient Lighting (DIAL), it introduces some annoying conflicts even though SkyPatcher is supposed to help. The new CS SkySync improves the look of interiors to compensate a little.</li>
+                                <li>CS Particle Patch, the performance impact is too high compared to other features.</li>
+                            </ul>
+                        </li>
+                        <li>Added all the new CS addons:
+                            <ul>
+                                <li>Extended Translucency</li>
+                                <li>Terrain Variation</li>
+                                <li>Sky Sync</li>
+                                <li>Hair Specular</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Updated instructions and regenerated the DBF Pre-Generated Terrain LOD, it used LOD32 Optimize Unseen 550, which broke the map in various minor worldspaces.</li>
+                        <li>Updated the DBF Pre-Generated Object LOD.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>A Wabbajack modlist and section are now available.</li>
+                    </ul>
+
+                    <hr>
+
                     <h2 class="install">May 31</h2>
                     <h3>Safe Mid-game</h3>
                     <h2><strong>Bug Fixes</strong></h2>
@@ -338,8 +435,8 @@
                     <h2><strong>LOD Guide</strong></h2>
                     <ul>
                         <li>Updated the Whiterun comparison images and added one to showcase a child worldspace (from Dragonsreach).</li>
-                        <li>Regenerated the DBF Pre-Generated Terrain LOD, it used LOD32 512 resolutions instead of 256. You don't need to do reinstall the file, as it changed almost nothing in practice (reason why we just use the 256 default).</li>
-                        <li>Switched from DynDOLOD DLL SE to NG, and added steps to clean the base game plugins so that the large refs workaround bug in DynDOLOD can be used, as it was still present with the previous setup.</li>
+                        <li>Regenerated the DBF Pre-Generated Terrain LOD, it used LOD32 512 resolutions instead of 256. You don't need to reinstall the file, as it changed almost nothing in practice (reason why we just use the 256 default).</li>
+                        <li>Switched from DynDOLOD DLL SE to NG, and added steps to clean the base game plugins so that the large refs workarounds in DynDOLOD can be used, as it was still present with the previous setup.</li>
                         <li>Updated DynDOLOD settings for greater detail.</li>
                         <li>Updated the DBF Pre-Generated Object LOD to reflect the 2 changes above.</li>
                     </ul>
@@ -349,7 +446,7 @@
                     <h2 class="install">May 10</h2>
                     <h2><strong>Utilities</strong></h2>
                     <ul>
-                        <li>Added steps during the Display Tweaks configuration to switch FramerateLimitMode to 1 for VRR users, this gives better framepacing.</li>
+                        <li>Added steps during the Display Tweaks configuration to switch FramerateLimitMode to 1 for VRR users, which gives better framepacing.</li>
                     </ul>
                     <h2><strong>LOD Guide</strong></h2>
                     <ul>
