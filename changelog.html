@@ -209,6 +209,76 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
+                    <h2 class="install">Sep 27</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Switched from DBF's USSEP book removal to Pheonix's, which is now fixed and compatible with USSEP >=4.3.6c.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Moved Description Framework to the Extra Utilities section.</li>
+                    </ul>
+                    <h2><strong>Animations</strong></h2>
+                    <ul>
+                        <li>Updated the DBF Pre-Generated Pandora Output for Pandora 4.0.4-beta.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Replaced Azurite Weathers with Better Vanilla Weather for closer visuals to vanilla.</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Static Mesh Improvement Mod - USSEP Patch</li>
+                                <li>Terrain Blending - Community Shaders</li>
+                            </ul>
+                        </li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Community Shaders - DBF Configuration, no longer necessary thanks to the new Community Shaders defaults in >=1.4.0.</li>
+                                <li>Light Limit Fix, it's now part of Community Shaders >=1.4.0.</li>
+                                <li>Terrain Shadows - Heightmaps, the DBF Pre-Generated LOD now correctly includes heightmaps and the LOD Guide provides a script to split it from your generated output, allowing you to pack LOD without breaking heightmaps (Terrain Shadows can't read inside BSAs).</li>
+                                <li>Hair Specular, it doesn't do a lot in DBF considered we don't revamp characters. It also needed patching that the guide failed to mention.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Removed the warning about Skyrim Misc Bugfix Compilation, as it's now fixed with >=2.0.</li>
+                        <li>Set LOD32 Optimize Unseen back to 550, the breakage seen previously was either a hallucination or a result of some other issue no longer present.</li>
+                        <li>Bumped up the texture resolution of LOD32 from 256 to 512 to noticeably reduce its blurriness.</li>
+                        <li>Simplified DynDOLOD instructions thanks to the new LOD32 button in its GUI.</li>
+                        <li>Added steps to split the heightmaps from the generated terrain LOD by using a new script, as mentioned above.</li>
+                        <li>Updated the DBF Pre-Generated LOD.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Unofficial Skyrim Special Edition Patch - USSEP (4.3.6c)</li>
+                                <li>Skyrim Misc Bugfix Compilation (2.4a)</li>
+                                <li>SSE Engine Fixes (skse64 plugin) (7.0.19)</li>
+                                <li>powerofthree's Tweaks (1.15.1)</li>
+                                <li>Zero Bounty Hostility Fix (0.5)</li>
+                                <li>Description Framework (2.1.2)</li>
+                                <li>Skyrim Cut Content Restoration (2.2.2)</li>
+                                <li>Assorted mesh fixes (0.129.1)</li>
+                                <li>Simplicity of Sea (0.8)</li>
+                                <li>Community Shaders (1.4.1)</li>
+                                <li>Grass Collision (2.1.0)</li>
+                                <li>Screen Space Shadows (2.0.0)</li>
+                                <li>Subsurface Scattering (3.0.0)</li>
+                                <li>Wetness Effects (3.0.0)</li>
+                                <li>Screen Space Global Illumination (SSGI) (4.0.0)</li>
+                                <li>Skylighting (1.2.0)</li>
+                                <li>Terrain Variation (1.0.1)</li>
+                                <li>DynDOLOD DLL NG (Alpha-39)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
                     <h2 class="install">Aug 17</h2>
                     <h3>Safe Mid-game</h3>
                     <h2><strong>Utilities</strong></h2>
@@ -242,7 +312,7 @@
                     </ul>
                     <h2><strong>LOD Guide</strong></h2>
                     <ul>
-                        <li>Updated instructions and regenerated the DBF Pre-Generated Terrain LOD, it used LOD32 Optimize Unseen 550, which broke the map in various minor worldspaces.</li>
+                        <li>Set LOD32 Optimize Unseen to on, fixing broken minor worldspaces such as Soul Cairn.</li>
                         <li>Updated the DBF Pre-Generated Object LOD.</li>
                     </ul>
                     <h2><strong>Wabbajack</strong></h2>
