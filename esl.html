@@ -224,21 +224,10 @@
                     <p>
                     <h3>Limitations</h3>
                     <ul>
-                        <li>To be flagged ESL, a plugin <strong>can't have more than 4095 new records</strong> (the range is from 001->FFF).</li>
                         <li>
-                            ESL on Skyrim has <strong>2 bugs</strong>:
-                            <ul>
-                                <li>Cells originating in an ESL plugin have trouble tracking the state of objects <strong>across save reloads in the same session</strong>, as shown by <a href="https://www.nexusmods.com/skyrimspecialedition/videos/21592" target="_blank">this video</a>.</li>
-                                <li>
-                                    All <strong>temporary references will fail to load</strong> in the cell when all these conditions are met:
-                                    <ul>
-                                        <li>The cell originates in an ESM+ESL flagged file.</li>
-                                        <li>That cell is overridden by another plugin.</li>
-                                        <li>That override is not flagged as "Partial Form".</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <strong>Temporary references may fail to load</strong> in cells originating from an ESM+ESL flagged file if the cell is overridden by another plugin (not flagged as "Partial Form"), and these cells can also have trouble tracking the state of objects <strong>across save reloads in the same session</strong>, as demonstrated in <a href="https://www.nexusmods.com/skyrimspecialedition/videos/21592" target="_blank">this video</a>. This was fixed by <a href="./bugfix.html#EngineFixes">Engine Fixes</a> >=7.0.13.
                         </li>
+                        <li>To be flagged ESL, a plugin can't have more than <strong>4095 new records</strong> (the range is from 001->FFF).</li>
                         <li>Working with ESL plugins in Creation Kit might result in more work due to the <strong>CK totally ignoring ESL</strong> space when creating new records. This means that after making new records in CK you'll have to compact forms in xEdit.</li>
                     </ul>
                     </p>
