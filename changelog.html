@@ -142,12 +142,16 @@
                     Resources
                 </a>
 
-                <a href="./esl.html" title="Light Plugins" class="sublink">
-                    Light Plugins
-                </a>
-
                 <a href="./lod.html" title="LOD Guide" class="sublink">
                     LOD Guide
+                </a>
+
+                <a href="./grasslod.html" title="Grass LOD Guide" class="sublink">
+                    Grass LOD Guide
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
                 </a>
 
                 <a href="./faq.html" title="FAQ">
@@ -162,9 +166,9 @@
                     Mods to Avoid
                 </a>
 
-                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                <a href="./wabbajack.html" title="Wabbajack">
                     Wabbajack
-                </a> -->
+                </a>
             </p>
             <p class="sidebar-padder"></p>
             <hr>
@@ -205,6 +209,119 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
+                    <h2 class="install">Sep 27</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Switched from DBF's USSEP book removal to Pheonix's, which is now fixed and compatible with USSEP >=4.3.6c.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Moved Description Framework to the Extra Utilities section.</li>
+                    </ul>
+                    <h2><strong>Animations</strong></h2>
+                    <ul>
+                        <li>Updated the DBF Pre-Generated Pandora Output for Pandora 4.0.4-beta.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Replaced Azurite Weathers with Better Vanilla Weather for closer visuals to vanilla.</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Static Mesh Improvement Mod - USSEP Patch</li>
+                                <li>Terrain Blending - Community Shaders</li>
+                            </ul>
+                        </li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Community Shaders - DBF Configuration, no longer necessary thanks to the new Community Shaders defaults in >=1.4.0.</li>
+                                <li>Light Limit Fix, it's now part of Community Shaders >=1.4.0.</li>
+                                <li>Terrain Shadows - Heightmaps, the DBF Pre-Generated LOD now correctly includes heightmaps and the LOD Guide provides a script to split it from your generated output, allowing you to pack LOD without breaking heightmaps (Terrain Shadows can't read inside BSAs).</li>
+                                <li>Hair Specular, it doesn't do a lot in DBF considered we don't revamp characters. It also needed patching that the guide failed to mention.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Removed the warning about Skyrim Misc Bugfix Compilation, as it's now fixed with >=2.0.</li>
+                        <li>Set LOD32 Optimize Unseen back to 550, the breakage seen previously was either a hallucination or a result of some other issue no longer present.</li>
+                        <li>Bumped up the texture resolution of LOD32 from 256 to 512 to noticeably reduce its blurriness.</li>
+                        <li>Simplified DynDOLOD instructions thanks to the new LOD32 button in its GUI.</li>
+                        <li>Added steps to split the heightmaps from the generated terrain LOD by using a new script, as mentioned above.</li>
+                        <li>Updated the DBF Pre-Generated LOD.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Unofficial Skyrim Special Edition Patch - USSEP (4.3.6c)</li>
+                                <li>Skyrim Misc Bugfix Compilation (2.4a)</li>
+                                <li>SSE Engine Fixes (skse64 plugin) (7.0.19)</li>
+                                <li>powerofthree's Tweaks (1.15.1)</li>
+                                <li>Zero Bounty Hostility Fix (0.5)</li>
+                                <li>Description Framework (2.1.2)</li>
+                                <li>Skyrim Cut Content Restoration (2.2.2)</li>
+                                <li>Assorted mesh fixes (0.129.1)</li>
+                                <li>Simplicity of Sea (0.8)</li>
+                                <li>Community Shaders (1.4.1)</li>
+                                <li>Grass Collision (2.1.0)</li>
+                                <li>Screen Space Shadows (2.0.0)</li>
+                                <li>Subsurface Scattering (3.0.0)</li>
+                                <li>Wetness Effects (3.0.0)</li>
+                                <li>Screen Space Global Illumination (SSGI) (4.0.0)</li>
+                                <li>Skylighting (1.2.0)</li>
+                                <li>Terrain Variation (1.0.1)</li>
+                                <li>DynDOLOD DLL NG (Alpha-39)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">Aug 17</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Removed the EnableTearing steps during the installation of Display Tweaks, it can be left disabled as it's not actually a requirement for VRR (the Microsoft documentation is wrong).</li>
+                    </ul>
+                    <h2><strong>Extra Utilities</strong></h2>
+                    <ul>
+                        <li>Removed SkyPatcher, the removal of DIAL makes it unused.</li>
+                    </ul>
+                    <h2><strong>Animations</strong></h2>
+                    <ul>
+                        <li>Updated the DBF Pre-Generated Pandora Output for Pandora 3.2.0-beta.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Dynamic Interior Ambient Lighting (DIAL), it introduces some annoying conflicts even though SkyPatcher is supposed to help. The new CS SkySync improves the look of interiors to compensate a little.</li>
+                                <li>CS Particle Patch, the performance impact is too high compared to other features.</li>
+                            </ul>
+                        </li>
+                        <li>Added all the new CS addons:
+                            <ul>
+                                <li>Extended Translucency</li>
+                                <li>Terrain Variation</li>
+                                <li>Sky Sync</li>
+                                <li>Hair Specular</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Set LOD32 Optimize Unseen to on, fixing broken minor worldspaces such as Soul Cairn.</li>
+                        <li>Updated the DBF Pre-Generated Object LOD.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>A Wabbajack modlist and section are now available.</li>
+                    </ul>
+
+                    <hr>
+
                     <h2 class="install">May 31</h2>
                     <h3>Safe Mid-game</h3>
                     <h2><strong>Bug Fixes</strong></h2>
@@ -334,8 +451,8 @@
                     <h2><strong>LOD Guide</strong></h2>
                     <ul>
                         <li>Updated the Whiterun comparison images and added one to showcase a child worldspace (from Dragonsreach).</li>
-                        <li>Regenerated the DBF Pre-Generated Terrain LOD, it used LOD32 512 resolutions instead of 256. You don't need to do reinstall the file, as it changed almost nothing in practice (reason why we just use the 256 default).</li>
-                        <li>Switched from DynDOLOD DLL SE to NG, and added steps to clean the base game plugins so that the large refs workaround bug in DynDOLOD can be used, as it was still present with the previous setup.</li>
+                        <li>Regenerated the DBF Pre-Generated Terrain LOD, it used LOD32 512 resolutions instead of 256. You don't need to reinstall the file, as it changed almost nothing in practice (reason why we just use the 256 default).</li>
+                        <li>Switched from DynDOLOD DLL SE to NG, and added steps to clean the base game plugins so that the large refs workarounds in DynDOLOD can be used, as it was still present with the previous setup.</li>
                         <li>Updated DynDOLOD settings for greater detail.</li>
                         <li>Updated the DBF Pre-Generated Object LOD to reflect the 2 changes above.</li>
                     </ul>
@@ -345,7 +462,7 @@
                     <h2 class="install">May 10</h2>
                     <h2><strong>Utilities</strong></h2>
                     <ul>
-                        <li>Added steps during the Display Tweaks configuration to switch FramerateLimitMode to 1 for VRR users, this gives better framepacing.</li>
+                        <li>Added steps during the Display Tweaks configuration to switch FramerateLimitMode to 1 for VRR users, which gives better framepacing.</li>
                     </ul>
                     <h2><strong>LOD Guide</strong></h2>
                     <ul>

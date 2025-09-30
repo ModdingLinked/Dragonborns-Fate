@@ -10,36 +10,34 @@ ccBGSSSE037-Curios.esl
 ccBGSSSE025-AdvDSGS.esm
 _ResourcePack.esl
 unofficial skyrim special edition patch.esp
-Disable USSEP Book.esp
+Unofficial Skyrim Special Edition Patch - Disable Book.esp
 Misc Bugfix Compilation.esp
 TrueHUD.esl
 Skyrim Extended Cut - Saints and Seducers.esp
-DIAL.esp
 DynDOLOD.esm
-Dragon Leveled List Fixes.esp
 bleedoutFix.esp
 zeroBountyHostilityFix.esp
+Dragon Leveled List Fixes.esp
 stuck on screen fix.esp
 SkyUI_SE.esp
 MCMHelper.esp
 QuickLootIE.esp
 Show Follower Carryweight.esp
+TrueDirectionalMovement.esp
+FNIS.esp
 BetterThirdPersonSelection.esp
 TavernAIFix.esp
 Sensible Oculory Solution - Logical Mzark Puzzle.esp
 NiftyAITweaksAIO.esp
-TrueDirectionalMovement.esp
-FNIS.esp
 SurvivalModeImproved.esp
 Survival Mode Improved - SKSE - USSEP Patch.esp
 SMI SKSE - Skyrim Misc Bugfix Compilation Patch.esp
 Simple Bow Stamina.esp
 CutContentRestoration.esp
 SMIM-SE-Merged-All.esp
-Azurite Weathers III.esp
-Azurite Weathers - MCM.esp
-Azurite III - HDR.esp
-DIAL_AzuriteIII_Patch.esp
+Static Mesh Improvement Mod - USSEP Patch.esp
+Better Vanilla Weather.esp
+Better Vanilla Weather - USSEP Patch.esp
 water mod.esp
 UMW - Vanilla Additions.esp
 A Clear Map of Skyrim.esp

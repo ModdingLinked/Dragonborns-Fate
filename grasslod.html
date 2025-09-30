@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/Coco/Head Logo.webp">
 
-    <title>Grass Cache Guide | A Dragonborn's Fate</title>
+    <title>Grass LOD Guide | A Dragonborn's Fate</title>
 
     <meta name="keywords" content="
     Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
@@ -148,12 +148,16 @@
                     Resources
                 </a>
 
-                <a href="./esl.html" title="Light Plugins" class="sublink">
-                    Light Plugins
-                </a>
-
                 <a href="./lod.html" title="LOD Guide" class="sublink">
                     LOD Guide
+                </a>
+
+                <a href="./grasslod.html" title="Grass LOD Guide" class="sublink">
+                    Grass LOD Guide
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
                 </a>
 
                 <a href="./faq.html" title="FAQ">
@@ -231,69 +235,23 @@
                 <div class="card" id="GrassLODComparison" title="Grass LOD Comparison">
                     <p>
                     <h3>Grass LOD Comparison</h3>
-                    Use the sliders below to compare different aspects of Grass LOD generation. Select different images for each side of the slider to create custom comparisons.
+                    Use the sliders below to compare different aspects of Grass LOD generation. First select a comparison set, then choose which images to compare for each side of the slider.
                     </p>
 
-                    <div class="image-slider custom-comparison-slider grass-comparison-slider" data-default-left="vanilla" data-default-right="grasslod">
-                        <script type="application/json">
-                        [
-                            {
-                                "value": "1",
-                                "label": "Set 1 - Whiterun",
-                                "images": {
-                                    "vanilla": "./img/Grass LOD/Comparisons/1 - Vanilla.webp",
-                                    "dyndolod": "./img/Grass LOD/Comparisons/1 - DynDOLOD.webp",
-                                    "grasslod": "./img/Grass LOD/Comparisons/1 - DynDOLOD + Grass LOD.webp"
-                                }
-                            },
-                            {
-                                "value": "2",
-                                "label": "Set 2 - The Reach",
-                                "images": {
-                                    "vanilla": "./img/Grass LOD/Comparisons/2 - Vanilla.webp",
-                                    "dyndolod": "./img/Grass LOD/Comparisons/2 - DynDOLOD.webp",
-                                    "grasslod": "./img/Grass LOD/Comparisons/2 - DynDOLOD + Grass LOD.webp"
-                                }
-                            },
-                            {
-                                "value": "3",
-                                "label": "Set 3 - Eastmarch",
-                                "images": {
-                                    "vanilla": "./img/Grass LOD/Comparisons/3 - Vanilla.webp",
-                                    "dyndolod": "./img/Grass LOD/Comparisons/3 - DynDOLOD.webp",
-                                    "grasslod": "./img/Grass LOD/Comparisons/3 - DynDOLOD + Grass LOD.webp"
-                                }
-                            }
-                        ]
-                        </script>
-                        <div class="slider-select-container" style="display: flex; justify-content: space-between; gap: 10px;">
-                            <div style="flex: 1;">
-                                <label for="left-select" style="display: block; margin-bottom: 5px; color: white;">Left Image:</label>
-                                <select id="left-select" class="slider-select slider-left-select">
-                                    <option value="vanilla">Vanilla</option>
-                                    <option value="dyndolod">DynDOLOD 3</option>
-                                    <option value="grasslod">DynDOLOD 3 + Grass LOD</option>
-                                </select>
-                            </div>
-                            <div style="flex: 1;">
-                                <label for="right-select" style="display: block; margin-bottom: 5px; color: white;">Right Image:</label>
-                                <select id="right-select" class="slider-select slider-right-select">
-                                    <option value="vanilla">Vanilla</option>
-                                    <option value="dyndolod">DynDOLOD 3</option>
-                                    <option value="grasslod">DynDOLOD 3 + Grass LOD</option>
-                                </select>
-                            </div>
+                    <div class="image-slider" data-image-path="./img/Grass LOD/Comparisons" data-sets="Whiterun Plains|The Reach|Eastmarch" data-images="Vanilla|DynDOLOD|DynDOLOD + Grass LOD">
+                        <select class="comparison-set-select"></select>
+                        <div class="comparison-selects">
+                            <select class="comparison-select-left"></select>
+                            <select class="comparison-select-right"></select>
                         </div>
-                        <div class="slider-container">
-                            <div class="slider-before">
-                                <img class="slider-img" src="" alt="Before image">
-                            </div>
-                            <img class="slider-img slider-after" src="" alt="After image">
-                            <div class="slider-handle"></div>
+                        <div class="comparison-slider">
+                            <img class="comparison-before" />
+                            <img class="comparison-after" />
+                            <div class="comparison-handle"></div>
                         </div>
-                        <div class="slider-labels">
-                            <span class="slider-label-before"></span>
-                            <span class="slider-label-after"></span>
+                        <div class="comparison-labels">
+                            <span class="label-before"></span>
+                            <span class="label-after"></span>
                         </div>
                     </div>
                 </div>
@@ -335,6 +293,7 @@
                                     <li>Open the downloaded archive.</li>
                                     <li>In MO2, click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 folders"> button at the top of MO2 and click <strong>Open MO2 Plugins folder</strong>.</li>
                                     <li><strong>Drag GrassPrecacher.py</strong> into the folder.</li>
+                                    <li><strong>Restart MO2</strong>.</li>
                                 </ol>
                             </ul>
                         </li>

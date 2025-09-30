@@ -148,12 +148,16 @@
                     Resources
                 </a>
 
-                <a href="./esl.html" title="Light Plugins" class="sublink">
-                    Light Plugins
-                </a>
-
                 <a href="./lod.html" title="LOD Guide" class="sublink">
                     LOD Guide
+                </a>
+
+                <a href="./grasslod.html" title="Grass LOD Guide" class="sublink">
+                    Grass LOD Guide
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
                 </a>
 
                 <a href="./faq.html" title="FAQ">
@@ -253,30 +257,19 @@
                 <div class="card" id="LODComparison" title="LOD Comparison">
                     <p>
                     <h3>LOD Comparison</h3>
-                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.
+                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets. You can also find performance and VRAM usage comparisons <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>.
                     </p>
 
-                    <div class="image-slider" data-before-label="Vanilla Game" data-after-label="Generated LOD">
-                        <div class="slider-select-container">
-                            <select class="slider-select">
-                                <option value="comparison-1">Hjaalmarch</option>
-                                <option value="comparison-2">Whiterun Night-time</option>
-                                <option value="comparison-3">The Reach</option>
-                                <option value="comparison-4">Lake Honrich</option>
-                                <option value="comparison-5">Dragonsreach</option>
-                                <option value="comparison-6">Map</option>
-                            </select>
+                    <div class="image-slider" data-image-path="./img/LOD/Comparisons" data-sets="Hjaalmarch|Whiterun|The Reach|Lake Honrich|Dragonsreach|Map" data-images="Vanilla|Generated LOD">
+                        <select class="comparison-set-select"></select>
+                        <div class="comparison-slider">
+                            <img class="comparison-before" />
+                            <img class="comparison-after" />
+                            <div class="comparison-handle"></div>
                         </div>
-                        <div class="slider-container">
-                            <div class="slider-before">
-                                <img class="slider-img" src="./img/LOD/Comparison/1 - Before.webp" alt="Before image">
-                            </div>
-                            <img class="slider-img slider-after" src="./img/LOD/Comparison/1 - After.webp" alt="After image">
-                            <div class="slider-handle"></div>
-                        </div>
-                        <div class="slider-labels">
-                            <span class="slider-label-before">Vanilla Game</span>
-                            <span class="slider-label-after">Generated LOD</span>
+                        <div class="comparison-labels">
+                            <span class="label-before"></span>
+                            <span class="label-after"></span>
                         </div>
                     </div>
                 </div>
@@ -539,11 +532,11 @@
                             <h3>Landscape Settings</h3>
                             <ul>
                                 <li><strong>Protect borders</strong>: Prevents ugly terrain drops at the cell borders.</li>
-                                <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
+                                <li><strong>Size</strong>: 512 on LOD4 and 256 on the next levels will suffice for most cases (especially in a list such as DBF), but high resolutions and retextured terrain may benefit from higher settings. Note that this setting can increase the generation time and file size of the output considerably.</li>
                                 <li><strong>Bake normal-maps</strong>: Roughens the terrain LOD textures to match the actual terrain's normal map.</li>
                                 <li><strong>Mipmap</strong>: Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost. Skyrim's terrain LOD uses mipmaps only on LOD4 diffuse textures.</li>
                                 <li><strong>Quality</strong>: This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the amount of triangles in the mesh.</li>
-                                <li><strong>Optimize Unseen</strong>: Reduces the amount of triangles of geometry below a configurable height, this is meant to optimize unseen areas underwater. Setting this to 550 for LOD32 gets rid of the map's spiky terrain. Other values may work, 550 is known to be good.</li>
+                                <li><strong>Optimize Unseen</strong>: Reduces the amount of triangles of geometry below a configurable height, this is meant to optimize unseen areas underwater.</li>
                             </ul>
 
                             <hr>
@@ -612,6 +605,19 @@
                     </p>
                 </div>
 
+                <div class="card" id="SplittingHeightmaps">
+                    <p>
+                    <h3>Splitting Heightmaps</h3>
+                    The Terrain Shadows mod cannot read files inside BSA, which is the next step. To work around this, we will move the heightmaps out of the mod folder temporarily, pack the LOD, then move them back.
+                    <ol>
+                        <li>Download the <a href="./files/Move Heightmaps Script.7z" target="_blank">Move Heightmaps Script</a> and unpack it.</li>
+                        <li>In Mod Organizer 2, right-click on your <strong>Terrain LOD</strong> mod and select <b>Open in Explorer</b>.</li>
+                        <li>Copy the <span class="card-basic">Move Heightmaps Script.bat</span> file to the Terrain LOD mod in MO2.</li>
+                        <li>Run the script - a new folder should appear with the name <span class="card-basic">heightmaps</span>, we will use this after packing.</li>
+                    </ol>
+                    </p>
+                </div>
+
                 <div class="card" id="PackingTerrainLOD" title="Packing Terrain LOD">
                     <p>
                     <h3>Packing Terrain LOD</h3>
@@ -629,11 +635,16 @@
                         <li>If everything was done correctly, the Terrain LOD folder should have BSA files and the relative plugin for loading them.</li>
                         <li>Click <strong>F5</strong> while you are on MO2 without any menu open, and make sure the aforemention plugin is enabled in your load order.</li>
                     </ol>
-                    <div class="card-red">
+
+                    <div class="expander-top">
                         <p>
-                            <b>IMPORTANT:</b>
-                            <br>
-                            To properly use BSA files, you must keep the following in mind:
+                        <h3>BSA Usage Information</h3>
+                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                        </p>
+                    </div>
+                    <div class="expander-bottom">
+                        <p>
+                            To properly use BSA files, you must <strong>keep the following in mind</strong>:
                         <ul>
                             <li>
                                 BSA files are loaded by plugins they share their name with - hence why BSAs created here start with "<b>Terrain LOD</b>".
@@ -658,6 +669,20 @@
                         </ul>
                         </p>
                     </div>
+                    </p>
+                </div>
+
+                <div class="card" id="MovingBackHeightmaps">
+                    <p>
+                    <h3>Moving Back Heightmaps</h3>
+                    Now that the LOD is packed, we can move the heightmaps back to the mod folder so that the Terrain Shadows mod can actually read them.
+                    <ol>
+                        <li>In Mod Organizer 2, right-click on your <strong>Terrain LOD</strong> mod and select <b>Open in Explorer</b>.</li>
+                        <li>Open the <span class="card-basic">heightmaps</span> folder that was created by the script.</li>
+                        <li>Cut the <b>textures</b> folder back to the <b>Terrain LOD</b> mod, next to the BSAs and plugin(s).</li>
+                        <li>Delete the <span class="card-basic">heightmaps</span> folder and the <span class="card-basic">Move Heightmaps Script.bat</span> file from the mod.</li>
+                        <li>Press <strong>F5</strong> while you are on MO2 without any menu open, then make sure the mod is still enabled by ticking its checkbox.</li>
+                    </ol>
                     </p>
                 </div>
             </span>
@@ -698,23 +723,17 @@
                     <p>
                     <h3>DynDOLOD</h3>
                     <ol>
-                        <li>Open the folder where you extracted DynDOLOD, then open <span class="card-basic">Edit Scripts\DynDOLOD\DynDOLOD_SSE.ini</span></li>
-                        <li>Change only the following options:</li>
-                        <ul>
-                            <li>Set <b>Expert</b> to <b>1</b> (line 11).</li>
-                            <li>Set <b>Level32</b> to <b>1</b> (line 45).</li>
-                        </ul>
                         <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
                         <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
                         <li>From the pop-up, navigate to where TexGen is installed and select <strong>DynDOLODx64.exe</strong>.</li>
                         <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-SSE</span></li>
                         <li>Close the <b>Modify Executables</b> menu and <strong>run DynDOLOD</strong> from the drop-down.</li>
-                        <li>Configure DynDOLOD with the following settings:</li>
+                        <li>Once DynDOLOD has loaded, open the <strong>Advanced settings</strong> and copy the following:</li>
                     </ol>
 
-                    <div class="card-yellow">
+                    <div class="card-green">
                         <p>
-                            These settings are the recommended ones for the modlist, but you can change them to your liking and based on the performance of your system.
+                            Aside from the few tweaks to LOD32 settings needed by ACMoS to look as intended, the other settings are largely up to personal preference and performance target. More information about what each setting does can be found in the <a href="https://dyndolod.info/Help/Advanced-Mode" target="_blank">DynDOLOD 3 wiki</a>. The ones used by DBF are on the higher end of visuals, but still reasonable for most systems. As mentioned earlier, you can find performance and VRAM usage comparisons <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>.
                         </p>
                     </div>
 
@@ -723,7 +742,7 @@
                             <li>In the top-left corner, right-click the list of worldspaces and <b>Select all</b>.</li>
                             <li>Select the <b>High</b> preset.</li>
                             <li>Enable <b>Candles</b> and <b>FXGlow</b>.</li>
-                            <li>In the <b>Mesh and Reference rules</b> list, scroll to the bottom and double click on <b>tree</b>.</li>
+                            <li>In the <b>Mesh and Reference rules</b> list, scroll to the bottom and double-click on <b>tree</b>.</li>
                             <li>Set its LOD options to:
                                 <ul>
                                     <li><i>LOD4</i>: Level0</li>
@@ -732,22 +751,13 @@
                                     <li><i>LOD32</i>: Billboard6</li>
                                 </ul>
                             </li>
-                            <li>Still in the list, double click <b>\</b> and set its <b>LOD32</b> to <b>Level0</b>.</li>
+                            <li>Still in the list, double-click <b>\</b> and set its <b>LOD32</b> to <b>Level0</b>.</li>
                             <li>Copy these options:</li>
                             <div class="image-container">
                                 <img class="content-img" src="./img/LOD/DynDOLOD Options.webp" alt="DynDOLOD Options">
                                 <div class="resize-overlay expand"></div>
                             </div>
                         </ul>
-                    </ol>
-
-                    <div class="card-green">
-                        <p>
-                            The customized rules will improve the look of trees and add objects to the map menu (LOD32). Once again, more information can be found in the <a href="https://dyndolod.info/Help/Advanced-Mode" target="_blank">DynDOLOD 3 wiki</a>.
-                        </p>
-                    </div>
-
-                    <ol start="9">
                         <li>Click <strong>OK</strong>.</li>
                         <li>When complete, you will see a message saying "DynDOLOD completed successfully", click <strong>Zip and Exit</strong>.</li>
                         <li>Install the DynDOLOD output by clicking the <img src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>

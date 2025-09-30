@@ -42,6 +42,7 @@
     <script src="js/popup.js"></script>
     <script src="js/javascript.js"></script>
     <script src="js/responsiveTitle.js"></script>
+    <script src="js/imageSlider.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
@@ -54,6 +55,7 @@
     <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/images.css">
     <link rel="stylesheet" href="css/textIcons.css">
+    <link rel="stylesheet" href="css/imageSlider.css">
 </head>
 
 <body class="theme">
@@ -144,12 +146,16 @@
                     Resources
                 </a>
 
-                <a href="./esl.html" title="Light Plugins" class="sublink">
-                    Light Plugins
-                </a>
-
                 <a href="./lod.html" title="LOD Guide" class="sublink">
                     LOD Guide
+                </a>
+
+                <a href="./grasslod.html" title="Grass LOD Guide" class="sublink">
+                    Grass LOD Guide
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
                 </a>
 
                 <a href="./faq.html" title="FAQ">
@@ -164,9 +170,9 @@
                     Mods to Avoid
                 </a>
 
-                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                <a href="./wabbajack.html" title="Wabbajack">
                     Wabbajack
-                </a> -->
+                </a>
             </p>
             <p class="sidebar-padder"></p>
             <hr>
@@ -221,6 +227,12 @@
                                 <li>Install</li>
                             </ol>
                         </li>
+                        <li>
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">A Dragonborn's Fate Resources</a>
+                            <ul>
+                                <li><b>Miscellaneous Files</b> - Static Mesh Improvement Mod - USSEP Patch</li>
+                            </ul>
+                        </li>
                     </ul>
                     </p>
                 </div>
@@ -265,55 +277,27 @@
                     </p>
                 </div>
 
-                <div class="card" id="AzuriteWeathers">
+                <div class="card" id="BetterVanillaWeather">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/42731" target="_blank">Azurite Weathers and Seasons</a></h3>
-                    A complete rework of vanilla weathers.
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/149975" target="_blank">Better Vanilla Weather</a></h3>
+                    Various improvements and changes to vanilla weathers, making them match the old LE look while retaining some SE changes.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - Azurite Weathers III</li>
+                        <li><b>Main Files</b> - Better Vanilla Weather</li>
+                        <ul>
+                            <li>You will be prompted with a FOMOD installer:
+                                <ol>
+                                    <li>SE saturation + bloom and eye adaptation</li>
+                                    <li>Next</li>
+                                    <li>Install</li>
+                                </ol>
+                            </li>
+                        </ul>
                         <li>
-                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/139858" target="_blank">Azurite Weathers - MCM and Settings Loader</a>
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">A Dragonborn's Fate Resources</a>
                             <ul>
-                                <li><b>Main Files</b> - Azurite Weathers - MCM and Settings Loader</li>
-                                <ul>
-                                    <li>You will be prompted with a FOMOD installer:
-                                        <ol>
-                                            <li>Azurite III</li>
-                                            <li>Install</li>
-                                        </ol>
-                                    </li>
-                                </ul>
-
-                                <div class="card-red">
-                                    <p>If the FOMOD defaults to Azurite II, it means Azurite III is not yet enabled or you installed Azurite II by mistake. Remove Azurite II and install Azurite III instead.</p>
-                                </div>
+                                <li><b>Miscellaneous Files</b> - Better Vanilla Weather - USSEP Patch</li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/138991" target="_blank">Azurite III - HDR</a>
-                            <ul>
-                                <li><b>Main Files</b> - Azurite III - HDR</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-
-                <div class="card" id="DIAL" title="DIAL">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/149920" target="_blank">Dynamic Interior Ambient Lighting (DIAL)</a></h3>
-                    Dynamically adjusts interior ambient lighting based on the time of day.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - Dynamic Interior Ambient Lighting (DIAL)</li>
-                        <li>You will be prompted with a FOMOD installer:
-                            <ol>
-                                <li>Next</li>
-                                <li>Next</li>
-                                <li>Azurite Weathers III</li>
-                                <li>Install</li>
-                            </ol>
                         </li>
                     </ul>
                     </p>
@@ -434,13 +418,26 @@
                 <h2 onclick="location.href='#CS'">Community Shaders</h2>
                 <div class="card" id="CoreAndAddons">
                     <p>
-                        Community Shaders is a framework that fixes rendering bugs and allows adding <strong>new graphics features</strong> through addons. The performance impact depends on which modules are used in addition to the main one, which, by itself, doesn't have a significant impact.<!-- An overview of all performance numbers for these addons and the base Community Shaders can be found <a href="https://www.nexusmods.com/skyrimspecialedition/mods/86502?tab=files" target="_blank">here</a>.-->
+                        Community Shaders is a framework that fixes rendering bugs and allows adding <strong>new graphics features</strong> through addons. The performance impact depends on which modules are used in addition to the main one, which, by itself, doesn't have a significant impact. An overview of all performance numbers for these addons and the base Community Shaders can be found <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>.
                     </p>
 
                     <div class="card-red">
                         <p>
                             CS requires a <strong>DX11.1 compatible GPU</strong>, you can check if yours is compatible by looking it up <a href="https://www.techpowerup.com/gpu-specs/" target="_blank">here</a>, then refer to the <b>Graphics Features</b> list.
                         </p>
+                    </div>
+
+                    <div class="image-slider" data-image-path="./img/Others/CS Comparisons" data-sets="Lake Ilinalta|Solitude|Dragonsreach|Warmaiden's|Falkreath|Alchemy Lab" data-images="Vanilla|Community Shaders">
+                        <select class="comparison-set-select"></select>
+                        <div class="comparison-slider">
+                            <img class="comparison-before" />
+                            <img class="comparison-after" />
+                            <div class="comparison-handle"></div>
+                        </div>
+                        <div class="comparison-labels">
+                            <span class="label-before"></span>
+                            <span class="label-after"></span>
+                        </div>
                     </div>
 
                     <h3 class="install">Installation instructions</h3>
@@ -456,12 +453,12 @@
 
                     <hr>
 
-                    <h4>Recommended Addons:</h4>
+                    <h4>Addons:</h4>
+                    <p>Any of these can be skipped.</p>
                     <ul>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/86502" target="_blank">Grass Lighting</a> - Improves grass visuals with directional lighting, subsurface scattering, and fixes UV-mapping issues for complex grass. Includes normal and specular map support.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/87816" target="_blank">Grass Collision</a> - Makes grass collide with the player and NPCs.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/93209" target="_blank">Screen Space Shadows</a> - Adds extra shadow details to objects, plants, and your character that wouldn't normally cast shadows</li>
-                        <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/99548" target="_blank">Light Limit Fix</a> - Removes the game's light limit (not the shadow limit) while adding particle lights and contact shadows.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/114114" target="_blank">Subsurface Scattering</a> - Adds screen-space subsurface scattering to characters to simulate realistic skin.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/112739" target="_blank">Wetness Effects</a> - Rainfall creates realistic wet surfaces, puddles that persist and evaporate over time, and dynamic ripple effects, while precipitation occlusion ensures raindrop visuals appear only on exposed areas.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/112762" target="_blank">Water Effects</a> - Simulates water caustic effects and adds optimised parallax support.</li>
@@ -469,52 +466,18 @@
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/130375" target="_blank">Screen Space Global Illumination (SSGI)</a> - Simulates ambient occlusion and indirect lighting using screen space information.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/139185" target="_blank">Cloud Shadows</a> - Allows clouds to cast shadows.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/139352" target="_blank">Skylighting</a> - Simulates large scale world-space ambient occlusion.</li>
+                        <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/150755" target="_blank">Extended Translucency</a> - Improves the look of thin fabric and other translucent materials, such as glass.</li>
+                        <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/148123" target="_blank">Terrain Variation</a> - Fixes tiling in landscape textures.</li>
+                        <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/157076" target="_blank">Terrain Blending</a> - Makes terrain realistically blend into objects like rocks, plants, and buildings.</li>
+                        <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/153543" target="_blank">Sky Sync</a> - Synchronizes lighting, shadows, and volumetric lighting with realistic sun and moon positioning, including an optional southern sun arc and altitude-corrected horizon visibility.</li>
                     </ul>
 
-                    <div class="card-green">
-                        <p>
-                            The DBF Configuration file applies the following settings:
-                        <ul>
-                            <li>
-                                Switched AA method from TAA to FSR 3.1 (native), massively improving visual clarity for a GPU performance hit of about 10%.
-                                <ul>
-                                    <li>If you are using an RTX GPU, you should switch from FSR 3.1 AA to DLAA, which gives a similar result but with better performance.</li>
-                                </ul>
-                            </li>
-                            <li>Increased sample count for Screen Space Shadows from 1x to 3x.</li>
-                            <li>SSGI set to quarter resolution - the full and half resolution options are too heavy to be recommended on most systems.</li>
-                            <li>Enabled contact shadows for LLF.</li>
-                        </ul>
+                    <div class="card-yellow">
+                        If you're short on GPU performance, you can install <a href="https://www.nexusmods.com/skyrimspecialedition/mods/156952" target="_blank">Upscaling - Community Shaders</a>. You can also use it to improve visuals, at a small performance cost, by running FSR (or DLSS if you have an RTX GPU) at native resolution.
                         </p>
                     </div>
                 </div>
 
-                <div class="card" id="CSParticlePatch" title="CS Particle Patch">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/147270" target="_blank">CS Particle Patch</a></h3>
-                    Fixes lighting on water effects, smoke particles, cloud meshes, and more.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - CS Particle Patch</li>
-                        <li>You will be prompted with a FOMOD installer:
-                            <ol>
-                                <li>Next</li>
-                                <li>Next</li>
-                                <li>SMIM</li>
-                                <li>Azurite III</li>
-                                <li>Install</li>
-                            </ol>
-                        </li>
-                        <li>
-                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/141038" target="_blank">No Camera Attached Smoke or Fog</a>
-                            (Improves performance when using the CS Particle Patch)
-                            <ul>
-                                <li><b>Main Files</b> - No Camera Attached Smoke or Fog</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    </p>
-                </div>
             </span>
 
             <span id="DistantObjects" class="section">
