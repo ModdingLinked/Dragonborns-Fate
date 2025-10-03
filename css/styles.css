@@ -218,6 +218,11 @@ textarea {
   cursor: pointer;
 }
 
+button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 @keyframes rotate {
   50% {
     transform: translateY(-6px) rotateZ(180deg);
