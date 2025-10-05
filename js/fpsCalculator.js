@@ -1,5 +1,6 @@
+const commonRates = [60, 120, 144, 240];
+
 function findNearestRateWithGoodDivisor(rate) {
-    const commonRates = [60, 72, 75, 85, 100, 120, 144, 240];
     const validRates = commonRates.filter(r => r <= rate);
 
     if (validRates.length === 0) return 60;
@@ -67,12 +68,17 @@ function calculateFPS() {
         const rrVRR = Math.round(rr * (1 - rr * 0.00028));
         results.innerHTML = `
             <div class="card card-basic">
-                <p>Recommended FPS Limit Range: From 48* to ${rrVRR}</p>
+                <p>Recommended FPS Limit Range: Any value from 48* to ${rrVRR}</p>
             </div>
             <div class="card card-yellow">
                 <p>
-                    *Your VRR range is typically 48-${rrVRR} FPS, but some displays support 30-${rrVRR} or 1-${rrVRR}.<br>
-                    Check your monitor's specifications for details.
+                    *Your VRR range typically starts at 48 FPS, but some displays support 30 or even 1.<br>
+                    Check <a href="https://www.nvidia.com/en-us/geforce/products/g-sync-monitors/specs/" target="_blank">this list</a> to know your model's VRR range. Check the product page if it's not listed there.
+                </p>
+            </div>
+            <div class="card card-green">
+                <p>
+                    Choose the highest value your system can maintain consistently.
                 </p>
             </div>
         `;
@@ -83,14 +89,13 @@ function calculateFPS() {
         ).join(' / ');
 
         let warning = '';
-        const commonRates = [60, 120, 144, 180, 240, 280];
-        if (!commonRates.includes(rr)) {
+        if (!commonRates.includes(rr) && rr > 75) {
             const better = findNearestRateWithGoodDivisor(rr);
             warning = `
                 <div class="card card-red">
                     <p>
                         Your refresh rate (${rr}Hz) has divisors that make it suited for VRR more than fixed refresh.<br>
-                        Look into enabling VRR if your display supports it. If not, consider switching to <b>${better}Hz</b> instead - you can do this in the <b>Nvidia Control Panel</b> or <b>Adrenalin</b> settings.
+                        Look into enabling VRR if your display supports it. If not, consider switching to <b>${better}Hz</b> instead if you can't hold performance close to the suggested value - you can do this in the <b>Nvidia Control Panel</b> or <b>Adrenalin</b> settings.
                     </p>
                 </div>
             `;
@@ -101,7 +106,7 @@ function calculateFPS() {
                 <p>Recommended FPS ${usableDivisors.length === 1 ? 'Limit' : 'Limits'}: ${recommendations}</p>
             </div>
             ${warning}
-            <div class="card card-yellow">
+            <div class="card card-green">
                 <p>
                     Choose the highest value your system can maintain consistently.
                 </p>
