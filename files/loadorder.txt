@@ -15,16 +15,15 @@ Misc Bugfix Compilation.esp
 TrueHUD.esl
 Skyrim Extended Cut - Saints and Seducers.esp
 DynDOLOD.esm
+Dragon Leveled List Fixes.esp
 bleedoutFix.esp
 zeroBountyHostilityFix.esp
-Dragon Leveled List Fixes.esp
 stuck on screen fix.esp
 SkyUI_SE.esp
 MCMHelper.esp
 QuickLootIE.esp
 Show Follower Carryweight.esp
 TrueDirectionalMovement.esp
-FNIS.esp
 BetterThirdPersonSelection.esp
 TavernAIFix.esp
 Sensible Oculory Solution - Logical Mzark Puzzle.esp

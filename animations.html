@@ -160,12 +160,8 @@
                     FAQ
                 </a>
 
-                <a href="./avoid-tools.html" title="Tools to Avoid">
-                    Tools to Avoid
-                </a>
-
-                <a href="./avoid-mods.html" title="Mods to Avoid">
-                    Mods to Avoid
+                <a href="./safe-modding.html" title="Safe Modding">
+                    Safe Modding
                 </a>
 
                 <a href="./wabbajack.html" title="Wabbajack">
@@ -214,8 +210,8 @@
                 <h2 onclick="location.href='#Animations'">Animations</h2>
 
                 <div class="card">
-                    <p>
                     <h3>Creating a Separator in MO2</h3>
+                    <p>
                     <ol>
                         <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
                         <li>Name the separator <strong>Animations</strong>.</li>
@@ -242,6 +238,17 @@
                     <ul>
                         <li><b>Main Files</b> - Paired Animation Improvements</li>
                         <li><b>Main Files</b> - Horse Mount and Dismount Double Sound Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="AssortedBehaviorFixes">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/167000" target="_blank">Assorted Behavior Fixes</a></h3>
+                    Fixes various animation issues.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Assorted Behavior Fixes</li>
                     </ul>
                     </p>
                 </div>
@@ -371,7 +378,7 @@
                         <ol>
                             <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
                             <li>In the <strong>INI Files</strong> tab, select <span class="card-basic">SKSE/Plugins/SimpleDualSheath.ini</span></li>
-                            <li>Set <b>Flags</b> (line 26) to <span class="card-basic">FirstPerson|Player|NPC</span></li>
+                            <li>Set <b>Flags</b> to <span class="card-basic">FirstPerson|Player|NPC</span></li>
                             <li>Save your changes.</li>
                         </ol>
                         <li><b>Optional Files</b> - XPMSSE Left Hand Sheath Rotation Fix</li>
@@ -432,11 +439,11 @@
                 <h2 onclick="location.href='#BehaviorPatching'">Behavior Patching</h2>
 
                 <div class="card" id="Running Pandora">
-                    <p>
                     <h3>Running Pandora</h3>
-                    As mentioned earlier, Pandora is needed in order to bring together all of the mods' changes.
+                    <p>
+                        As mentioned earlier, Pandora is needed in order to bring together all of the mods' changes.
 
-                    <br>
+                        <br>
                     <ol>
                         <li>Install <a href="https://dotnet.microsoft.com/en-us/download/dotnet/9.0" target="_blank">.NET >=9.0</a> (ASP.NET Core Runtime), then restart your computer.</li>
                         <li>In MO2, head to the right pane's <b>Data</b> tab, then filter <span class="card-basic">Pandora</span>. You will see a number of files, right-click <strong>Pandora Behaviour Engine+.exe</strong> and <b>Add as Executable</b>.</li>
@@ -447,16 +454,12 @@
                         <li>Press <b>CTRL + E</b> and then select Pandora Behaviour Engine+.</li>
                         <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-o:"Copied path goes here"</span></li>
                         <li>Close the <b>Modify Executables</b> menu and <strong>run Pandora</strong> from the drop-down.</li>
-                        <li><strong>Select </strong> the following patches as shown (order won't matter):</li>
-                        <div class="image-container">
-                            <img class="content-img" src="./img/Others/Pandora Patches.webp" alt="Pandors Patches">
-                            <div class="resize-overlay expand"></div>
-                        </div>
+                        <li>Select all patches except the <b>XMPSE Patch for Pandora</b> (read below).</li>
                     </ol>
 
                     <div class="card-red">
                         <p>
-                            <strong>Do NOT enable the XPMSE Patch</strong>! It will cause crashes during the game's intro. None of the mods in DBF require it, and XPMSE is not generally recommended.
+                            <strong>Do NOT enable the XPMSE Patch</strong>! It will cause crashes during the game's intro. None of the mods in DBF require it, and XPMSE is generally not recommended. If you do have mods that require XPMSE, then select its minimal version during install, as the full one has performance problems due to scripting.
 
                             <br><br>
 

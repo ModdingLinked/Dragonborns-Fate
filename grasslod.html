@@ -164,12 +164,8 @@
                     FAQ
                 </a>
 
-                <a href="./avoid-tools.html" title="Tools to Avoid">
-                    Tools to Avoid
-                </a>
-
-                <a href="./avoid-mods.html" title="Mods to Avoid">
-                    Mods to Avoid
+                <a href="./safe-modding.html" title="Safe Modding">
+                    Safe Modding
                 </a>
 
                 <a href="./wabbajack.html" title="Wabbajack">
@@ -208,9 +204,9 @@
                 <h2 onclick="location.href='#Overview'">Overview</h2>
 
                 <div class="card" id="IntroductionAndRequirement">
-                    <p>
                     <h3>Grass Cache</h3>
-                    Grass caching is the process of generating files (using the NGIO mod) that tell the game exactly where grass should and shouldn't appear. This has several benefits:
+                    <p>
+                        Grass caching is the process of generating files (using the NGIO mod) that tell the game exactly where grass should and shouldn't appear. This has several benefits:
                     <ul>
                         <li>
                             <strong>Prevents grass clipping through objects</strong> &mdash; no more grass poking through rocks or buildings.
@@ -233,9 +229,9 @@
                 </div>
 
                 <div class="card" id="GrassLODComparison" title="Grass LOD Comparison">
-                    <p>
                     <h3>Grass LOD Comparison</h3>
-                    Use the sliders below to compare different aspects of Grass LOD generation. First select a comparison set, then choose which images to compare for each side of the slider.
+                    <p>
+                        Use the sliders below to compare different aspects of Grass LOD generation. First select a comparison set, then choose which images to compare for each side of the slider.
                     </p>
 
                     <div class="image-slider" data-image-path="./img/Grass LOD/Comparisons" data-sets="Whiterun Plains|The Reach|Eastmarch" data-images="Vanilla|DynDOLOD|DynDOLOD + Grass LOD">
@@ -261,8 +257,8 @@
                 <h2 onclick="location.href='#Process'">Process</h2>
 
                 <div class="card">
-                    <p>
                     <h3>Creating a Separator in MO2</h3>
+                    <p>
                     <ol>
                         <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
                         <li>Name the separator <strong>Grass Cache</strong>.</li>
@@ -271,9 +267,9 @@
                 </div>
 
                 <div class="card" id="InstallingResources" title="Installing Resources">
-                    <p>
                     <h3>Installing Resources</h3>
-                    Install in the following order:
+                    <p>
+                        Install in the following order:
                     <ol>
                         <li>
                             <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/42161" target="_blank">No Grass In Objects</a></b>
@@ -283,9 +279,9 @@
                                     <li>Once the mod has been installed, run the game once (SKSE in MO2), then close it.</li>
                                     <li>Double-click <i>Overwrite</i> and open <span class="card-basic">SKSE/Plugins/GrassControl.ini</span></li>
                                     <ul>
-                                        <li>Set <b>Use-grass-cache</b> (line 43) to <strong>true</strong>.</li>
-                                        <li>Set <b>Only-load-from-cache</b> (line 72) to <strong>true</strong>.</li>
-                                        <li>Set <b>DynDOLOD-Grass-Mode</b> (line 82) to <strong>2</strong>.</li>
+                                        <li>Set <b>Use-grass-cache</b> to <strong>true</strong>.</li>
+                                        <li>Set <b>Only-load-from-cache</b> to <strong>true</strong>.</li>
+                                        <li>Set <b>DynDOLOD-Grass-Mode</b> to <strong>2</strong>.</li>
                                     </ul>
                                     <li>Save your changes.</li>
                                 </ol>
@@ -306,7 +302,7 @@
                                 <ol>
                                     <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
                                     <li>In the <strong>INI Files</strong> tab, select <span class="card-basic">SKSE/Plugins/GrassCacheHelperNG.ini</span></li>
-                                    <li>Set <b>AutoGrassDistanceSettings</b> (line 19) to <strong>0</strong>.</li>
+                                    <li>Set <b>AutoGrassDistanceSettings</b> to <strong>0</strong>.</li>
                                     <li>Save your changes.</li>
                                 </ol>
                             </ul>
@@ -342,8 +338,8 @@
                 </div>
 
                 <div class="card" id="GrassCache">
-                    <p>
                     <h3>Grass Cache</h3>
+                    <p>
                     <ol>
                         <li><u>Temporarily</u> disable the following mods if you use them:
                             <ul>
@@ -384,9 +380,9 @@
                 </div>
 
                 <div class="card" id="GrassLOD" title="Grass LOD">
-                    <p>
                     <h3>Grass LOD</h3>
-                    This part assumes you are already familiar with the <a href="./lod.html#TexGen">LOD generation process</a>! Learn the ropes of LOD generation before continuing with this guide.
+                    <p>
+                        This part assumes you are already familiar with the <a href="./lod.html#TexGen">LOD generation process</a>! Learn the ropes of LOD generation before continuing with this guide.
 
                     <ol>
                         <li>Delete the existing outputs for <b>TexGen</b> and <b>DynDOLOD</b>, if they exist.</li>
