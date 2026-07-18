@@ -10,27 +10,24 @@ ccBGSSSE037-Curios.esl
 ccBGSSSE025-AdvDSGS.esm
 _ResourcePack.esl
 unofficial skyrim special edition patch.esp
-Unofficial Skyrim Special Edition Patch - Disable Book.esp
-Misc Bugfix Compilation.esp
+Disable USSEP Book.esl
 TrueHUD.esl
 Skyrim Extended Cut - Saints and Seducers.esp
 DynDOLOD.esm
-Dragon Leveled List Fixes.esp
 bleedoutFix.esp
-zeroBountyHostilityFix.esp
-stuck on screen fix.esp
 SkyUI_SE.esp
+Dragon Leveled List Fixes.esp
 MCMHelper.esp
 QuickLootIE.esp
 Show Follower Carryweight.esp
 TrueDirectionalMovement.esp
+FNIS.esp
 BetterThirdPersonSelection.esp
 TavernAIFix.esp
 Sensible Oculory Solution - Logical Mzark Puzzle.esp
 NiftyAITweaksAIO.esp
 SurvivalModeImproved.esp
 Survival Mode Improved - SKSE - USSEP Patch.esp
-SMI SKSE - Skyrim Misc Bugfix Compilation Patch.esp
 Simple Bow Stamina.esp
 CutContentRestoration.esp
 SMIM-SE-Merged-All.esp

@@ -378,7 +378,7 @@
                         <ol>
                             <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
                             <li>In the <strong>INI Files</strong> tab, select <span class="card-basic">SKSE/Plugins/SimpleDualSheath.ini</span></li>
-                            <li>Set <b>Flags</b> to <span class="card-basic">FirstPerson|Player|NPC</span></li>
+                            <li>In the <b>ShieldOnBack</b> section, set <b>Flags</b> to <span class="card-basic">FirstPerson|Player|NPC</span></li>
                             <li>Save your changes.</li>
                         </ol>
                         <li><b>Optional Files</b> - XPMSSE Left Hand Sheath Rotation Fix</li>
@@ -444,32 +444,18 @@
 
                         <br>
                     <ol>
-                        <li>Install <a href="https://dotnet.microsoft.com/en-us/download/dotnet/9.0" target="_blank">.NET >=9.0</a> (ASP.NET Core Runtime), then restart your computer.</li>
+                        <li>Download and install Pandora as instructed above.</li>
                         <li>In MO2, head to the right pane's <b>Data</b> tab, then filter <span class="card-basic">Pandora</span>. You will see a number of files, right-click <strong>Pandora Behaviour Engine+.exe</strong> and <b>Add as Executable</b>.</li>
                         <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
                         <li>Title the mod <span class="card-basic">Pandora Output</span></li>
-                        <li>Right-click on your <strong>Pandora Output</strong> mod and select <b>Open in Explorer</b>.</li>
+                        <li>Right-click on your Pandora Output mod and select <b>Open in Explorer</b>.</li>
                         <li>From from newly opened window, <strong>copy the file path</strong>.</li>
-                        <li>Press <b>CTRL + E</b> and then select Pandora Behaviour Engine+.</li>
-                        <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-o:"Copied path goes here"</span></li>
-                        <li>Close the <b>Modify Executables</b> menu and <strong>run Pandora</strong> from the drop-down.</li>
-                        <li>Select all patches except the <b>XMPSE Patch for Pandora</b> (read below).</li>
-                    </ol>
-
-                    <div class="card-red">
-                        <p>
-                            <strong>Do NOT enable the XPMSE Patch</strong>! It will cause crashes during the game's intro. None of the mods in DBF require it, and XPMSE is generally not recommended. If you do have mods that require XPMSE, then select its minimal version during install, as the full one has performance problems due to scripting.
-
-                            <br><br>
-
-                            Additionally, you may not see some of these patches if you skipped the corresponding mods. This is normal, and you can safely ignore them.
-                        </p>
-                    </div>
-
-                    <ol start="11">
+                        <li><strong>Run Pandora</strong> from the drop-down.</li>
+                        <li>Select all patches.</li>
+                        <li>From the bottom-left corner, open Pandora's settings and <strong>set the Output Folder</strong> to the one you copied earlier.</li>
                         <li>Click the <strong>Patch</strong> button.</li>
                         <li>Once the patching is done, close Pandora.</li>
-                        <li>In MO2, make sure your <strong>Pandora Output</strong> mod is enabled. If you did everything correctly, you should see it conflicting with a few other mods in the list (bolt icons).</li>
+                        <li>In MO2, make sure your Pandora Output mod is enabled. If you did everything correctly, you should see it conflicting with a few other mods in the list (bolt icons).</li>
                         </p>
                 </div>
             </span>

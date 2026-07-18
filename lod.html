@@ -384,39 +384,71 @@
                             <li>
                                 Cleaning ESM plugins may result in slightly longer loading times, as xEdit removes the OFST data (an engine optimization for faster cell lookup) instead of regenerating it. However, with a small load order list like DBF, the impact is negligible. Naturally this isn't a good thing, but fixing the large refs bugs is far more important.
                             </li>
-                            </p>
+                        </ul>
+                        </p>
                     </div>
 
-                    <h3 id="CleaningSetup">Cleaning Setup</h3>
-                    <ol>
-                        <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
-                        <li>Title the mod <span class="card-basic">Cleaned Plugins</span></li>
-                        <li>Navigate to your game's <b>Data</b> folder, and copy the following plugins:
-                            <ul>
-                                <li>Update.esm</li>
-                                <li>Dawnguard.esm</li>
-                                <li>Hearthfires.esm</li>
-                                <li>Dragonborn.esm</li>
-                                <li>ccBGSSSE001-Fish.esm</li>
-                                <li>ccQDRSSE001-SurvivalMode.esl</li>
-                                <li>ccBGSSSE025-AdvDSGS.esm</li>
-                            </ul>
-                        </li>
-                        <li>Paste them to the <b>Cleaned Plugins</b> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
-                        <li>Press <strong>F5</strong> while you are on MO2 without any menu open, then make sure the new mod is enabled by ticking its checkbox.</li>
-                    </ol>
+                    <br>
+                    You can clean master files directly in the game's Data folder, or load cleaned copies as a mod in Mod Organizer 2. The former takes less storage space (around 200MB). The latter makes your setup more portable.
+                    <div class="flex" style="flex-direction: row; align-content: center; justify-content: center;">
+                        <div class="flex" style="flex-direction: column; width: 50%; margin-right: 0.5em;">
+                            <div class="expander-top clickable" onclick="expandCard(this, inDataExpander)" id="inData">
+                                <h3>Directly in the Data folder</h3>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                            </div>
+                            <div class="expander-bottom" id="inDataExpander">
+                                <p>
+                                <ol>
+                                    <li>Download <a href="https://www.nexusmods.com/skyrimspecialedition/mods/185743" target="_blank">Simple Cleaned Skyrim ESMs Patcher</a>.</li>
+                                    <li>Open the downloaded archive and extract <strong>everything</strong> to the game's <b>Data</b> folder.</li>
+                                    <li>Double-click on <strong>Simple Cleaned Skyrim ESMs Patcher.exe</strong> to run it.</li>
+                                    <li>
+                                        A command prompt window will open and it should say:
+                                        <div class="card-basic">Patching successful</div>
+                                    </li>
+                                    <li>Press ENTER to close the command prompt. Backups will be created in the <b>Original ESMs backups</b> folder.</li>
+                                </ol>
+                                </p>
+                            </div>
+                        </div>
 
-                    <h3 id="RunningQAC">Running QAC</h3>
-                    <ol>
-                        <li><strong>Download the latest xEdit release</strong> from the <a href="https://discord.gg/5t8RnNQ">xEdit Discord server</a>, in the <b>xedit-builds</b> channel.</li>
-                        <li><strong>Extract the archive</strong> and place the files inside a folder of your choosing (do not use a UAC protected folder or the game folder).</li>
-                        <li><strong>Add xEdit to MO2</strong>'s executables list by pressing <b>CTRL + E</b> and then clicking <span class="card-basic">Add from file...</span>, then point it to <b>xEdit.exe</b>.</li>
-                        <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-SSE -QAC</span></li>
-                        <li>Close the <b>Modify Executables</b> menu and <strong>run xEdit</strong> from the drop-down.</li>
-                        <li>When prompted with the plugin selection screen, click on <strong>Update.esm</strong>.</li>
-                        <li>When complete, you should see <b>Quick Clean mode finished</b> at the bottom of the log, you can close the program.</li>
-                        <li>Now do the exact <strong>same thing for the rest</strong> of the plugins listed before.</li>
-                    </ol>
+                        <div class="flex" style="flex-direction: column; width: 50%; margin-left: 0.5em;">
+                            <div class="expander-top clickable" onclick="expandCard(this, inMo2Expander)" id="inMo2">
+                                <h3>As a mod in MO2</h3>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                            </div>
+                            <div class="expander-bottom" id="inMo2Expander">
+                                <p>
+                                <ol>
+                                    <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
+                                    <li>Title the mod <span class="card-basic">Cleaned Plugins</span></li>
+                                    <li>Navigate to your game's <b>Data</b> folder, and copy the following plugins:
+                                        <ul>
+                                            <li>Update.esm</li>
+                                            <li>Dawnguard.esm</li>
+                                            <li>Hearthfires.esm</li>
+                                            <li>Dragonborn.esm</li>
+                                            <li>ccBGSSSE001-Fish.esm</li>
+                                            <li>ccQDRSSE001-SurvivalMode.esl</li>
+                                            <li>ccBGSSSE025-AdvDSGS.esm</li>
+                                        </ul>
+                                    </li>
+                                    <li>Paste them to the <b>Cleaned Plugins</b> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                                    <li>Press <strong>F5</strong> while you are on MO2 without any menu open, then make sure the new mod is enabled by ticking its checkbox.</li>
+                                    <li>Download <a href="https://www.nexusmods.com/skyrimspecialedition/mods/185743" target="_blank">Simple Cleaned Skyrim ESMs Patcher</a>.</li>
+                                    <li>Open the downloaded archive and extract <strong>everything</strong> to the new mod's folder.</li>
+                                    <li>Double-click on <strong>Simple Cleaned Skyrim ESMs Patcher.exe</strong> to run it.</li>
+                                    <li>
+                                        A command prompt window will open and it should say:
+                                        <div class="card-basic">Patching successful</div>
+                                    </li>
+                                    <li>Press ENTER to close the command prompt. Backups will be created in the <b>Original ESMs backups</b> folder.</li>
+                                </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     </p>
                 </div>
 
