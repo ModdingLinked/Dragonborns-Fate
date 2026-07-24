@@ -43,6 +43,8 @@
     <script src="js/javascript.js"></script>
     <script src="js/responsiveTitle.js"></script>
     <script src="js/imageSlider.js"></script>
+    <script src="js/imageViewer.js"></script>
+    <script src="js/imageGallery.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
@@ -56,6 +58,8 @@
     <link rel="stylesheet" href="css/images.css">
     <link rel="stylesheet" href="css/textIcons.css">
     <link rel="stylesheet" href="css/imageSlider.css">
+    <link rel="stylesheet" href="css/imageGallery.css">
+</head>
 </head>
 
 <body class="theme">
@@ -200,6 +204,29 @@
 
             <span id="Visuals" class="section">
                 <h2 onclick="location.href='#Visuals'">Visuals</h2>
+
+                <div class="card" id="Showcase">
+                    <h3>Showcase</h3>
+                    <div class="image-gallery" id="showcase-gallery" data-total-images="121" data-image-path="./img/Showcase/ScreenShot">
+
+                        <div class="gallery-viewer">
+                            <button class="gallery-arrow gallery-prev" aria-label="Previous Image">
+                                <img src="./img/UI/Arrow.svg" alt="Previous">
+                            </button>
+
+                            <img class="gallery-display" src="./img/Showcase/ScreenShot1.webp" alt="Showcase screenshot 1" />
+
+                            <button class="gallery-arrow gallery-next" aria-label="Next Image">
+                                <img src="./img/UI/Arrow.svg" alt="Next">
+                            </button>
+                        </div>
+
+                        <div class="gallery-labels">
+                            <span class="gallery-label">1 / 121</span>
+                        </div>
+
+                    </div>
+                </div>
 
                 <div class="card">
                     <h3>Creating a Separator in MO2</h3>
