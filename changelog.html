@@ -39,19 +39,22 @@
     <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='clear-site-data' content='cache'>
 
-    <script src="js/popup.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/vramDiff.js"></script>
+    <script src="submodule/shared/js/benchmarkCharts.js"></script>
+    <script src="submodule/shared/js/download.js"></script>
+    <script src="submodule/shared/js/expanders.js"></script>
+    <script src="submodule/shared/js/fpsCalculator.js"></script>
+    <script src="submodule/shared/js/highlight.js"></script>
+    <script src="submodule/shared/js/imageGallery.js"></script>
+    <script src="submodule/shared/js/imageSlider.js"></script>
+    <script src="submodule/shared/js/imageViewer.js"></script>
+    <script src="submodule/shared/js/javascript.js"></script>
+    <script src="submodule/shared/js/perfguide.js"></script>
+    <script src="submodule/shared/js/popup.js"></script>
+    <script src="submodule/shared/js/recommendPreset.js"></script>
+    <script src="submodule/shared/js/responsiveTitle.js"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navigationArrows.css">
-    <link rel="stylesheet" href="css/progressBar.css">
-    <link rel="stylesheet" href="css/guideColors.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body class="theme">
@@ -197,13 +200,33 @@
             <span id="Changelog" class="section">
                 <h2 onclick="location.href='#Changelog'">Changelog</h2>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>2026</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
                 <div class="expander-bottom">
                     <p>
+                    <h2 class="install">Jul 26</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Removed Better AltTab, it causes all missed dialogue to play simultaneously when regaining focus.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Fleshed out the Community Shaders Upscaling section - it now features a table that takes in your game resolution and recommends upscaling presets based on upscaler, using color coding.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Removed unintentionally included XPMSSE Left Hand Skeleton Rotation Fix, which made bodies harder to drag.</li>
+                        <li>Updated Bethini Pie (4.17).</li>
+                    </ul>
+
+                    <hr>
+
                     <h2 class="install">Jul 19</h2>
+                    <h3>NOT Safe Mid-game</h3>
                     <h2><strong>Bug Fixes</strong></h2>
                     <ul>
                         <li>Replaced Disable USSEP Book with Disable USSEP Unwanted Effects Book Updated.</li>
@@ -323,7 +346,7 @@
                                 <li>Extended Translucency</li>
                             </ul>
                         </li>
-                        <li>Added a note about running CS' upscaler in native mode for users with spare GPU performance.</li>
+                        <li>Added information regarding Community Shader's Upscaling.</li>
                     </ul>
                     <h2><strong>Wabbajack</strong></h2>
                     <ul>
@@ -357,7 +380,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>2025</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -367,7 +390,7 @@
                     <h3>Safe Mid-game</h3>
                     <h2><strong>Utilities</strong></h2>
                     <ul>
-                        <li>Fixed the recommended refresh rates and improved clarity. Also added a link to NVidia's official G-Sync monitors list (as a reference for VRR ranges).</li>
+                        <li>Fixed the recommended refresh rates and improved clarity. Also added a link to Nvidia's official G-Sync monitors list (as a reference for VRR ranges).</li>
                     </ul>
                     <h2><strong>Wabbajack</strong></h2>
                     <ul>

@@ -39,27 +39,22 @@
     <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='clear-site-data' content='cache'>
 
-    <script src="js/popup.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/responsiveTitle.js"></script>
-    <script src="js/imageSlider.js"></script>
-    <script src="js/imageViewer.js"></script>
-    <script src="js/imageGallery.js"></script>
+    <script src="submodule/shared/js/vramDiff.js"></script>
+    <script src="submodule/shared/js/benchmarkCharts.js"></script>
+    <script src="submodule/shared/js/download.js"></script>
+    <script src="submodule/shared/js/expanders.js"></script>
+    <script src="submodule/shared/js/fpsCalculator.js"></script>
+    <script src="submodule/shared/js/highlight.js"></script>
+    <script src="submodule/shared/js/imageGallery.js"></script>
+    <script src="submodule/shared/js/imageSlider.js"></script>
+    <script src="submodule/shared/js/imageViewer.js"></script>
+    <script src="submodule/shared/js/javascript.js"></script>
+    <script src="submodule/shared/js/perfguide.js"></script>
+    <script src="submodule/shared/js/popup.js"></script>
+    <script src="submodule/shared/js/recommendPreset.js"></script>
+    <script src="submodule/shared/js/responsiveTitle.js"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navigationArrows.css">
-    <link rel="stylesheet" href="css/coco.css">
-    <link rel="stylesheet" href="css/progressBar.css">
-    <link rel="stylesheet" href="css/guideColors.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/images.css">
-    <link rel="stylesheet" href="css/textIcons.css">
-    <link rel="stylesheet" href="css/imageSlider.css">
-    <link rel="stylesheet" href="css/imageGallery.css">
-</head>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body class="theme">
@@ -204,29 +199,6 @@
 
             <span id="Visuals" class="section">
                 <h2 onclick="location.href='#Visuals'">Visuals</h2>
-
-                <div class="card" id="Showcase">
-                    <h3>Showcase</h3>
-                    <div class="image-gallery" id="showcase-gallery" data-total-images="121" data-image-path="./img/Showcase/ScreenShot">
-
-                        <div class="gallery-viewer">
-                            <button class="gallery-arrow gallery-prev" aria-label="Previous Image">
-                                <img src="./img/UI/Arrow.svg" alt="Previous">
-                            </button>
-
-                            <img class="gallery-display" src="./img/Showcase/ScreenShot1.webp" alt="Showcase screenshot 1" />
-
-                            <button class="gallery-arrow gallery-next" aria-label="Next Image">
-                                <img src="./img/UI/Arrow.svg" alt="Next">
-                            </button>
-                        </div>
-
-                        <div class="gallery-labels">
-                            <span class="gallery-label">1 / 121</span>
-                        </div>
-
-                    </div>
-                </div>
 
                 <div class="card">
                     <h3>Creating a Separator in MO2</h3>
@@ -442,7 +414,7 @@
                 <div class="card" id="CoreAndAddons">
                     <p>
                         Community Shaders is a framework that fixes rendering bugs and allows adding <strong>new graphics features</strong> through addons. The performance impact depends on which modules are used in addition to the main one, which, by itself, doesn't have a significant impact.
-                        <!-- Retake these!
+                        <!-- Pending new benchmarks
                         An overview of all performance numbers for these addons and the base Community Shaders can be found <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>.
                         -->
                     </p>
@@ -467,7 +439,7 @@
                     </div>
 
                     <h3 class="install">Installation instructions</h3>
-                    First, install <a href="https://www.nexusmods.com/skyrimspecialedition/mods/86492" target="_blank">Community Shaders</a>, then you can install any of the following addons:
+                    <p>First, install <a href="https://www.nexusmods.com/skyrimspecialedition/mods/86492" target="_blank">Community Shaders</a>, then you can install any of the following addons:</p>
                     <ul>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/112739" target="_blank">Wetness Effects</a> - Rainfall creates realistic wet surfaces, puddles that persist and evaporate over time, and dynamic ripple effects, while precipitation occlusion ensures raindrop visuals appear only on exposed areas.</li>
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/130375" target="_blank">Screen Space Global Illumination (SSGI)</a> - Simulates ambient occlusion and indirect lighting using screen space information.</li>
@@ -477,15 +449,122 @@
                         <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/157076" target="_blank">Terrain Blending</a> - Makes terrain realistically blend into objects like rocks, plants, and buildings.</li>
                     </ul>
 
-                    <div class="card-yellow">
-                        <p>
-                            If you're short on GPU performance, you can install <a href="https://www.nexusmods.com/skyrimspecialedition/mods/156952" target="_blank">Upscaling - Community Shaders</a>. Do note that it defaults to Frame Generation on.
+                    <br>
+                    <hr>
 
-                            <br><br>
+                    <h2 onclick="location.href='#Upscaling'">Upscaling</h2>
+                    <p>
+                        Upscaling is a technology aimed at improving the flexibility of a game's performance and visuals.
 
-                            On the other hand, if you have spare GPU performance and want the best image clarity, you can use the same mod in native mode (DLAA and FSR native), cleaning the visuals from TAA's blurriness.
-                        </p>
+                        <br><br>
+
+                        The internal resolution of your game is expressed as a preset that ranges from <b>Native</b> to <b>Ultra Performance</b>. Each preset progressively lowers the internal resolution that is fed to the upscaler. The upscaler then uses machine learning to reconstruct it back to the game's resolution. Native mode is the exception, improving the image without lowering internal resolution.
+
+                    <div class="card-green center">
+                        <p>For example, running a 4K game in Performance mode renders it at 1080p before upscaling it back to 4K for display.</p>
                     </div>
+
+                    <br>
+
+                    All 3 of the main GPU vendors have their own implementation of this same idea:
+                    </p>
+
+                    <ul>
+                        <li><span style="color: rgb(118, 185, 0);">DLSS</span> from Nvidia - the most advanced one, but locked to RTX GPUs.</li>
+                        <li><span style="color: rgb(237, 28, 36);">FSR</span> from AMD, GPU agnostic up until its latest iteration, FSR 4 (RDNA 3 and RDNA 4 only).</li>
+                        <li><span style="color: rgb(0, 113, 197)">XeSS</span> from Intel - GPU agnostic, although it favours Intel's Arc GPUs and is not as widely supported.</li>
+                    </ul>
+
+                    <p>
+                        Input your game resolution below and hit Apply. The table's color coding will indicate how viable the various presets of a given upscaler are. Green would indicate that the upscaler has enough pixels to reconstruct a stable and accurate image. Orange and red entries should be considered only if performance is paramount - DLSS 4 in particular can get away with those lower sources if you don't pixel peep.
+                    </p>
+
+                    <div class="card-basic center">
+                        <div class="center" style="margin: 10px;">
+                            <label for="res-width">Width: </label>
+                            <input id="res-width" placeholder="e.g. 1920" style="margin-right: 15px;" autocomplete="off">
+                            <label for="res-height">Height: </label>
+                            <input id="res-height" placeholder="e.g. 1080" style="margin-right: 15px;" autocomplete="off">
+                            <button onclick="reccomendPreset()">Apply</button>
+                        </div>
+                    </div>
+
+                    <table class="center" id="upscale-matrix">
+                        <tr>
+                            <th>Internal Resolution</th>
+                            <th>Native</th>
+                            <th>Ultra Quality Plus</th>
+                            <th>Ultra Quality</th>
+                            <th>Quality</th>
+                            <th>Balanced</th>
+                            <th>Performance</th>
+                            <th>Ultra Perf.</th>
+                        </tr>
+                        <tr data-upscaler="DLSS 4">
+                            <td>DLSS 4</td>
+                            <td data-percent="100">100% (Native aka DLAA)</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="66">66%</td>
+                            <td data-percent="58">58%</td>
+                            <td data-percent="50">50%</td>
+                            <td data-percent="33">33%</td>
+                        </tr>
+                        <tr data-upscaler="FSR 4">
+                            <td>FSR 4</td>
+                            <td data-percent="100">100% (Native)</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="66">66%</td>
+                            <td data-percent="58">58%</td>
+                            <td data-percent="50">50%</td>
+                            <td data-percent="33">33%</td>
+                        </tr>
+                        <tr data-upscaler="FSR 3">
+                            <td>FSR 3</td>
+                            <td data-percent="100">100% (Native)</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="66">66%</td>
+                            <td data-percent="58">58%</td>
+                            <td data-percent="50">50%</td>
+                            <td data-percent="33">33%</td>
+                        </tr>
+                        <tr data-upscaler="XeSS &ge;v1.3">
+                            <td>XeSS &ge;v1.3</td>
+                            <td data-percent="100">100% (Native)</td>
+                            <td data-percent="77">77%</td>
+                            <td data-percent="66">66%</td>
+                            <td data-percent="59">58%</td>
+                            <td data-percent="50">50%</td>
+                            <td data-percent="43">43%</td>
+                            <td data-percent="33">33%</td>
+                        </tr>
+                        <tr data-upscaler="XeSS <v1.3">
+                            <td>XeSS &lt;v1.3</td>
+                            <td data-percent="100">100% (Native)</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="77">77%</td>
+                            <td data-percent="66">66%</td>
+                            <td data-percent="59">58%</td>
+                            <td data-percent="50">50%</td>
+                            <td data-percent="0">N/A</td>
+                        </tr>
+                    </table>
+
+                    <br><br>
+
+                    <p>
+                        In numerous games, including Skyrim and Fallout 4 with the respective upscaling integration, upscaling has become a no-brainer. Compared to these games' traditional <a href="https://www.pcgamingwiki.com/wiki/Glossary:Anti-aliasing_(AA)" target="_blank">AA</a> options (mostly <a href="https://www.pcgamingwiki.com/wiki/Glossary:Anti-aliasing_(AA)#Temporal_methods" target="_blank">TAA</a>), upscaling massively improves visual clarity, fine detail resolve, sharpness, and performance (if not running in native mode).
+
+                        <br><br>
+
+                        <a href="https://www.nexusmods.com/skyrimspecialedition/mods/156952" target="_blank">Upscaling - Community Shaders</a> implements the latest DLSS 4 and FSR 3.1 (upgradable to FSR 4 with OptiScaler), but not XeSS. Do note that it defaults to <a href="https://www.pcgamingwiki.com/wiki/Glossary:Frame_generation" target="_blank">Frame Generation</a> on.
+
+                        <br><br>
+
+                        The presets mentioned earlier are in the Community Shaders menu, accessible with the <span class="card-basic">End</span> key on your keyboard.
+                    </p>
                 </div>
 
             </span>
