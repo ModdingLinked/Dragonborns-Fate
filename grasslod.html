@@ -54,6 +54,7 @@
     <script src="submodule/shared/js/popup.js"></script>
     <script src="submodule/shared/js/recommendPreset.js"></script>
     <script src="submodule/shared/js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/sidebar.js"></script>
 
     <link rel="stylesheet" href="main.css">
 </head>
@@ -204,7 +205,7 @@
                 <div class="card" id="IntroductionAndRequirement">
                     <h3>Grass Cache</h3>
                     <p>
-                        Grass caching is the process of generating files (using the NGIO mod) that tell the game exactly where grass should and shouldn't appear. This has several benefits:
+                        Grass caching is the process of generating files (using the No Grass In Objects mod) that tell the game exactly where grass should and shouldn't appear. This has several benefits:
                     <ul>
                         <li>
                             <strong>Prevents grass clipping through objects</strong> &mdash; no more grass poking through rocks or buildings.
@@ -213,7 +214,7 @@
                             <strong>Improves performance</strong> by reducing the amount of grass the game needs to generate and render.
                         </li>
                         <li>
-                            <strong>Enables grass LOD</strong> in DynDOLOD 3, allowing grass to be rendered at long distances.
+                            <strong>Allows generating grass LOD</strong> in DynDOLOD 3, allowing grass to be rendered at long distances using the game's Object LOD system.
                         </li>
                     </ul>
 
@@ -305,25 +306,7 @@
                                 </ol>
                             </ul>
                         </li>
-
-                        <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/68640" target="_blank">Vanilla Complex Grasses for ENB</a></b>
-                            <ul>
-                                <li><b>Main Files</b> - Vanilla Complex Grasses</li>
-                            </ul>
-                        </li>
                     </ol>
-
-                    <div class="card-yellow">
-                        <p>
-                            Even though the mod mentions ENB, it also <strong>works with Community Shaders</strong>. Complex Grass patches won't do anything if you don't use the feature from ENB or Community Shaders.
-
-                            <br><br>
-
-                            <strong>DBF (even with DBF Extended) uses vanilla grass</strong>, use a different Complex Grass patch (or a mod with it included) if you want different grass. Results in the color matching between real grass and grass LOD may vary.
-                        </p>
-                    </div>
-
                     </p>
                 </div>
 
@@ -361,7 +344,7 @@
 
                     <div class="card-yellow">
                         <p>
-                            Especially during the last worldspace (Tamriel), the game <strong>might crash a few times</strong>. This is <strong>normal and can be ignored</strong>, as the mod will automatically restart the process.
+                            Especially during the last worldspace (Tamriel), <strong>the game might crash a few times</strong>. This is normal and can be ignored, as the mod will automatically restart the process.
                             <br><br>
                             However, if the game crashes way too often during the process and you can replicate the issue in-game by visiting the same location, you should investigate the cause.
                         </p>
@@ -377,37 +360,49 @@
                     </p>
                 </div>
 
+                <div class="card-red center">
+                    <p>
+                        <b>IMPORTANT</b>:
+                        <br>
+                        The upcoming Grass Optimizations module for Community Shaders drastically improves performance and enables NGIO's grass extension feature without relying on DynDOLOD grass LODs.
+
+                        <br><br>
+
+                        Once released, it will be a far superior alternative to the grass LOD mentioned here - eliminating the heavy GPU performance hit and maintaining visual consistency with normal grass (grass LOD uses a different shader).
+                    </p>
+                </div>
+
                 <div class="card" id="GrassLOD" title="Grass LOD">
                     <h3>Grass LOD</h3>
+
+                    <div class="card-yellow">
+                        <p>
+                            This part assumes you are already familiar with the <a href="./lod.html#TexGen">LOD generation process</a>! Learn the ropes of LOD generation before continuing with this guide.
+                        </p>
+                    </div>
+
                     <p>
-                        This part assumes you are already familiar with the <a href="./lod.html#TexGen">LOD generation process</a>! Learn the ropes of LOD generation before continuing with this guide.
+                        Grass LOD requires grass with normal mapping. DBF Extended uses vanilla grass with <a href="https://www.nexusmods.com/skyrimspecialedition/mods/68640" target="_blank">Vanilla Complex Grasses for ENB and CS</a>. If you use a grass mod, make sure that it is patched for <a href="https://www.nexusmods.com/skyrimspecialedition/mods/86502" target="_blank">Grass Lighting</a> (or ENB's Complex Grass feature). Once that is set up, do the following:
+                    </p>
 
                     <ol>
                         <li>Delete the existing outputs for <b>TexGen</b> and <b>DynDOLOD</b>, if they exist.</li>
-                        <li>TexGen:
+                        <li>Run TexGen:
                             <ul>
                                 <li>Enable <strong>HD Grass</strong>, which should now be available thanks to the Complex Grass patch and the presence of grass cache.</li>
                                 <li>Generate as normal.</li>
                                 <li><b>Install</b> the TexGen output.</li>
                             </ul>
                         </li>
-                        <li>DynDOLOD:
+                        <li>Run DynDOLOD:
                             <ul>
                                 <li>Enable <strong>Grass LOD</strong> with the <b>Mode</b> set to <strong>2</strong>.</li>
-                                <li>Set the <b>Density</b> setting to <strong>80</strong> as a starting point. Higher values mean denser grass but have a <strong>greater performance impact</strong>.</li>
+                                <li>Set the <b>Density</b> setting to <strong>80</strong> as a starting point. Higher values mean denser grass but have a <strong>greater performance impact</strong>. This value is meant for vanilla grass - the sweetspot with modded grass may be different.</li>
                                 <li>Generate as normal.</li>
                                 <li>Install the DynDOLOD output.</li>
                             </ul>
                         </li>
                     </ol>
-
-                    <div class="card-yellow">
-                        <p>
-                            If you use custom grass mods, you may need to <u>adjust the density</u> higher or lower to balance visuals and performance.
-                        </p>
-                    </div>
-
-                    </p>
                 </div>
             </span>
 
