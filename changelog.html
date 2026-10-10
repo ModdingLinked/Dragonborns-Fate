@@ -150,8 +150,8 @@
                     LOD Guide
                 </a>
 
-                <a href="./grasslod.html" title="Grass LOD Guide" class="sublink">
-                    Grass LOD Guide
+                <a href="./extendedgrass.html" title="Extended Grass Guide" class="sublink">
+                    Extended Grass Guide
                 </a>
 
                 <a href="./esl.html" title="Light Plugins" class="sublink">
@@ -207,6 +207,98 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
+                    <h2 class="install">Oct 10</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Updated to game version 1.7.104.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>GOG Memory Leak Fix (now GOG and 1.7 Memory Leak Fix) is now also required for Steam users.</li>
+                        <li>Added Scrambled Updates.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Removed Fix Note Icon for SkyUI (SKSE64 plugin), SKSE >=2.2.7 integrates it.</li>
+                    </ul>
+                    <h2><strong>Animations</strong></h2>
+                    <ul>
+                        <li>Updated the DBF Pre-Generated Pandora Output for Pandora 5.0.0-beta.</li>
+                        <li>Split the list of mods into 2 based on if they require behaviour patching or not.</li>
+                        <li>Removed the following mods, as they do not support 1.7.104 (yet):
+                            <ul>
+                                <li>Immersive Equipment Displays</li>
+                                <li>Open Animation Replacer - IED Conditions</li>
+                                <li>Weapon Styles - Draw-Sheathe animations for IED (because of the above)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Moved CoMAP - Common Marker Addon Project to the Extra Utilities section.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Updated Survival Mode Improved - SKSE - USSEP Patch to remove a redundant record and fix various spell costs.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Switched to the version of Simplicity of Sea that keeps flow maps, as they work fine with Community Shader's water parallax.</li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Cloud Shadows, as it's now part of CS core.</li>
+                                <li>Weather of World - Enhanced Worldspace Maps has its own new weather for Tamriel.</li>
+                                <li>The Security Overhaul series of mods. It is now among DBF's <a href="./safe-modding.html" target="_blank">Recommended Mods</a>.</li>
+                            </ul>
+                        </li>
+                        <li>Added Grass Optimizations in the list of CS addons.</li>
+                        <li>Added Merethic Grasslands. Vanilla Complex Grasses remains listed as alternative for the people who prefer vanilla grass with CS.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Replaced A Clear Map of Skyrim and Other Worlds with Enhanced Worldspace Maps (now in the Visuals section), as it looks better in some worldspaces and is simpler to set up.</li>
+                        <li>Updated the Temp Snow Replacement to look closer to vanilla LOD, the snow in the map might not look as white anymore, but this is obviously preferable to breaking snow during gameplay.</li>
+                        <li>Removed the Whiter Snow LOD Material plugin, it is not necessary anymore.</li>
+                        <li>Updated the xLODGen terrain quality settings.</li>
+                        <li>Updated the DynDOLOD settings.</li>
+                        <li>Added steps to edit the SkyrimCustom INI and improve the look of the map. More information is provided in <a href="./lod.html#INITweaks" target="_blank">that section</a>.</li>
+                        <li>Added DBF DynDOLOD Rules. This does multiple things:
+                            <ol>
+                                <li>Re-implement the rules from ACMoS (credits to DoubleYou for permissions) that add objects to the map.</li>
+                                <li>Automatically makes the required rule changes to the LOD 32 entries of \ and trees.</li>
+                                <li>Adds a rule for mountain meshes in LOD 32, fixing the grey snow. The remaining grey snow in the map is due to landscape and that is fixed by the Temp Snow Replacement.</li>
+                            </ol>
+                        </li>
+                        <li>Updated the DBF Pre-Generated LOD.</li>
+                    </ul>
+                    <h2><strong>Extended Grass Guide</strong></h2>
+                    <ul>
+                        <li>The CS Grass Optimizations addon is now required.</li>
+                        <li>Grass cache is now generated using Faster NGIO Grass Cache. It now takes a matter of seconds or minutes (depending on GPU) rather than possibly multiple hours.</li>
+                        <li>Removed the Grass Generation MO2 Plugin for the reason stated above.</li>
+                        <li>Added steps to pack the grass cache into BSA.</li>
+                        <li>Updated No Grass In Objects settings.</li>
+                        <li>Removed steps to edit the Grass Cache Helper NG settings, defaults will work.</li>
+                        <li>Grass is now extended solely through the NGIO extended grass feature, rather than baking it in object LOD through DynDOLOD. On top of that, thanks to the CS Grass Optimizations addon, performance is now drastically better.</li>
+                        <li>Due to the above, Grass LOD is now technically a misnomer, so the page is under a new name. The legacy guide will not be preserved, as it had multiple issues that the new method does not suffer from. Most notably:
+                            <ul>
+                                <li>Reliance on DynDOLOD, which made it take way longer.</li>
+                                <li>Much worse performance, especially on GPU.</li>
+                                <li>Impossibility to color-match the loaded grass with the new grass in LOD, due to them fundamentally using different shaders.</li>
+                            </ul>
+                        </li>
+                        <li>The grass cache can now be downloaded from the DBF resources page for DBFE setups.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated various mods. No full list is available like usual, as I remade the Wabbajack from scratch. Everything is on the latest version at the time of this release.</li>
+                        <li>Now ships with <a href="./extendedgrass.html" target="_blank">Extended Grass</a>, as the performance cost is small enough.</li>
+                    </ul>
+
+                    <hr>
+
                     <h2 class="install">Aug 8</h2>
                     <h3>Safe Mid-game</h3>
                     <h2><strong>Visuals</strong></h2>
@@ -495,9 +587,9 @@
                     <h2><strong>LOD Guide</strong></h2>
                     <ul>
                         <li>Removed the warning about Skyrim Misc Bugfix Compilation, as it's now fixed with >=2.0.</li>
-                        <li>Set LOD32 Optimize Unseen back to 550, the breakage seen previously was either a hallucination or a result of some other issue no longer present.</li>
-                        <li>Bumped up the texture resolution of LOD32 from 256 to 512 to noticeably reduce its blurriness.</li>
-                        <li>Simplified DynDOLOD instructions thanks to the new LOD32 button in its GUI.</li>
+                        <li>Set LOD 32 Optimize Unseen back to 550, the breakage seen previously was either a hallucination or a result of some other issue no longer present.</li>
+                        <li>Bumped up the texture resolution of LOD 32 from 256 to 512 to noticeably reduce its blurriness.</li>
+                        <li>Simplified DynDOLOD instructions thanks to the new LOD 32 button in its GUI.</li>
                         <li>Added steps to split the heightmaps from the generated terrain LOD by using a new script, as mentioned above.</li>
                         <li>Updated the DBF Pre-Generated LOD.</li>
                     </ul>
@@ -566,7 +658,7 @@
                     </ul>
                     <h2><strong>LOD Guide</strong></h2>
                     <ul>
-                        <li>Set LOD32 Optimize Unseen to on, fixing broken minor worldspaces such as Soul Cairn.</li>
+                        <li>Set LOD 32 Optimize Unseen to on, fixing broken minor worldspaces such as Soul Cairn.</li>
                         <li>Updated the DBF Pre-Generated Object LOD.</li>
                     </ul>
                     <h2><strong>Wabbajack</strong></h2>
@@ -658,6 +750,12 @@
                                 <li>DIAL - Misc Bugfix Compilation Patch</li>
                             </ul>
                         </li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>XPMF - Extended Projected Materials Framework</li>
+                                <li>Simplicity of Snow Sulfur Ash Moss</li>
+                            </ul>
+                        </li>
                     </ul>
                     <h2><strong>Resources</strong></h2>
                     <ul>
@@ -705,7 +803,7 @@
                     <h2><strong>LOD Guide</strong></h2>
                     <ul>
                         <li>Updated the Whiterun comparison images and added one to showcase a child worldspace (from Dragonsreach).</li>
-                        <li>Regenerated the DBF Pre-Generated Terrain LOD, it used LOD32 512 resolutions instead of 256. You don't need to reinstall the file, as it changed almost nothing in practice (reason why we just use the 256 default).</li>
+                        <li>Regenerated the DBF Pre-Generated Terrain LOD, it used LOD 32 512 resolutions instead of 256. You don't need to reinstall the file, as it changed almost nothing in practice (reason why we just use the 256 default).</li>
                         <li>Switched from DynDOLOD DLL SE to NG, and added steps to clean the base game plugins so that the large refs workarounds in DynDOLOD can be used, as it was still present with the previous setup.</li>
                         <li>Updated DynDOLOD settings for greater detail.</li>
                         <li>Updated the DBF Pre-Generated Object LOD to reflect the 2 changes above.</li>

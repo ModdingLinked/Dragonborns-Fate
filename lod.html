@@ -151,8 +151,8 @@
                     LOD Guide
                 </a>
 
-                <a href="./grasslod.html" title="Grass LOD Guide" class="sublink">
-                    Grass LOD Guide
+                <a href="./extendedgrass.html" title="Extended Grass Guide" class="sublink">
+                    Extended Grass Guide
                 </a>
 
                 <a href="./esl.html" title="Light Plugins" class="sublink">
@@ -284,32 +284,36 @@
                     </p>
                 </div>
 
+                <div class="card" id="INITweaks" title="INI Tweaks">
+                    <h3>INI Tweaks</h3>
+                    <p>
+                        These settings will:
+                    <ol>
+                        <li>Sets the map's near clip plane distance from 128 to 1024, improving the look of the horizon and fixing z-flicker/holes in the far distance.</li>
+                        <li>Switch the map screen from Object LOD 16 to 32, which we will soon generate using DynDOLOD.</li>
+                        <li>Switch the map screen from Terrain LOD 32 to 4. This is to avoid having 2 levels (4 and 32) with high mesh quality and resolution, when we can just use 4.</li>
+                    </ol>
+                    <ol>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/Tools.webp" alt="Tools drop-down"> button at the top of MO2 and select <b>INI Editor</b>.</li>
+                        <li>Select the <b>SkyrimCustom.ini</b> tab, which should have the settings copied from the <a href="./mo2.html">Mod Organizer 2</a> page.</li>
+                        <li>Paste in the following at the end of the file:</li>
+                        <textarea readonly="readonly" style="height: 10em; width: 95%;" onclick="this.focus();this.select()">
+[MapMenu]
+;Helps fix map z-fighting issues. Sets the near clip pane distance. Default is 128.0
+fMapMenuNearClipPlane=1024.0
+;Sets the Object LOD level to be used by the Map. Default is 16.
+uLockedObjectMapLOD=32
+;Sets the Terrain LOD level to be used by the Map. Default is 32.
+uLockedTerrainLOD=4</textarea>
+                    </ol>
+                    </p>
+                </div>
+
                 <div class="card" id="InstallingResources" title="Installing LOD Resources">
                     <h3>Installing LOD Resources</h3>
                     <p>
                         Install in the following order:
                     <ol>
-                        <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/56367" target="_blank">A Clear Map of Skyrim and Other Worlds</a></b>
-                            <ul>
-                                <li><b>Main Files</b> - A Clear Map of Skyrim and Other Worlds FOMOD</li>
-                                <li>You will be prompted with a FOMOD installer:
-                                    <ol>
-                                        <li>DynDOLOD 3</li>
-                                        <li>With DynDOLOD LOD32</li>
-                                        <li>Remove or keep clouds based on your preference</li>
-                                        <li>Install</li>
-                                    </ol>
-                                </li>
-                            </ul>
-
-                            <div class="card-yellow">
-                                <p>
-                                    After installing ACMoS, you should move its plugin right above <b>Weather of World.esp</b>. This way, Weather of the World will overwrite ACMoS and the map will look better.
-                                </p>
-                            </div>
-                        </li>
-
                         <li>
                             <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/52897" target="_blank">DynDOLOD Resources SE 3</a></b>
                             <ul>
@@ -351,7 +355,7 @@
                         <li>
                             <b class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">A Dragonborn's Fate Resources</a></b>
                             <ul>
-                                <li><b>Main Files</b> - DBF LOD Guide - Whiter Snow LOD Material</li>
+                                <li><b>Main Files</b> - DBF DynDOLOD Rules</li>
                             </ul>
                         </li>
                     </ol>
@@ -403,9 +407,9 @@
                                     <li>Double-click on <strong>Simple Cleaned Skyrim ESMs Patcher.exe</strong> to run it.</li>
                                     <li>
                                         A command prompt window will open and it should say:
-                                        <div class="card-basic">Patching successful</div>
+                                        <span class="card-basic">Patching successful</span>
                                     </li>
-                                    <li>Press ENTER to close the command prompt. Backups will be created in the <b>Original ESMs backups</b> folder.</li>
+                                    <li>Press ENTER to close the command prompt.</li>
                                 </ol>
                                 </p>
                             </div>
@@ -439,7 +443,7 @@
                                     <li>Double-click on <strong>Simple Cleaned Skyrim ESMs Patcher.exe</strong> to run it.</li>
                                     <li>
                                         A command prompt window will open and it should say:
-                                        <div class="card-basic">Patching successful</div>
+                                        <span class="card-basic">Patching successful</span>
                                     </li>
                                     <li>Press ENTER to close the command prompt. Backups will be created in the <b>Original ESMs backups</b> folder.</li>
                                 </ol>
@@ -458,8 +462,8 @@
                     <br><br>
                     Simply install <strong>both the Object and Terrain Pre-Generated LOD</strong> as normal mods in MO2 and put them under the resources listed in the previous section (which you still need), then set up the load order as follows:
                     <ul>
-                        <li><strong>DynDOLOD.esm</strong> should be the <strong>last ESM</strong> plugin (written in bold).</li>
-                        <li><strong>DynDOLOD.esp</strong> and then <strong>Occlusion.esp</strong> should be at the <strong>bottom</strong>.</li>
+                        <li><span class="card-basic">DynDOLOD.esm</span> should be the <strong>last ESM</strong> plugin (written in bold).</li>
+                        <li><span class="card-basic">DynDOLOD.esp</span> and then <span class="card-basic">Occlusion.esp</span> at the bottom, in that order.</li>
                     </ul>
                     </li>
                     </p>
@@ -495,12 +499,12 @@
                     </div>
 
                     <ol start="2">
-                        <li>Download, install, and enable <a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">DBF LOD Guide - Temp Snow Replacement</a>.</li>
+                        <li>Download, install, and enable <a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">DBF Temporary Snow Texture for xLODGen</a>.</li>
                         <li>Download the latest <strong>xLODGen</strong> from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
                         <li>Once the download has finished, extract the contents of the archive anywhere outside of the default Windows folders.</li>
                         <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables" class="mo2-icon"> button at the top of MO2 to open the executables menu.</li>
                         <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
-                        <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGenx64.exe</strong>.</li>
+                        <li>From the pop-up, navigate to where the tool is and select <strong>xLODGenx64.exe</strong>.</li>
                         <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-SSE -O:"C:\Output"</span></li>
 
                         <div class="card-green">
@@ -568,7 +572,7 @@
                             <hr>
 
                             <h3>Snow Fix</h3>
-                            <p>A common issue when regenerating terrain LOD32, is snow being too green and/or grey. This is due to the vanilla snow textures not being bright enough. This guides solves the problem by loading a temporary replacement for a few snow textures. This, coupled with a whiter <a href="https://dyndolod.info/Help/Snow-Ash-LOD-Shader" target="_blank">LOD snow shader</a>, should result in a map with the same terrain colors as vanilla, while improving detail.</p>
+                            <p>A common issue with the game map is grey-ish snow. This is due to the map menu differing in visuals compared to gameplay, meaning that in order to have snow of the right brightness in the map screen, one has to compensate directly in the texture and find a middle-ground for both scenarios. This guide solves the problem by loading a temporary replacement.</p>
                         </div>
 
                         <div class="card-yellow">
@@ -658,8 +662,7 @@
                         <li>From from newly opened window, copy the file path, then paste it into CAO (right below the profile drop-down).</li>
                         <li>Click the <strong>Run</strong> button.</li>
                         <li>Once the process is complete, you will see a message saying "<b>Done</b>" at the bottom.</li>
-                        <li>If everything was done correctly, the Terrain LOD folder should have BSA files and the relative plugin for loading them.</li>
-                        <li>Click <strong>F5</strong> while you are on MO2 without any menu open, and make sure the aforemention plugin is enabled in your load order.</li>
+                        <li>Click <strong>F5</strong> while you are on MO2 without any menu open, and make sure the new plugin (it loads the archives) is enabled in your load order.</li>
                     </ol>
 
                     <div class="expander-top clickable important" onclick="expandCard(this)">
@@ -709,10 +712,32 @@
                     </ol>
                     </p>
                 </div>
+
+                <div class="card" id="ResolvingConflicts">
+                    <h3>Resolving Conflicts</h3>
+                    <p>
+                        Enhanced Worldspace Maps ships with with few LOD assets that will conflict with the new terrain LOD files. This is because, as explained in the drop-down above, loose files always win over ones in BSA. To solve this, we can just pack Enhanced Worldspace Maps as BSA:
+                    <ol>
+                        <li>Run <strong>Cathedral_Assets_Optimizer.exe</strong>, just like before.</li>
+                        <li>Tick the <b>Create BSA</b> box.</li>
+                        <li>In Mod Organizer 2, right-click on <strong>Enhanced Worldspace Maps</strong> mod and select <b>Open in Explorer</b>.</li>
+                        <li>From from newly opened window, copy the file path, then paste it into CAO (right below the profile drop-down).</li>
+                        <li>Click the <strong>Run</strong> button.</li>
+                        <li>Once the process is complete, you will see a message saying "<b>Done</b>" at the bottom.</li>
+                        <li>Make sure your <span class="card-basic">Terrain LOD.esp</span> is loaded below Enhanced Worldspace Maps' block of plugins (which one loads the BSA doesn't matter).</li>
+                    </ol>
+                    </p>
+                </div>
             </span>
 
             <span id="ObjectAndTree" class="section">
                 <h2 onclick="location.href='#ObjectAndTree'">Object and Tree LOD</h2>
+
+                <div class="card-green center">
+                    <p>
+                        More information about what each setting does can be found in the <a href="https://dyndolod.info/Help/Advanced-Mode" target="_blank">DynDOLOD 3 wiki</a>. The ones used by DBF are on the higher end of visuals, but still reasonable for most systems.
+                    </p>
+                </div>
 
                 <div class="card" id="TexGen" title="TexGen">
                     <h3>TexGen</h3>
@@ -722,19 +747,10 @@
                         <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
                         <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
                         <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
-                        <li>From the pop-up, navigate to where TexGen is installed and select <strong>TexGenx64.exe</strong>.</li>
+                        <li>From the pop-up, navigate to where the tool is and select <strong>TexGenx64.exe</strong>.</li>
                         <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-SSE</span></li>
                         <li>Close the <b>Modify Executables</b> menu and <strong>run TexGen</strong> from the drop-down.</li>
                         <li>Enable <b>HD Tree</b>.</li>
-                    </ol>
-
-                    <div class="card-green">
-                        <p>
-                            HD Tree billboards are a pre-requirement for trees in Object LOD - this achieves better visuals and works around limitations of the Tree LOD system. More information can be found in the <a href="https://dyndolod.info/Help/Ultra-Tree-LOD" target="_blank">DynDOLOD 3 wiki</a>.
-                        </p>
-                    </div>
-
-                    <ol start="8">
                         <li>Click <strong>Start</strong>.</li>
                         <li>When complete, you will see a message saying "<b>TexGen completed successfully</b>", click <strong>Zip and Exit</strong>.</li>
                         <li>Install the TexGen output by clicking the <img src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
@@ -749,32 +765,14 @@
                     <ol>
                         <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
                         <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
-                        <li>From the pop-up, navigate to where TexGen is installed and select <strong>DynDOLODx64.exe</strong>.</li>
+                        <li>From the pop-up, navigate to where the tool is and select <strong>DynDOLODx64.exe</strong>.</li>
                         <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-SSE</span></li>
                         <li>Close the <b>Modify Executables</b> menu and <strong>run DynDOLOD</strong> from the drop-down.</li>
-                        <li>Once DynDOLOD has loaded, open the <strong>Advanced settings</strong> and copy the following:</li>
-                    </ol>
-
-                    <div class="card-green">
-                        <p>
-                            Aside from the few tweaks to LOD32 settings needed by ACMoS to look as intended, the other settings are largely up to personal preference and performance target. More information about what each setting does can be found in the <a href="https://dyndolod.info/Help/Advanced-Mode" target="_blank">DynDOLOD 3 wiki</a>. The ones used by DBF are on the higher end of visuals, but still reasonable for most systems. As mentioned earlier, you can find performance and VRAM usage comparisons <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>.
-                        </p>
-                    </div>
-
-                    <ol start="8">
+                        <li>Once DynDOLOD has loaded, open the <strong>Advanced settings</strong> and do the following:</li>
                         <ul>
                             <li>In the top-left corner, right-click the list of worldspaces and <b>Select all</b>.</li>
                             <li>Select the <b>High</b> preset.</li>
                             <li>Enable <b>Candles</b> and <b>FXGlow</b>.</li>
-                            <li>In the <b>Mesh and Reference rules</b> list, scroll to the bottom and double-click on <b>tree</b>.</li>
-                            <li>Set its LOD options to:
-                                <ul>
-                                    <li><i>LOD4</i>: Level0</li>
-                                    <li><i>LOD8</i>: Billboard4</li>
-                                    <li><i>LOD16</i>: Billboard4</li>
-                                    <li><i>LOD32</i>: Billboard6</li>
-                                </ul>
-                            </li>
                             <li>Still in the list, double-click <b>\</b> and set its <b>LOD32</b> to <b>Level0</b>.</li>
                             <li>Copy these options:</li>
                             <div class="image-container">
@@ -788,8 +786,8 @@
                         <li>From the new window, navigate to the DynDOLOD folder you installed in step 2, then double-click <b>DynDOLOD_Output.zip</b> and install it.</li>
                         <li>Set up the load order as follows:
                             <ul>
-                                <li><strong>DynDOLOD.esm</strong> should be the <strong>last ESM</strong> plugin (written in bold).</li>
-                                <li><strong>DynDOLOD.esp</strong> and then <strong>Occlusion.esp</strong> should be at the <strong>bottom</strong>.</li>
+                                <li><span class="card-basic">DynDOLOD.esm</span> should be the <strong>last ESM</strong> plugin (written in bold).</li>
+                                <li><span class="card-basic">DynDOLOD.esp</span> and then <span class="card-basic">Occlusion.esp</span> at the bottom, in that order.</li>
                             </ul>
                         </li>
                     </ol>

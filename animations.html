@@ -150,8 +150,8 @@
                     LOD Guide
                 </a>
 
-                <a href="./grasslod.html" title="Grass LOD Guide" class="sublink">
-                    Grass LOD Guide
+                <a href="./extendedgrass.html" title="Extended Grass Guide" class="sublink">
+                    Extended Grass Guide
                 </a>
 
                 <a href="./esl.html" title="Light Plugins" class="sublink">
@@ -202,9 +202,11 @@
                 <p>
                     <b>IMPORTANT</b>:
                     <br>
-                    Most of the following mods will <strong>require behavior patching</strong>. This is a process that, essentially, allows mods to modify aspects of the animation system without trying to edit the same file. Pandora is a behavior patcher that can be used to apply these changes, instructions on how to use it will come later.
-                    <br><br>
-                    For this reason, unlike the rest of the guide, it is recommended that you follow this section in its entirety or not at all. Quite a few of these mods will not work without the rest.
+                    This page is split up into <b>2 lists of mods</b>:
+                <ul>
+                    <li>The first list is of the ones that do not need any particular instructions to get running.</li>
+                    <li>The second list is of mods that require behaviour patching in order to work. In short, behaviour patching allows mods to modify aspects of the animation system without trying to edit the same file. Pandora is the modern tool for this job. Instructions on how to use it will come later.</li>
+                </ul>
                 </p>
             </div>
 
@@ -244,17 +246,6 @@
                     </p>
                 </div>
 
-                <div class="card" id="AssortedBehaviorFixes">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/167000" target="_blank">Assorted Behavior Fixes</a></h3>
-                    Fixes various animation issues.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - Assorted Behavior Fixes</li>
-                    </ul>
-                    </p>
-                </div>
-
                 <div class="card" id="OAR" title="Open Animation Replacer">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/92109" target="_blank">Open Animation Replacer</a></h3>
@@ -262,17 +253,6 @@
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li><b>Main Files</b> - Open Animation Replacer</li>
-                    </ul>
-                    </p>
-                </div>
-
-                <div class="card" id="USSEPPAndoraPatch" title="USSEP Pandora Patch">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/139572" target="_blank">USSEP Nemesis or Pandora Patch</a></h3>
-                    Allows merging the USSEP animation fixes into the Pandora output.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - USSEP Behaviour Patch</li>
                     </ul>
                     </p>
                 </div>
@@ -303,6 +283,93 @@
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li><b>Main Files</b> - Weapon switch animation Fix 1.4</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- <div class="card" id="ImmersiveEquipmentDisplays">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/62001" target="_blank">Immersive Equipment Displays</a></h3>
+                    Displays unequipped gear and custom items on the player or NPCs. Fully configurable and compatible with everything.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Immersive Equipment Displays for 1.6.629 and newer</li>
+                        <li>
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/98308" target="_blank">Open Animation Replacer - IED Conditions</a>
+                            <ul>
+                                <li><b>Main Files</b> - Open Animation Replacer - IED conditions</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div> -->
+
+                <div class="card" id="SimpleDualSheath">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/50049" target="_blank">Simple Dual Sheath</a></h3>
+                    Makes equipped left hand weapons and both staves visible on the player or NPCs. Also shows shields on the back.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Simple Dual Sheath for 1.6.629 and newer</li>
+                        <ol>
+                            <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
+                            <li>In the <strong>INI Files</strong> tab, select <span class="card-basic">SKSE/Plugins/SimpleDualSheath.ini</span></li>
+                            <li>In the <b>ShieldOnBack</b> section, set <b>Flags</b> to <span class="card-basic">FirstPerson|Player|NPC</span></li>
+                            <li>Save your changes.</li>
+                        </ol>
+                        <li><b>Optional Files</b> - XPMSSE Left Hand Sheath Rotation Fix</li>
+                    </ul>
+                    </p>
+
+                    <div class="card-yellow">
+                        <p>
+                            If you installed IED, you can <strong>skip installing the XPMSSE Left Hand Sheath Rotation Fix</strong> - IED handles this automatically.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- <div class="card" id="WeaponStyles">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/85085" target="_blank">Weapon Styles - Draw-Sheathe animations for IED</a></h3>
+                    Adds equip/unequip animations to be used with Immersive Equipment Displays and Simple Dual Sheath.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Weapon Styles for IED</li>
+                        <ul>
+                            <li>You will be prompted with a FOMOD installer:
+                                <ol>
+                                    <li>Shield animations</li>
+                                    <li>Dual Wield Fix</li>
+                                    <li>Install</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </ul>
+                    </p>
+                </div> -->
+            </span>
+
+            <span id="BehaviorPatching" class="section">
+                <h2 onclick="location.href='#BehaviorPatching'">Mods Requiring Behavior Patching</h2>
+
+                <div class="card" id="AssortedBehaviorFixes">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/167000" target="_blank">Assorted Behavior Fixes</a></h3>
+                    Fixes various animation issues.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Assorted Behavior Fixes</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="USSEPPAndoraPatch" title="USSEP Pandora Patch">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/139572" target="_blank">USSEP Nemesis or Pandora Patch</a></h3>
+                    Allows merging the USSEP animation fixes into the Pandora output.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - USSEP Behaviour Patch</li>
                     </ul>
                     </p>
                 </div>
@@ -342,100 +409,13 @@
                     </p>
                 </div>
 
-                <div class="card" id="ImmersiveEquipmentDisplays">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/62001" target="_blank">Immersive Equipment Displays</a></h3>
-                    Displays unequipped gear and custom items on the player or NPCs. Fully configurable and compatible with everything.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - Immersive Equipment Displays for 1.6.629 and newer</li>
-                        <li>
-                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/98308" target="_blank">Open Animation Replacer - IED Conditions</a>
-                            <ul>
-                                <li><b>Main Files</b> - Open Animation Replacer - IED conditions</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-
-                <div class="card" id="SimpleDualSheath">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/50049" target="_blank">Simple Dual Sheath</a></h3>
-                    Makes equipped left hand weapons and both staves visible on the player or NPCs. Also shows shields on the back.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - Simple Dual Sheath for 1.6.629 and newer</li>
-                        <ol>
-                            <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
-                            <li>In the <strong>INI Files</strong> tab, select <span class="card-basic">SKSE/Plugins/SimpleDualSheath.ini</span></li>
-                            <li>In the <b>ShieldOnBack</b> section, set <b>Flags</b> to <span class="card-basic">FirstPerson|Player|NPC</span></li>
-                            <li>Save your changes.</li>
-                        </ol>
-                        <li><b>Optional Files</b> - XPMSSE Left Hand Sheath Rotation Fix</li>
-                    </ul>
-                    </p>
-
-                    <div class="card-yellow">
-                        <p>
-                            If you installed IED, you can <strong>skip installing the XPMSSE Left Hand Sheath Rotation Fix</strong> - IED handles this automatically.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card" id="WeaponStyles">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/85085" target="_blank">Weapon Styles - Draw-Sheathe animations for IED</a></h3>
-                    Adds equip/unequip animations to be used with Immersive Equipment Displays and Simple Dual Sheath.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - Weapon Styles for IED</li>
-                        <ul>
-                            <li>You will be prompted with a FOMOD installer:
-                                <ol>
-                                    <li>Shield animations</li>
-                                    <li>Dual Wield Fix</li>
-                                    <li>Install</li>
-                                </ol>
-                            </li>
-                        </ul>
-                    </ul>
-                    </p>
-                </div>
-
-                <div class="card" id="Pandora">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/133232" target="_blank">Pandora Behaviour Engine Plus</a></h3>
-                    Behaviour engine tool for patching Nemesis/FNIS behaviour mods, with full creature support.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - Pandora Behaviour Engine</li>
-                    </ul>
-                    </p>
-                </div>
-
-                <div class="card" id="PreGen" title="Pre-Generated Pandora Output">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">Pre-Generated Pandora Output</a></h3>
-                    If you use <strong>all of the mods above</strong> (without extra ones), you can skip manual behavior patching by using this files.
-                    <br><br>
-                    Simply install it as a normal mod in MO2 and put it under the previous mods (which you still need).
-                    </li>
-                    </p>
-                </div>
-            </span>
-
-            <span id="BehaviorPatching" class="section">
-                <h2 onclick="location.href='#BehaviorPatching'">Behavior Patching</h2>
-
                 <div class="card" id="Running Pandora">
                     <h3>Running Pandora</h3>
                     <p>
-                        As mentioned earlier, Pandora is needed in order to bring together all of the mods' changes.
-
+                        As mentioned earlier, Pandora is needed in order to bring together all of the mods' changes. If you installed all mods in this section, you can simply install the <a href="https://www.nexusmods.com/skyrimspecialedition/mods/149212" target="_blank">Pre-Generated Pandora Output</a>. Otherwise, do the following:
                         <br>
                     <ol>
-                        <li>Download and install Pandora as instructed above.</li>
+                        <li>Download and install <a href="https://www.nexusmods.com/skyrimspecialedition/mods/133232" target="_blank">Pandora</a>.</li>
                         <li>In MO2, head to the right pane's <b>Data</b> tab, then filter <span class="card-basic">Pandora</span>. You will see a number of files, right-click <strong>Pandora Behaviour Engine+.exe</strong> and <b>Add as Executable</b>.</li>
                         <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
                         <li>Title the mod <span class="card-basic">Pandora Output</span></li>
@@ -443,7 +423,7 @@
                         <li>From from newly opened window, <strong>copy the file path</strong>.</li>
                         <li><strong>Run Pandora</strong> from the drop-down.</li>
                         <li>Select all patches.</li>
-                        <li>From the bottom-left corner, open Pandora's settings and <strong>set the Output Folder</strong> to the one you copied earlier.</li>
+                        <li>From the bottom-left corner, open Pandora's settings and <strong>set the output folder</strong> to the one you copied earlier.</li>
                         <li>Click the <strong>Patch</strong> button.</li>
                         <li>Once the patching is done, close Pandora.</li>
                         <li>In MO2, make sure your Pandora Output mod is enabled. If you did everything correctly, you should see it conflicting with a few other mods in the list (bolt icons).</li>
