@@ -32,6 +32,8 @@ Simple Bow Stamina.esp
 CutContentRestoration.esp
 SMIM-SE-Merged-All.esp
 Static Mesh Improvement Mod - USSEP Patch.esp
+Better Vanilla Weather.esp
+Better Vanilla Weather - USSEP Patch.esp
 water mod.esp
 UMW - Vanilla Additions.esp
 Simplicity of Snow.esp
@@ -49,4 +51,4 @@ DBF DynDOLOD Rules.esp
 DBF Pre-Generated Terrain LOD.esp
 DynDOLOD.esp
 Occlusion.esp
-Grass Cache.esp
+DBF Grass Cache.esp
