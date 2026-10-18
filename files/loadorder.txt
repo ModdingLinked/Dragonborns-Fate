@@ -20,7 +20,6 @@ Dragon Leveled List Fixes.esp
 MCMHelper.esp
 QuickLootIE.esp
 Show Follower Carryweight.esp
-FNIS.esp
 TrueDirectionalMovement.esp
 BetterThirdPersonSelection.esp
 TavernAIFix.esp
